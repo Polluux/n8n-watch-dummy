@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veille tech — archives</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <header class="mb-10">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600">Veille tech</p>
+      <h1 class="mt-1 text-3xl font-bold tracking-tight text-slate-900">Archives</h1>
+      <p class="mt-3 text-slate-600">Sélection quotidienne de liens tech, générée automatiquement par un workflow n8n + Claude.</p>
+    </header>
+
+    <ul id="digests" class="space-y-4">
+      <li id="empty" class="rounded-xl border border-dashed border-slate-300 bg-white p-6 text-center text-slate-500">
+        Aucun digest publié pour le moment.
+      </li>
+    </ul>
+
+    <footer class="mt-16 border-t border-slate-200 pt-4 text-sm text-slate-500">
+      Généré par n8n + Claude — <a href="https://github.com/" class="text-blue-600 hover:text-blue-800">code source</a>
+    </footer>
+  </div>
+
+  <script>
+    fetch('digests.json')
+      .then(r => r.ok ? r.json() : [])
+      .then(entries => {
+        if (!Array.isArray(entries) || entries.length === 0) return;
+        entries.sort((a, b) => b.date.localeCompare(a.date));
+        const ul = document.getElementById('digests');
+        ul.innerHTML = '';
+        entries.forEach((e, i) => {
+          const li = document.createElement('li');
+          li.className = i === 0
+            ? 'relative rounded-xl border border-blue-400 bg-blue-50 p-4 shadow-sm transition hover:shadow-md'
+            : 'rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md';
+          if (i === 0) {
+            const badge = document.createElement('span');
+            badge.className = 'absolute right-4 top-4 rounded-full bg-blue-600 px-2.5 py-0.5 text-xs font-medium text-white';
+            badge.textContent = 'dernier';
+            li.appendChild(badge);
+          }
+          const a = document.createElement('a');
+          a.href = e.path;
+          a.className = 'font-semibold text-slate-900 hover:text-blue-700';
+          a.textContent = e.date;
+          const meta = document.createElement('p');
+          meta.className = 'mt-1 text-sm text-slate-600';
+          meta.textContent = (e.count != null ? e.count + ' liens — ' : '') + (e.intro || '');
+          li.append(a, meta);
+          ul.appendChild(li);
+        });
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>

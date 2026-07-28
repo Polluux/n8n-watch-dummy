@@ -18,7 +18,7 @@ Collect today's items from 3–4 tech-watch sources into one normalized list.
 
 - Normalization rules: strip HTML from excerpts, drop items missing a URL,
   drop items older than 48h, sort by `publishedAt` desc, cap at **60 items**
-  (keeps the Claude prompt in spec 03 small and cheap).
+  (keeps the LLM prompt in spec 03 small — well inside Gemini free-tier quotas).
 
 ## Acceptance criteria
 - [ ] Manual execution outputs a single list of ≤60 normalized items from all sources

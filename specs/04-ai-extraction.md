@@ -1,10 +1,10 @@
-# Spec 04 — Structured JSON extraction (Claude #2)
+# Spec 04 — Structured JSON extraction (LLM #2)
 
 ## Goal
 Enrich each selected link into a structured record for the digest.
 
 ## Design
-- Node: **Basic LLM Chain** + Anthropic Chat Model + **Structured Output Parser**
+- Node: **Basic LLM Chain** + Google Gemini Chat Model + **Structured Output Parser**
   so the schema is enforced by n8n, not by prompt hope.
 - Runs once over the batch of selected items (single call, not per-item — cheaper).
 - Output schema per item:

@@ -24,7 +24,8 @@ specifications with acceptance criteria.
 - `specs/` — one spec per phase (spec-driven development with Claude Code)
 - `docs/` — GitHub Pages root: `index.html` (static homepage listing all digests), `digests.json` (manifest appended by the workflow), `digests/` (one page per day)
 - `templates/digest.html` — the shared digest template (single source of truth for layout)
-- `workflow/` — exported n8n workflow JSON (added in phase 7)
+- `workflow/` — the n8n workflow JSON (source of truth in git; n8n's own copy lives in its Docker volume)
+- `scripts/export-workflow.sh` — sync UI edits back to the repo (run after editing in n8n; there is **no automatic sync** between the n8n database and this file)
 - `assets/` — execution screenshots (added in phase 7)
 
 ## Running it

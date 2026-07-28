@@ -28,7 +28,7 @@ The workflow never edits the homepage, only appends to the manifest.
 | Topic | Decision |
 |---|---|
 | n8n hosting | Self-hosted via Docker Compose, data persisted in a volume ([spec 01](specs/01-environment.md)) |
-| Sources | 3–4 RSS feeds to start (Hacker News frontpage, dev.to, InfoQ…) — RSS avoids scraping fragility |
+| Sources | 5 RSS feeds (Hacker News frontpage, dev.to, Journal du Hacker, Next, Korben) — RSS avoids scraping fragility |
 | LLM provider | **Google Gemini free tier** (n8n Google Gemini Chat Model node, API key from Google AI Studio — no credit card). The provider is swappable: only the chat-model sub-node changes |
 | AI nodes | Step 2 uses a Structured Output Parser so JSON is schema-validated |
 | LLM calls | 3 separate nodes (select / extract / intro) rather than one mega-prompt — each is testable in isolation |

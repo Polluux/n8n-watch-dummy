@@ -1,0 +1,396 @@
+{
+  "id": "TechWatchDummy01",
+  "name": "tech-watch",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://hnrss.org/frontpage",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "RSS Hacker News",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        16,
+        16
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://dev.to/feed",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "RSS dev.to",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        16,
+        208
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.journalduhacker.net/rss",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "name": "RSS Journal du Hacker",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        16,
+        400
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "src-hn",
+              "name": "source",
+              "value": "hn",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000005",
+      "name": "Tag hn",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        16
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "src-devto",
+              "name": "source",
+              "value": "devto",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000006",
+      "name": "Tag devto",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "src-jdh",
+              "name": "source",
+              "value": "jdh",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000007",
+      "name": "Tag jdh",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "numberInputs": 5
+      },
+      "id": "a1000000-0000-4000-8000-000000000008",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        464,
+        352
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Normalize RSS items to {title, url, source, publishedAt, excerpt}\n// Rules (spec 02): strip HTML, drop missing URL, drop older than 48h,\n// sort by publishedAt desc, cap at 60 items.\nconst cutoff = Date.now() - 48 * 3600 * 1000;\nconst strip = (s) => String(s ?? '')\n  .replace(/<[^>]*>/g, ' ')\n  .replace(/&nbsp;/g, ' ')\n  .replace(/&amp;/g, '&')\n  .replace(/&lt;/g, '<')\n  .replace(/&gt;/g, '>')\n  .replace(/&#39;|&apos;/g, \"'\")\n  .replace(/&quot;/g, '\"')\n  .replace(/\\s+/g, ' ')\n  .trim();\n\nconst out = [];\nfor (const { json } of $input.all()) {\n  const url = json.link;\n  if (!url) continue;\n  const ts = Date.parse(json.isoDate || json.pubDate || '');\n  if (!ts || ts < cutoff) continue;\n  out.push({\n    json: {\n      title: strip(json.title),\n      url,\n      source: json.source,\n      publishedAt: new Date(ts).toISOString(),\n      excerpt: strip(json.contentSnippet || json.content).slice(0, 300),\n    },\n  });\n}\n\nout.sort((a, b) => b.json.publishedAt.localeCompare(a.json.publishedAt));\nreturn out.slice(0, 60);"
+      },
+      "id": "a1000000-0000-4000-8000-000000000009",
+      "name": "Normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        688,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://next.ink/feed/free",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        16,
+        592
+      ],
+      "id": "d6def46c-0a59-47ce-b3ce-eea7180d6d73",
+      "name": "RSS Next",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d0c0d13f-6b3e-4a5f-bfd9-42d82f561479",
+              "name": "source",
+              "value": "nxt",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        240,
+        592
+      ],
+      "id": "7381fe11-7387-4454-b48f-a58f32157810",
+      "name": "Tag nxt"
+    },
+    {
+      "parameters": {
+        "url": "https://korben.info/feedfull",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        16,
+        784
+      ],
+      "id": "95a8e0e7-a8ce-49a1-b51a-96790383c163",
+      "name": "RSS Korben",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "09cd58a7-3bf6-4c60-930c-1c932b3b5f34",
+              "name": "source",
+              "value": "kbn",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        240,
+        784
+      ],
+      "id": "c5d71917-9663-4c91-9004-cae18fbe299f",
+      "name": "Tag kbn"
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS dev.to",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Journal du Hacker",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Next",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Hacker News",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Korben",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS Hacker News": {
+      "main": [
+        [
+          {
+            "node": "Tag hn",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS dev.to": {
+      "main": [
+        [
+          {
+            "node": "Tag devto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag hn": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag devto": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS Journal du Hacker": {
+      "main": [
+        [
+          {
+            "node": "Tag jdh",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag jdh": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "RSS Next": {
+      "main": [
+        [
+          {
+            "node": "Tag nxt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag nxt": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "RSS Korben": {
+      "main": [
+        [
+          {
+            "node": "Tag kbn",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag kbn": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  }
+}

@@ -19,15 +19,24 @@ Each digest goes live at its own URL, the homepage automatically lists all diges
 The workflow only writes a new data file and registers its date — no HTML anywhere
 in the pipeline.
 
-## Workflow steps (GitHub node)
-1. **Get** `docs/digests.json` → Code node: parse, add today's date if absent
-   (idempotent for same-day re-runs), sort desc.
-2. **Create/Update** `docs/digests/YYYY-MM-DD.json` — commit message `digest: YYYY-MM-DD`.
-3. **Update** `docs/digests.json` (only when the date was newly added).
-- Note: GitHub file updates need the current file SHA; the n8n GitHub node's "Edit"
-  handles this, but "Edit" fails on a missing file and "Create" on an existing one —
-  handle the first-run case for each daily file.
+## Workflow steps
+Implemented with **HTTP Request nodes against GitHub's contents API** (using the
+stored GitHub credential as a predefined credential type) rather than the GitHub
+node: `PUT /repos/{owner}/{repo}/contents/{path}` is a single create-or-update call
+(include the file's `sha` to update, omit it to create), which avoids the GitHub
+node's "Edit fails on missing file / Create fails on existing file" split.
+
+1. **Get index** + **Get existing payload** (GETs; the payload GET has
+   continue-on-error — a 404 just means first publish of the day).
+2. **Prepare publish** (Code): decode the index, add today's date if absent
+   (idempotent), build both PUT bodies (base64 content, `sha` when updating) and the
+   Discord message.
+3. **Commit payload** (PUT, `digest: YYYY-MM-DD`) → **Index changed?** (IF) →
+   **Commit index** (PUT, only when the date is new).
 - Pages (enabled in spec 01) republishes automatically within ~1 minute.
+- n8n quirk: with webhook authentication the Discord v2 node hides the `resource`
+  parameter (defaults to `webhook`) and the operation is `sendLegacy` — setting
+  `resource: message` explicitly breaks the node's internal routing.
 
 ## Notify (Discord)
 - **Discord node, webhook mode**, posting to your private channel:
@@ -39,8 +48,8 @@ in the pipeline.
 - Discord runs **after** both GitHub commits succeed (no announcement of a failed publish).
 
 ## Acceptance criteria
-- [ ] After a run, the digest renders at `digest.html?d=<date>` **and** is listed on the homepage
-- [ ] Homepage shows digests latest-first with the newest visually highlighted
-- [ ] Re-running the same day overwrites the data file and leaves exactly one index entry for that date
-- [ ] Discord message arrives with a working direct link to the day's digest
-- [ ] If any GitHub step fails, no Discord message is sent
+- [x] After a run, the digest renders at `digest.html?d=<date>` **and** is listed on the homepage — verified live: workflow commit `f70e913` served by Pages (new `generatedAt` confirmed), viewer 200, live index contains the date
+- [x] Homepage shows digests latest-first with the newest visually highlighted — index sorted desc by the workflow; homepage badges entry 0 ("dernier")
+- [x] Re-running the same day overwrites the data file and leaves exactly one index entry for that date — verified live: second run updated the payload via its `sha` and **skipped** the index commit (IF branch false); live index has exactly one entry
+- [x] Discord message arrives with a working direct link to the day's digest — webhook returned `success: true`; content = date, count, top-3 titles, viewer link (user eyeball: check the channel)
+- [x] If any GitHub step fails, no Discord message is sent — by construction (strictly sequential: commits precede Discord; any node error aborts the run) and observed live: the first run errored at the Discord node itself, after its payload commit — no message was sent

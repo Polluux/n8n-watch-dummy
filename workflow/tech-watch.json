@@ -379,6 +379,172 @@
         2864,
         400
       ]
+    },
+    {
+      "parameters": {
+        "url": "https://api.github.com/repos/Polluux/n8n-watch-dummy/contents/docs/digests.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000060",
+      "name": "Get index",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3088,
+        400
+      ],
+      "credentials": {
+        "githubApi": {
+          "id": "8gvoOdrpzU7G3mte",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/Polluux/n8n-watch-dummy/contents/docs/digests/{{ $('Build payload').first().json.date }}.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000061",
+      "name": "Get existing payload",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3312,
+        400
+      ],
+      "credentials": {
+        "githubApi": {
+          "id": "8gvoOdrpzU7G3mte",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Build the GitHub contents-API bodies + the Discord message.\n// PUT to the contents API creates OR updates: sha present = update, absent = create.\n// The index (docs/digests.json) is a pure date array - add today only if absent.\nconst payload = $('Build payload').first().json;\nconst idx = $('Get index').first().json;\nconst dates = JSON.parse(Buffer.from(idx.content, 'base64').toString('utf8'));\nif (!Array.isArray(dates)) throw new Error('digests.json on remote is not a JSON array');\n\nconst existing = $input.first().json;\nconst payloadSha = existing.error ? null : existing.sha;\n\nconst indexChanged = !dates.includes(payload.date);\nconst newDates = indexChanged ? [payload.date, ...dates].sort().reverse() : dates;\n\nconst b64 = (s) => Buffer.from(s, 'utf8').toString('base64');\nconst payloadBody = {\n  message: `digest: ${payload.date}`,\n  content: b64(JSON.stringify(payload, null, 2) + '\\n'),\n};\nif (payloadSha) payloadBody.sha = payloadSha;\n\nconst indexBody = indexChanged ? {\n  message: `digest index: ${payload.date}`,\n  content: b64(JSON.stringify(newDates, null, 2) + '\\n'),\n  sha: idx.sha,\n} : null;\n\nconst top = payload.items.slice(0, 3).map((i) => `\\u2022 ${i.title}`);\nconst discordContent = [\n  `\\ud83d\\udcda Veille tech ${payload.date} \\u2014 ${payload.count} liens`,\n  ...top,\n  `\\u2192 https://polluux.github.io/n8n-watch-dummy/digest.html?d=${payload.date}`,\n].join('\\n');\n\nreturn [{ json: { date: payload.date, indexChanged, payloadBody, indexBody, discordContent } }];"
+      },
+      "id": "a1000000-0000-4000-8000-000000000062",
+      "name": "Prepare publish",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3536,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/Polluux/n8n-watch-dummy/contents/docs/digests/{{ $('Build payload').first().json.date }}.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.payloadBody) }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000063",
+      "name": "Commit payload",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3760,
+        400
+      ],
+      "credentials": {
+        "githubApi": {
+          "id": "8gvoOdrpzU7G3mte",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "idx-changed",
+              "leftValue": "={{ $('Prepare publish').first().json.indexChanged }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000064",
+      "name": "Index changed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        3984,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "https://api.github.com/repos/Polluux/n8n-watch-dummy/contents/docs/digests.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($('Prepare publish').first().json.indexBody) }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000065",
+      "name": "Commit index",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4208,
+        336
+      ],
+      "credentials": {
+        "githubApi": {
+          "id": "8gvoOdrpzU7G3mte",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "={{ $('Prepare publish').first().json.discordContent }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000066",
+      "name": "Notify Discord",
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        4432,
+        400
+      ],
+      "webhookId": "fc055eb9-2d64-46ec-bb4f-6c8537cb5f47",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "aygGrPxH3Xp3z52I",
+          "name": "Discord Webhook account"
+        }
+      }
     }
   ],
   "connections": {
@@ -648,6 +814,90 @@
         [
           {
             "node": "Build payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build payload": {
+      "main": [
+        [
+          {
+            "node": "Get index",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get index": {
+      "main": [
+        [
+          {
+            "node": "Get existing payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get existing payload": {
+      "main": [
+        [
+          {
+            "node": "Prepare publish",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare publish": {
+      "main": [
+        [
+          {
+            "node": "Commit payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commit payload": {
+      "main": [
+        [
+          {
+            "node": "Index changed?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Index changed?": {
+      "main": [
+        [
+          {
+            "node": "Commit index",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Notify Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Commit index": {
+      "main": [
+        [
+          {
+            "node": "Notify Discord",
             "type": "main",
             "index": 0
           }

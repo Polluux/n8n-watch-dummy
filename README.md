@@ -26,7 +26,6 @@ specifications with acceptance criteria.
 - `docs/` — GitHub Pages root: `index.html` (homepage), `digest.html` (digest viewer), `digests.json` (manifest appended by the workflow), `digests/` (one JSON payload per day)
 - `workflow/` — the n8n workflow JSON (source of truth in git; n8n's own copy lives in its Docker volume)
 - `scripts/export-workflow.sh` — sync UI edits back to the repo (run after editing in n8n; there is **no automatic sync** between the n8n database and this file)
-- `assets/` — execution screenshots (added in phase 7)
 
 ## Running it
 

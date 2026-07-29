@@ -12,8 +12,7 @@ Runs daily at 09:30 Europe/Paris. Demo/portfolio project ("dummy"), free-tier on
 Development is **spec-driven**: one spec per phase in `specs/01..07`, each with
 acceptance criteria checked off as they are verified. Read `PLAN.md` first, then the
 spec for the phase being worked on. One commit per phase (`build(<topic>): spec N
-finished`). Phases 1–5 are done; 06 (publish + Discord) and 07 (schedule + proof
-artifacts) remain.
+finished`). Phases 1–6 are done; 07 (schedule + proof artifacts) remains.
 
 ## Critical: workflow sync protocol
 
@@ -50,6 +49,14 @@ python3 -m http.server -d docs/
 
 There is no `n8n delete:workflow` in this n8n version — delete via the UI.
 
+Publishing quirks: GitHub file writes go through HTTP Request nodes on the contents
+API (`PUT` = create-or-update via optional `sha`), not the GitHub node (its
+Create/Edit split fails on the first-run vs re-run cases). Discord v2 node with
+webhook auth: do NOT set `resource` (hidden, defaults to `webhook`); operation is
+`sendLegacy`. A workflow run that fails mid-publish may already have committed the
+payload — re-runs are safe (idempotent by design), but `git pull` before local work:
+**the workflow commits to origin/main**.
+
 ## Architecture
 
 Pipeline (single workflow `tech-watch`, `workflow/tech-watch.json`):
@@ -63,7 +70,9 @@ Manual Trigger (→ Schedule 09:30 in phase 7)
  → Extract data (LLM Chain + Structured Output Parser "Structured JSON") → Validate extraction (Code)
  → Bundle records (Aggregate) → Write intro (LLM Chain) → Build payload (Code: pure JSON —
    its output IS the daily artifact docs/digests/YYYY-MM-DD.json, phase 5's deliverable)
- → [phase 6+] publish only: GitHub commit (artifact + manifest) → Discord
+ → publish: Get index / Get existing payload (HTTP GET, GitHub contents API)
+ → Prepare publish (Code: PUT bodies + Discord text) → Commit payload (PUT)
+ → Index changed? (IF) → Commit index (PUT, only if date new) → Notify Discord (webhook)
 ```
 
 Design invariants (each learned the hard way — do not regress):

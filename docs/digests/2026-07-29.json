@@ -1,81 +1,88 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T14:20:54.669Z",
-  "intro": "Cette édition met en lumière les nouveaux défis de la sécurité logicielle face aux menaces émergentes de l'intelligence artificielle et des attaques sur la chaîne d'approvisionnement. Les ingénieurs y trouveront également des retours d'expérience précieux sur l'optimisation des architectures full-stack, du typage partagé et des performances des bases de données en production.",
-  "count": 10,
+  "generatedAt": "2026-07-29T14:29:11.230Z",
+  "intro": "Cette édition met en lumière les nouveaux défis de la sécurité logicielle, partagés entre l'automatisation des audits par l'intelligence artificielle, la protection de la chaîne d'approvisionnement et l'émergence de menaces ciblées sur les assistants textuels. Du côté de l'ingénierie front-end et back-end, l'actualité technique valorise le partage de types full-stack, l'optimisation des performances de SQLite en production et le développement d'architectures web innovantes grâce au WebAssembly.",
+  "count": 9,
   "items": [
     {
       "title": "Sharing tRPC v11 types between Next.js and Expo: a real-world indie Web + iOS setup",
       "url": "https://dev.to/hirodeath/sharing-trpc-v11-types-between-nextjs-and-expo-a-real-world-indie-web-ios-setup-3067",
       "source": "devto",
+      "sourceName": "dev.to",
       "publishedAt": "2026-07-29T14:08:55.000Z",
       "category": "dev",
       "tags": [
-        "typescript",
         "next.js",
-        "react-native",
-        "trpc"
+        "expo",
+        "trpc",
+        "typescript"
       ],
-      "tldr": "Un développeur solo explique comment partager les types tRPC v11 entre une application Next.js et une application mobile Expo pour éviter de dupliquer les définitions d'API."
+      "tldr": "Cet article montre comment partager les définitions de types d'API tRPC v11 entre une application web Next.js et une application iOS Expo pour un projet solo."
     },
     {
       "title": "Anthropic’s Mythos Preview Shows How AI Is Reshaping Defensive Vulnerability Research",
       "url": "https://dev.to/alifar/anthropics-mythos-preview-shows-how-ai-is-reshaping-defensive-vulnerability-research-4lll",
       "source": "devto",
+      "sourceName": "dev.to",
       "publishedAt": "2026-07-29T14:00:30.000Z",
       "category": "ai",
       "tags": [
-        "llm",
-        "security",
+        "anthropic",
         "vulnerabilities",
-        "anthropic"
+        "security",
+        "ai"
       ],
-      "tldr": "Le modèle de recherche Claude Mythos d'Anthropic démontre sa capacité à identifier et exploiter de manière autonome des vulnérabilités zero-day dans des environnements logiciels réels."
-    },
-    {
-      "title": "A Texture Lookup Approach to Bézier Curve Evaluation on the GPU (JCGT)",
-      "url": "https://jcgt.org/published/0015/02/01/",
-      "source": "hn",
-      "publishedAt": "2026-07-29T12:40:13.000Z",
-      "category": "other",
-      "tags": [
-        "gpu",
-        "graphics",
-        "algorithms"
-      ],
-      "tldr": "Cet article technique présente une approche par recherche de texture pour évaluer des courbes de Bézier directement sur le GPU."
+      "tldr": "Le modèle de recherche Claude Mythos Preview d'Anthropic démontre sa capacité à identifier et exploiter de manière autonome des vulnérabilités zero-day."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
       "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
       "source": "hn",
+      "sourceName": "Hacker News",
       "publishedAt": "2026-07-29T12:11:18.000Z",
       "category": "security",
       "tags": [
-        "supply-chain",
         "npm",
-        "github-actions"
+        "github",
+        "supply-chain",
+        "security"
       ],
-      "tldr": "GitHub détaille ses initiatives pour perturber et contrer les attaques ciblant la chaîne d'approvisionnement logicielle sur NPM et GitHub Actions."
+      "tldr": "Cette publication aborde les mesures prises pour perturber et contrer les attaques ciblant la chaîne d'approvisionnement sur NPM et GitHub Actions."
     },
     {
       "title": "Document-borne AI worms can self-propagate through Copilot for Word",
       "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
       "source": "hn",
+      "sourceName": "Hacker News",
       "publishedAt": "2026-07-29T11:44:33.000Z",
       "category": "security",
       "tags": [
         "ai",
-        "vulnerability",
-        "microsoft",
-        "security"
+        "security",
+        "copilot",
+        "word"
       ],
-      "tldr": "Des recherches démontrent que des vers informatiques transportés par des documents peuvent se propager de manière autonome à travers Copilot pour Word."
+      "tldr": "Une recherche met en évidence que des vers informatiques basés sur l'IA peuvent se propager automatiquement à travers les documents traités par Copilot pour Word."
+    },
+    {
+      "title": "Show HN: Vimgolf.ai – Learn Vim by playing through a map of levels",
+      "url": "https://vimgolf.ai",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-29T09:26:52.000Z",
+      "category": "dev",
+      "tags": [
+        "vim",
+        "learning",
+        "gamification"
+      ],
+      "tldr": "Vimgolf.ai est une nouvelle application conçue pour aider les débutants à apprendre le fonctionnement de Vim de manière ludique à travers une carte de niveaux."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
       "url": "https://micrologics.org/blog/sqlite-in-production-optimizing-wal-mode-concurrency-and-vfs-layers-for-low-latency-app-servers",
       "source": "hn",
+      "sourceName": "Hacker News",
       "publishedAt": "2026-07-29T07:18:24.000Z",
       "category": "dev",
       "tags": [
@@ -84,26 +91,13 @@
         "performance",
         "backend"
       ],
-      "tldr": "Un guide complet sur l'optimisation de SQLite en production, incluant le mode WAL, la gestion de la concurrence et les couches VFS pour les serveurs à faible latence."
-    },
-    {
-      "title": "More Tailscale tricks for your jailbroken Kindle",
-      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
-      "source": "hn",
-      "publishedAt": "2026-07-29T04:58:46.000Z",
-      "category": "other",
-      "tags": [
-        "tailscale",
-        "networking",
-        "kindle",
-        "proxy"
-      ],
-      "tldr": "Cet article explore des astuces et configurations avancées pour utiliser Tailscale en mode proxy TUN sur une liseuse Kindle débridée."
+      "tldr": "Ce guide détaille les optimisations du mode WAL, de la concurrence et des couches VFS pour exécuter SQLite efficacement en production pour des serveurs à faible latence."
     },
     {
       "title": "User Interfaces of the Demo Scene",
       "url": "https://www.datagubbe.se/scenegui/",
       "source": "hn",
+      "sourceName": "Hacker News",
       "publishedAt": "2026-07-29T04:30:36.000Z",
       "category": "other",
       "tags": [
@@ -112,35 +106,37 @@
         "retro",
         "design"
       ],
-      "tldr": "Une analyse visuelle et historique des interfaces utilisateur uniques créées au sein de la scène démo."
+      "tldr": "Un article qui explore et analyse les interfaces utilisateur uniques conçues au sein de la communauté de la Demoscene."
     },
     {
-      "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
-      "url": "https://next.ink/249180/microsoft-affirme-battre-tout-le-monde-en-detection-de-failles-avec-mai-cyber-1-flash/",
+      "title": "☕️ Firefox active sa nouvelle interface Nova par défaut dans le canal Nightly",
+      "url": "https://next.ink/brief-article/firefox-active-sa-nouvelle-interface-nova-par-defaut-dans-le-canal-nightly/",
       "source": "nxt",
-      "publishedAt": "2026-07-28T08:35:16.000Z",
-      "category": "ai",
+      "sourceName": "Next",
+      "publishedAt": "2026-07-28T09:49:00.000Z",
+      "category": "other",
       "tags": [
-        "microsoft",
-        "cybersecurity",
-        "llm",
-        "vulnerabilities"
+        "firefox",
+        "browser",
+        "mozilla",
+        "ui"
       ],
-      "tldr": "Microsoft présente MAI-Cyber-1-Flash, son nouveau modèle dédié à la cybersécurité qu'il annonce comme le plus performant en matière de détection de failles."
+      "tldr": "Mozilla active par défaut sa nouvelle interface utilisateur, baptisée Nova, dans le canal de développement Nightly de Firefox."
     },
     {
       "title": "Votre vieux Morrowind se relance dans le navigateur",
       "url": "https://korben.info/morrowind-navigateur-webassembly-openmw.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
       "source": "kbn",
+      "sourceName": "Korben",
       "publishedAt": "2026-07-28T08:11:19.000Z",
-      "category": "other",
+      "category": "dev",
       "tags": [
         "webassembly",
         "gaming",
         "browser",
-        "retro"
+        "openmw"
       ],
-      "tldr": "Grâce à une recompilation du moteur libre OpenMW en WebAssembly, il est désormais possible de jouer au jeu Morrowind directement depuis son navigateur web."
+      "tldr": "Grâce au portage du moteur libre OpenMW en WebAssembly, il est désormais possible de jouer au jeu Morrowind directement depuis un navigateur web."
     }
   ]
 }

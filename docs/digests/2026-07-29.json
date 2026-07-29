@@ -1,22 +1,36 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T13:51:50.196Z",
-  "intro": "La sécurité logicielle et l'intelligence artificielle dominent l'actualité technique, entre la découverte de vulnérabilités cryptographiques par des modèles avancés, les risques de propagation de vers autonomes via les outils bureautiques et la sécurisation des chaînes d'approvisionnement open source. Parallèlement, l'écosystème progresse sur l'infrastructure avec l'optimisation des bases de données relationnelles légères en production et l'arrivée de modèles de langage de plus en plus massifs en open source.",
+  "generatedAt": "2026-07-29T14:05:08.205Z",
+  "intro": "L'actualité technique du jour met en lumière les avancées majeures et les risques critiques liés à l'intelligence artificielle, entre nouveaux modèles open source massifs, capacités de recherche de vulnérabilités autonomes et défis de sécurité dans la chaîne d'approvisionnement. Les ingénieurs logiciels trouveront également des ressources précieuses sur l'optimisation des bases de données et des moteurs de stockage, de SQLite en production jusqu'aux architectures en Rust.",
   "count": 10,
   "items": [
     {
-      "title": "Anthropic Says Claude Mythos Preview Found Cryptography Implementation Weaknesses",
-      "url": "https://dev.to/alifar/anthropic-says-claude-mythos-preview-found-cryptography-implementation-weaknesses-2dhk",
+      "title": "Anthropic’s Mythos Preview Shows How AI Is Reshaping Defensive Vulnerability Research",
+      "url": "https://dev.to/alifar/anthropics-mythos-preview-shows-how-ai-is-reshaping-defensive-vulnerability-research-4lll",
       "source": "devto",
-      "publishedAt": "2026-07-29T13:40:30.000Z",
+      "publishedAt": "2026-07-29T14:00:30.000Z",
       "category": "security",
       "tags": [
-        "cryptography",
         "ai",
         "vulnerabilities",
-        "tls"
+        "security",
+        "zero-day"
       ],
-      "tldr": "Le modèle Claude Mythos d'Anthropic a identifié et démontré des failles de sécurité dans des logiciels cryptographiques largement utilisés, touchant notamment TLS, AES-GCM et SSH."
+      "tldr": "Le modèle de recherche Claude Mythos Preview d'Anthropic démontre sa capacité à identifier et exploiter de manière autonome des vulnérabilités zero-day dans des environnements logiciels réels."
+    },
+    {
+      "title": "LioranDB V2 Pre-Alpha Benchmark Summary",
+      "url": "https://dev.to/ultrontheai/liorandb-v2-pre-alpha-benchmark-summary-4nfb",
+      "source": "devto",
+      "publishedAt": "2026-07-29T13:26:36.000Z",
+      "category": "dev",
+      "tags": [
+        "database",
+        "rust",
+        "benchmarks",
+        "storage"
+      ],
+      "tldr": "L'auteur publie les journaux de benchmarks bruts de LioranDB V2, un nouveau moteur de base de données documentaire développé entièrement en Rust."
     },
     {
       "title": "Handbook.md shows that long policy documents do not reliably govern agents",
@@ -25,11 +39,12 @@
       "publishedAt": "2026-07-29T13:01:57.000Z",
       "category": "ai",
       "tags": [
+        "ai",
         "agents",
         "policy",
-        "llm"
+        "research"
       ],
-      "tldr": "Une étude montre que les longs documents de politiques ne permettent pas de régir de manière fiable le comportement des agents d'intelligence artificielle."
+      "tldr": "Une étude montre que les documents de politique longs ne suffisent pas à gouverner de manière fiable le comportement des agents autonomes."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
@@ -41,7 +56,7 @@
         "security",
         "supply-chain",
         "npm",
-        "github"
+        "github-actions"
       ],
       "tldr": "Cet article aborde les méthodes pour perturber et contrer les attaques ciblant la chaîne d'approvisionnement logicielle sur NPM et GitHub Actions."
     },
@@ -50,14 +65,14 @@
       "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
       "source": "hn",
       "publishedAt": "2026-07-29T11:44:33.000Z",
-      "category": "ai",
+      "category": "security",
       "tags": [
-        "ai-worms",
+        "ai",
         "security",
-        "copilot",
-        "word"
+        "malware",
+        "copilot"
       ],
-      "tldr": "Des recherches démontrent que des vers informatiques basés sur l'IA et transportés par des documents peuvent se propager de manière autonome via Copilot pour Word."
+      "tldr": "Des chercheurs démontrent que des vers informatiques transportés par des documents peuvent se propager automatiquement via Copilot pour Word."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
@@ -82,10 +97,10 @@
       "tags": [
         "tailscale",
         "kindle",
-        "proxy",
-        "networking"
+        "networking",
+        "proxy"
       ],
-      "tldr": "Découvrez de nouvelles astuces pour configurer les modes proxy et TUN de Tailscale sur une liseuse Kindle débridée."
+      "tldr": "Découvrez de nouvelles astuces pour utiliser Tailscale en modes proxy et TUN sur une liseuse Kindle débridée."
     },
     {
       "title": "Cracking Windows Open: Porting RADV to Win32",
@@ -97,9 +112,9 @@
         "vulkan",
         "windows",
         "graphics",
-        "porting"
+        "driver"
       ],
-      "tldr": "Ce billet détaille le portage du pilote Vulkan RADV vers l'environnement Win32, ouvrant de nouvelles perspectives graphiques sur Windows."
+      "tldr": "Collabora détaille le portage de RADV (le pilote Vulkan open source pour les cartes AMD) vers l'environnement Win32 de Windows."
     },
     {
       "title": "Moonshot met en ligne Kimi K3, le plus gros modèle d'IA jamais proposé en téléchargement libre",
@@ -108,12 +123,12 @@
       "publishedAt": "2026-07-28T11:55:40.000Z",
       "category": "ai",
       "tags": [
+        "ai",
         "llm",
         "open-source",
-        "moonshot",
-        "ai-model"
+        "huggingface"
       ],
-      "tldr": "Moonshot AI a publié Kimi K3, un modèle open source massif de 2 800 milliards de paramètres doté d'une grande fenêtre de contexte."
+      "tldr": "Moonshot AI lance Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en téléchargement libre sur Hugging Face avec une large fenêtre de contexte."
     },
     {
       "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
@@ -122,26 +137,12 @@
       "publishedAt": "2026-07-28T08:35:16.000Z",
       "category": "security",
       "tags": [
-        "microsoft",
-        "cybersecurity",
         "ai",
-        "vulnerabilities"
+        "security",
+        "microsoft",
+        "cybersecurity"
       ],
-      "tldr": "Microsoft présente MAI-Cyber-1-Flash, un modèle d'IA dédié à la cybersécurité qui revendique d'excellentes performances en matière de détection de failles."
-    },
-    {
-      "title": "GLM 5.2 censure moins s'il se croit américain",
-      "url": "https://korben.info/glm-kimi-modeles-chinois-identite-claude.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "publishedAt": "2026-07-28T07:29:55.000Z",
-      "category": "ai",
-      "tags": [
-        "llm",
-        "censorship",
-        "safety",
-        "jurisdiction"
-      ],
-      "tldr": "Une étude révèle que le taux de censure du modèle chinois GLM 5.2 chute drastiquement lorsqu'on lui fait croire qu'il est un système américain, soulignant l'impact de la juridiction."
+      "tldr": "Microsoft présente MAI-Cyber-1-Flash, son nouveau modèle dédié à la cybersécurité, affirmant surpasser les performances actuelles du marché dans la détection de failles."
     }
   ]
 }

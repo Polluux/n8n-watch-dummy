@@ -12,7 +12,11 @@ From the ≤60 normalized items, the LLM selects the ~10 most relevant, deduplic
   the alias always resolves to the current Flash model.
 - Input: the full normalized list as JSON in the prompt.
 - Prompt requirements:
-  - a stated editorial line (e.g. "software engineering, AI/LLM tooling, DevOps — for a French consulting engineer")
+  - a stated editorial line as a **prioritized reader profile**: 1) frontend — Vue.js
+    ecosystem first, JavaScript/TypeScript news in general; 2) a11y, browser/web-platform
+    features, UI/UX; 3) security (vulnerabilities, incidents, advisories); 4) AI and its
+    impact on software development; 5) fun projects and clever hacks; cloud/DevOps only
+    when major. The prompt asks to balance across priorities when the day's items allow.
   - deduplicate near-identical stories (same event covered by several sources → keep the best single link)
   - return **only** a JSON array of the selected items' `id` values (integers), max 10
 - **Why ids and not URLs:** in live testing, Gemini *translated a French word inside a

@@ -62,7 +62,8 @@ payload — re-runs are safe (idempotent by design), but `git pull` before local
 Pipeline (single workflow `tech-watch`, `workflow/tech-watch.json`):
 
 ```
-Schedule Trigger (cron 30 9 * * *, Europe/Paris; "Execute workflow" in the UI still runs it manually)
+Schedule Trigger (cron 30 9 * * *, Europe/Paris) + Manual Trigger (same fan-out — required:
+`n8n execute` cannot start a workflow without one, so the CLI verification loop needs it)
  → N× RSS Read (onError: continueRegularOutput) → N× Set "Tag <src>" (stamps a short source tag)
  → Merge (append, N inputs)
  → Normalize (Code): strip HTML, drop >48h, sort desc, cap 60, stamp numeric `id`

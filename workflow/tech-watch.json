@@ -23,6 +23,17 @@
       ]
     },
     {
+      "parameters": {},
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        560
+      ]
+    },
+    {
       "parameters": {
         "url": "https://hnrss.org/frontpage",
         "options": {}
@@ -260,7 +271,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "=You are curating a daily tech-watch digest for a French consulting software engineer.\nEditorial line: software engineering, AI/LLM tooling, DevOps, cloud, security.\n\nFrom the JSON list of items below, select the most relevant ones — MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nPrefer substantial, technical stories over marketing or minor product news.\n\nReturn ONLY a JSON array of the selected items' \"id\" values (integers).\nNo markdown fences, no commentary, no object wrapper — just the array, e.g. [3, 17, 42].\n\nItems:\n{{ JSON.stringify($json.data) }}"
+        "text": "=You are curating a daily tech-watch digest. The reader is a frontend-focused\nsoftware engineer. Their interests, by priority:\n\n1. Frontend: the Vue.js ecosystem first, and JavaScript/TypeScript news in\n   general (frameworks, runtimes, tooling, releases).\n2. Accessibility (a11y), new browser / web-platform features, UI/UX design and\n   engineering - daily-practice topics for the reader.\n3. Security: vulnerabilities, incidents, advisories, and notable security news.\n4. AI: significant models, tooling and their impact on software development.\n5. Fun: playful projects, demos, clever little hacks - one or two are always\n   welcome when the day offers them.\n\nLower priority: cloud, DevOps, infrastructure - include only when the story is\nmajor or has direct impact on the topics above.\n\nFrom the JSON list of items below, select the most relevant ones - MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nPrefer substantial, technical stories over marketing or minor product news.\nBalance the selection across the priorities above when the day's items allow it.\n\nReturn ONLY a JSON array of the selected items' \"id\" values (integers).\nNo markdown fences, no commentary, no object wrapper - just the array, e.g. [3, 17, 42].\n\nItems:\n{{ JSON.stringify($json.data) }}"
       },
       "id": "a1000000-0000-4000-8000-000000000031",
       "name": "Select links",
@@ -883,6 +894,37 @@
       ]
     },
     "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS dev.to",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Journal du Hacker",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Next",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Hacker News",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Korben",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Trigger": {
       "main": [
         [
           {

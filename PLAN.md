@@ -30,7 +30,7 @@ digests retroactively.
 | Topic | Decision |
 |---|---|
 | n8n hosting | Self-hosted via Docker Compose, data persisted in a volume ([spec 01](specs/01-environment.md)) |
-| Sources | A configurable set of RSS feeds — the canonical list lives in the workflow's RSS Read nodes ([workflow/tech-watch.json](workflow/tech-watch.json)), docs stay source-agnostic. RSS avoids scraping fragility |
+| Sources | A config-driven list of `{name, tag, url}` feeds in the workflow's "Sources" node, looped over (Split In Batches) — adding a source is a one-line edit; docs stay source-agnostic. RSS avoids scraping fragility |
 | LLM provider | **Google Gemini free tier** (n8n Google Gemini Chat Model node, API key from Google AI Studio — no credit card). The provider is swappable: only the chat-model sub-node changes |
 | AI nodes | Step 2 uses a Structured Output Parser so JSON is schema-validated |
 | LLM calls | 3 separate nodes (select / extract / intro) rather than one mega-prompt — each is testable in isolation |
@@ -53,14 +53,6 @@ criteria in the spec pass and the workflow JSON is re-exported and committed.
 - **Phase 5 — HTML digest** ([spec 05](specs/05-html-digest.md)): Gemini writes the editorial intro; a Code node renders the shared template with the JSON.
 - **Phase 6 — Publish & notify** ([spec 06](specs/06-publish-notify.md)): GitHub commits (digest page + manifest) → Pages live, homepage lists it; Discord message with link.
 - **Phase 7 — Schedule** ([spec 07](specs/07-schedule.md)): swap the manual trigger for the 09:30 schedule, activate, verify a real scheduled end-to-end run.
-
-## Roadmap (post-phase-7 improvements)
-
-- **Config-driven sources**: replace the per-source RSS + Tag branches with a single
-  list of `{url, tag}` pairs the workflow loops over, so adding a source is a config
-  edit rather than 2 nodes + a Merge input. Design wrinkle: the RSS Read node's output
-  doesn't carry the input item's fields, so the tag must be re-attached inside the
-  loop (Split In Batches around RSS Read, or HTTP Request + XML parsing).
 
 ## Risks / gotchas to expect
 

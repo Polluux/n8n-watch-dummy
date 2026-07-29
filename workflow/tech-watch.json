@@ -19,7 +19,7 @@
       "typeVersion": 1.2,
       "position": [
         -208,
-        400
+        336
       ]
     },
     {
@@ -30,229 +30,75 @@
       "typeVersion": 1,
       "position": [
         -208,
-        560
+        528
       ]
     },
     {
       "parameters": {
-        "url": "https://hnrss.org/frontpage",
-        "options": {}
+        "jsCode": "// Source list - THE single place to add/remove/rename a feed.\nconst SOURCES = [\n  {\n    \"name\": \"dev.to\",\n    \"tag\": \"devto\",\n    \"url\": \"https://dev.to/feed\"\n  },\n  {\n    \"name\": \"Hacker News\",\n    \"tag\": \"hn\",\n    \"url\": \"https://hnrss.org/frontpage\"\n  },\n  {\n    \"name\": \"Journal du Hacker\",\n    \"tag\": \"jdh\",\n    \"url\": \"https://www.journalduhacker.net/rss\"\n  },\n  {\n    \"name\": \"Korben\",\n    \"tag\": \"kbn\",\n    \"url\": \"https://korben.info/feedfull\"\n  },\n  {\n    \"name\": \"Next\",\n    \"tag\": \"nxt\",\n    \"url\": \"https://next.ink/feed/free\"\n  }\n];\nreturn SOURCES.map((s) => ({ json: s }));"
       },
-      "id": "a1000000-0000-4000-8000-000000000002",
-      "name": "RSS Hacker News",
-      "type": "n8n-nodes-base.rssFeedRead",
-      "typeVersion": 1.1,
+      "id": "a1000000-0000-4000-8000-000000000080",
+      "name": "Sources",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
       "position": [
         16,
-        16
-      ],
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "url": "https://dev.to/feed",
-        "options": {}
-      },
-      "id": "a1000000-0000-4000-8000-000000000003",
-      "name": "RSS dev.to",
-      "type": "n8n-nodes-base.rssFeedRead",
-      "typeVersion": 1.1,
-      "position": [
-        16,
-        208
-      ],
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "url": "https://www.journalduhacker.net/rss",
-        "options": {}
-      },
-      "id": "a1000000-0000-4000-8000-000000000004",
-      "name": "RSS Journal du Hacker",
-      "type": "n8n-nodes-base.rssFeedRead",
-      "typeVersion": 1.1,
-      "position": [
-        16,
-        400
-      ],
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "src-hn",
-              "name": "source",
-              "value": "hn",
-              "type": "string"
-            }
-          ]
-        },
-        "includeOtherFields": true,
-        "options": {}
-      },
-      "id": "a1000000-0000-4000-8000-000000000005",
-      "name": "Tag hn",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        240,
-        16
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "src-devto",
-              "name": "source",
-              "value": "devto",
-              "type": "string"
-            }
-          ]
-        },
-        "includeOtherFields": true,
-        "options": {}
-      },
-      "id": "a1000000-0000-4000-8000-000000000006",
-      "name": "Tag devto",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        240,
-        208
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "src-jdh",
-              "name": "source",
-              "value": "jdh",
-              "type": "string"
-            }
-          ]
-        },
-        "includeOtherFields": true,
-        "options": {}
-      },
-      "id": "a1000000-0000-4000-8000-000000000007",
-      "name": "Tag jdh",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        240,
-        400
-      ]
-    },
-    {
-      "parameters": {
-        "numberInputs": 5
-      },
-      "id": "a1000000-0000-4000-8000-000000000008",
-      "name": "Merge",
-      "type": "n8n-nodes-base.merge",
-      "typeVersion": 3,
-      "position": [
-        464,
         352
       ]
     },
     {
       "parameters": {
-        "jsCode": "// Normalize RSS items to {title, url, source, publishedAt, excerpt}\n// Rules (spec 02): strip HTML, drop missing URL, drop older than 48h,\n// sort by publishedAt desc, cap at 60 items.\nconst cutoff = Date.now() - 48 * 3600 * 1000;\nconst strip = (s) => String(s ?? '')\n  .replace(/<[^>]*>/g, ' ')\n  .replace(/&nbsp;/g, ' ')\n  .replace(/&amp;/g, '&')\n  .replace(/&lt;/g, '<')\n  .replace(/&gt;/g, '>')\n  .replace(/&#39;|&apos;/g, \"'\")\n  .replace(/&quot;/g, '\"')\n  .replace(/\\s+/g, ' ')\n  .trim();\n\nconst out = [];\nfor (const { json } of $input.all()) {\n  const url = json.link;\n  if (!url) continue;\n  const ts = Date.parse(json.isoDate || json.pubDate || '');\n  if (!ts || ts < cutoff) continue;\n  out.push({\n    json: {\n      title: strip(json.title),\n      url,\n      source: json.source,\n      publishedAt: new Date(ts).toISOString(),\n      excerpt: strip(json.contentSnippet || json.content).slice(0, 300),\n    },\n  });\n}\n\nout.sort((a, b) => b.json.publishedAt.localeCompare(a.json.publishedAt));\nreturn out.slice(0, 60).map((it, i) => ({ json: { id: i, ...it.json } }));"
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000081",
+      "name": "Loop sources",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        240,
+        352
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.url }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000082",
+      "name": "Fetch RSS",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        464,
+        256
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Re-attach the current source's identity to every fetched item.\n// The RSS Read node drops its input fields, so the loop context is the only\n// place that still knows which source this batch came from.\nconst src = $('Loop sources').first().json;\nreturn $input.all().map((i) => ({ json: { ...i.json, source: src.tag, sourceName: src.name } }));"
+      },
+      "id": "a1000000-0000-4000-8000-000000000083",
+      "name": "Tag items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        688,
+        256
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Normalize RSS items to {title, url, source, publishedAt, excerpt}\n// Rules (spec 02): strip HTML, drop missing URL, drop older than 48h,\n// sort by publishedAt desc, cap at 60 items.\nconst cutoff = Date.now() - 48 * 3600 * 1000;\nconst strip = (s) => String(s ?? '')\n  .replace(/<[^>]*>/g, ' ')\n  .replace(/&nbsp;/g, ' ')\n  .replace(/&amp;/g, '&')\n  .replace(/&lt;/g, '<')\n  .replace(/&gt;/g, '>')\n  .replace(/&#39;|&apos;/g, \"'\")\n  .replace(/&quot;/g, '\"')\n  .replace(/\\s+/g, ' ')\n  .trim();\n\nconst out = [];\nfor (const { json } of $input.all()) {\n  const url = json.link;\n  if (!url) continue;\n  const ts = Date.parse(json.isoDate || json.pubDate || '');\n  if (!ts || ts < cutoff) continue;\n  out.push({\n    json: {\n      title: strip(json.title),\n      url,\n      source: json.source,\n      sourceName: json.sourceName,\n      publishedAt: new Date(ts).toISOString(),\n      excerpt: strip(json.contentSnippet || json.content).slice(0, 300),\n    },\n  });\n}\n\nout.sort((a, b) => b.json.publishedAt.localeCompare(a.json.publishedAt));\nreturn out.slice(0, 60).map((it, i) => ({ json: { id: i, ...it.json } }));"
       },
       "id": "a1000000-0000-4000-8000-000000000009",
       "name": "Normalize",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        688,
-        400
+        464,
+        448
       ]
-    },
-    {
-      "parameters": {
-        "url": "https://next.ink/feed/free",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.rssFeedRead",
-      "typeVersion": 1.2,
-      "position": [
-        16,
-        592
-      ],
-      "id": "d6def46c-0a59-47ce-b3ce-eea7180d6d73",
-      "name": "RSS Next",
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "d0c0d13f-6b3e-4a5f-bfd9-42d82f561479",
-              "name": "source",
-              "value": "nxt",
-              "type": "string"
-            }
-          ]
-        },
-        "includeOtherFields": true,
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.5,
-      "position": [
-        240,
-        592
-      ],
-      "id": "7381fe11-7387-4454-b48f-a58f32157810",
-      "name": "Tag nxt"
-    },
-    {
-      "parameters": {
-        "url": "https://korben.info/feedfull",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.rssFeedRead",
-      "typeVersion": 1.2,
-      "position": [
-        16,
-        784
-      ],
-      "id": "95a8e0e7-a8ce-49a1-b51a-96790383c163",
-      "name": "RSS Korben",
-      "onError": "continueRegularOutput"
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "09cd58a7-3bf6-4c60-930c-1c932b3b5f34",
-              "name": "source",
-              "value": "kbn",
-              "type": "string"
-            }
-          ]
-        },
-        "includeOtherFields": true,
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.5,
-      "position": [
-        240,
-        784
-      ],
-      "id": "c5d71917-9663-4c91-9004-cae18fbe299f",
-      "name": "Tag kbn"
     },
     {
       "parameters": {
@@ -264,8 +110,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        912,
-        400
+        688,
+        448
       ]
     },
     {
@@ -278,8 +124,8 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        1136,
-        400
+        912,
+        448
       ]
     },
     {
@@ -294,8 +140,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1208,
-        632
+        984,
+        680
       ],
       "credentials": {
         "googlePalmApi": {
@@ -313,8 +159,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1488,
-        400
+        1264,
+        448
       ]
     },
     {
@@ -328,8 +174,8 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        1712,
-        400
+        1488,
+        448
       ]
     },
     {
@@ -342,8 +188,8 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        1784,
-        632
+        1560,
+        680
       ]
     },
     {
@@ -355,8 +201,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2064,
-        400
+        1840,
+        448
       ]
     },
     {
@@ -369,8 +215,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        2288,
-        400
+        2064,
+        448
       ]
     },
     {
@@ -383,21 +229,21 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        2512,
-        400
+        2288,
+        448
       ]
     },
     {
       "parameters": {
-        "jsCode": "// Assemble the day's digest as a publishable JSON payload.\n// The site (docs/digest.html) renders it client-side - the workflow ships DATA,\n// never markup. Layout/styling live in the viewer page, committed once.\nconst records = $('Validate extraction').all().map((i) => i.json);\nif (records.length === 0) throw new Error('No records to publish');\nconst intro = String($input.first().json.text ?? '').trim();\nif (!intro) throw new Error('Empty intro from LLM');\n\nconst now = new Date();\nconst date = now.toLocaleDateString('fr-CA', { timeZone: 'Europe/Paris' }); // YYYY-MM-DD\nreturn [{\n  json: {\n    date,\n    generatedAt: now.toISOString(),\n    intro,\n    count: records.length,\n    items: records.map(({ title, url, source, publishedAt, category, tags, tldr }) =>\n      ({ title, url, source, publishedAt, category, tags, tldr })),\n  },\n}];"
+        "jsCode": "// Assemble the day's digest as a publishable JSON payload.\n// The site (docs/digest.html) renders it client-side - the workflow ships DATA,\n// never markup. Layout/styling live in the viewer page, committed once.\nconst records = $('Validate extraction').all().map((i) => i.json);\nif (records.length === 0) throw new Error('No records to publish');\nconst intro = String($input.first().json.text ?? '').trim();\nif (!intro) throw new Error('Empty intro from LLM');\n\nconst now = new Date();\nconst date = now.toLocaleDateString('fr-CA', { timeZone: 'Europe/Paris' }); // YYYY-MM-DD\nreturn [{\n  json: {\n    date,\n    generatedAt: now.toISOString(),\n    intro,\n    count: records.length,\n    items: records.map(({ title, url, source, sourceName, publishedAt, category, tags, tldr }) =>\n      ({ title, url, source, sourceName, publishedAt, category, tags, tldr })),\n  },\n}];"
       },
       "id": "a1000000-0000-4000-8000-000000000053",
       "name": "Build payload",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2864,
-        400
+        2640,
+        448
       ]
     },
     {
@@ -412,8 +258,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3088,
-        400
+        2864,
+        448
       ],
       "credentials": {
         "githubApi": {
@@ -434,8 +280,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3312,
-        400
+        3088,
+        448
       ],
       "credentials": {
         "githubApi": {
@@ -454,8 +300,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3536,
-        400
+        3312,
+        448
       ]
     },
     {
@@ -474,8 +320,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3760,
-        400
+        3536,
+        448
       ],
       "credentials": {
         "githubApi": {
@@ -514,8 +360,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        3984,
-        400
+        3760,
+        448
       ]
     },
     {
@@ -534,8 +380,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4208,
-        336
+        3984,
+        448
       ],
       "credentials": {
         "githubApi": {
@@ -555,8 +401,8 @@
       "type": "n8n-nodes-base.discord",
       "typeVersion": 2,
       "position": [
-        4432,
-        400
+        4208,
+        448
       ],
       "webhookId": "fc055eb9-2d64-46ec-bb4f-6c8537cb5f47",
       "credentials": {
@@ -568,127 +414,6 @@
     }
   ],
   "connections": {
-    "RSS Hacker News": {
-      "main": [
-        [
-          {
-            "node": "Tag hn",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "RSS dev.to": {
-      "main": [
-        [
-          {
-            "node": "Tag devto",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Tag hn": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Tag devto": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 1
-          }
-        ]
-      ]
-    },
-    "Merge": {
-      "main": [
-        [
-          {
-            "node": "Normalize",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "RSS Journal du Hacker": {
-      "main": [
-        [
-          {
-            "node": "Tag jdh",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Tag jdh": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 2
-          }
-        ]
-      ]
-    },
-    "RSS Next": {
-      "main": [
-        [
-          {
-            "node": "Tag nxt",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Tag nxt": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 3
-          }
-        ]
-      ]
-    },
-    "RSS Korben": {
-      "main": [
-        [
-          {
-            "node": "Tag kbn",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Tag kbn": {
-      "main": [
-        [
-          {
-            "node": "Merge",
-            "type": "main",
-            "index": 4
-          }
-        ]
-      ]
-    },
     "Normalize": {
       "main": [
         [
@@ -897,27 +622,7 @@
       "main": [
         [
           {
-            "node": "RSS dev.to",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Journal du Hacker",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Next",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Hacker News",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Korben",
+            "node": "Sources",
             "type": "main",
             "index": 0
           }
@@ -928,27 +633,58 @@
       "main": [
         [
           {
-            "node": "RSS dev.to",
+            "node": "Sources",
             "type": "main",
             "index": 0
-          },
+          }
+        ]
+      ]
+    },
+    "Sources": {
+      "main": [
+        [
           {
-            "node": "RSS Journal du Hacker",
+            "node": "Loop sources",
             "type": "main",
             "index": 0
-          },
+          }
+        ]
+      ]
+    },
+    "Loop sources": {
+      "main": [
+        [
           {
-            "node": "RSS Next",
+            "node": "Normalize",
             "type": "main",
             "index": 0
-          },
+          }
+        ],
+        [
           {
-            "node": "RSS Hacker News",
+            "node": "Fetch RSS",
             "type": "main",
             "index": 0
-          },
+          }
+        ]
+      ]
+    },
+    "Fetch RSS": {
+      "main": [
+        [
           {
-            "node": "RSS Korben",
+            "node": "Tag items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tag items": {
+      "main": [
+        [
+          {
+            "node": "Loop sources",
             "type": "main",
             "index": 0
           }

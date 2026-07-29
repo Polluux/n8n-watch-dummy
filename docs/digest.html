@@ -54,7 +54,7 @@
       a.rel = 'noopener';
       h3.appendChild(a);
       card.appendChild(h3);
-      card.appendChild(el('p', 'mt-1 text-xs text-slate-500', item.source));
+      card.appendChild(el('p', 'mt-1 text-xs text-slate-500', item.sourceName || item.source));
       card.appendChild(el('p', 'mt-2 text-sm text-slate-600', item.tldr));
       const tags = el('p', 'mt-3');
       for (const t of item.tags ?? []) {

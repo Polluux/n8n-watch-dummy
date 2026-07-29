@@ -64,8 +64,10 @@ Pipeline (single workflow `tech-watch`, `workflow/tech-watch.json`):
 ```
 Schedule Trigger (cron 30 9 * * *, Europe/Paris) + Manual Trigger (same fan-out — required:
 `n8n execute` cannot start a workflow without one, so the CLI verification loop needs it)
- → N× RSS Read (onError: continueRegularOutput) → N× Set "Tag <src>" (stamps a short source tag)
- → Merge (append, N inputs)
+ → Sources (Code: config list of {name, tag, url} — THE place to add/remove feeds)
+ → Loop sources (Split In Batches) → Fetch RSS (url from item; onError continue)
+ → Tag items (Code: re-attach source tag+name — RSS Read drops input fields) → loop back;
+   done-output →
  → Normalize (Code): strip HTML, drop >48h, sort desc, cap 60, stamp numeric `id`
  → Bundle items (Aggregate) → Select links (LLM Chain + "Gemini Flash" sub-node) → Filter selected (Code)
  → Extract data (LLM Chain + Structured Output Parser "Structured JSON") → Validate extraction (Code)
@@ -106,18 +108,15 @@ Design invariants (each learned the hard way — do not regress):
   the real viewer script). Tailwind via browser CDN is the only allowed external
   asset. Same-day re-runs must replace, not duplicate, the day's manifest entry.
 
-- **Docs stay source-agnostic.** The canonical feed list is the workflow's RSS Read
-  nodes; specs/PLAN/README must not enumerate the feeds (they reference the workflow
-  JSON instead). Adding/removing a source touches only the workflow.
+- **Docs stay source-agnostic.** The canonical feed list is the workflow's "Sources"
+  Code node; specs/PLAN/README must not enumerate the feeds (they reference the
+  workflow JSON instead). Adding/removing a source is a one-line edit there.
 
 Feed quirks: some feeds reject n8n's user-agent with HTTP 406 (InfoQ does — that's why
 it isn't a source); test new feeds in the workflow, not just with curl. Per-feed UI
 counts are raw; spec numbers are post-Normalize (48h filter + cap). hnrss occasionally
 returns 0 items under rapid repeated runs; the continue-on-error branches absorb it.
 
-Roadmap (PLAN.md): make sources config-driven — a `{url, tag}` list looped over
-instead of per-source branches. The RSS Read node drops input fields, so the tag must
-be re-attached inside the loop (Split In Batches, or HTTP Request + XML node).
 
 ## Verification pattern
 

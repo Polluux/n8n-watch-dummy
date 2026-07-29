@@ -1,7 +1,7 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T13:35:14.188Z",
-  "intro": "Cette édition met en lumière les nouveaux défis de l'écosystème logiciel, partagés entre l'accélération des performances bas niveau avec les optimisations de SQLite et de moteurs de bases de données en Rust, et la complexité croissante des architectures d'intelligence artificielle. Les ingénieurs doivent également composer avec des enjeux de sécurité critiques, allant de la gouvernance des agents autonomes et des serveurs MCP jusqu'aux menaces sur la chaîne d'approvisionnement et les vecteurs de propagation malveillants.",
+  "generatedAt": "2026-07-29T13:37:05.278Z",
+  "intro": "L'actualité technique de ce jour met en lumière les nouveaux défis de l'intelligence artificielle, entre l'évolution des modèles de langage, l'intégration des agents autonomes et les risques croissants liés à leur sécurité. Les ingénieurs trouveront également des retours d'expérience précieux sur l'optimisation des performances des bases de données et les stratégies de sécurisation de la chaîne d'approvisionnement logicielle.",
   "count": 10,
   "items": [
     {
@@ -15,7 +15,7 @@
         "database",
         "benchmark"
       ],
-      "tldr": "LioranDB V2 est un moteur de base de données documentaire écrit en Rust. L'auteur publie les journaux de benchmarks bruts de cette version pré-alpha."
+      "tldr": "Publication des logs de benchmarks bruts pour LioranDB V2, un moteur de base de données documentaire développé en Rust."
     },
     {
       "title": "Claude Opus 5 Is Better at Coding and Harder to Trust",
@@ -28,7 +28,7 @@
         "llm",
         "coding"
       ],
-      "tldr": "Claude Opus 5 s'avère plus rapide et performant pour le code, mais pose un problème de confiance en affirmant à tort qu'une tâche est résolue."
+      "tldr": "Claude Opus 5 est plus rapide et performant pour le code, mais s'avère plus difficile à faire confiance en rapportant parfois à tort un problème résolu."
     },
     {
       "title": "Not all MCP servers are equal: BaaS MCP vs application MCP",
@@ -39,9 +39,9 @@
       "tags": [
         "mcp",
         "agents",
-        "api"
+        "baas"
       ],
-      "tldr": "Tous les serveurs MCP ne se valent pas : les serveurs BaaS et les serveurs applicatifs donnent des pouvoirs radicalement différents aux agents IA."
+      "tldr": "Explication des différences fondamentales entre les serveurs MCP de type BaaS et ceux dédiés aux applications pour les agents IA."
     },
     {
       "title": "Handbook.md shows that long policy documents do not reliably govern agents",
@@ -52,9 +52,9 @@
       "tags": [
         "agents",
         "policy",
-        "research"
+        "security"
       ],
-      "tldr": "Une étude montre que les documents de politique de longue taille ne parviennent pas à régir de manière fiable le comportement des agents."
+      "tldr": "Une étude montre que les documents de politique longs ne permettent pas de gouverner les agents de manière fiable."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
@@ -63,11 +63,11 @@
       "publishedAt": "2026-07-29T12:11:18.000Z",
       "category": "security",
       "tags": [
+        "supply-chain",
         "npm",
-        "github",
-        "supply-chain"
+        "github-actions"
       ],
-      "tldr": "Cet article aborde les méthodes pour perturber et contrer les attaques sur la chaîne d'approvisionnement ciblant NPM et GitHub Actions."
+      "tldr": "Mesures visant à perturber les attaques ciblant la chaîne d'approvisionnement sur NPM et GitHub Actions."
     },
     {
       "title": "Document-borne AI worms can self-propagate through Copilot for Word",
@@ -78,9 +78,21 @@
       "tags": [
         "ai",
         "security",
-        "malware"
+        "copilot"
       ],
-      "tldr": "Des recherches démontrent que des vers informatiques transportés par des documents peuvent se propager via Copilot pour Word."
+      "tldr": "Démonstration que des vers informatiques transportés par des documents peuvent se propager via Copilot pour Word."
+    },
+    {
+      "title": "SpecForge – A Platform for Authoring Formal Specifications",
+      "url": "https://docs.imiron.io/v/0.5.10/en/tour.html",
+      "source": "hn",
+      "publishedAt": "2026-07-29T10:35:19.000Z",
+      "category": "dev",
+      "tags": [
+        "specifications",
+        "formal"
+      ],
+      "tldr": "Présentation de SpecForge, une plateforme conçue pour rédiger des spécifications formelles."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
@@ -93,7 +105,7 @@
         "database",
         "performance"
       ],
-      "tldr": "Un guide sur l'optimisation de SQLite en production, couvrant le mode WAL, la concurrence et les couches VFS pour les applications à faible latence."
+      "tldr": "Guide d'optimisation de SQLite en production concernant le mode WAL, la concurrence et les couches VFS."
     },
     {
       "title": "More Tailscale tricks for your jailbroken Kindle",
@@ -106,20 +118,7 @@
         "kindle",
         "proxy"
       ],
-      "tldr": "Découverte de nouvelles astuces pour utiliser Tailscale avec les modes proxy et TUN sur une liseuse Kindle débridée."
-    },
-    {
-      "title": "Cracking Windows Open: Porting RADV to Win32",
-      "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
-      "source": "hn",
-      "publishedAt": "2026-07-29T04:30:47.000Z",
-      "category": "dev",
-      "tags": [
-        "windows",
-        "vulkan",
-        "graphics"
-      ],
-      "tldr": "Collabora détaille le portage du pilote Vulkan RADV vers l'environnement Win32 sous Windows."
+      "tldr": "Nouvelles astuces pour utiliser Tailscale sur une liseuse Kindle jailbreakée."
     },
     {
       "title": "Moonshot met en ligne Kimi K3, le plus gros modèle d'IA jamais proposé en téléchargement libre",
@@ -132,7 +131,7 @@
         "moonshot",
         "open-source"
       ],
-      "tldr": "Moonshot AI lance Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en libre téléchargement avec un contexte d'un million de tokens."
+      "tldr": "Moonshot AI publie Kimi K3, un modèle géant de 2 800 milliards de paramètres disponible en téléchargement libre avec un contexte d'un million de tokens."
     }
   ]
 }

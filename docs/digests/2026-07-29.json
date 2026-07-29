@@ -1,8 +1,8 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T14:29:11.230Z",
-  "intro": "Cette édition met en lumière les nouveaux défis de la sécurité logicielle, partagés entre l'automatisation des audits par l'intelligence artificielle, la protection de la chaîne d'approvisionnement et l'émergence de menaces ciblées sur les assistants textuels. Du côté de l'ingénierie front-end et back-end, l'actualité technique valorise le partage de types full-stack, l'optimisation des performances de SQLite en production et le développement d'architectures web innovantes grâce au WebAssembly.",
-  "count": 9,
+  "generatedAt": "2026-07-29T14:32:52.834Z",
+  "intro": "L'actualité technique de ce jour met en lumière les nouveaux défis de la cybersécurité, marqués par la sécurisation de la chaîne d'approvisionnement logicielle et l'émergence de menaces sophistiquées liées aux intelligences artificielles. Les ingénieurs apprécieront également les partages d'expérience autour du développement full-stack, allant de l'optimisation de bases de données en production à l'intégration de types partagés. Enfin, l'innovation continue de se manifester à travers l'exploitation de moteurs de jeux et d'applications lourdes directement compilés en WebAssembly pour le navigateur.",
+  "count": 10,
   "items": [
     {
       "title": "Sharing tRPC v11 types between Next.js and Expo: a real-world indie Web + iOS setup",
@@ -12,27 +12,12 @@
       "publishedAt": "2026-07-29T14:08:55.000Z",
       "category": "dev",
       "tags": [
+        "trpc",
         "next.js",
         "expo",
-        "trpc",
         "typescript"
       ],
-      "tldr": "Cet article montre comment partager les définitions de types d'API tRPC v11 entre une application web Next.js et une application iOS Expo pour un projet solo."
-    },
-    {
-      "title": "Anthropic’s Mythos Preview Shows How AI Is Reshaping Defensive Vulnerability Research",
-      "url": "https://dev.to/alifar/anthropics-mythos-preview-shows-how-ai-is-reshaping-defensive-vulnerability-research-4lll",
-      "source": "devto",
-      "sourceName": "dev.to",
-      "publishedAt": "2026-07-29T14:00:30.000Z",
-      "category": "ai",
-      "tags": [
-        "anthropic",
-        "vulnerabilities",
-        "security",
-        "ai"
-      ],
-      "tldr": "Le modèle de recherche Claude Mythos Preview d'Anthropic démontre sa capacité à identifier et exploiter de manière autonome des vulnérabilités zero-day."
+      "tldr": "Un développeur solo partage son expérience pour partager les types tRPC v11 entre une application web Next.js et une application iOS Expo, évitant ainsi de dupliquer la maintenance des définitions d'API."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
@@ -42,12 +27,12 @@
       "publishedAt": "2026-07-29T12:11:18.000Z",
       "category": "security",
       "tags": [
+        "supply-chain",
         "npm",
         "github",
-        "supply-chain",
         "security"
       ],
-      "tldr": "Cette publication aborde les mesures prises pour perturber et contrer les attaques ciblant la chaîne d'approvisionnement sur NPM et GitHub Actions."
+      "tldr": "Cet article aborde les méthodes pour perturber et contrer les attaques de la chaîne d'approvisionnement ciblant NPM et GitHub Actions."
     },
     {
       "title": "Document-borne AI worms can self-propagate through Copilot for Word",
@@ -60,23 +45,9 @@
         "ai",
         "security",
         "copilot",
-        "word"
+        "vulnerability"
       ],
-      "tldr": "Une recherche met en évidence que des vers informatiques basés sur l'IA peuvent se propager automatiquement à travers les documents traités par Copilot pour Word."
-    },
-    {
-      "title": "Show HN: Vimgolf.ai – Learn Vim by playing through a map of levels",
-      "url": "https://vimgolf.ai",
-      "source": "hn",
-      "sourceName": "Hacker News",
-      "publishedAt": "2026-07-29T09:26:52.000Z",
-      "category": "dev",
-      "tags": [
-        "vim",
-        "learning",
-        "gamification"
-      ],
-      "tldr": "Vimgolf.ai est une nouvelle application conçue pour aider les débutants à apprendre le fonctionnement de Vim de manière ludique à travers une carte de niveaux."
+      "tldr": "Des chercheurs démontrent que des vers informatiques véhiculés par des documents peuvent se propager de manière autonome via Copilot pour Word."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
@@ -91,7 +62,22 @@
         "performance",
         "backend"
       ],
-      "tldr": "Ce guide détaille les optimisations du mode WAL, de la concurrence et des couches VFS pour exécuter SQLite efficacement en production pour des serveurs à faible latence."
+      "tldr": "Un guide sur l'optimisation de SQLite en production, incluant la gestion du mode WAL, la concurrence et les couches VFS pour les serveurs à faible latence."
+    },
+    {
+      "title": "☕️ Les appels audio et vidéo de WhatsApp maintenant dans le navigateur",
+      "url": "https://next.ink/brief-article/les-appels-audio-et-video-de-whatsapp-maintenant-dans-le-navigateur/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-07-29T05:53:19.000Z",
+      "category": "other",
+      "tags": [
+        "whatsapp",
+        "browser",
+        "messaging",
+        "web"
+      ],
+      "tldr": "WhatsApp déploie de nouveaux appels audio et vidéo directement accessibles depuis le navigateur web, sans nécessiter l'application dédiée."
     },
     {
       "title": "User Interfaces of the Demo Scene",
@@ -106,7 +92,7 @@
         "retro",
         "design"
       ],
-      "tldr": "Un article qui explore et analyse les interfaces utilisateur uniques conçues au sein de la communauté de la Demoscene."
+      "tldr": "Une exploration visuelle et technique des interfaces utilisateur créées au sein de la démosphère."
     },
     {
       "title": "☕️ Firefox active sa nouvelle interface Nova par défaut dans le canal Nightly",
@@ -114,14 +100,29 @@
       "source": "nxt",
       "sourceName": "Next",
       "publishedAt": "2026-07-28T09:49:00.000Z",
-      "category": "other",
+      "category": "dev",
       "tags": [
         "firefox",
         "browser",
-        "mozilla",
-        "ui"
+        "ui",
+        "nightly"
       ],
-      "tldr": "Mozilla active par défaut sa nouvelle interface utilisateur, baptisée Nova, dans le canal de développement Nightly de Firefox."
+      "tldr": "Mozilla active par défaut sa nouvelle interface nommée Nova dans le canal de développement Nightly de Firefox."
+    },
+    {
+      "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
+      "url": "https://next.ink/249180/microsoft-affirme-battre-tout-le-monde-en-detection-de-failles-avec-mai-cyber-1-flash/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-07-28T08:35:16.000Z",
+      "category": "ai",
+      "tags": [
+        "microsoft",
+        "cybersecurity",
+        "ai",
+        "vulnerability"
+      ],
+      "tldr": "Microsoft présente MAI-Cyber-1-Flash, un nouveau modèle d'intelligence artificielle dédié à la cybersécurité et à la détection de failles."
     },
     {
       "title": "Votre vieux Morrowind se relance dans le navigateur",
@@ -133,10 +134,25 @@
       "tags": [
         "webassembly",
         "gaming",
-        "browser",
-        "openmw"
+        "openmw",
+        "browser"
       ],
-      "tldr": "Grâce au portage du moteur libre OpenMW en WebAssembly, il est désormais possible de jouer au jeu Morrowind directement depuis un navigateur web."
+      "tldr": "Le moteur de jeu libre OpenMW a été recompilé en WebAssembly, permettant de faire tourner le RPG Morrowind directement dans un onglet de navigateur."
+    },
+    {
+      "title": "Sa boîte à goûter fait tourner un LLM en local",
+      "url": "https://korben.info/cyberdeck-lunchbox-mask-raspberry-pi.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-07-28T05:56:36.000Z",
+      "category": "ai",
+      "tags": [
+        "raspberry pi",
+        "llm",
+        "hardware",
+        "edge-ai"
+      ],
+      "tldr": "Un passionné a intégré un Raspberry Pi 5 et un écran tactile dans une boîte à goûter rétro pour faire tourner un modèle de langage (LLM) en local."
     }
   ]
 }

@@ -1,64 +1,62 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T14:05:08.205Z",
-  "intro": "L'actualité technique du jour met en lumière les avancées majeures et les risques critiques liés à l'intelligence artificielle, entre nouveaux modèles open source massifs, capacités de recherche de vulnérabilités autonomes et défis de sécurité dans la chaîne d'approvisionnement. Les ingénieurs logiciels trouveront également des ressources précieuses sur l'optimisation des bases de données et des moteurs de stockage, de SQLite en production jusqu'aux architectures en Rust.",
+  "generatedAt": "2026-07-29T14:20:54.669Z",
+  "intro": "Cette édition met en lumière les nouveaux défis de la sécurité logicielle face aux menaces émergentes de l'intelligence artificielle et des attaques sur la chaîne d'approvisionnement. Les ingénieurs y trouveront également des retours d'expérience précieux sur l'optimisation des architectures full-stack, du typage partagé et des performances des bases de données en production.",
   "count": 10,
   "items": [
+    {
+      "title": "Sharing tRPC v11 types between Next.js and Expo: a real-world indie Web + iOS setup",
+      "url": "https://dev.to/hirodeath/sharing-trpc-v11-types-between-nextjs-and-expo-a-real-world-indie-web-ios-setup-3067",
+      "source": "devto",
+      "publishedAt": "2026-07-29T14:08:55.000Z",
+      "category": "dev",
+      "tags": [
+        "typescript",
+        "next.js",
+        "react-native",
+        "trpc"
+      ],
+      "tldr": "Un développeur solo explique comment partager les types tRPC v11 entre une application Next.js et une application mobile Expo pour éviter de dupliquer les définitions d'API."
+    },
     {
       "title": "Anthropic’s Mythos Preview Shows How AI Is Reshaping Defensive Vulnerability Research",
       "url": "https://dev.to/alifar/anthropics-mythos-preview-shows-how-ai-is-reshaping-defensive-vulnerability-research-4lll",
       "source": "devto",
       "publishedAt": "2026-07-29T14:00:30.000Z",
-      "category": "security",
-      "tags": [
-        "ai",
-        "vulnerabilities",
-        "security",
-        "zero-day"
-      ],
-      "tldr": "Le modèle de recherche Claude Mythos Preview d'Anthropic démontre sa capacité à identifier et exploiter de manière autonome des vulnérabilités zero-day dans des environnements logiciels réels."
-    },
-    {
-      "title": "LioranDB V2 Pre-Alpha Benchmark Summary",
-      "url": "https://dev.to/ultrontheai/liorandb-v2-pre-alpha-benchmark-summary-4nfb",
-      "source": "devto",
-      "publishedAt": "2026-07-29T13:26:36.000Z",
-      "category": "dev",
-      "tags": [
-        "database",
-        "rust",
-        "benchmarks",
-        "storage"
-      ],
-      "tldr": "L'auteur publie les journaux de benchmarks bruts de LioranDB V2, un nouveau moteur de base de données documentaire développé entièrement en Rust."
-    },
-    {
-      "title": "Handbook.md shows that long policy documents do not reliably govern agents",
-      "url": "https://arxiv.org/abs/2607.25398",
-      "source": "hn",
-      "publishedAt": "2026-07-29T13:01:57.000Z",
       "category": "ai",
       "tags": [
-        "ai",
-        "agents",
-        "policy",
-        "research"
+        "llm",
+        "security",
+        "vulnerabilities",
+        "anthropic"
       ],
-      "tldr": "Une étude montre que les documents de politique longs ne suffisent pas à gouverner de manière fiable le comportement des agents autonomes."
+      "tldr": "Le modèle de recherche Claude Mythos d'Anthropic démontre sa capacité à identifier et exploiter de manière autonome des vulnérabilités zero-day dans des environnements logiciels réels."
+    },
+    {
+      "title": "A Texture Lookup Approach to Bézier Curve Evaluation on the GPU (JCGT)",
+      "url": "https://jcgt.org/published/0015/02/01/",
+      "source": "hn",
+      "publishedAt": "2026-07-29T12:40:13.000Z",
+      "category": "other",
+      "tags": [
+        "gpu",
+        "graphics",
+        "algorithms"
+      ],
+      "tldr": "Cet article technique présente une approche par recherche de texture pour évaluer des courbes de Bézier directement sur le GPU."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
       "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
       "source": "hn",
       "publishedAt": "2026-07-29T12:11:18.000Z",
-      "category": "devops",
+      "category": "security",
       "tags": [
-        "security",
         "supply-chain",
         "npm",
         "github-actions"
       ],
-      "tldr": "Cet article aborde les méthodes pour perturber et contrer les attaques ciblant la chaîne d'approvisionnement logicielle sur NPM et GitHub Actions."
+      "tldr": "GitHub détaille ses initiatives pour perturber et contrer les attaques ciblant la chaîne d'approvisionnement logicielle sur NPM et GitHub Actions."
     },
     {
       "title": "Document-borne AI worms can self-propagate through Copilot for Word",
@@ -68,11 +66,11 @@
       "category": "security",
       "tags": [
         "ai",
-        "security",
-        "malware",
-        "copilot"
+        "vulnerability",
+        "microsoft",
+        "security"
       ],
-      "tldr": "Des chercheurs démontrent que des vers informatiques transportés par des documents peuvent se propager automatiquement via Copilot pour Word."
+      "tldr": "Des recherches démontrent que des vers informatiques transportés par des documents peuvent se propager de manière autonome à travers Copilot pour Word."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
@@ -86,7 +84,7 @@
         "performance",
         "backend"
       ],
-      "tldr": "Un guide sur l'optimisation de SQLite en production, couvrant le mode WAL, la gestion de la concurrence et les couches VFS pour les serveurs à faible latence."
+      "tldr": "Un guide complet sur l'optimisation de SQLite en production, incluant le mode WAL, la gestion de la concurrence et les couches VFS pour les serveurs à faible latence."
     },
     {
       "title": "More Tailscale tricks for your jailbroken Kindle",
@@ -96,53 +94,53 @@
       "category": "other",
       "tags": [
         "tailscale",
-        "kindle",
         "networking",
+        "kindle",
         "proxy"
       ],
-      "tldr": "Découvrez de nouvelles astuces pour utiliser Tailscale en modes proxy et TUN sur une liseuse Kindle débridée."
+      "tldr": "Cet article explore des astuces et configurations avancées pour utiliser Tailscale en mode proxy TUN sur une liseuse Kindle débridée."
     },
     {
-      "title": "Cracking Windows Open: Porting RADV to Win32",
-      "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
+      "title": "User Interfaces of the Demo Scene",
+      "url": "https://www.datagubbe.se/scenegui/",
       "source": "hn",
-      "publishedAt": "2026-07-29T04:30:47.000Z",
-      "category": "dev",
+      "publishedAt": "2026-07-29T04:30:36.000Z",
+      "category": "other",
       "tags": [
-        "vulkan",
-        "windows",
-        "graphics",
-        "driver"
+        "demoscene",
+        "ui",
+        "retro",
+        "design"
       ],
-      "tldr": "Collabora détaille le portage de RADV (le pilote Vulkan open source pour les cartes AMD) vers l'environnement Win32 de Windows."
-    },
-    {
-      "title": "Moonshot met en ligne Kimi K3, le plus gros modèle d'IA jamais proposé en téléchargement libre",
-      "url": "https://korben.info/moonshot-met-en-ligne-kimi-k3-le-plus-gros-modele-dia-jamais-propose-en-telechargement-libre.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "publishedAt": "2026-07-28T11:55:40.000Z",
-      "category": "ai",
-      "tags": [
-        "ai",
-        "llm",
-        "open-source",
-        "huggingface"
-      ],
-      "tldr": "Moonshot AI lance Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en téléchargement libre sur Hugging Face avec une large fenêtre de contexte."
+      "tldr": "Une analyse visuelle et historique des interfaces utilisateur uniques créées au sein de la scène démo."
     },
     {
       "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
       "url": "https://next.ink/249180/microsoft-affirme-battre-tout-le-monde-en-detection-de-failles-avec-mai-cyber-1-flash/",
       "source": "nxt",
       "publishedAt": "2026-07-28T08:35:16.000Z",
-      "category": "security",
+      "category": "ai",
       "tags": [
-        "ai",
-        "security",
         "microsoft",
-        "cybersecurity"
+        "cybersecurity",
+        "llm",
+        "vulnerabilities"
       ],
-      "tldr": "Microsoft présente MAI-Cyber-1-Flash, son nouveau modèle dédié à la cybersécurité, affirmant surpasser les performances actuelles du marché dans la détection de failles."
+      "tldr": "Microsoft présente MAI-Cyber-1-Flash, son nouveau modèle dédié à la cybersécurité qu'il annonce comme le plus performant en matière de détection de failles."
+    },
+    {
+      "title": "Votre vieux Morrowind se relance dans le navigateur",
+      "url": "https://korben.info/morrowind-navigateur-webassembly-openmw.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "publishedAt": "2026-07-28T08:11:19.000Z",
+      "category": "other",
+      "tags": [
+        "webassembly",
+        "gaming",
+        "browser",
+        "retro"
+      ],
+      "tldr": "Grâce à une recompilation du moteur libre OpenMW en WebAssembly, il est désormais possible de jouer au jeu Morrowind directement depuis son navigateur web."
     }
   ]
 }

@@ -46,21 +46,24 @@
     };
 
     function Card(item) {
-      const card = el('article', 'rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md');
-      const h3 = el('h3', 'font-semibold');
-      const a = el('a', 'text-slate-900 hover:text-blue-700', item.title);
+      // The whole card is one link to the article: the <a> carries the padding
+      // and content; the <article> keeps the card frame and hover feedback.
+      const card = el('article', 'rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md hover:border-slate-300');
+      const a = el('a', 'block p-4');
       a.href = item.url;
       a.target = '_blank';
       a.rel = 'noopener';
-      h3.appendChild(a);
-      card.appendChild(h3);
-      card.appendChild(el('p', 'mt-1 text-xs text-slate-500', item.sourceName || item.source));
-      card.appendChild(el('p', 'mt-2 text-sm text-slate-600', item.tldr));
+      const h3 = el('h3', 'font-semibold text-slate-900');
+      h3.textContent = item.title;
+      a.appendChild(h3);
+      a.appendChild(el('p', 'mt-1 text-xs text-slate-500', item.sourceName || item.source));
+      a.appendChild(el('p', 'mt-2 text-sm text-slate-600', item.tldr));
       const tags = el('p', 'mt-3');
       for (const t of item.tags ?? []) {
         tags.appendChild(el('span', 'mr-1 inline-block rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700', t));
       }
-      card.appendChild(tags);
+      a.appendChild(tags);
+      card.appendChild(a);
       return card;
     }
 

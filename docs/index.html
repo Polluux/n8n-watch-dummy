@@ -50,27 +50,31 @@
         ul.replaceChildren();
         dates.forEach((d, i) => {
           const li = document.createElement('li');
-          li.className = i === 0
-            ? 'relative rounded-xl border border-blue-400 bg-blue-50 p-4 shadow-sm transition hover:shadow-md'
-            : 'rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md';
+          // The whole card is one link: the <a> carries the card styling and
+          // contains the date, badge and subtitle.
+          const a = document.createElement('a');
+          a.href = 'digest.html?d=' + encodeURIComponent(d);
+          a.className = i === 0
+            ? 'relative block rounded-xl border border-blue-400 bg-blue-50 p-4 shadow-sm transition hover:shadow-md hover:border-blue-500'
+            : 'relative block rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md hover:border-slate-300';
           if (i === 0) {
             const badge = document.createElement('span');
             badge.className = 'absolute right-4 top-4 rounded-full bg-blue-600 px-2.5 py-0.5 text-xs font-medium text-white';
             badge.textContent = 'dernier';
-            li.appendChild(badge);
+            a.appendChild(badge);
           }
-          const a = document.createElement('a');
-          a.href = 'digest.html?d=' + encodeURIComponent(d);
-          a.className = 'font-semibold text-slate-900 hover:text-blue-700';
-          a.textContent = d;
-          li.appendChild(a);
+          const date = document.createElement('span');
+          date.className = 'block font-semibold text-slate-900';
+          date.textContent = d;
+          a.appendChild(date);
           const p = details.get(d);
           if (p) {
-            const meta = document.createElement('p');
-            meta.className = 'mt-1 text-sm text-slate-600';
+            const meta = document.createElement('span');
+            meta.className = 'mt-1 block text-sm text-slate-600';
             meta.textContent = (p.count != null ? p.count + ' liens — ' : '') + (p.intro || '');
-            li.appendChild(meta);
+            a.appendChild(meta);
           }
+          li.appendChild(a);
           ul.appendChild(li);
         });
       })

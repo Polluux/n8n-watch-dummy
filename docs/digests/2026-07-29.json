@@ -1,7 +1,7 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T14:32:52.834Z",
-  "intro": "L'actualité technique de ce jour met en lumière les nouveaux défis de la cybersécurité, marqués par la sécurisation de la chaîne d'approvisionnement logicielle et l'émergence de menaces sophistiquées liées aux intelligences artificielles. Les ingénieurs apprécieront également les partages d'expérience autour du développement full-stack, allant de l'optimisation de bases de données en production à l'intégration de types partagés. Enfin, l'innovation continue de se manifester à travers l'exploitation de moteurs de jeux et d'applications lourdes directement compilés en WebAssembly pour le navigateur.",
+  "generatedAt": "2026-07-29T14:36:02.333Z",
+  "intro": "Cette édition met en lumière la sécurité logicielle avec de nouvelles menaces liées aux assistants IA et la sécurisation des chaînes d'approvisionnement, ainsi que l'ingénierie full-stack et les performances bas niveau abordant l'optimisation de bases de données en production et le rendu graphique sur GPU. Les développeurs pourront également découvrir des retours d'expérience sur le partage de types inter-plateformes et des usages audacieux de WebAssembly ou de réseaux virtuels.",
   "count": 10,
   "items": [
     {
@@ -17,7 +17,21 @@
         "expo",
         "typescript"
       ],
-      "tldr": "Un développeur solo partage son expérience pour partager les types tRPC v11 entre une application web Next.js et une application iOS Expo, évitant ainsi de dupliquer la maintenance des définitions d'API."
+      "tldr": "Un développeur solo explique comment il partage les définitions de types tRPC v11 entre une application web Next.js et une application iOS Expo."
+    },
+    {
+      "title": "A Texture Lookup Approach to Bézier Curve Evaluation on the GPU (JCGT)",
+      "url": "https://jcgt.org/published/0015/02/01/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-29T12:40:13.000Z",
+      "category": "other",
+      "tags": [
+        "gpu",
+        "graphics",
+        "bezier"
+      ],
+      "tldr": "Une approche par recherche de texture pour évaluer les courbes de Bézier sur le GPU, publiée dans le JCGT."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
@@ -29,10 +43,9 @@
       "tags": [
         "supply-chain",
         "npm",
-        "github",
-        "security"
+        "github-actions"
       ],
-      "tldr": "Cet article aborde les méthodes pour perturber et contrer les attaques de la chaîne d'approvisionnement ciblant NPM et GitHub Actions."
+      "tldr": "GitHub présente des mesures pour contrer et perturber les attaques ciblant la chaîne d'approvisionnement sur NPM et GitHub Actions."
     },
     {
       "title": "Document-borne AI worms can self-propagate through Copilot for Word",
@@ -40,14 +53,27 @@
       "source": "hn",
       "sourceName": "Hacker News",
       "publishedAt": "2026-07-29T11:44:33.000Z",
-      "category": "security",
+      "category": "ai",
       "tags": [
-        "ai",
         "security",
         "copilot",
-        "vulnerability"
+        "ai-worm"
       ],
-      "tldr": "Des chercheurs démontrent que des vers informatiques véhiculés par des documents peuvent se propager de manière autonome via Copilot pour Word."
+      "tldr": "Des recherches démontrent que des vers informatiques transportés par des documents peuvent se propager automatiquement via Copilot pour Word."
+    },
+    {
+      "title": "Show HN: Vimgolf.ai – Learn Vim by playing through a map of levels",
+      "url": "https://vimgolf.ai",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-29T09:26:52.000Z",
+      "category": "dev",
+      "tags": [
+        "vim",
+        "learning",
+        "gamification"
+      ],
+      "tldr": "Vimgolf.ai est une nouvelle application interactive conçue pour apprendre Vim en progressant à travers une carte de niveaux."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
@@ -55,29 +81,27 @@
       "source": "hn",
       "sourceName": "Hacker News",
       "publishedAt": "2026-07-29T07:18:24.000Z",
-      "category": "dev",
+      "category": "devops",
       "tags": [
         "sqlite",
         "database",
-        "performance",
-        "backend"
+        "performance"
       ],
-      "tldr": "Un guide sur l'optimisation de SQLite en production, incluant la gestion du mode WAL, la concurrence et les couches VFS pour les serveurs à faible latence."
+      "tldr": "Un guide technique sur l'optimisation de SQLite en production, couvrant le mode WAL, la concurrence et les couches VFS pour les serveurs à faible latence."
     },
     {
-      "title": "☕️ Les appels audio et vidéo de WhatsApp maintenant dans le navigateur",
-      "url": "https://next.ink/brief-article/les-appels-audio-et-video-de-whatsapp-maintenant-dans-le-navigateur/",
-      "source": "nxt",
-      "sourceName": "Next",
-      "publishedAt": "2026-07-29T05:53:19.000Z",
+      "title": "More Tailscale tricks for your jailbroken Kindle",
+      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-29T04:58:46.000Z",
       "category": "other",
       "tags": [
-        "whatsapp",
-        "browser",
-        "messaging",
-        "web"
+        "tailscale",
+        "kindle",
+        "networking"
       ],
-      "tldr": "WhatsApp déploie de nouveaux appels audio et vidéo directement accessibles depuis le navigateur web, sans nécessiter l'application dédiée."
+      "tldr": "Découvrez de nouvelles astuces pour utiliser Tailscale avec les modes proxy et TUN sur une liseuse Kindle débridée."
     },
     {
       "title": "User Interfaces of the Demo Scene",
@@ -89,10 +113,9 @@
       "tags": [
         "demoscene",
         "ui",
-        "retro",
-        "design"
+        "retro"
       ],
-      "tldr": "Une exploration visuelle et technique des interfaces utilisateur créées au sein de la démosphère."
+      "tldr": "Une exploration des interfaces utilisateur uniques et créatives issues de la scène demoscene."
     },
     {
       "title": "☕️ Firefox active sa nouvelle interface Nova par défaut dans le canal Nightly",
@@ -100,29 +123,13 @@
       "source": "nxt",
       "sourceName": "Next",
       "publishedAt": "2026-07-28T09:49:00.000Z",
-      "category": "dev",
+      "category": "other",
       "tags": [
         "firefox",
         "browser",
-        "ui",
-        "nightly"
+        "ui"
       ],
-      "tldr": "Mozilla active par défaut sa nouvelle interface nommée Nova dans le canal de développement Nightly de Firefox."
-    },
-    {
-      "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
-      "url": "https://next.ink/249180/microsoft-affirme-battre-tout-le-monde-en-detection-de-failles-avec-mai-cyber-1-flash/",
-      "source": "nxt",
-      "sourceName": "Next",
-      "publishedAt": "2026-07-28T08:35:16.000Z",
-      "category": "ai",
-      "tags": [
-        "microsoft",
-        "cybersecurity",
-        "ai",
-        "vulnerability"
-      ],
-      "tldr": "Microsoft présente MAI-Cyber-1-Flash, un nouveau modèle d'intelligence artificielle dédié à la cybersécurité et à la détection de failles."
+      "tldr": "La nouvelle interface utilisateur de Firefox, baptisée Nova, est désormais activée par défaut dans le canal Nightly."
     },
     {
       "title": "Votre vieux Morrowind se relance dans le navigateur",
@@ -134,25 +141,9 @@
       "tags": [
         "webassembly",
         "gaming",
-        "openmw",
-        "browser"
+        "openmw"
       ],
-      "tldr": "Le moteur de jeu libre OpenMW a été recompilé en WebAssembly, permettant de faire tourner le RPG Morrowind directement dans un onglet de navigateur."
-    },
-    {
-      "title": "Sa boîte à goûter fait tourner un LLM en local",
-      "url": "https://korben.info/cyberdeck-lunchbox-mask-raspberry-pi.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "sourceName": "Korben",
-      "publishedAt": "2026-07-28T05:56:36.000Z",
-      "category": "ai",
-      "tags": [
-        "raspberry pi",
-        "llm",
-        "hardware",
-        "edge-ai"
-      ],
-      "tldr": "Un passionné a intégré un Raspberry Pi 5 et un écran tactile dans une boîte à goûter rétro pour faire tourner un modèle de langage (LLM) en local."
+      "tldr": "Grâce au moteur libre OpenMW recompilé en WebAssembly, il est désormais possible de jouer à Morrowind directement dans un onglet de navigateur."
     }
   ]
 }

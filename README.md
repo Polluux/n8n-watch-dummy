@@ -11,9 +11,10 @@ sub-node changes.
 
 Every day at 09:30 (Europe/Paris), n8n fetches several RSS tech sources, asks Gemini to
 select and deduplicate the most relevant links, extract structured JSON, and write an
-editorial intro. The digest page is rendered from a **shared template** (so every day
-looks identical), committed to `docs/digests/` with a manifest entry, and announced on
-Discord. The homepage lists every published digest from the manifest.
+editorial intro. The workflow publishes the digest as **JSON data** in `docs/digests/`
+plus a manifest entry; the site renders everything client-side (`digest.html` viewer,
+`index.html` homepage — both static, committed once), and the day's selection is
+announced on Discord. Layout changes restyle all digests, past and future.
 
 See [PLAN.md](PLAN.md) for the full pipeline and [specs/](specs/) for the per-phase
 specifications with acceptance criteria.
@@ -22,8 +23,7 @@ specifications with acceptance criteria.
 
 - `PLAN.md` — implementation plan and design decisions
 - `specs/` — one spec per phase (spec-driven development with Claude Code)
-- `docs/` — GitHub Pages root: `index.html` (static homepage listing all digests), `digests.json` (manifest appended by the workflow), `digests/` (one page per day)
-- `templates/digest.html` — the shared digest template (single source of truth for layout)
+- `docs/` — GitHub Pages root: `index.html` (homepage), `digest.html` (digest viewer), `digests.json` (manifest appended by the workflow), `digests/` (one JSON payload per day)
 - `workflow/` — the n8n workflow JSON (source of truth in git; n8n's own copy lives in its Docker volume)
 - `scripts/export-workflow.sh` — sync UI edits back to the repo (run after editing in n8n; there is **no automatic sync** between the n8n database and this file)
 - `assets/` — execution screenshots (added in phase 7)

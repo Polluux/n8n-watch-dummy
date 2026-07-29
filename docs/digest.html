@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veille tech</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <nav class="mb-6">
+      <a href="index.html" class="text-sm font-medium text-blue-600 hover:text-blue-800">← Accueil</a>
+    </nav>
+
+    <header class="mb-10">
+      <p class="text-xs font-semibold uppercase tracking-widest text-blue-600">Veille tech</p>
+      <h1 id="date" class="mt-1 text-3xl font-bold tracking-tight text-slate-900">…</h1>
+      <p id="intro" class="mt-4 hidden rounded-r-lg border-l-4 border-blue-500 bg-blue-50 px-4 py-3 text-slate-700"></p>
+    </header>
+
+    <main id="main" class="space-y-10">
+      <p id="status" class="rounded-xl border border-dashed border-slate-300 bg-white p-6 text-center text-slate-500">Chargement…</p>
+    </main>
+
+    <footer id="footer" class="mt-16 border-t border-slate-200 pt-4 text-sm text-slate-500">
+      Généré par n8n + Gemini — <a href="https://github.com/Polluux/n8n-watch-dummy" class="text-blue-600 hover:text-blue-800">code source</a>
+    </footer>
+  </div>
+
+  <script>
+    // Component-style renderers. All third-party data lands via textContent —
+    // never innerHTML — so escaping is structural, not a discipline.
+    const CATEGORIES = [
+      ['ai', 'Intelligence artificielle'],
+      ['dev', 'Développement'],
+      ['devops', 'DevOps'],
+      ['security', 'Sécurité'],
+      ['other', 'Autres'],
+    ];
+
+    const el = (tag, className, text) => {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    };
+
+    function Card(item) {
+      const card = el('article', 'rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md');
+      const h3 = el('h3', 'font-semibold');
+      const a = el('a', 'text-slate-900 hover:text-blue-700', item.title);
+      a.href = item.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      h3.appendChild(a);
+      card.appendChild(h3);
+      card.appendChild(el('p', 'mt-1 text-xs text-slate-500', item.source));
+      card.appendChild(el('p', 'mt-2 text-sm text-slate-600', item.tldr));
+      const tags = el('p', 'mt-3');
+      for (const t of item.tags ?? []) {
+        tags.appendChild(el('span', 'mr-1 inline-block rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-medium text-indigo-700', t));
+      }
+      card.appendChild(tags);
+      return card;
+    }
+
+    function Section(label, items) {
+      const section = el('section');
+      section.appendChild(el('h2', 'mb-4 border-b border-slate-200 pb-2 text-lg font-semibold text-slate-900', label));
+      const list = el('div', 'space-y-4');
+      for (const item of items) list.appendChild(Card(item));
+      section.appendChild(list);
+      return section;
+    }
+
+    function Digest(data) {
+      document.title = `Veille tech — ${data.date}`;
+      document.getElementById('date').textContent = data.date;
+      const intro = document.getElementById('intro');
+      intro.textContent = data.intro;
+      intro.classList.remove('hidden');
+
+      const main = document.getElementById('main');
+      main.replaceChildren();
+      for (const [key, label] of CATEGORIES) {
+        const items = (data.items ?? []).filter((i) => i.category === key);
+        if (items.length) main.appendChild(Section(label, items));
+      }
+      const footer = document.getElementById('footer');
+      footer.prepend(document.createTextNode(`${data.date} · ${data.generatedAt} — `));
+    }
+
+    function fail(message) {
+      const status = el('p', 'rounded-xl border border-dashed border-slate-300 bg-white p-6 text-center text-slate-500', message + ' ');
+      const back = el('a', 'text-blue-600 hover:text-blue-800', "Retour à l'accueil");
+      back.href = 'index.html';
+      status.appendChild(back);
+      document.getElementById('main').replaceChildren(status);
+    }
+
+    const d = new URLSearchParams(location.search).get('d');
+    if (!d || !/^\d{4}-\d{2}-\d{2}$/.test(d)) {
+      fail('Aucune date de digest demandée.');
+    } else {
+      document.getElementById('date').textContent = d;
+      fetch(`digests/${d}.json`)
+        .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(Digest)
+        .catch(() => fail(`Digest introuvable pour le ${d}.`));
+    }
+  </script>
+</body>
+</html>

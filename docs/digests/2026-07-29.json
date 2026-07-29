@@ -1,0 +1,138 @@
+{
+  "date": "2026-07-29",
+  "generatedAt": "2026-07-29T13:14:39.993Z",
+  "intro": "L'actualité technique du jour met en avant les nouveaux défis de la sécurité logicielle et de l'intelligence artificielle, entre la protection des chaînes d'approvisionnement, la vulnérabilité des environnements collaboratifs face aux nouveaux vecteurs d'attaque et l'émergence de modèles de langage toujours plus massifs. Les ingénieurs devront également composer avec des évolutions notables en matière d'architecture de données, qu'il s'agisse d'optimiser SQLite en production ou de repenser l'orchestration des pipelines d'apprentissage automatique autour d'actifs versionnés.",
+  "count": 10,
+  "items": [
+    {
+      "title": "Offensive audit, engineering edition — the 6-piece fix pattern in detail",
+      "url": "https://dev.to/dexterlung/offensive-audit-engineering-edition-the-6-piece-fix-pattern-in-detail-129m",
+      "source": "devto",
+      "publishedAt": "2026-07-29T13:05:17.000Z",
+      "category": "security",
+      "tags": [
+        "audit",
+        "security",
+        "governance"
+      ],
+      "tldr": "Cet article présente la version ingénierie d'un audit offensif, détaillant en profondeur le modèle de correction en six pièces."
+    },
+    {
+      "title": "Your ML Pipeline Isn't a DAG of Tasks. It's a Graph of Assets",
+      "url": "https://dev.to/aiexplore369zoho/your-ml-pipeline-isnt-a-dag-of-tasks-its-a-graph-of-assets-1gff",
+      "source": "devto",
+      "publishedAt": "2026-07-29T13:01:12.000Z",
+      "category": "devops",
+      "tags": [
+        "mlops",
+        "orchestration",
+        "pipelines"
+      ],
+      "tldr": "Les pipelines ML devraient être modélisés comme des graphes d'actifs versionnés plutôt que comme de simples listes de tâches ordonnées."
+    },
+    {
+      "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
+      "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
+      "source": "hn",
+      "publishedAt": "2026-07-29T12:11:18.000Z",
+      "category": "security",
+      "tags": [
+        "supply-chain",
+        "npm",
+        "github"
+      ],
+      "tldr": "Une analyse sur la neutralisation des attaques ciblant la chaîne d'approvisionnement logicielle sur NPM et GitHub Actions."
+    },
+    {
+      "title": "Document-borne AI worms can self-propagate through Copilot for Word",
+      "url": "https://enklypesalt.com/posts/context-collapse-part3-ai-worming-through-word/",
+      "source": "hn",
+      "publishedAt": "2026-07-29T11:44:33.000Z",
+      "category": "security",
+      "tags": [
+        "ai",
+        "security",
+        "vulnerability"
+      ],
+      "tldr": "Des chercheurs démontrent que des vers informatiques transportés par des documents peuvent se propager automatiquement via Copilot pour Word."
+    },
+    {
+      "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
+      "url": "https://micrologics.org/blog/sqlite-in-production-optimizing-wal-mode-concurrency-and-vfs-layers-for-low-latency-app-servers",
+      "source": "hn",
+      "publishedAt": "2026-07-29T07:18:24.000Z",
+      "category": "dev",
+      "tags": [
+        "sqlite",
+        "database",
+        "performance"
+      ],
+      "tldr": "Guide sur l'optimisation de SQLite en production, couvrant le mode WAL, la concurrence et les couches VFS pour les applications à faible latence."
+    },
+    {
+      "title": "Cracking Windows Open: Porting RADV to Win32",
+      "url": "https://www.collabora.com/news-and-blog/news-and-events/cracking-windows-open-porting-radv-to-win32.html",
+      "source": "hn",
+      "publishedAt": "2026-07-29T04:30:47.000Z",
+      "category": "dev",
+      "tags": [
+        "windows",
+        "graphics",
+        "driver"
+      ],
+      "tldr": "Un article technique sur le portage du pilote Vulkan RADV vers l'environnement Win32 de Windows."
+    },
+    {
+      "title": "Codex Security",
+      "url": "https://github.com/openai/codex-security",
+      "source": "hn",
+      "publishedAt": "2026-07-28T20:52:55.000Z",
+      "category": "security",
+      "tags": [
+        "openai",
+        "security",
+        "code"
+      ],
+      "tldr": "Présentation de Codex Security par OpenAI, un outil axé sur la sécurité du code."
+    },
+    {
+      "title": "Moonshot met en ligne Kimi K3, le plus gros modèle d'IA jamais proposé en téléchargement libre",
+      "url": "https://korben.info/moonshot-met-en-ligne-kimi-k3-le-plus-gros-modele-dia-jamais-propose-en-telechargement-libre.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "publishedAt": "2026-07-28T11:55:40.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "open-source",
+        "huggingface"
+      ],
+      "tldr": "Moonshot AI a mis en ligne Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en libre téléchargement."
+    },
+    {
+      "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
+      "url": "https://next.ink/249180/microsoft-affirme-battre-tout-le-monde-en-detection-de-failles-avec-mai-cyber-1-flash/",
+      "source": "nxt",
+      "publishedAt": "2026-07-28T08:35:16.000Z",
+      "category": "security",
+      "tags": [
+        "microsoft",
+        "ai",
+        "cybersecurity"
+      ],
+      "tldr": "Microsoft lance MAI-Cyber-1-Flash, un modèle spécialisé en cybersécurité qui afficherait des performances de pointe en détection de failles."
+    },
+    {
+      "title": "GLM 5.2 censure moins s'il se croit américain",
+      "url": "https://korben.info/glm-kimi-modeles-chinois-identite-claude.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "publishedAt": "2026-07-28T07:29:55.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "censorship",
+        "alignment"
+      ],
+      "tldr": "Une étude montre que le comportement et la censure du modèle chinois GLM 5.2 varient significativement selon l'identité nationale qu'on lui attribue."
+    }
+  ]
+}

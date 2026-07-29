@@ -1,48 +1,56 @@
-# Spec 05 — HTML digest from shared template (LLM #3 + Code node)
+# Spec 05 — Digest payload + client-side rendering (LLM #3 + viewer page)
 
 ## Goal
-Every daily digest is rendered from the same repo-versioned template, so all pages are
-visually coherent. The LLM contributes **content only**, never page structure.
+The workflow publishes the day's digest as **data** (JSON); the site renders it
+client-side through a shared viewer page. Every digest — past and future — is
+displayed with the current layout, so visual coherence is total and retroactive.
+
+> Original design (superseded): the workflow fetched `templates/digest.html` from raw
+> GitHub at run time and assembled the HTML itself. Rejected because it coupled every
+> run to GitHub availability, required a push to `main` before template edits applied,
+> and baked layout into published artifacts.
 
 ## Design
 
-Two steps:
+Two parts:
 
-1. **LLM #3 — editorial intro.** Basic LLM Chain + Google Gemini Chat Model.
-   Input: spec 04's JSON array. Output: 2–3 sentences in French summarizing today's
-   themes (plain text, no HTML, no markdown). This keeps an AI touch in the page
-   while the layout stays deterministic.
+1. **LLM #3 — editorial intro** ("Write intro"). Basic LLM Chain + Google Gemini Chat
+   Model (shared "Gemini Flash" sub-node). Input: spec 04's records (bundled by
+   "Bundle records"). Output: 2–3 sentences in French, plain text, no
+   markdown/HTML/emoji, themes not titles.
 
-2. **Code node — template rendering.**
-   - Template lives at [`templates/digest.html`](../templates/digest.html) — single
-     source of truth, versioned in the repo. The workflow fetches it at run time from
-     the raw GitHub URL (HTTP Request node), so template updates never require touching
-     the workflow. (Fallback if offline dev is needed: paste it into the Code node, but
-     the repo file stays authoritative.)
-   - Placeholders (mustache-style, replaced by the Code node):
-     - `{{DATE}}` — YYYY-MM-DD
-     - `{{INTRO}}` — the LLM's editorial intro (escaped)
-     - `{{ITEMS}}` — the per-item HTML blocks, built by the Code node from the JSON
-       (grouped by `category`; each block: linked title `target="_blank"`, source, tags, tldr)
-     - `{{GENERATED_AT}}` — ISO timestamp
-   - **All third-party strings HTML-escaped** by the Code node (titles come from the open web).
+2. **"Build payload" (Code node)** — assembles the publishable JSON:
 
-## Template requirements (`templates/digest.html`)
-- Styling: **Tailwind CSS via the browser CDN build** (`@tailwindcss/browser@4`) — the
-  only external asset allowed. No build step; acceptable for a demo since the pages are
-  online-only anyway (the homepage fetches the manifest). If this ever becomes a real
-  product, switch to the Tailwind CLI generating a committed `docs/assets/site.css`.
-- The template contains a **commented item-markup pattern** (section per category, card
-  per item, with the exact Tailwind classes). The Code node generating `{{ITEMS}}` must
-  follow it verbatim — that comment is the layout contract between template and workflow.
-- Readable at mobile width; `<title>` "Veille tech — {{DATE}}"
-- A "← Accueil" link back to `../index.html`
-- Footer: "Généré par n8n + Gemini" + `{{GENERATED_AT}}`
+```json
+{
+  "date": "YYYY-MM-DD (Europe/Paris)",
+  "generatedAt": "ISO-8601",
+  "intro": "…",
+  "count": 10,
+  "items": [ { "title", "url", "source", "publishedAt", "category", "tags", "tldr" } ]
+}
+```
+
+   **The daily JSON artifact `docs/digests/YYYY-MM-DD.json` is this phase's
+   deliverable** — its content is exactly the Build payload output. Phase 6 only
+   *publishes* it (GitHub commit + manifest entry + Discord); it adds no content.
+   The workflow produces **no HTML anywhere**.
+
+3. **Viewer page** [`docs/digest.html`](../docs/digest.html) — static, committed once,
+   never touched by the workflow. Reads `?d=YYYY-MM-DD` (validated), fetches
+   `digests/<d>.json`, renders via component-style functions (`Card`, `Section`,
+   `Digest`). Styling: Tailwind browser CDN (only external asset, same as homepage).
+   Layout changes = edit this file, push — all digests restyle retroactively.
+
+## Security model
+All third-party strings (feed titles, LLM text) reach the DOM exclusively via
+`textContent` — `innerHTML` is never used for data. Escaping is structural, not a
+discipline to maintain.
 
 ## Acceptance criteria
-- [ ] Two digests generated on different days differ **only** in content, not structure/styling
-- [ ] Editing `templates/digest.html` changes the next run's output with no workflow change
-- [ ] A title containing `<script>` renders as text, not markup
-- [ ] LLM intro output containing accidental HTML/markdown is neutralized by escaping
-- [ ] Saved output renders correctly in a browser (Tailwind CDN is the only network request)
-- [ ] Generated item blocks use exactly the classes from the template's commented pattern
+- [x] Workflow output is pure data matching the payload shape above — verified via `n8n execute`: 10 items, French intro, valid date/ISO timestamps, no markup fields
+- [x] The day's artifact `docs/digests/YYYY-MM-DD.json` is generated from the run and renders in the viewer — verified: `docs/digests/2026-07-29.json` written from the live run; served locally (`python3 -m http.server -d docs/`), both `digest.html` and the payload respond 200 and parse
+- [x] All digests share one layout, retroactively — by construction: a single viewer page renders every payload; no HTML is baked at publish time
+- [x] A title containing `<script>`/`<img onerror>` renders as text — by construction (`textContent` only); verified by injecting a hostile payload through the viewer's render path
+- [x] Viewer handles bad input: missing/malformed `?d=`, unknown date → readable error with a link home (no blank page)
+- [x] The only loadable external resource on the viewer is the Tailwind CDN

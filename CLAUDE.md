@@ -12,8 +12,8 @@ Runs daily at 09:30 Europe/Paris. Demo/portfolio project ("dummy"), free-tier on
 Development is **spec-driven**: one spec per phase in `specs/01..07`, each with
 acceptance criteria checked off as they are verified. Read `PLAN.md` first, then the
 spec for the phase being worked on. One commit per phase (`build(<topic>): spec N
-finished`). Phases 1–4 are done; 05 (template rendering), 06 (publish + Discord),
-07 (schedule + proof artifacts) remain.
+finished`). Phases 1–5 are done; 06 (publish + Discord) and 07 (schedule + proof
+artifacts) remain.
 
 ## Critical: workflow sync protocol
 
@@ -61,7 +61,9 @@ Manual Trigger (→ Schedule 09:30 in phase 7)
  → Normalize (Code): strip HTML, drop >48h, sort desc, cap 60, stamp numeric `id`
  → Bundle items (Aggregate) → Select links (LLM Chain + "Gemini Flash" sub-node) → Filter selected (Code)
  → Extract data (LLM Chain + Structured Output Parser "Structured JSON") → Validate extraction (Code)
- → [phase 5+] template render → GitHub commit → Discord
+ → Bundle records (Aggregate) → Write intro (LLM Chain) → Build payload (Code: pure JSON —
+   its output IS the daily artifact docs/digests/YYYY-MM-DD.json, phase 5's deliverable)
+ → [phase 6+] publish only: GitHub commit (artifact + manifest) → Discord
 ```
 
 Design invariants (each learned the hard way — do not regress):
@@ -80,15 +82,19 @@ Design invariants (each learned the hard way — do not regress):
   new API keys ("no longer available to new users") — keep the rolling alias. To see
   what a key can use, GET `/v1beta/models` via an n8n HTTP Request node with the
   stored credential (see git history for the tmp-list-models workflow).
-- **The digest layout lives in `templates/digest.html` only.** The LLM writes the
-  French intro text; a Code node fills `{{DATE}}/{{INTRO}}/{{ITEMS}}/{{GENERATED_AT}}`
-  and must copy the item markup pattern from the template's HTML comment verbatim.
-  All third-party strings are HTML-escaped (feed titles are untrusted). Tailwind via
-  browser CDN is the only allowed external asset.
-- **The homepage (`docs/index.html`) is never edited by the workflow.** It renders
-  `docs/digests.json` client-side; the workflow only writes
-  `docs/digests/YYYY-MM-DD.html` and appends/replaces the manifest entry for the day
-  (same-day re-runs must not duplicate entries).
+- **The workflow ships data, never markup.** Its final output is a JSON payload
+  (`docs/digests/YYYY-MM-DD.json`) plus its date registered in `docs/digests.json` —
+  which is a **pure index** (array of date strings, nothing else; day data lives only
+  in the payload, the homepage fetches recent payloads for subtitles). All
+  rendering is client-side in two static pages the workflow never touches:
+  `docs/index.html` (homepage, lists the manifest) and `docs/digest.html` (viewer,
+  renders `?d=YYYY-MM-DD`). Layout edits restyle all digests retroactively. This
+  replaced an earlier design that fetched an HTML template from raw GitHub at run
+  time (rejected: run-time coupling to GitHub, push-before-effect, baked layout).
+- **Viewer security model: third-party strings reach the DOM via `textContent`
+  only — never `innerHTML`.** Verified with a DOM-stub test (hostile payload through
+  the real viewer script). Tailwind via browser CDN is the only allowed external
+  asset. Same-day re-runs must replace, not duplicate, the day's manifest entry.
 
 - **Docs stay source-agnostic.** The canonical feed list is the workflow's RSS Read
   nodes; specs/PLAN/README must not enumerate the feeds (they reference the workflow

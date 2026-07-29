@@ -13,14 +13,16 @@ Schedule Trigger (09:30 Europe/Paris)
   → LLM #1 (Gemini): select & deduplicate the most relevant links
   → LLM #2 (Gemini): extract structured JSON per link (tags, category, tl;dr)
   → LLM #3 (Gemini): write a short editorial intro (content only, no HTML structure)
-  → Code node: inject JSON + intro into the shared template (templates/digest.html)
-  → GitHub node: commit docs/digests/YYYY-MM-DD.html + update docs/digests.json manifest
+  → Code node: assemble the day's digest as a JSON payload (data only, no markup)
+  → GitHub node: commit docs/digests/YYYY-MM-DD.json + update docs/digests.json manifest
   → Discord: post the digest link + top picks
 ```
 
-Homepage: `docs/index.html` is a **static page committed once** — it fetches
-`docs/digests.json` client-side and lists every published digest (latest first).
-The workflow never edits the homepage, only appends to the manifest.
+The site renders client-side: `docs/index.html` (homepage) lists digests from the
+`docs/digests.json` manifest; `docs/digest.html?d=YYYY-MM-DD` (viewer) fetches the
+day's JSON and renders it through component-style functions. Both pages are static,
+committed once, never touched by the workflow — layout changes restyle **all**
+digests retroactively.
 ```
 
 ## Key decisions (rationale in the specs)
@@ -32,8 +34,8 @@ The workflow never edits the homepage, only appends to the manifest.
 | LLM provider | **Google Gemini free tier** (n8n Google Gemini Chat Model node, API key from Google AI Studio — no credit card). The provider is swappable: only the chat-model sub-node changes |
 | AI nodes | Step 2 uses a Structured Output Parser so JSON is schema-validated |
 | LLM calls | 3 separate nodes (select / extract / intro) rather than one mega-prompt — each is testable in isolation |
-| Digest rendering | **Shared template** `templates/digest.html` filled by a Code node — the LLM produces content, never page structure, so every digest looks identical ([spec 05](specs/05-html-digest.md)) |
-| Homepage | Static `docs/index.html` + `docs/digests.json` manifest appended by the workflow — no HTML surgery on the index ([spec 06](specs/06-publish-notify.md)) |
+| Digest rendering | **Client-side**: the workflow publishes JSON data; the static viewer `docs/digest.html` renders any digest — the LLM produces content, never structure; layout edits restyle all digests retroactively ([spec 05](specs/05-html-digest.md)). Supersedes an earlier design that fetched an HTML template from raw GitHub at run time |
+| Homepage | Static `docs/index.html` + `docs/digests.json` as a **pure date index** (static hosting can't list a directory; all day data lives in the payloads) ([spec 06](specs/06-publish-notify.md)) |
 | Publishing | GitHub Pages serving the `docs/` folder of `main` — n8n's GitHub node just commits files, Pages does the rest |
 | Discord | **Webhook to a private server/channel you own.** True DMs require a Discord bot + token; a private-channel webhook is 1 node and equivalent proof. (Bot option documented in [spec 06](specs/06-discord.md)) |
 | Versioning | Export the workflow to `workflow/tech-watch.json` after every phase — the repo is the source of truth |
@@ -63,6 +65,6 @@ criteria in the spec pass and the workflow JSON is re-exported and committed.
 ## Risks / gotchas to expect
 
 - **Rate/size limits**: cap items sent to the LLM (~top 60 by recency) — keeps prompts small and well inside the Gemini free-tier per-minute/per-day quotas.
-- **HTML injection**: digest is built from third-party titles — spec 5 requires escaping.
+- **HTML injection**: digests carry third-party titles — the viewer renders data via `textContent` only, never `innerHTML` (spec 05).
 - **GitHub Pages delay**: publish can take ~1 min after commit; Discord message links the stable URL, no need to wait.
 - **09:30 means timezone**: set `GENERIC_TIMEZONE=Europe/Paris` on the n8n container, otherwise the schedule runs in UTC.

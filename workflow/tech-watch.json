@@ -264,7 +264,7 @@
     },
     {
       "parameters": {
-        "modelName": "models/gemini-flash-latest",
+        "modelName": "models/gemini-3.5-flash-lite",
         "options": {
           "temperature": 0.2
         }
@@ -308,8 +308,8 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        2000,
-        220
+        1712,
+        400
       ]
     },
     {
@@ -322,13 +322,12 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        2140,
-        440
+        1784,
+        632
       ]
     },
     {
       "parameters": {
-        "mode": "runOnceForAllItems",
         "jsCode": "// Enforce spec 04. Identity fields (title/url/source) NEVER pass through the\n// LLM - they are rebuilt from the original items by id, so URLs cannot be\n// altered by construction. The LLM only contributes category/tags/tldr.\nconst CATEGORIES = new Set(['ai', 'dev', 'devops', 'security', 'other']);\nconst out = $input.first().json.output;\nconst records = Array.isArray(out) ? out : out?.items;\nif (!Array.isArray(records)) throw new Error('Parser output has no items array');\n\nconst selected = $('Filter selected').first().json.data;\nif (records.length !== selected.length) {\n  throw new Error(`Expected ${selected.length} records, got ${records.length}`);\n}\nconst byId = new Map(records.map((r) => [r.id, r]));\nconst result = [];\nfor (const sel of selected) {\n  const rec = byId.get(sel.id);\n  if (!rec) throw new Error('No record for item id ' + sel.id);\n  if (!CATEGORIES.has(rec.category)) throw new Error(`Invalid category \"${rec.category}\" for id ${sel.id}`);\n  if (!Array.isArray(rec.tags) || rec.tags.length < 1 || rec.tags.length > 4) {\n    throw new Error('tags must have 1-4 entries for id ' + sel.id);\n  }\n  if (typeof rec.tldr !== 'string' || rec.tldr.trim().length === 0) {\n    throw new Error('Empty tldr for id ' + sel.id);\n  }\n  const { id, ...original } = sel;\n  result.push({ json: { ...original, category: rec.category, tags: rec.tags, tldr: rec.tldr.trim() } });\n}\nreturn result;"
       },
       "id": "a1000000-0000-4000-8000-000000000043",
@@ -336,8 +335,49 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2280,
-        220
+        2064,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000050",
+      "name": "Bundle records",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        2288,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You write the editorial introduction of a daily French tech-watch digest.\n\nBased on the following selected articles (JSON), write 2-3 sentences in FRENCH\nsummarizing today's main themes for a software engineering audience.\n\nConstraints:\n- plain text only: no markdown, no HTML, no bullet points, no emoji\n- no greeting, no \"voici\" boilerplate: start directly with the substance\n- mention the dominant themes, not individual article titles\n\nArticles:\n{{ JSON.stringify($json.data) }}"
+      },
+      "id": "a1000000-0000-4000-8000-000000000051",
+      "name": "Write intro",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        2512,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Assemble the day's digest as a publishable JSON payload.\n// The site (docs/digest.html) renders it client-side - the workflow ships DATA,\n// never markup. Layout/styling live in the viewer page, committed once.\nconst records = $('Validate extraction').all().map((i) => i.json);\nif (records.length === 0) throw new Error('No records to publish');\nconst intro = String($input.first().json.text ?? '').trim();\nif (!intro) throw new Error('Empty intro from LLM');\n\nconst now = new Date();\nconst date = now.toLocaleDateString('fr-CA', { timeZone: 'Europe/Paris' }); // YYYY-MM-DD\nreturn [{\n  json: {\n    date,\n    generatedAt: now.toISOString(),\n    intro,\n    count: records.length,\n    items: records.map(({ title, url, source, publishedAt, category, tags, tldr }) =>\n      ({ title, url, source, publishedAt, category, tags, tldr })),\n  },\n}];"
+      },
+      "id": "a1000000-0000-4000-8000-000000000053",
+      "name": "Build payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2864,
+        400
       ]
     }
   ],
@@ -539,6 +579,11 @@
             "node": "Extract data",
             "type": "ai_languageModel",
             "index": 0
+          },
+          {
+            "node": "Write intro",
+            "type": "ai_languageModel",
+            "index": 0
           }
         ]
       ]
@@ -571,6 +616,39 @@
           {
             "node": "Extract data",
             "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate extraction": {
+      "main": [
+        [
+          {
+            "node": "Bundle records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Bundle records": {
+      "main": [
+        [
+          {
+            "node": "Write intro",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write intro": {
+      "main": [
+        [
+          {
+            "node": "Build payload",
+            "type": "main",
             "index": 0
           }
         ]

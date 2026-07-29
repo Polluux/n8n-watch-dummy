@@ -26,14 +26,29 @@
   </div>
 
   <script>
+    // digests.json is a pure index: ["YYYY-MM-DD", ...]. Everything else (count,
+    // intro) lives in each day's payload — no data duplicated in the manifest.
+    // Subtitles are fetched from the most recent payloads only (DETAIL_LIMIT).
+    const DETAIL_LIMIT = 30;
+
     fetch('digests.json')
       .then(r => r.ok ? r.json() : [])
-      .then(entries => {
-        if (!Array.isArray(entries) || entries.length === 0) return;
-        entries.sort((a, b) => b.date.localeCompare(a.date));
+      .then(async dates => {
+        if (!Array.isArray(dates) || dates.length === 0) return;
+        dates = dates.filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d)).sort().reverse();
+        if (dates.length === 0) return;
+
+        const details = new Map();
+        await Promise.all(dates.slice(0, DETAIL_LIMIT).map(d =>
+          fetch('digests/' + d + '.json')
+            .then(r => r.ok ? r.json() : null)
+            .then(p => { if (p) details.set(d, p); })
+            .catch(() => {})
+        ));
+
         const ul = document.getElementById('digests');
-        ul.innerHTML = '';
-        entries.forEach((e, i) => {
+        ul.replaceChildren();
+        dates.forEach((d, i) => {
           const li = document.createElement('li');
           li.className = i === 0
             ? 'relative rounded-xl border border-blue-400 bg-blue-50 p-4 shadow-sm transition hover:shadow-md'
@@ -45,13 +60,17 @@
             li.appendChild(badge);
           }
           const a = document.createElement('a');
-          a.href = e.path;
+          a.href = 'digest.html?d=' + encodeURIComponent(d);
           a.className = 'font-semibold text-slate-900 hover:text-blue-700';
-          a.textContent = e.date;
-          const meta = document.createElement('p');
-          meta.className = 'mt-1 text-sm text-slate-600';
-          meta.textContent = (e.count != null ? e.count + ' liens — ' : '') + (e.intro || '');
-          li.append(a, meta);
+          a.textContent = d;
+          li.appendChild(a);
+          const p = details.get(d);
+          if (p) {
+            const meta = document.createElement('p');
+            meta.className = 'mt-1 text-sm text-slate-600';
+            meta.textContent = (p.count != null ? p.count + ' liens — ' : '') + (p.intro || '');
+            li.appendChild(meta);
+          }
           ul.appendChild(li);
         });
       })

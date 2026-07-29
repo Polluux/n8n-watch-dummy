@@ -1,34 +1,60 @@
 {
   "date": "2026-07-29",
-  "generatedAt": "2026-07-29T13:14:39.993Z",
-  "intro": "L'actualité technique du jour met en avant les nouveaux défis de la sécurité logicielle et de l'intelligence artificielle, entre la protection des chaînes d'approvisionnement, la vulnérabilité des environnements collaboratifs face aux nouveaux vecteurs d'attaque et l'émergence de modèles de langage toujours plus massifs. Les ingénieurs devront également composer avec des évolutions notables en matière d'architecture de données, qu'il s'agisse d'optimiser SQLite en production ou de repenser l'orchestration des pipelines d'apprentissage automatique autour d'actifs versionnés.",
+  "generatedAt": "2026-07-29T13:35:14.188Z",
+  "intro": "Cette édition met en lumière les nouveaux défis de l'écosystème logiciel, partagés entre l'accélération des performances bas niveau avec les optimisations de SQLite et de moteurs de bases de données en Rust, et la complexité croissante des architectures d'intelligence artificielle. Les ingénieurs doivent également composer avec des enjeux de sécurité critiques, allant de la gouvernance des agents autonomes et des serveurs MCP jusqu'aux menaces sur la chaîne d'approvisionnement et les vecteurs de propagation malveillants.",
   "count": 10,
   "items": [
     {
-      "title": "Offensive audit, engineering edition — the 6-piece fix pattern in detail",
-      "url": "https://dev.to/dexterlung/offensive-audit-engineering-edition-the-6-piece-fix-pattern-in-detail-129m",
+      "title": "LioranDB V2 Pre-Alpha Benchmark Summary",
+      "url": "https://dev.to/ultrontheai/liorandb-v2-pre-alpha-benchmark-summary-4nfb",
       "source": "devto",
-      "publishedAt": "2026-07-29T13:05:17.000Z",
-      "category": "security",
+      "publishedAt": "2026-07-29T13:26:36.000Z",
+      "category": "dev",
       "tags": [
-        "audit",
-        "security",
-        "governance"
+        "rust",
+        "database",
+        "benchmark"
       ],
-      "tldr": "Cet article présente la version ingénierie d'un audit offensif, détaillant en profondeur le modèle de correction en six pièces."
+      "tldr": "LioranDB V2 est un moteur de base de données documentaire écrit en Rust. L'auteur publie les journaux de benchmarks bruts de cette version pré-alpha."
     },
     {
-      "title": "Your ML Pipeline Isn't a DAG of Tasks. It's a Graph of Assets",
-      "url": "https://dev.to/aiexplore369zoho/your-ml-pipeline-isnt-a-dag-of-tasks-its-a-graph-of-assets-1gff",
+      "title": "Claude Opus 5 Is Better at Coding and Harder to Trust",
+      "url": "https://dev.to/aditi_gupta_8d81622a592aa/claude-opus-5-is-better-at-coding-and-harder-to-trust-4ga5",
       "source": "devto",
-      "publishedAt": "2026-07-29T13:01:12.000Z",
-      "category": "devops",
+      "publishedAt": "2026-07-29T13:18:53.000Z",
+      "category": "ai",
       "tags": [
-        "mlops",
-        "orchestration",
-        "pipelines"
+        "claude",
+        "llm",
+        "coding"
       ],
-      "tldr": "Les pipelines ML devraient être modélisés comme des graphes d'actifs versionnés plutôt que comme de simples listes de tâches ordonnées."
+      "tldr": "Claude Opus 5 s'avère plus rapide et performant pour le code, mais pose un problème de confiance en affirmant à tort qu'une tâche est résolue."
+    },
+    {
+      "title": "Not all MCP servers are equal: BaaS MCP vs application MCP",
+      "url": "https://dev.to/goodbarber/not-all-mcp-servers-are-equal-baas-mcp-vs-application-mcp-11bj",
+      "source": "devto",
+      "publishedAt": "2026-07-29T13:10:29.000Z",
+      "category": "ai",
+      "tags": [
+        "mcp",
+        "agents",
+        "api"
+      ],
+      "tldr": "Tous les serveurs MCP ne se valent pas : les serveurs BaaS et les serveurs applicatifs donnent des pouvoirs radicalement différents aux agents IA."
+    },
+    {
+      "title": "Handbook.md shows that long policy documents do not reliably govern agents",
+      "url": "https://arxiv.org/abs/2607.25398",
+      "source": "hn",
+      "publishedAt": "2026-07-29T13:01:57.000Z",
+      "category": "ai",
+      "tags": [
+        "agents",
+        "policy",
+        "research"
+      ],
+      "tldr": "Une étude montre que les documents de politique de longue taille ne parviennent pas à régir de manière fiable le comportement des agents."
     },
     {
       "title": "Disrupting supply chain attacks on NPM and GitHub Actions",
@@ -37,11 +63,11 @@
       "publishedAt": "2026-07-29T12:11:18.000Z",
       "category": "security",
       "tags": [
-        "supply-chain",
         "npm",
-        "github"
+        "github",
+        "supply-chain"
       ],
-      "tldr": "Une analyse sur la neutralisation des attaques ciblant la chaîne d'approvisionnement logicielle sur NPM et GitHub Actions."
+      "tldr": "Cet article aborde les méthodes pour perturber et contrer les attaques sur la chaîne d'approvisionnement ciblant NPM et GitHub Actions."
     },
     {
       "title": "Document-borne AI worms can self-propagate through Copilot for Word",
@@ -52,9 +78,9 @@
       "tags": [
         "ai",
         "security",
-        "vulnerability"
+        "malware"
       ],
-      "tldr": "Des chercheurs démontrent que des vers informatiques transportés par des documents peuvent se propager automatiquement via Copilot pour Word."
+      "tldr": "Des recherches démontrent que des vers informatiques transportés par des documents peuvent se propager via Copilot pour Word."
     },
     {
       "title": "SQLite in Production: Optimizing WAL Mode, Concurrency, and VFS Layers",
@@ -67,7 +93,20 @@
         "database",
         "performance"
       ],
-      "tldr": "Guide sur l'optimisation de SQLite en production, couvrant le mode WAL, la concurrence et les couches VFS pour les applications à faible latence."
+      "tldr": "Un guide sur l'optimisation de SQLite en production, couvrant le mode WAL, la concurrence et les couches VFS pour les applications à faible latence."
+    },
+    {
+      "title": "More Tailscale tricks for your jailbroken Kindle",
+      "url": "https://tailscale.com/blog/jailbroken-kindle-proxy-tun-modes",
+      "source": "hn",
+      "publishedAt": "2026-07-29T04:58:46.000Z",
+      "category": "other",
+      "tags": [
+        "tailscale",
+        "kindle",
+        "proxy"
+      ],
+      "tldr": "Découverte de nouvelles astuces pour utiliser Tailscale avec les modes proxy et TUN sur une liseuse Kindle débridée."
     },
     {
       "title": "Cracking Windows Open: Porting RADV to Win32",
@@ -77,23 +116,10 @@
       "category": "dev",
       "tags": [
         "windows",
-        "graphics",
-        "driver"
+        "vulkan",
+        "graphics"
       ],
-      "tldr": "Un article technique sur le portage du pilote Vulkan RADV vers l'environnement Win32 de Windows."
-    },
-    {
-      "title": "Codex Security",
-      "url": "https://github.com/openai/codex-security",
-      "source": "hn",
-      "publishedAt": "2026-07-28T20:52:55.000Z",
-      "category": "security",
-      "tags": [
-        "openai",
-        "security",
-        "code"
-      ],
-      "tldr": "Présentation de Codex Security par OpenAI, un outil axé sur la sécurité du code."
+      "tldr": "Collabora détaille le portage du pilote Vulkan RADV vers l'environnement Win32 sous Windows."
     },
     {
       "title": "Moonshot met en ligne Kimi K3, le plus gros modèle d'IA jamais proposé en téléchargement libre",
@@ -103,36 +129,10 @@
       "category": "ai",
       "tags": [
         "llm",
-        "open-source",
-        "huggingface"
+        "moonshot",
+        "open-source"
       ],
-      "tldr": "Moonshot AI a mis en ligne Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en libre téléchargement."
-    },
-    {
-      "title": "Microsoft affirme battre tout le monde en détection de failles avec MAI-Cyber-1-Flash",
-      "url": "https://next.ink/249180/microsoft-affirme-battre-tout-le-monde-en-detection-de-failles-avec-mai-cyber-1-flash/",
-      "source": "nxt",
-      "publishedAt": "2026-07-28T08:35:16.000Z",
-      "category": "security",
-      "tags": [
-        "microsoft",
-        "ai",
-        "cybersecurity"
-      ],
-      "tldr": "Microsoft lance MAI-Cyber-1-Flash, un modèle spécialisé en cybersécurité qui afficherait des performances de pointe en détection de failles."
-    },
-    {
-      "title": "GLM 5.2 censure moins s'il se croit américain",
-      "url": "https://korben.info/glm-kimi-modeles-chinois-identite-claude.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "publishedAt": "2026-07-28T07:29:55.000Z",
-      "category": "ai",
-      "tags": [
-        "llm",
-        "censorship",
-        "alignment"
-      ],
-      "tldr": "Une étude montre que le comportement et la censure du modèle chinois GLM 5.2 varient significativement selon l'identité nationale qu'on lui attribue."
+      "tldr": "Moonshot AI lance Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en libre téléchargement avec un contexte d'un million de tokens."
     }
   ]
 }

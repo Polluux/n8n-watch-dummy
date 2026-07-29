@@ -4,25 +4,31 @@
 Enrich each selected link into a structured record for the digest.
 
 ## Design
-- Node: **Basic LLM Chain** + Google Gemini Chat Model + **Structured Output Parser**
-  so the schema is enforced by n8n, not by prompt hope.
-- Runs once over the batch of selected items (single call, not per-item — cheaper).
-- Output schema per item:
+- "Filter selected" (spec 03) emits its result as a single bundled item
+  (`{data: [...]}`), so the chain here runs once for the batch — one Gemini call,
+  not one per item. (An intermediate Aggregate node existed initially and was removed
+  as redundant.)
+- **Basic LLM Chain** ("Extract data") + Google Gemini Chat Model (shared "Gemini Flash"
+  sub-node) + **Structured Output Parser** ("Structured JSON") so the schema is enforced
+  by n8n, not by prompt hope.
+- **The LLM only produces judgment fields** — the record it returns per item is:
 
 ```json
-{
-  "title": "string",
-  "url": "string (unchanged from input)",
-  "source": "string",
-  "category": "ai | dev | devops | security | other",
-  "tags": ["string", "max 4"],
-  "tldr": "string, 1–2 sentences, French"
-}
+{ "id": 0, "category": "ai | dev | devops | security | other", "tags": ["1-4 short keywords"], "tldr": "1-2 sentences, French" }
 ```
 
-- `tldr` is written from title + excerpt only — the workflow does not fetch article bodies (keep the dummy simple).
+- A **Code** node ("Validate extraction") joins the records back to the original items
+  by `id` and re-checks everything (count, ids, category enum, tag count, non-empty
+  tldr), then emits the merged final records `{title, url, source, publishedAt,
+  category, tags, tldr}`.
+- **Identity fields (title/url/source) never pass through the LLM.** First
+  implementation asked Gemini to "copy the url EXACTLY" — it translated a French word
+  in the slug anyway (`affirme` → `affirms`). URLs cannot be altered by construction
+  now; the same id-based rule was retrofitted into spec 03.
+- `tldr` is written from title + excerpt only — the workflow does not fetch article
+  bodies (keep the dummy simple).
 
 ## Acceptance criteria
-- [ ] Output validates against the schema for all items (parser errors surface as node failures)
-- [ ] `url` values are byte-identical to spec 03's output
-- [ ] `tldr` is in French and non-empty for every item
+- [x] Output validates against the schema for all items (parser + validator errors surface as node failures) — verified via `n8n execute`: 10/10 records, 0 violations
+- [x] `url` values are byte-identical to spec 03's output — by construction (urls never round-trip through the LLM)
+- [x] `tldr` is in French and non-empty for every item — verified on live run (10/10 French summaries)

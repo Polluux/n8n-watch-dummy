@@ -145,7 +145,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Normalize RSS items to {title, url, source, publishedAt, excerpt}\n// Rules (spec 02): strip HTML, drop missing URL, drop older than 48h,\n// sort by publishedAt desc, cap at 60 items.\nconst cutoff = Date.now() - 48 * 3600 * 1000;\nconst strip = (s) => String(s ?? '')\n  .replace(/<[^>]*>/g, ' ')\n  .replace(/&nbsp;/g, ' ')\n  .replace(/&amp;/g, '&')\n  .replace(/&lt;/g, '<')\n  .replace(/&gt;/g, '>')\n  .replace(/&#39;|&apos;/g, \"'\")\n  .replace(/&quot;/g, '\"')\n  .replace(/\\s+/g, ' ')\n  .trim();\n\nconst out = [];\nfor (const { json } of $input.all()) {\n  const url = json.link;\n  if (!url) continue;\n  const ts = Date.parse(json.isoDate || json.pubDate || '');\n  if (!ts || ts < cutoff) continue;\n  out.push({\n    json: {\n      title: strip(json.title),\n      url,\n      source: json.source,\n      publishedAt: new Date(ts).toISOString(),\n      excerpt: strip(json.contentSnippet || json.content).slice(0, 300),\n    },\n  });\n}\n\nout.sort((a, b) => b.json.publishedAt.localeCompare(a.json.publishedAt));\nreturn out.slice(0, 60);"
+        "jsCode": "// Normalize RSS items to {title, url, source, publishedAt, excerpt}\n// Rules (spec 02): strip HTML, drop missing URL, drop older than 48h,\n// sort by publishedAt desc, cap at 60 items.\nconst cutoff = Date.now() - 48 * 3600 * 1000;\nconst strip = (s) => String(s ?? '')\n  .replace(/<[^>]*>/g, ' ')\n  .replace(/&nbsp;/g, ' ')\n  .replace(/&amp;/g, '&')\n  .replace(/&lt;/g, '<')\n  .replace(/&gt;/g, '>')\n  .replace(/&#39;|&apos;/g, \"'\")\n  .replace(/&quot;/g, '\"')\n  .replace(/\\s+/g, ' ')\n  .trim();\n\nconst out = [];\nfor (const { json } of $input.all()) {\n  const url = json.link;\n  if (!url) continue;\n  const ts = Date.parse(json.isoDate || json.pubDate || '');\n  if (!ts || ts < cutoff) continue;\n  out.push({\n    json: {\n      title: strip(json.title),\n      url,\n      source: json.source,\n      publishedAt: new Date(ts).toISOString(),\n      excerpt: strip(json.contentSnippet || json.content).slice(0, 300),\n    },\n  });\n}\n\nout.sort((a, b) => b.json.publishedAt.localeCompare(a.json.publishedAt));\nreturn out.slice(0, 60).map((it, i) => ({ json: { id: i, ...it.json } }));"
       },
       "id": "a1000000-0000-4000-8000-000000000009",
       "name": "Normalize",
@@ -244,22 +244,22 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        1060,
-        220
+        912,
+        400
       ]
     },
     {
       "parameters": {
         "promptType": "define",
-        "text": "=You are curating a daily tech-watch digest for a French consulting software engineer.\nEditorial line: software engineering, AI/LLM tooling, DevOps, cloud, security.\n\nFrom the JSON list of items below, select the most relevant ones — MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nPrefer substantial, technical stories over marketing or minor product news.\n\nReturn ONLY a JSON array of the selected items' \"url\" values, copied exactly as they appear in the input.\nNo markdown fences, no commentary, no object wrapper — just the array.\n\nItems:\n{{ JSON.stringify($json.data) }}"
+        "text": "=You are curating a daily tech-watch digest for a French consulting software engineer.\nEditorial line: software engineering, AI/LLM tooling, DevOps, cloud, security.\n\nFrom the JSON list of items below, select the most relevant ones — MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nPrefer substantial, technical stories over marketing or minor product news.\n\nReturn ONLY a JSON array of the selected items' \"id\" values (integers).\nNo markdown fences, no commentary, no object wrapper — just the array, e.g. [3, 17, 42].\n\nItems:\n{{ JSON.stringify($json.data) }}"
       },
       "id": "a1000000-0000-4000-8000-000000000031",
       "name": "Select links",
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        1280,
-        220
+        1136,
+        400
       ]
     },
     {
@@ -274,8 +274,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1280,
-        440
+        1208,
+        632
       ],
       "credentials": {
         "googlePalmApi": {
@@ -286,15 +286,57 @@
     },
     {
       "parameters": {
-        "mode": "runOnceForAllItems",
-        "jsCode": "// Parse the LLM's URL selection and filter the ORIGINAL normalized items.\n// The LLM never rewrites item data - a hallucinated URL fails loudly here (spec 03).\nconst first = $input.first().json;\nconst raw = String(first.text ?? first.output ?? '').trim();\nconst cleaned = raw.replace(/^```(?:json)?\\s*/i, '').replace(/```\\s*$/, '').trim();\n\nlet urls;\ntry {\n  urls = JSON.parse(cleaned);\n} catch (e) {\n  throw new Error('LLM returned non-JSON output: ' + raw.slice(0, 200));\n}\nif (!Array.isArray(urls) || !urls.every((u) => typeof u === 'string')) {\n  throw new Error('LLM output is not a JSON array of URL strings: ' + cleaned.slice(0, 200));\n}\n\nconst byUrl = new Map($('Normalize').all().map((i) => [i.json.url, i.json]));\nconst seen = new Set();\nconst selected = [];\nfor (const u of urls) {\n  if (seen.has(u)) continue;\n  seen.add(u);\n  const item = byUrl.get(u);\n  if (!item) throw new Error('LLM returned a URL absent from the input list: ' + u);\n  selected.push({ json: item });\n  if (selected.length >= 10) break;\n}\nif (selected.length === 0) throw new Error('LLM selected no valid items');\nreturn selected;"
+        "jsCode": "// Parse the LLM's id selection and filter the ORIGINAL normalized items.\n// Identity fields (url/title) never pass through the LLM: it selects by id only,\n// so a hallucinated or mangled URL is impossible by construction (spec 03).\nconst first = $input.first().json;\nconst raw = String(first.text ?? first.output ?? '').trim();\nconst cleaned = raw.replace(/^```(?:json)?\\s*/i, '').replace(/```\\s*$/, '').trim();\n\nlet ids;\ntry {\n  ids = JSON.parse(cleaned);\n} catch (e) {\n  throw new Error('LLM returned non-JSON output: ' + raw.slice(0, 200));\n}\nif (!Array.isArray(ids) || !ids.every((n) => Number.isInteger(n))) {\n  throw new Error('LLM output is not a JSON array of integer ids: ' + cleaned.slice(0, 200));\n}\n\nconst byId = new Map($('Normalize').all().map((i) => [i.json.id, i.json]));\nconst seen = new Set();\nconst selected = [];\nfor (const id of ids) {\n  if (seen.has(id)) continue;\n  seen.add(id);\n  const item = byId.get(id);\n  if (item === undefined) throw new Error('LLM returned an id absent from the input list: ' + id);\n  selected.push(item);\n  if (selected.length >= 10) break;\n}\nif (selected.length === 0) throw new Error('LLM selected no valid items');\n// Emit ONE bundled item ({data: [...]}, same shape as an Aggregate node) so the\n// next LLM chain runs once for the batch - replaces the former Bundle selected node.\nreturn [{ json: { data: selected } }];"
       },
       "id": "a1000000-0000-4000-8000-000000000033",
       "name": "Filter selected",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1560,
+        1488,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Analyze the following tech-watch items and return one record per item.\n\nEach record has:\n- \"id\": the item's id, echoed unchanged\n- \"category\": exactly one of \"ai\", \"dev\", \"devops\", \"security\", \"other\"\n- \"tags\": 1 to 4 short lowercase keywords (e.g. \"rust\", \"llm\", \"ci/cd\")\n- \"tldr\": 1-2 sentences in FRENCH summarizing the item, based only on its title and excerpt\n\nReturn exactly one record per input item - same count.\n\nItems:\n{{ JSON.stringify($json.data) }}",
+        "hasOutputParser": true
+      },
+      "id": "a1000000-0000-4000-8000-000000000041",
+      "name": "Extract data",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        2000,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"items\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"id\": {\n            \"type\": \"integer\"\n          },\n          \"category\": {\n            \"type\": \"string\",\n            \"enum\": [\n              \"ai\",\n              \"dev\",\n              \"devops\",\n              \"security\",\n              \"other\"\n            ]\n          },\n          \"tags\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\"\n            },\n            \"minItems\": 1,\n            \"maxItems\": 4\n          },\n          \"tldr\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"id\",\n          \"category\",\n          \"tags\",\n          \"tldr\"\n        ]\n      }\n    }\n  },\n  \"required\": [\n    \"items\"\n  ]\n}"
+      },
+      "id": "a1000000-0000-4000-8000-000000000042",
+      "name": "Structured JSON",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        2140,
+        440
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Enforce spec 04. Identity fields (title/url/source) NEVER pass through the\n// LLM - they are rebuilt from the original items by id, so URLs cannot be\n// altered by construction. The LLM only contributes category/tags/tldr.\nconst CATEGORIES = new Set(['ai', 'dev', 'devops', 'security', 'other']);\nconst out = $input.first().json.output;\nconst records = Array.isArray(out) ? out : out?.items;\nif (!Array.isArray(records)) throw new Error('Parser output has no items array');\n\nconst selected = $('Filter selected').first().json.data;\nif (records.length !== selected.length) {\n  throw new Error(`Expected ${selected.length} records, got ${records.length}`);\n}\nconst byId = new Map(records.map((r) => [r.id, r]));\nconst result = [];\nfor (const sel of selected) {\n  const rec = byId.get(sel.id);\n  if (!rec) throw new Error('No record for item id ' + sel.id);\n  if (!CATEGORIES.has(rec.category)) throw new Error(`Invalid category \"${rec.category}\" for id ${sel.id}`);\n  if (!Array.isArray(rec.tags) || rec.tags.length < 1 || rec.tags.length > 4) {\n    throw new Error('tags must have 1-4 entries for id ' + sel.id);\n  }\n  if (typeof rec.tldr !== 'string' || rec.tldr.trim().length === 0) {\n    throw new Error('Empty tldr for id ' + sel.id);\n  }\n  const { id, ...original } = sel;\n  result.push({ json: { ...original, category: rec.category, tags: rec.tags, tldr: rec.tldr.trim() } });\n}\nreturn result;"
+      },
+      "id": "a1000000-0000-4000-8000-000000000043",
+      "name": "Validate extraction",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2280,
         220
       ]
     }
@@ -491,6 +533,44 @@
           {
             "node": "Select links",
             "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Extract data",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter selected": {
+      "main": [
+        [
+          {
+            "node": "Extract data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract data": {
+      "main": [
+        [
+          {
+            "node": "Validate extraction",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured JSON": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Extract data",
+            "type": "ai_outputParser",
             "index": 0
           }
         ]

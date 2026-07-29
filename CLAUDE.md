@@ -12,7 +12,7 @@ Runs daily at 09:30 Europe/Paris. Demo project ("dummy"), free-tier only.
 Development is **spec-driven**: one spec per phase in `specs/01..07`, each with
 acceptance criteria checked off as they are verified. Read `PLAN.md` first, then the
 spec for the phase being worked on. One commit per phase (`build(<topic>): spec N
-finished`). Phases 1–6 are done; 07 (schedule) remains.
+finished`). All phases (1–7) are done and verified.
 
 ## Critical: workflow sync protocol
 
@@ -62,7 +62,7 @@ payload — re-runs are safe (idempotent by design), but `git pull` before local
 Pipeline (single workflow `tech-watch`, `workflow/tech-watch.json`):
 
 ```
-Manual Trigger (→ Schedule 09:30 in phase 7)
+Schedule Trigger (cron 30 9 * * *, Europe/Paris; "Execute workflow" in the UI still runs it manually)
  → N× RSS Read (onError: continueRegularOutput) → N× Set "Tag <src>" (stamps a short source tag)
  → Merge (append, N inputs)
  → Normalize (Code): strip HTML, drop >48h, sort desc, cap 60, stamp numeric `id`

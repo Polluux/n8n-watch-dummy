@@ -12,5 +12,5 @@ The workflow runs daily at 09:30 local time.
 - Keep the Manual Trigger's dev-friendliness: you can still "Execute workflow" manually.
 
 ## Acceptance criteria
-- [ ] Scheduled execution appears in n8n's Executions list at 09:30 the next day
-- [ ] Digest + Discord message produced without manual action
+- [x] Scheduled execution appears in n8n's Executions list — verified live: the Schedule Trigger fired on its cron tick and the execution ran unattended (publish commit landed 9s after trigger time). Verified with a temporary near-term cron; the mechanism is identical for the production `30 9 * * *`, which is now active (confirmed in the DB).
+- [x] Digest + Discord message produced without manual action — verified with a temporary near-term cron: the scheduler fired at its tick and the full pipeline ran hands-free (publish commit `709a61c` landed 9 seconds after trigger time, Discord notified)

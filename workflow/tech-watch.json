@@ -3,11 +3,20 @@
   "name": "tech-watch",
   "nodes": [
     {
-      "parameters": {},
-      "id": "a1000000-0000-4000-8000-000000000001",
-      "name": "Manual Trigger",
-      "type": "n8n-nodes-base.manualTrigger",
-      "typeVersion": 1,
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "30 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000070",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
       "position": [
         -208,
         400
@@ -548,37 +557,6 @@
     }
   ],
   "connections": {
-    "Manual Trigger": {
-      "main": [
-        [
-          {
-            "node": "RSS dev.to",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Journal du Hacker",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Next",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Hacker News",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "RSS Korben",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "RSS Hacker News": {
       "main": [
         [
@@ -898,6 +876,37 @@
         [
           {
             "node": "Notify Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS dev.to",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Journal du Hacker",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Next",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Hacker News",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Korben",
             "type": "main",
             "index": 0
           }

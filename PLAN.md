@@ -37,7 +37,7 @@ digests retroactively.
 | Digest rendering | **Client-side**: the workflow publishes JSON data; the static viewer `docs/digest.html` renders any digest — the LLM produces content, never structure; layout edits restyle all digests retroactively ([spec 05](specs/05-html-digest.md)). Supersedes an earlier design that fetched an HTML template from raw GitHub at run time |
 | Homepage | Static `docs/index.html` + `docs/digests.json` as a **pure date index** (static hosting can't list a directory; all day data lives in the payloads) ([spec 06](specs/06-publish-notify.md)) |
 | Publishing | GitHub Pages serving the `docs/` folder of `main` — n8n's GitHub node just commits files, Pages does the rest |
-| Discord | **Webhook to a private server/channel you own.** True DMs require a Discord bot + token; a private-channel webhook is 1 node and equivalent proof. (Bot option documented in [spec 06](specs/06-discord.md)) |
+| Discord | **Webhook to a private server/channel you own.** True DMs require a Discord bot + token; a private-channel webhook is 1 node for the same result. (Bot option documented in [spec 06](specs/06-publish-notify.md)) |
 | Versioning | Export the workflow to `workflow/tech-watch.json` after every phase — the repo is the source of truth |
 
 ## Phases
@@ -52,7 +52,7 @@ criteria in the spec pass and the workflow JSON is re-exported and committed.
 - **Phase 4 — JSON extraction** ([spec 04](specs/04-ai-extraction.md)): structured output (schema-enforced) per selected link.
 - **Phase 5 — HTML digest** ([spec 05](specs/05-html-digest.md)): Gemini writes the editorial intro; a Code node renders the shared template with the JSON.
 - **Phase 6 — Publish & notify** ([spec 06](specs/06-publish-notify.md)): GitHub commits (digest page + manifest) → Pages live, homepage lists it; Discord message with link.
-- **Phase 7 — Schedule & proof** ([spec 07](specs/07-schedule-proof.md)): swap manual trigger for 09:30 schedule, one real end-to-end run, screenshot the green execution, export final JSON.
+- **Phase 7 — Schedule** ([spec 07](specs/07-schedule.md)): swap the manual trigger for the 09:30 schedule, activate, verify a real scheduled end-to-end run.
 
 ## Roadmap (post-phase-7 improvements)
 

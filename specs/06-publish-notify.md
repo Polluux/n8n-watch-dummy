@@ -43,7 +43,7 @@ node's "Edit fails on missing file / Create fails on existing file" split.
   - content: date, item count, top 3 titles, direct link to
     `https://polluux.github.io/n8n-watch-dummy/digest.html?d=YYYY-MM-DD`
 - Chosen over a true DM because a DM needs a Discord bot application + token + the bot
-  sharing a server with you — 3 extra setup steps for the same proof. If you want the DM
+  sharing a server with you — 3 extra setup steps for the same result. If you want the DM
   anyway: create a bot, use n8n's Discord Bot credential, target yourself as recipient.
 - Discord runs **after** both GitHub commits succeed (no announcement of a failed publish).
 

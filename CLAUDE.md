@@ -7,12 +7,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Daily tech-watch digest built as an n8n workflow: N RSS sources → normalize →
 Gemini selects ≤10 links → Gemini extracts structured JSON → render HTML digest
 from a shared template → commit to GitHub Pages → Discord notification.
-Runs daily at 09:30 Europe/Paris. Demo/portfolio project ("dummy"), free-tier only.
+Runs daily at 09:30 Europe/Paris. Demo project ("dummy"), free-tier only.
 
 Development is **spec-driven**: one spec per phase in `specs/01..07`, each with
 acceptance criteria checked off as they are verified. Read `PLAN.md` first, then the
 spec for the phase being worked on. One commit per phase (`build(<topic>): spec N
-finished`). Phases 1–6 are done; 07 (schedule + proof artifacts) remains.
+finished`). Phases 1–6 are done; 07 (schedule) remains.
 
 ## Critical: workflow sync protocol
 

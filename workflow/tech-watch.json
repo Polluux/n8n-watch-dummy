@@ -233,6 +233,70 @@
       ],
       "id": "c5d71917-9663-4c91-9004-cae18fbe299f",
       "name": "Tag kbn"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000030",
+      "name": "Bundle items",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1060,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are curating a daily tech-watch digest for a French consulting software engineer.\nEditorial line: software engineering, AI/LLM tooling, DevOps, cloud, security.\n\nFrom the JSON list of items below, select the most relevant ones — MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nPrefer substantial, technical stories over marketing or minor product news.\n\nReturn ONLY a JSON array of the selected items' \"url\" values, copied exactly as they appear in the input.\nNo markdown fences, no commentary, no object wrapper — just the array.\n\nItems:\n{{ JSON.stringify($json.data) }}"
+      },
+      "id": "a1000000-0000-4000-8000-000000000031",
+      "name": "Select links",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        1280,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-flash-latest",
+        "options": {
+          "temperature": 0.2
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000032",
+      "name": "Gemini Flash",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1280,
+        440
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "7eWnbnBsMvbxk6NZ",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Parse the LLM's URL selection and filter the ORIGINAL normalized items.\n// The LLM never rewrites item data - a hallucinated URL fails loudly here (spec 03).\nconst first = $input.first().json;\nconst raw = String(first.text ?? first.output ?? '').trim();\nconst cleaned = raw.replace(/^```(?:json)?\\s*/i, '').replace(/```\\s*$/, '').trim();\n\nlet urls;\ntry {\n  urls = JSON.parse(cleaned);\n} catch (e) {\n  throw new Error('LLM returned non-JSON output: ' + raw.slice(0, 200));\n}\nif (!Array.isArray(urls) || !urls.every((u) => typeof u === 'string')) {\n  throw new Error('LLM output is not a JSON array of URL strings: ' + cleaned.slice(0, 200));\n}\n\nconst byUrl = new Map($('Normalize').all().map((i) => [i.json.url, i.json]));\nconst seen = new Set();\nconst selected = [];\nfor (const u of urls) {\n  if (seen.has(u)) continue;\n  seen.add(u);\n  const item = byUrl.get(u);\n  if (!item) throw new Error('LLM returned a URL absent from the input list: ' + u);\n  selected.push({ json: item });\n  if (selected.length >= 10) break;\n}\nif (selected.length === 0) throw new Error('LLM selected no valid items');\nreturn selected;"
+      },
+      "id": "a1000000-0000-4000-8000-000000000033",
+      "name": "Filter selected",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        220
+      ]
     }
   ],
   "connections": {
@@ -384,6 +448,50 @@
             "node": "Merge",
             "type": "main",
             "index": 4
+          }
+        ]
+      ]
+    },
+    "Normalize": {
+      "main": [
+        [
+          {
+            "node": "Bundle items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Bundle items": {
+      "main": [
+        [
+          {
+            "node": "Select links",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Select links": {
+      "main": [
+        [
+          {
+            "node": "Filter selected",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini Flash": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Select links",
+            "type": "ai_languageModel",
+            "index": 0
           }
         ]
       ]

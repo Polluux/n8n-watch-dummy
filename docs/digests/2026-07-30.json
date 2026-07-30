@@ -1,65 +1,51 @@
 {
   "date": "2026-07-30",
-  "generatedAt": "2026-07-30T07:30:26.062Z",
-  "intro": "L actualite de ce jour est dominee par les avancees majeures de l intelligence artificielle dans le domaine du developpement et de la securite. Les ingenieurs doivent composer avec l integration de systemes multi-agents autonomes, l arrivee de nouveaux modeles de langage open source massifs ainsi que des resultats troublants en cryptanalyse automatisee. Parallelement, les pratiques de ingenierie logicielle s adaptent avec des outils de gestion de memoire et de files d attente locales dediees a ces nouveaux flux de travail.",
+  "generatedAt": "2026-07-30T09:31:34.430Z",
+  "intro": "L actualite tech met en avant l influence grandissante des modeles de langage et des agents intelligents sur le developpement logiciel et la generation de code, notamment via l optimisation des couts et la conception d interfaces. La securite et la cryptanalyse occupent egalement une place centrale avec des avancees notables en matiere de resilience post-quantique et d analyse des comportements automatises. Enfin, l ecosysteme evolue avec de nouveaux outils dedies a la retroingenierie et au partage securise de donnees.",
   "count": 10,
   "items": [
     {
-      "title": "Claude Code Team Memory: CLAUDE.md, Git, or MCP?",
-      "url": "https://dev.to/_3ffb5be7950c3a975b5d/claude-code-team-memory-claudemd-git-or-mcp-5and",
+      "title": "Dominando Impeccable: Diseño de habilidades para arquitectura frontend con IA",
+      "url": "https://dev.to/angularfirebase/dominando-impeccable-diseno-de-habilidades-para-arquitectura-frontend-con-ia-1739",
       "source": "devto",
       "sourceName": "dev.to",
-      "publishedAt": "2026-07-30T07:24:53.000Z",
+      "publishedAt": "2026-07-30T09:11:27.000Z",
       "category": "ai",
       "tags": [
-        "claude",
+        "frontend",
         "ai",
-        "memory",
-        "development"
+        "design",
+        "agents"
       ],
-      "tldr": "Cet article détaille l'utilisation combinée de CLAUDE.md, Git et des serveurs MCP pour gérer efficacement la mémoire et le contexte des agents Claude Code au sein d'une équipe."
+      "tldr": "Impeccable est un ensemble de compétences en design créé pour contrer les défauts visuels générés par les agents de code sur les interfaces frontend."
     },
     {
-      "title": "Logic for Programmers",
-      "url": "https://logicforprogrammers.com/",
+      "title": "Kuna: Decompiler Development in the Age of Coding Agents",
+      "url": "https://noelo.org/blog/kuna-release/",
       "source": "hn",
       "sourceName": "Hacker News",
-      "publishedAt": "2026-07-30T00:51:39.000Z",
+      "publishedAt": "2026-07-30T02:41:16.000Z",
       "category": "dev",
       "tags": [
-        "logic",
-        "programming"
+        "decompiler",
+        "ai",
+        "coding-agents"
       ],
-      "tldr": "Cette ressource explore les concepts de logique fondamentale adaptés spécifiquement aux programmeurs et développeurs."
+      "tldr": "Kuna explore le développement de décompilateurs à l'ère des agents de programmation intelligents."
     },
     {
-      "title": "Show HN: A local merge queue for parallel Claude Code agents",
-      "url": "https://github.com/funador/claude-code-merge-queue",
+      "title": "LLM Honeypot",
+      "url": "https://llm2human.pages.dev/",
       "source": "hn",
       "sourceName": "Hacker News",
-      "publishedAt": "2026-07-30T00:20:16.000Z",
-      "category": "devops",
+      "publishedAt": "2026-07-29T22:51:03.000Z",
+      "category": "security",
       "tags": [
-        "claude",
-        "git",
-        "ci/cd",
-        "automation"
+        "llm",
+        "honeypot",
+        "security"
       ],
-      "tldr": "Un outil de file d'attente de fusion local conçu pour gérer l'exécution en parallèle de plusieurs agents Claude Code, évitant ainsi de surcharger les machines locales et de gaspiller les minutes de CI."
-    },
-    {
-      "title": "The coolest use for the Vision Pro",
-      "url": "https://christianselig.com/2026/07/vision-pro-house/",
-      "source": "hn",
-      "sourceName": "Hacker News",
-      "publishedAt": "2026-07-29T20:39:40.000Z",
-      "category": "other",
-      "tags": [
-        "vision pro",
-        "apple",
-        "hardware"
-      ],
-      "tldr": "Un retour d'expérience sur l'utilisation innovante et pratique du casque Vision Pro d'Apple dans un environnement domestique."
+      "tldr": "Un honeypot conçu spécifiquement pour interagir et analyser les comportements des LLM."
     },
     {
       "title": "Kimi K3-256k",
@@ -70,11 +56,10 @@
       "category": "ai",
       "tags": [
         "llm",
-        "kimi",
-        "code",
-        "ai"
+        "models",
+        "code"
       ],
-      "tldr": "Documentation officielle présentant les caractéristiques techniques et d'utilisation des modèles de code Kimi K3-256k."
+      "tldr": "Présentation des spécifications et des modèles de Kimi K3-256k dédiés au code."
     },
     {
       "title": "Some thoughts about Anthropic's new cryptanalysis results",
@@ -88,7 +73,22 @@
         "anthropic",
         "security"
       ],
-      "tldr": "Une analyse d'experts en cryptographie concernant les récents résultats obtenus par Anthropic en matière de cryptanalyse automatisée."
+      "tldr": "Réflexions et analyses suite aux nouveaux résultats d'Anthropic concernant la cryptanalyse."
+    },
+    {
+      "title": "Launch HN: Tokenless (YC S26) – Automatic model switching to save money",
+      "url": "https://usetokenless.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-29T15:55:27.000Z",
+      "category": "ai",
+      "tags": [
+        "api-gateway",
+        "cost-optimization",
+        "ai",
+        "agents"
+      ],
+      "tldr": "Tokenless propose une passerelle API qui redirige dynamiquement le trafic des agents entre différents modèles d'IA pour réduire les coûts."
     },
     {
       "title": "Claude casse un algo post-quantique en 60 heures",
@@ -98,12 +98,12 @@
       "publishedAt": "2026-07-29T15:17:06.000Z",
       "category": "security",
       "tags": [
-        "claude",
-        "cryptography",
+        "post-quantum",
         "ai",
-        "security"
+        "cryptography",
+        "claude"
       ],
-      "tldr": "La version Claude Mythos Preview d'Anthropic a réussi à identifier en 60 heures une faille dans l'algorithme post-quantique HAWK-256 et une attaque sur AES-128."
+      "tldr": "La version d'évaluation de Claude Mythos par Anthropic a réussi à trouver en 60 heures une faiblesse dans un algorithme post-quantique et une attaque sur AES-128."
     },
     {
       "title": "OTI - Le lien à usage unique que les bots ne crament plus",
@@ -113,12 +113,11 @@
       "publishedAt": "2026-07-29T08:42:22.000Z",
       "category": "security",
       "tags": [
-        "encryption",
-        "privacy",
         "self-hosted",
-        "security"
+        "encryption",
+        "privacy"
       ],
-      "tldr": "OTI est un outil open source auto-hébergé permettant de partager des secrets chiffrés à usage unique, qui attend une validation humaine avant d'afficher la lecture du message."
+      "tldr": "OTI permet de partager des messages secrets à usage unique chiffrés dans le navigateur, en attendant un clic humain et en notifiant la lecture."
     },
     {
       "title": "☕️ Les appels audio et vidéo de WhatsApp maintenant dans le navigateur",
@@ -130,24 +129,24 @@
       "tags": [
         "whatsapp",
         "browser",
-        "messaging"
+        "audio-video"
       ],
-      "tldr": "WhatsApp déploie les appels audio et vidéo directement au sein des navigateurs web, s'affranchissant ainsi de l'application dédiée."
+      "tldr": "WhatsApp déploie des appels audio et vidéo directement accessibles depuis le navigateur web, sans l'application dédiée."
     },
     {
-      "title": "Moonshot met en ligne Kimi K3, le plus gros modèle d'IA jamais proposé en téléchargement libre",
-      "url": "https://korben.info/moonshot-met-en-ligne-kimi-k3-le-plus-gros-modele-dia-jamais-propose-en-telechargement-libre.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "title": "Il déverrouille une Xbox 360 avec un Teensy et un peu de bruteforce",
+      "url": "https://korben.info/xbox-360-controle-parental-brute-force.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
       "source": "kbn",
       "sourceName": "Korben",
-      "publishedAt": "2026-07-28T11:55:40.000Z",
-      "category": "ai",
+      "publishedAt": "2026-07-28T16:11:48.000Z",
+      "category": "security",
       "tags": [
-        "llm",
-        "moonshot",
-        "open-source",
-        "ai"
+        "hardware",
+        "xbox",
+        "bruteforce",
+        "teensy"
       ],
-      "tldr": "Moonshot AI a mis en ligne Kimi K3, un modèle massif de 2 800 milliards de paramètres disponible en téléchargement libre avec un contexte d'un million de tokens."
+      "tldr": "Un utilisateur a réussi à déverrouiller le contrôle parental d'une Xbox 360 à l'aide d'un microcontrôleur Teensy et d'une attaque par force brute."
     }
   ]
 }

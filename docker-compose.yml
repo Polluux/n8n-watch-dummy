@@ -1,10 +1,10 @@
 services:
   n8n:
-    image: n8nio/n8n:latest
+    image: n8nio/n8n:2.32.5
     container_name: n8n-watch
     restart: unless-stopped
     ports:
-      - "5678:5678"
+      - "127.0.0.1:5678:5678"
     environment:
       - GENERIC_TIMEZONE=Europe/Paris
       - TZ=Europe/Paris

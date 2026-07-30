@@ -26,9 +26,9 @@
   </div>
 
   <script>
-    // digests.json is a pure index: ["YYYY-MM-DD", ...]. Everything else (count,
-    // intro) lives in each day's payload — no data duplicated in the manifest.
-    // Subtitles are fetched from the most recent payloads only (DETAIL_LIMIT).
+    // digests.json is a pure index: ["YYYY-MM-DD", ...]
+    // Everything else (count, intro) lives in each day's payload
+    // Subtitles are fetched from the most recent payloads only (DETAIL_LIMIT)
     const DETAIL_LIMIT = 30;
 
     fetch('digests.json')
@@ -50,8 +50,7 @@
         ul.replaceChildren();
         dates.forEach((d, i) => {
           const li = document.createElement('li');
-          // The whole card is one link: the <a> carries the card styling and
-          // contains the date, badge and subtitle.
+          // The whole card is one link: the <a> carries the card styling and contains the date, badge and subtitle.
           const a = document.createElement('a');
           a.href = 'digest.html?d=' + encodeURIComponent(d);
           a.className = i === 0

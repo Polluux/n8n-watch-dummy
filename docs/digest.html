@@ -28,8 +28,6 @@
   </div>
 
   <script>
-    // Component-style renderers. All third-party data lands via textContent —
-    // never innerHTML — so escaping is structural, not a discipline.
     const CATEGORIES = [
       ['ai', 'Intelligence artificielle'],
       ['dev', 'Développement'],
@@ -50,9 +48,10 @@
       // and content; the <article> keeps the card frame and hover feedback.
       const card = el('article', 'rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md hover:border-slate-300');
       const a = el('a', 'block p-4');
-      a.href = item.url;
+      // Render guard: only http(s) hrefs
+      if (/^https?:\/\//i.test(item.url ?? '')) a.href = item.url;
       a.target = '_blank';
-      a.rel = 'noopener';
+      a.rel = 'noopener noreferrer';
       const h3 = el('h3', 'font-semibold text-slate-900');
       h3.textContent = item.title;
       a.appendChild(h3);

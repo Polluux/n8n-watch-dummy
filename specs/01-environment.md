@@ -4,8 +4,8 @@
 A reproducible local n8n instance with persisted data and all credentials configured.
 
 ## Requirements
-- `docker-compose.yml` at repo root running `n8nio/n8n:latest`:
-  - port `5678:5678`
+- `docker-compose.yml` at repo root running a **pinned** n8n image (bump deliberately a floating tag can pull DB migrations on any restart):
+  - port `127.0.0.1:5678:5678` (loopback only — the editor is not meant to be reachable from the network)
   - volume `n8n_data:/home/node/.n8n` (workflows/credentials survive restarts)
   - env: `GENERIC_TIMEZONE=Europe/Paris`, `TZ=Europe/Paris`
 - Credentials created **in the n8n UI** (never committed to the repo):

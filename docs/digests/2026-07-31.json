@@ -1,9 +1,39 @@
 {
   "date": "2026-07-31",
-  "generatedAt": "2026-07-31T12:37:24.825Z",
-  "intro": "L'actualité du génie logiciel est marquée par l'intégration croissante de l'intelligence artificielle, qu'il s'agisse d'optimiser les performances des grands modèles de langage ou d'accélérer drastiquement la détection et la correction des failles de sécurité. Du côté des outils et des langages, l'écosystème évolue avec l'arrivée native des pull requests empilées sur GitHub, l'intégration des objets de valeur dans OpenJDK et la refonte majeure des environnements de développement front-end. Ces avancées soulignent une volonté constante d'améliorer l'efficacité des flux de travail et la robustesse du code, de la conception à la production.",
-  "count": 5,
+  "generatedAt": "2026-07-31T13:03:56.839Z",
+  "intro": "Cette édition met en lumière l'intégration croissante de l'intelligence artificielle dans l'ingénierie logicielle, qu'il s'agisse d'accélérer la correction de vulnérabilités dans les navigateurs ou d'évaluer de nouveaux modèles de langage. Les ingénieurs apprécieront également les actualités concernant l'outillage de développement, incluant la gestion des événements bas niveau, les flux de travail Git et l'évolution des environnements d'exécution comme Java.",
+  "count": 9,
   "items": [
+    {
+      "title": "How Browsers Handle Keyboard Events: From Raw Input to DOM Events",
+      "url": "https://dev.to/mspk97/how-browsers-handle-keyboard-events-from-raw-input-to-dom-events-6o8",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-07-31T12:57:23.000Z",
+      "category": "dev",
+      "tags": [
+        "browser",
+        "javascript",
+        "dom",
+        "events"
+      ],
+      "tldr": "Cet article détaille la gestion complexe des événements clavier par les navigateurs, du signal brut jusqu'au DOM. Il aborde les problèmes de doublons et de composition d'entrée (IME)."
+    },
+    {
+      "title": "Déjà - Il devine ce que vous allez taper dans le terminal",
+      "url": "https://korben.info/deja-terminal-predictif.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-07-31T08:04:34.000Z",
+      "category": "dev",
+      "tags": [
+        "terminal",
+        "shell",
+        "zsh",
+        "cli"
+      ],
+      "tldr": "L'outil Deja remplace zsh-autosuggestions pour prédire vos prochaines commandes dans le terminal en local, sans utiliser d'intelligence artificielle."
+    },
     {
       "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
       "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-ga",
@@ -15,9 +45,9 @@
         "deepseek",
         "llm",
         "performance",
-        "analysis"
+        "ai"
       ],
-      "tldr": "Une analyse détaillée de l'intelligence, des performances et du prix du modèle DeepSeek V4 Flash."
+      "tldr": "Une analyse détaillée évalue l'intelligence, les performances et le prix du modèle DeepSeek V4 Flash 0731."
     },
     {
       "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
@@ -27,12 +57,27 @@
       "publishedAt": "2026-07-31T07:29:22.000Z",
       "category": "security",
       "tags": [
-        "google",
         "chrome",
-        "bugs",
+        "google",
+        "security",
         "ai"
       ],
-      "tldr": "Grâce à l'intelligence artificielle, Google a corrigé plus de bugs dans Chrome en un mois qu'au cours des deux années précédentes."
+      "tldr": "Grâce à l'intelligence artificielle, Google a corrigé plus de bugs dans le navigateur Chrome en juin que durant les deux années précédentes."
+    },
+    {
+      "title": "Chrome va recevoir deux mises à jour de sécurité par semaine",
+      "url": "https://next.ink/249642/chrome-va-recevoir-deux-mises-a-jour-de-securite-par-semaine/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-07-31T06:15:46.000Z",
+      "category": "security",
+      "tags": [
+        "chrome",
+        "google",
+        "security",
+        "updates"
+      ],
+      "tldr": "Google accélère le rythme de publication des correctifs pour Chrome en livrant désormais deux mises à jour de sécurité par semaine, aidé par l'IA."
     },
     {
       "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
@@ -44,23 +89,10 @@
       "tags": [
         "java",
         "openjdk",
-        "jep"
+        "JEP",
+        "programming"
       ],
-      "tldr": "La JEP 401 sur les objets de valeur en version préliminaire a été fusionnée dans la branche principale d'OpenJDK."
-    },
-    {
-      "title": "CodePen 2.0",
-      "url": "https://chriscoyier.net/2026/07/30/codepen-2-0/",
-      "source": "hn",
-      "sourceName": "Hacker News",
-      "publishedAt": "2026-07-30T17:52:51.000Z",
-      "category": "dev",
-      "tags": [
-        "codepen",
-        "web",
-        "frontend"
-      ],
-      "tldr": "Annonce et présentation de la nouvelle version majeure CodePen 2.0 pour les développeurs web."
+      "tldr": "La JEP 401 introduisant les Value Objects en version préliminaire a été fusionnée dans la branche principale d'OpenJDK."
     },
     {
       "title": "Stacked PRs are now live on GitHub",
@@ -75,7 +107,37 @@
         "pull-requests",
         "workflow"
       ],
-      "tldr": "Les pull requests empilées (stacked PRs) sont désormais disponibles en version bêta publique sur GitHub."
+      "tldr": "GitHub propose désormais les pull requests empilées (stacked PRs) en version d'évaluation publique pour améliorer les workflows de développement."
+    },
+    {
+      "title": "Il fait tourner DOOM avec des expressions régulières, et il faut trois minutes par image",
+      "url": "https://korben.info/il-fait-tourner-doom-avec-des-expressions-regulieres-et-il-faut-trois-minutes-par-image.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-07-30T09:43:00.000Z",
+      "category": "other",
+      "tags": [
+        "doom",
+        "regex",
+        "fun",
+        "retro"
+      ],
+      "tldr": "Un développeur a réussi à faire tourner le jeu DOOM entièrement à l'aide d'expressions régulières, nécessitant toutefois trois minutes par image."
+    },
+    {
+      "title": "Des fuites de Claude sur des conversations partagées ? Pas vraiment",
+      "url": "https://next.ink/249441/des-fuites-de-claude-sur-des-conversations-partagees-pas-vraiment/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-07-29T14:25:00.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "anthropic",
+        "privacy",
+        "leak"
+      ],
+      "tldr": "La découverte de conversations Claude partagées facilement accessibles relance les inquiétudes, bien qu'Anthropic invoque un fonctionnement attendu."
     }
   ]
 }

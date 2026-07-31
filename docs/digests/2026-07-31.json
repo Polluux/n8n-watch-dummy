@@ -1,53 +1,52 @@
 {
   "date": "2026-07-31",
-  "generatedAt": "2026-07-31T07:42:05.285Z",
-  "intro": "La veille technique de ce jour met en lumière l evolution des pratiques de développement web et des outils d ingenierie logicielle, portée notamment par l arrivee des pull requests empilées sur GitHub et l evolution des architectures Next.js. La sécurité et l intelligence artificielle occupent également une place centrale, entre l acceleration des correctifs pour navigateurs, les performances des modeles face a la cryptographie et les innovations en matiere de confidentialite des donnees. Enfin, l ecosysteme front-end continue de se structurer avec de nouveaux environnements de travail et des experimentaleries algorithmiques inattendues.",
-  "count": 8,
+  "generatedAt": "2026-07-31T12:37:24.825Z",
+  "intro": "L'actualité du génie logiciel est marquée par l'intégration croissante de l'intelligence artificielle, qu'il s'agisse d'optimiser les performances des grands modèles de langage ou d'accélérer drastiquement la détection et la correction des failles de sécurité. Du côté des outils et des langages, l'écosystème évolue avec l'arrivée native des pull requests empilées sur GitHub, l'intégration des objets de valeur dans OpenJDK et la refonte majeure des environnements de développement front-end. Ces avancées soulignent une volonté constante d'améliorer l'efficacité des flux de travail et la robustesse du code, de la conception à la production.",
+  "count": 5,
   "items": [
     {
-      "title": "HTML Minifier: the privacy-first data tool that runs entirely in your browser",
-      "url": "https://dev.to/mryesiller/html-minifier-the-privacy-first-data-tool-that-runs-entirely-in-your-browser-318h",
-      "source": "devto",
-      "sourceName": "dev.to",
-      "publishedAt": "2026-07-31T07:29:13.000Z",
-      "category": "dev",
+      "title": "DeepSeek V4 Flash 0731 Intelligence, Performance and Price Analysis",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-flash-ga",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-31T07:59:11.000Z",
+      "category": "ai",
       "tags": [
-        "html",
+        "deepseek",
+        "llm",
         "performance",
-        "privacy",
-        "tools"
+        "analysis"
       ],
-      "tldr": "Un outil de minification HTML s'exécutant entièrement dans le navigateur garantit la confidentialité des données tout en optimisant la taille des fichiers."
+      "tldr": "Une analyse détaillée de l'intelligence, des performances et du prix du modèle DeepSeek V4 Flash."
     },
     {
-      "title": "Next.js API routes vs route handlers: when to use each",
-      "url": "https://dev.to/nayankyada/nextjs-api-routes-vs-route-handlers-when-to-use-each-29p6",
-      "source": "devto",
-      "sourceName": "dev.to",
-      "publishedAt": "2026-07-31T07:21:23.000Z",
-      "category": "dev",
-      "tags": [
-        "next.js",
-        "api",
-        "javascript",
-        "react"
-      ],
-      "tldr": "Comparaison entre les routes API et les gestionnaires de routes (route handlers) de Next.js, en se focalisant sur leurs différences de sémantique de mise en cache et de modèles mentaux."
-    },
-    {
-      "title": "Chrome va recevoir deux mises à jour de sécurité par semaine",
-      "url": "https://next.ink/249642/chrome-va-recevoir-deux-mises-a-jour-de-securite-par-semaine/",
-      "source": "nxt",
-      "sourceName": "Next",
-      "publishedAt": "2026-07-31T06:15:46.000Z",
+      "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-31T07:29:22.000Z",
       "category": "security",
       "tags": [
+        "google",
         "chrome",
-        "browser",
-        "updates",
-        "google"
+        "bugs",
+        "ai"
       ],
-      "tldr": "Google accélère le rythme des correctifs pour son navigateur Chrome en déployant désormais deux mises à jour de sécurité par semaine."
+      "tldr": "Grâce à l'intelligence artificielle, Google a corrigé plus de bugs dans Chrome en un mois qu'au cours des deux années précédentes."
+    },
+    {
+      "title": "JEP 401: Value Objects (Preview) merged to OpenJDK master",
+      "url": "https://github.com/openjdk/jdk/pull/31120",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-07-31T04:38:19.000Z",
+      "category": "dev",
+      "tags": [
+        "java",
+        "openjdk",
+        "jep"
+      ],
+      "tldr": "La JEP 401 sur les objets de valeur en version préliminaire a été fusionnée dans la branche principale d'OpenJDK."
     },
     {
       "title": "CodePen 2.0",
@@ -58,10 +57,10 @@
       "category": "dev",
       "tags": [
         "codepen",
-        "frontend",
-        "web"
+        "web",
+        "frontend"
       ],
-      "tldr": "Annonce de la sortie de CodePen 2.0 pour la communauté des développeurs front-end."
+      "tldr": "Annonce et présentation de la nouvelle version majeure CodePen 2.0 pour les développeurs web."
     },
     {
       "title": "Stacked PRs are now live on GitHub",
@@ -74,53 +73,9 @@
         "github",
         "git",
         "pull-requests",
-        "ci/cd"
+        "workflow"
       ],
-      "tldr": "GitHub lance officiellement la préforme publique des pull requests empilées (stacked PRs)."
-    },
-    {
-      "title": "Il fait tourner DOOM avec des expressions régulières, et il faut trois minutes par image",
-      "url": "https://korben.info/il-fait-tourner-doom-avec-des-expressions-regulieres-et-il-faut-trois-minutes-par-image.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "sourceName": "Korben",
-      "publishedAt": "2026-07-30T09:43:00.000Z",
-      "category": "other",
-      "tags": [
-        "doom",
-        "regex",
-        "fun"
-      ],
-      "tldr": "Un développeur fait fonctionner le jeu DOOM en utilisant uniquement des expressions régulières, avec un rendu nécessitant trois minutes par image."
-    },
-    {
-      "title": "Claude casse un algo post-quantique en 60 heures",
-      "url": "https://korben.info/claude-casse-un-algo-post-quantique-en-60-heures.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "sourceName": "Korben",
-      "publishedAt": "2026-07-29T15:17:06.000Z",
-      "category": "ai",
-      "tags": [
-        "ai",
-        "security",
-        "cryptography",
-        "claude"
-      ],
-      "tldr": "L'intelligence artificielle Claude d'Anthropic a réussi à identifier en 60 heures une faiblesse dans un algorithme post-quantique et une attaque sur AES-128."
-    },
-    {
-      "title": "OTI - Le lien à usage unique que les bots ne crament plus",
-      "url": "https://korben.info/oti-partage-secret-usage-unique-self-hosted.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
-      "source": "kbn",
-      "sourceName": "Korben",
-      "publishedAt": "2026-07-29T08:42:22.000Z",
-      "category": "security",
-      "tags": [
-        "privacy",
-        "security",
-        "self-hosted",
-        "encryption"
-      ],
-      "tldr": "OTI propose un système de partage de secret chiffré dans le navigateur avec des liens à usage unique conçus pour contrer les bots."
+      "tldr": "Les pull requests empilées (stacked PRs) sont désormais disponibles en version bêta publique sur GitHub."
     }
   ]
 }

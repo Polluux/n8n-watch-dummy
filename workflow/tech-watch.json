@@ -102,29 +102,15 @@
     },
     {
       "parameters": {
-        "aggregate": "aggregateAllItemData",
-        "options": {}
-      },
-      "id": "a1000000-0000-4000-8000-000000000030",
-      "name": "Bundle items",
-      "type": "n8n-nodes-base.aggregate",
-      "typeVersion": 1,
-      "position": [
-        688,
-        448
-      ]
-    },
-    {
-      "parameters": {
         "promptType": "define",
-        "text": "=You are curating a daily tech-watch digest. The reader is a frontend-focused\nsoftware engineer. Their interests, by priority:\n\n1. Frontend: the Vue.js ecosystem first, and JavaScript/TypeScript news in\n   general (frameworks, runtimes, tooling, releases).\n2. Accessibility (a11y), new browser / web-platform features, UI/UX design and\n   engineering - daily-practice topics for the reader.\n3. Security: vulnerabilities, incidents, advisories, and notable security news.\n4. AI: significant models, tooling and their impact on software development.\n5. Fun: playful projects, demos, clever little hacks - one or two are always\n   welcome when the day offers them.\n\nLower priority: cloud, DevOps, infrastructure - include only when the story is\nmajor or has direct impact on the topics above.\n\nFrom the JSON list of items below, select the most relevant ones - MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nPrefer substantial, technical stories over marketing or minor product news.\nBalance the selection across the priorities above when the day's items allow it.\n\nReturn ONLY a JSON array of the selected items' \"id\" values (integers).\nNo markdown fences, no commentary, no object wrapper - just the array, e.g. [3, 17, 42].\n\nItems:\n{{ JSON.stringify($json.data) }}"
+        "text": "=You are curating a daily tech-watch digest. The reader is a frontend-focused\nsoftware engineer. Their interests, by priority:\n\n1. Frontend: the Vue.js ecosystem first, and JavaScript/TypeScript news in\n   general (frameworks, runtimes, tooling, releases).\n2. Accessibility (a11y), new browser / web-platform features, UI/UX design and\n   engineering - daily-practice topics for the reader.\n3. Security: vulnerabilities, incidents, advisories, and notable security news.\n4. AI: significant models, tooling and their impact on software development.\n5. Fun: playful projects, demos, clever little hacks - one or two are always\n   welcome when the day offers them.\n\nLower priority: cloud, DevOps, infrastructure - include only when the story is\nmajor or has direct impact on the topics above.\n\nFrom the JSON list of items below, select the most relevant ones - MAXIMUM 10.\nDeduplicate: if the same story is covered by several sources, keep only the single best link.\nSome stories already ran in a recent digest; their headlines are listed under\n\"Already covered\" below. Never select an item that tells the same story as any of\nthem - not from another source, not from a different angle, not as a follow-up.\nPrefer substantial, technical stories over marketing or minor product news.\nBalance the selection across the priorities above when the day's items allow it.\n\nReturn ONLY a JSON array of the selected items' \"id\" values (integers).\nNo markdown fences, no commentary, no object wrapper - just the array, e.g. [3, 17, 42].\n\nAlready covered in recent digests:\n{{ JSON.stringify($json.covered) }}\n\nItems:\n{{ JSON.stringify($json.data) }}"
       },
       "id": "a1000000-0000-4000-8000-000000000031",
       "name": "Select links",
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        912,
+        1360,
         448
       ]
     },
@@ -140,7 +126,7 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        984,
+        1432,
         680
       ],
       "credentials": {
@@ -152,14 +138,14 @@
     },
     {
       "parameters": {
-        "jsCode": "// Parse the LLM's id selection and filter the ORIGINAL normalized items.\n// Identity fields (url/title) never pass through the LLM: it selects by id only,\n// so a hallucinated or mangled URL is impossible by construction (spec 03).\nconst first = $input.first().json;\nconst raw = String(first.text ?? first.output ?? '').trim();\nconst cleaned = raw.replace(/^```(?:json)?\\s*/i, '').replace(/```\\s*$/, '').trim();\n\nlet ids;\ntry {\n  ids = JSON.parse(cleaned);\n} catch (e) {\n  throw new Error('LLM returned non-JSON output: ' + raw.slice(0, 200));\n}\nif (!Array.isArray(ids) || !ids.every((n) => Number.isInteger(n))) {\n  throw new Error('LLM output is not a JSON array of integer ids: ' + cleaned.slice(0, 200));\n}\n\nconst byId = new Map($('Normalize').all().map((i) => [i.json.id, i.json]));\nconst seen = new Set();\nconst selected = [];\nfor (const id of ids) {\n  if (seen.has(id)) continue;\n  seen.add(id);\n  const item = byId.get(id);\n  if (item === undefined) throw new Error('LLM returned an id absent from the input list: ' + id);\n  selected.push(item);\n  if (selected.length >= 10) break;\n}\nif (selected.length === 0) throw new Error('LLM selected no valid items');\n// Emit ONE bundled item ({data: [...]}, same shape as an Aggregate node) so the\n// next LLM chain runs once for the batch - replaces the former Bundle selected node.\nreturn [{ json: { data: selected } }];"
+        "jsCode": "// Parse the LLM's id selection and filter the deduped candidate list.\n// Identity fields (url/title) never pass through the LLM: it selects by id only,\n// so a hallucinated or mangled URL is impossible by construction (spec 03).\nconst first = $input.first().json;\nconst raw = String(first.text ?? first.output ?? '').trim();\nconst cleaned = raw.replace(/^```(?:json)?\\s*/i, '').replace(/```\\s*$/, '').trim();\n\nlet ids;\ntry {\n  ids = JSON.parse(cleaned);\n} catch (e) {\n  throw new Error('LLM returned non-JSON output: ' + raw.slice(0, 200));\n}\nif (!Array.isArray(ids) || !ids.every((n) => Number.isInteger(n))) {\n  throw new Error('LLM output is not a JSON array of integer ids: ' + cleaned.slice(0, 200));\n}\n\n// Resolved against Drop published, not Normalize: an id excluded as already\n// published is therefore rejected below rather than silently re-admitted.\nconst byId = new Map($('Drop published').first().json.data.map((it) => [it.id, it]));\nconst seen = new Set();\nconst selected = [];\nfor (const id of ids) {\n  if (seen.has(id)) continue;\n  seen.add(id);\n  const item = byId.get(id);\n  if (item === undefined) throw new Error('LLM returned an id absent from the input list: ' + id);\n  selected.push(item);\n  if (selected.length >= 10) break;\n}\nif (selected.length === 0) throw new Error('LLM selected no valid items');\n// Emit ONE bundled item ({data: [...]}, same shape as an Aggregate node) so the\n// next LLM chain runs once for the batch - replaces the former Bundle selected node.\nreturn [{ json: { data: selected } }];"
       },
       "id": "a1000000-0000-4000-8000-000000000033",
       "name": "Filter selected",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1264,
+        1712,
         448
       ]
     },
@@ -174,7 +160,7 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        1488,
+        1936,
         448
       ]
     },
@@ -188,7 +174,7 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        1560,
+        2008,
         680
       ]
     },
@@ -201,7 +187,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1840,
+        2288,
         448
       ]
     },
@@ -215,7 +201,7 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        2064,
+        2512,
         448
       ]
     },
@@ -229,7 +215,7 @@
       "type": "@n8n/n8n-nodes-langchain.chainLlm",
       "typeVersion": 1.5,
       "position": [
-        2288,
+        2736,
         448
       ]
     },
@@ -242,7 +228,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2640,
+        3088,
         448
       ]
     },
@@ -258,7 +244,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2864,
+        3312,
         448
       ],
       "credentials": {
@@ -280,7 +266,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3088,
+        3536,
         448
       ],
       "credentials": {
@@ -300,7 +286,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3312,
+        3760,
         448
       ]
     },
@@ -320,7 +306,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3536,
+        3984,
         448
       ],
       "credentials": {
@@ -360,7 +346,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        3760,
+        4208,
         448
       ]
     },
@@ -380,7 +366,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3984,
+        4432,
         448
       ],
       "credentials": {
@@ -401,7 +387,7 @@
       "type": "n8n-nodes-base.discord",
       "typeVersion": 2,
       "position": [
-        4208,
+        4656,
         448
       ],
       "webhookId": "fc055eb9-2d64-46ec-bb4f-6c8537cb5f47",
@@ -411,6 +397,70 @@
           "name": "Discord Webhook account"
         }
       }
+    },
+    {
+      "parameters": {
+        "jsCode": "// The cross-day exclusion window: the LOOKBACK_DAYS days before today (Europe/Paris),\n// one item per date. \"Get recent digests\" then fetches each day's published payload;\n// a 404 simply means no digest that day (cold start, or a day without a run).\nconst LOOKBACK_DAYS = 7;\n\nconst today = new Date().toLocaleDateString('fr-CA', { timeZone: 'Europe/Paris' }); // YYYY-MM-DD\nconst [y, m, d] = today.split('-').map(Number);\n\nconst out = [];\nfor (let back = 1; back <= LOOKBACK_DAYS; back++) {\n  // Calendar arithmetic at UTC noon: month/year rollover handled, no DST edge cases\n  // (subtracting fixed 24h spans would skip or repeat a day across a DST change).\n  const day = new Date(Date.UTC(y, m - 1, d - back, 12));\n  out.push({ json: { date: day.toISOString().slice(0, 10) } });\n}\nreturn out;"
+      },
+      "id": "a1000000-0000-4000-8000-000000000020",
+      "name": "Recent dates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        688,
+        448
+      ]
+    },
+    {
+      "parameters": {
+        "url": "=https://api.github.com/repos/Polluux/n8n-watch-dummy/contents/docs/digests/{{ $json.date }}.json",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/vnd.github.raw+json"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000021",
+      "name": "Get recent digests",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        912,
+        448
+      ],
+      "credentials": {
+        "githubApi": {
+          "id": "8gvoOdrpzU7G3mte",
+          "name": "GitHub account"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Cross-day deduplication. Candidates already published in the last 7 days are dropped\n// before the LLM ever sees them, so re-publishing a link is impossible by construction\n// (same principle as identity fields never round-tripping through a model).\n// The already-covered headlines travel on to the Select links prompt, which lets the\n// model also skip a different source's take on a story it already ran.\nconst candidates = $('Normalize').all().map((i) => i.json);\nif (candidates.length === 0) throw new Error('No normalized items to select from');\n\n// Feeds re-emit the same article with varying tracking params; compare on a canonical\n// form so ?utm_source=... variants of one link still match yesterday's entry.\nconst TRACKING = /^(utm_[a-z_]*|fbclid|gclid|mc_cid|mc_eid|ref|ref_src)$/i;\nconst canon = (raw) => {\n  try {\n    const u = new URL(String(raw));\n    u.hash = '';\n    u.hostname = u.hostname.toLowerCase().replace(/^www\\./, '');\n    for (const k of [...u.searchParams.keys()]) if (TRACKING.test(k)) u.searchParams.delete(k);\n    u.pathname = u.pathname.replace(/\\/+$/, '');\n    return u.protocol + '//' + u.hostname + u.pathname + u.search;\n  } catch (e) {\n    return String(raw).trim().toLowerCase();\n  }\n};\n\nconst publishedUrls = new Set();\nconst covered = [];\nlet daysRead = 0;\n\nfor (const { json } of $input.all()) {\n  if (json.error !== undefined) {\n    // A missing day is expected. Anything else - auth, rate limit, network - must not\n    // silently degrade into \"nothing to exclude\" and quietly reprint yesterday's links.\n    const detail = typeof json.error === 'string' ? json.error : JSON.stringify(json.error);\n    // A GitHub 404 surfaces as NodeApiError{description:'Not Found'} whose message reads\n    // \"could not be found\" and carries no status code - match both phrasings.\n    if (/\\b404\\b|not\\s+(?:be\\s+)?found/i.test(detail)) continue;\n    throw new Error('Could not read a recent digest: ' + detail.slice(0, 200));\n  }\n  // Fetched with the raw media type, so the payload arrives already parsed.\n  const items = json.items;\n  if (!Array.isArray(items)) {\n    throw new Error('Recent digest has no items array: ' + JSON.stringify(json).slice(0, 200));\n  }\n  daysRead++;\n  for (const it of items) {\n    if (!it || !it.url) continue;\n    publishedUrls.add(canon(it.url));\n    if (it.title) covered.push(it.title);\n  }\n}\n\nconst data = candidates.filter((c) => !publishedUrls.has(canon(c.url)));\nif (data.length === 0) {\n  throw new Error(\n    `All ${candidates.length} candidate(s) were already published in the last ${daysRead} digest(s)`,\n  );\n}\nconsole.log(\n  `dedup: ${daysRead} recent digest(s), ${publishedUrls.size} published url(s), ` +\n    `${candidates.length} candidates -> ${data.length} after exclusion`,\n);\n\n// One bundled item ({data: [...]}, the shape an Aggregate node produces) so the LLM\n// chain downstream runs once for the whole batch.\nreturn [{ json: { data, covered } }];"
+      },
+      "id": "a1000000-0000-4000-8000-000000000022",
+      "name": "Drop published",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1136,
+        448
+      ]
     }
   ],
   "connections": {
@@ -418,18 +468,7 @@
       "main": [
         [
           {
-            "node": "Bundle items",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Bundle items": {
-      "main": [
-        [
-          {
-            "node": "Select links",
+            "node": "Recent dates",
             "type": "main",
             "index": 0
           }
@@ -685,6 +724,39 @@
         [
           {
             "node": "Loop sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recent dates": {
+      "main": [
+        [
+          {
+            "node": "Get recent digests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get recent digests": {
+      "main": [
+        [
+          {
+            "node": "Drop published",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drop published": {
+      "main": [
+        [
+          {
+            "node": "Select links",
             "type": "main",
             "index": 0
           }

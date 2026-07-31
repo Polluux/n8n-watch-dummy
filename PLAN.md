@@ -8,6 +8,7 @@ Goal: a daily n8n workflow that curates tech-watch links with an LLM (Google Gem
 Schedule Trigger (09:30 Europe/Paris)
   → Sources (config list {name, tag, url}) → loop: fetch RSS + tag each item
   → Normalize (Code node → {id, title, url, source, sourceName, publishedAt, excerpt})
+  → Code + GitHub contents API: drop candidates already published in the last 7 days
   → LLM #1 (Gemini): select & deduplicate the most relevant links (by id)
   → LLM #2 (Gemini): extract structured JSON per link (category, tags, tl;dr)
   → LLM #3 (Gemini): write a short editorial intro (content only, no HTML structure)
@@ -40,7 +41,7 @@ Each phase = one Claude Code session driven by its spec. Done means the acceptan
 - **Phase 0 — Scaffolding**: specs, README, `docs/` placeholder, `.gitignore`.
 - **Phase 1 — Environment** ([spec 01](specs/01-environment.md)): Docker Compose for n8n, timezone config, credentials created in the n8n UI (Google Gemini API key, GitHub fine-grained PAT, Discord webhook).
 - **Phase 2 — Fetch & normalize** ([spec 02](specs/02-fetch-sources.md)): source loop (fetch + tag) + normalization Code node.
-- **Phase 3 — AI selection** ([spec 03](specs/03-ai-selection.md)): Gemini picks ≤10 relevant, deduplicated links.
+- **Phase 3 — AI selection** ([spec 03](specs/03-ai-selection.md)): links published in the last 7 days are excluded in code, then Gemini picks ≤10 relevant, deduplicated links.
 - **Phase 4 — JSON extraction** ([spec 04](specs/04-ai-extraction.md)): structured output (schema-enforced) per selected link.
 - **Phase 5 — Digest payload** ([spec 05](specs/05-html-digest.md)): Gemini writes the editorial intro; a Code node assembles the day's JSON payload — the phase's deliverable.
 - **Phase 6 — Publish & notify** ([spec 06](specs/06-publish-notify.md)): GitHub commits (payload + date index) → Pages live, homepage lists it; Discord message with link.

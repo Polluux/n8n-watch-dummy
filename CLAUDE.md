@@ -17,6 +17,7 @@ The n8n editor works on its own database (Docker volume `n8n_data`), and `workfl
 - After JSON edits: import with `docker cp workflow/tech-watch.json n8n-watch:/tmp/tech-watch.json && docker exec n8n-watch n8n import:workflow --input=/tmp/tech-watch.json`
 - **Always run the export script before editing the JSON**, to capture any UI changes.
 - The workflow id is pinned (`TechWatchDummy01`) so import updates in place.
+- **An import deactivates the workflow** (`import:workflow` prints `Deactivating workflow "tech-watch"`), which silently stops the 09:30 schedule. `update:workflow --active=true` / `publish:workflow` are no-ops in this n8n version — they warn about a restart and write nothing, and a restart does not help (`workflow_entity.active` stays `0`, `workflow_published_version` stays empty). **Re-activate with the toggle in the UI after every import**, and check with:<br>`docker cp n8n-watch:/home/node/.n8n/database.sqlite /tmp/db.sqlite` then `select active, activeVersionId from workflow_entity;` (the container has no `sqlite3`). Activation is not stored in the exported JSON, so git cannot reveal the regression.
 
 ## Commands
 
@@ -53,7 +54,11 @@ Schedule Trigger (cron 30 9 * * *, Europe/Paris) + Manual Trigger (same fan-out 
  → Tag items (Code: re-attach source tag+name — RSS Read drops input fields) → loop back;
    done-output →
  → Normalize (Code): strip HTML, drop >48h, sort desc, cap 60, stamp numeric `id`
- → Bundle items (Aggregate) → Select links (LLM Chain + "Gemini Flash" sub-node) → Filter selected (Code)
+ → Recent dates (Code: the 7 days before today) → Get recent digests (HTTP GET per day, GitHub
+   contents API with the raw media type; onError continue — a 404 is a day without a digest)
+ → Drop published (Code: cross-day dedup — drops candidates whose URL already shipped, bundles
+   the survivors as `{data, covered}`)
+ → Select links (LLM Chain + "Gemini Flash" sub-node) → Filter selected (Code)
  → Extract data (LLM Chain + Structured Output Parser "Structured JSON") → Validate extraction (Code)
  → Bundle records (Aggregate) → Write intro (LLM Chain) → Build payload (Code: pure JSON —
    its output IS the daily artifact docs/digests/YYYY-MM-DD.json, phase 5's deliverable)
@@ -65,7 +70,8 @@ Schedule Trigger (cron 30 9 * * *, Europe/Paris) + Manual Trigger (same fan-out 
 Design invariants (do not regress):
 
 - **Identity fields (title/url/source) never round-trip through an LLM** — models can subtly alter strings they "copy", URLs included. LLM steps receive items with numeric `id`s and return only ids + judgment fields (`category`, `tags`, `tldr`); Code nodes rebuild identity fields from the originals by id and throw on any unknown id / malformed output (fail loudly, no silent empty digest).
-- **LLM chains run once per input item.** Batch calls require bundling first — either an Aggregate node or a Code node returning `[{json: {data: [...]}}]` (Filter selected does the latter).
+- **LLM chains run once per input item.** Batch calls require bundling first — either an Aggregate node or a Code node returning `[{json: {data: [...]}}]` (Drop published and Filter selected do the latter).
+- **A link publishes at most once per 7-day window, enforced in code — never by the model.** Normalize's 48h window is wider than the 24h run cadence, so every item is a candidate on two consecutive days. "Drop published" reads the last 7 days' payloads and removes already-published URLs *before* the LLM sees them, comparing on a canonical URL (lowercase host, no `www.`, no fragment, tracking params stripped) so `?utm_*` variants of one link still match. "Filter selected" resolves the returned ids against that deduped list, so an excluded item cannot be re-admitted. The prompt additionally receives the excluded headlines under "Already covered" to discourage a second source's take on the same story — that half is model judgment, the URL exclusion is not. **The window is the 7 days *before* today, never today**: a same-day re-run must be free to re-select the links it published that morning.
 - **Model is `models/gemini-flash-latest`** (credential: "Google Gemini(PaLM) Api" in the n8n UI, never in the repo). Keep the rolling alias: pinned versions 404 for new API keys ("no longer available to new users"). To see what a key can use, GET `/v1beta/models` via an n8n HTTP Request node with the stored credential.
 - **The workflow ships data, never markup.** Its final output is a JSON payload (`docs/digests/YYYY-MM-DD.json`) plus its date registered in `docs/digests.json` — which is a **pure index** (array of date strings, nothing else; day data lives only in the payload, the homepage fetches recent payloads for subtitles). All rendering is client-side in two static pages the workflow never touches: `docs/index.html` (homepage, lists the date index) and `docs/digest.html` (viewer, renders `?d=YYYY-MM-DD`). Layout edits restyle all digests retroactively. The pipeline has no run-time dependency on the site or the repo's HTML.
 - **Viewer security model: third-party strings reach the DOM via `textContent` only — never `innerHTML` — and hrefs are http(s)-only.** Normalize drops non-http(s) URLs at ingestion and the viewer refuses to set such an href at render (defense in depth). Verified with a DOM-stub test (hostile payload through the real viewer script). Tailwind via browser CDN is the only allowed external asset. Same-day re-runs must replace, not duplicate, the day's index entry.

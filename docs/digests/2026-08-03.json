@@ -1,0 +1,127 @@
+{
+  "date": "2026-08-03",
+  "generatedAt": "2026-08-03T07:31:23.606Z",
+  "intro": "La veille technique d'aujourd'hui met en lumière les défis de la sécurité logicielle et des tests, illustrés par des vulnérabilités critiques dans les firmwares et des pièges subtils liés au levage de variables dans les outils de test modernes. L'intelligence artificielle continue de transformer les pratiques d'ingénierie, qu'il s'agisse de l'automatisation de la migration de systèmes hérités ou des nouvelles performances des modèles dédiés au code. Enfin, l'actualité fait la part belle aux innovations système et aux projets créatifs, allant de l'interopérabilité des binaires à l'exploitation détournée de capteurs matériels sous Linux.",
+  "count": 8,
+  "items": [
+    {
+      "title": "Why your vi.mock in Vitest silently does nothing",
+      "url": "https://dev.to/msakai/why-your-vimock-in-vitest-silently-does-nothing-1c31",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-03T07:11:20.000Z",
+      "category": "dev",
+      "tags": [
+        "vitest",
+        "javascript",
+        "testing",
+        "mocking"
+      ],
+      "tldr": "Découvrez pourquoi l'utilisation de vi.mock dans Vitest peut parfois échouer silencieusement à cause d'un problème de levage (hoisting) de variable."
+    },
+    {
+      "title": "Un zéro mal interprété dans le firmware Coldcard a rendu les clés Bitcoin devinables pendant cinq ans",
+      "url": "https://korben.info/un-zero-mal-interprete-dans-le-firmware-coldcard-a-rendu-les-cles-bitcoin-devinables-pendant-cinq-ans.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-08-03T06:01:20.000Z",
+      "category": "security",
+      "tags": [
+        "bitcoin",
+        "coldcard",
+        "firmware",
+        "crypto"
+      ],
+      "tldr": "Une erreur d'interprétation d'un zéro dans le firmware des portefeuilles matériels Coldcard a permis de deviner des clés Bitcoin, entraînant un vol massif de cryptomonnaies."
+    },
+    {
+      "title": "AI migrated legacy COBOL programs to Java, bugs included",
+      "url": "https://arxiv.org/abs/2607.28271",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-03T03:06:12.000Z",
+      "category": "ai",
+      "tags": [
+        "migration",
+        "cobol",
+        "java",
+        "llm"
+      ],
+      "tldr": "Une étude examine l'utilisation de l'intelligence artificielle pour migrer d'anciens programmes COBOL vers Java, tout en reproduisant certains bugs."
+    },
+    {
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-03T02:16:09.000Z",
+      "category": "ai",
+      "tags": [
+        "qwen",
+        "coding",
+        "llm"
+      ],
+      "tldr": "Qwen3.8-Max établit de nouveaux standards en matière de capacités de programmation et d'assistance collaborative pour les modèles d'IA."
+    },
+    {
+      "title": "Show HN: Isopolis – Isometric pixel map of SF",
+      "url": "https://sf.isopolis.city/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-03T00:46:38.000Z",
+      "category": "other",
+      "tags": [
+        "map",
+        "sanfrancisco",
+        "pixelart",
+        "isometric"
+      ],
+      "tldr": "Isopolis propose une carte isométrique en pixel art représentant la ville de San Francisco."
+    },
+    {
+      "title": "Show HN: Make your Framework 12 sound like a creaky door",
+      "url": "https://github.com/ArcaEge/creakwork12",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-02T20:33:01.000Z",
+      "category": "dev",
+      "tags": [
+        "linux",
+        "hardware",
+        "sensor",
+        "python"
+      ],
+      "tldr": "Un projet open source utilise le capteur d'angle de charnière d'un ordinateur Framework 12 sous Linux pour reproduire le bruit d'une porte qui grince."
+    },
+    {
+      "title": "My personal AI benchmark: “Generate an SVG of a frog with a Habsburg jaw”",
+      "url": "https://frogs.vaguespac.es/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-02T19:42:08.000Z",
+      "category": "ai",
+      "tags": [
+        "benchmark",
+        "svg",
+        "generation",
+        "image"
+      ],
+      "tldr": "Ce benchmark personnel évalue les modèles d'intelligence artificielle sur leur capacité à générer un fichier SVG représentant une grenouille avec un prognathisme mandibulaire."
+    },
+    {
+      "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM",
+      "url": "https://github.com/wie-project/kakehashi",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-02T16:26:40.000Z",
+      "category": "dev",
+      "tags": [
+        "macos",
+        "linux",
+        "arm",
+        "binary"
+      ],
+      "tldr": "Kakehashi est un projet expérimental en espace utilisateur conçu pour exécuter des binaires macOS sur des architectures Linux ARM."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-05",
+  "generatedAt": "2026-08-05T07:43:38.580Z",
+  "intro": "L'automatisation par l'intelligence artificielle bouscule profondément les pratiques de développement et la sécurité informatique, soulevant des défis inédits allant de la saturation des chaînes d'intégration continue et des plateformes de signalement de bugs jusqu'à la définition de nouvelles politiques de gouvernance du code. En parallèle, l'écosystème technique continue d'optimiser les performances bas niveau, comme le démontrent les avancées sur les décodeurs en Rust, tout en jonglant avec des problématiques persistantes de confidentialité réseau et d'évolution des standards web.",
+  "count": 7,
+  "items": [
+    {
+      "title": "Your 12-Minute Frontend Build Is Now Your AI Agent's Bottleneck",
+      "url": "https://dev.to/siddharth_pandey_27/your-12-minute-frontend-build-is-now-your-ai-agents-bottleneck-2ilb",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-05T07:30:12.000Z",
+      "category": "devops",
+      "tags": [
+        "ai",
+        "ci/cd",
+        "frontend",
+        "build"
+      ],
+      "tldr": "Les agents de code génèrent de nombreuses demandes de fusion, créant un goulot d'étranglement avec de longs builds frontend en CI."
+    },
+    {
+      "title": "Rust-lang/rust is adopting an LLM policy",
+      "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-05T05:52:24.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "llm",
+        "policy"
+      ],
+      "tldr": "Le dépôt Rust-lang/rust adopte officiellement une politique concernant l'utilisation des LLM."
+    },
+    {
+      "title": "IP and DNS Leaks in WebKit Affecting Proxy Browsers and iCloud Private Relay",
+      "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-04T23:31:46.000Z",
+      "category": "security",
+      "tags": [
+        "webkit",
+        "proxy",
+        "icloud",
+        "leak"
+      ],
+      "tldr": "Des failles de fuite IP et DNS dans WebKit affectent les navigateurs proxy et la fonction iCloud Private Relay."
+    },
+    {
+      "title": "Show HN: SIMD Viterbi Decoder in Rust",
+      "url": "https://github.com/brian-armstrong/fec",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-04T22:37:05.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "simd",
+        "decoder"
+      ],
+      "tldr": "Un développeur présente un décodeur Viterbi générique et optimisé avec SIMD implémenté en Rust."
+    },
+    {
+      "title": "We finally learned to center a div, then browsers added sidebars",
+      "url": "https://seg6.space/posts/center-div/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-04T22:24:00.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "browsers",
+        "layout"
+      ],
+      "tldr": "Un article humoristique et technique sur l'évolution des mises en page web et l'arrivée des barres latérales dans les navigateurs."
+    },
+    {
+      "title": "54 des 55 failles de sécurité déposées par ce compte GitHub n'existaient pas",
+      "url": "https://korben.info/54-des-55-failles-de-securite-deposees-par-ce-compte-github-nexistaient-pas.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-08-04T10:17:36.000Z",
+      "category": "security",
+      "tags": [
+        "github",
+        "vulnerabilities",
+        "jfrog"
+      ],
+      "tldr": "Une analyse de JFrog révèle que 54 sur 55 failles de sécurité soumises par un compte GitHub étaient entièrement fabriquées."
+    },
+    {
+      "title": "Apple submergée par les rapports de bugs générés par IA",
+      "url": "https://next.ink/249926/apple-submergee-par-les-rapports-de-bugs-generes-par-ia/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-08-03T14:35:01.000Z",
+      "category": "security",
+      "tags": [
+        "apple",
+        "ai",
+        "bugs"
+      ],
+      "tldr": "Apple fait face à une surcharge de rapports de bugs générés par IA et met en place des mesures pour limiter les volumes."
+    }
+  ]
+}

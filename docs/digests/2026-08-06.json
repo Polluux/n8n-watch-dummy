@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-06T07:30:26.133Z",
+  "intro": "L'actualité technique du jour met en avant la recherche de performance avec l'optimisation des moteurs web et de nouvelles solutions de stockage, tout en soulignant les risques de sécurité liés aux assistants dopés à l'intelligence artificielle. Les ingénieurs apprécieront également les prouesses d'optimisation matérielle en rétrocomputing repoussant les limites de machines anciennes.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Express 5 on µWebSockets: same middleware, 2x to 7x",
+      "url": "https://dev.to/nigrosimone/express-5-on-uwebsockets-same-middleware-2x-to-7x-h8j",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-06T06:55:18.000Z",
+      "category": "dev",
+      "tags": [
+        "express",
+        "nodejs",
+        "websockets",
+        "performance"
+      ],
+      "tldr": "Fulmine est une alternative directe à Express 5 propulsée par µWebSockets.js, offrant des performances multipliées par 2 à 7 tout en conservant la compatibilité des middlewares existants."
+    },
+    {
+      "title": "Zed DeltaDB",
+      "url": "https://zed.dev/deltadb",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-05T18:52:54.000Z",
+      "category": "dev",
+      "tags": [
+        "database",
+        "zed",
+        "deltadb"
+      ],
+      "tldr": "Présentation de DeltaDB par l'équipe de Zed, une solution de base de données adaptée à leurs besoins de performance."
+    },
+    {
+      "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
+      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-05T17:23:25.000Z",
+      "category": "security",
+      "tags": [
+        "atlassian",
+        "rovo",
+        "exfiltration",
+        "ai"
+      ],
+      "tldr": "Une faille de sécurité dans Atlassian Rovo permet l'exfiltration de données en contournant les contrôles établis."
+    },
+    {
+      "title": "Un développeur fait tourner les cinématiques de Command & Conquer sur un Atari ST de 1985",
+      "url": "https://korben.info/un-developpeur-fait-tourner-les-cinematiques-de-command-conquer-sur-un-atari-st-de-1985.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-08-05T05:41:51.000Z",
+      "category": "other",
+      "tags": [
+        "retrocomputing",
+        "atari",
+        "codec",
+        "optimization"
+      ],
+      "tldr": "Un développeur a réussi à lire les cinématiques du jeu Command & Conquer sur un Atari ST de 1985 grâce à un codec personnalisé nommé STV."
+    }
+  ]
+}

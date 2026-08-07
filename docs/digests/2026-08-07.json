@@ -1,0 +1,158 @@
+{
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-07T07:30:26.433Z",
+  "intro": "L'actualité technique de ce jour met en lumière les évolutions de l'intelligence artificielle, entre l'optimisation des performances d'inférence matérielle et logicielle, l'automatisation accrue par les agents et les défis de sécurité inhérents à leur validation. D'autre part, l'ingénierie logicielle fait face aux exigences de robustesse des tests d'interface et à la gestion des incidents d'infrastructure observés sur les plateformes de développement.",
+  "count": 10,
+  "items": [
+    {
+      "title": "A UI test that guesses is worse than one that fails",
+      "url": "https://dev.to/joduchan/a-ui-test-that-guesses-is-worse-than-one-that-fails-953",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-07T07:22:10.000Z",
+      "category": "dev",
+      "tags": [
+        "testing",
+        "ui",
+        "automation",
+        "bugs"
+      ],
+      "tldr": "Un test UI qui réussit à tort en sélectionnant le mauvais élément suite à un changement d'interface montre qu'un faux positif peut s'avérer plus dangereux qu'un échec franc."
+    },
+    {
+      "title": "Claude Code Now Runs Subagents in the Background by Default — What Actually Changed",
+      "url": "https://dev.to/alvarito1983/claude-code-now-runs-subagents-in-the-background-by-default-what-actually-changed-54kb",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-07T07:15:58.000Z",
+      "category": "ai",
+      "tags": [
+        "claude code",
+        "subagents",
+        "dev agent",
+        "automation"
+      ],
+      "tldr": "Claude Code exécute désormais des sous-agents en arrière-plan par défaut, modifiant ainsi l'expérience quotidienne des développeurs."
+    },
+    {
+      "title": "Dead-pixel test sites are just colored divs — the actual engineering problem is the Fullscreen API, not the colors",
+      "url": "https://dev.to/begoodtool/dead-pixel-test-sites-are-just-colored-divs-the-actual-engineering-problem-is-the-fullscreen-api-2a22",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-07T07:00:03.000Z",
+      "category": "dev",
+      "tags": [
+        "frontend",
+        "fullscreen api",
+        "web",
+        "engineering"
+      ],
+      "tldr": "Si les sites de test de pixels morts se résument visuellement à des blocs de couleur, le véritable défi technique réside dans l'utilisation de l'API Fullscreen."
+    },
+    {
+      "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
+      "url": "https://www.aleksagordic.com/blog/vllm",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-06T21:30:21.000Z",
+      "category": "ai",
+      "tags": [
+        "vllm",
+        "llm",
+        "inference",
+        "performance"
+      ],
+      "tldr": "Cette analyse détaillée explore l'architecture interne de vLLM, un système conçu pour maximiser le débit d'inférence des grands modèles de langage."
+    },
+    {
+      "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+      "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-06T20:23:11.000Z",
+      "category": "ai",
+      "tags": [
+        "amd",
+        "taalas",
+        "hardware",
+        "silicon"
+      ],
+      "tldr": "AMD rachète la startup Taalas pour accélérer l'inférence des modèles d'IA en gravant directement les architectures neuronales dans le silicium."
+    },
+    {
+      "title": "GitHub Actions and Pages are experiencing degraded availability",
+      "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-06T15:49:38.000Z",
+      "category": "devops",
+      "tags": [
+        "github actions",
+        "github pages",
+        "outage",
+        "status"
+      ],
+      "tldr": "GitHub Actions et GitHub Pages rencontrent actuellement des problèmes de disponibilité et des pannes de service."
+    },
+    {
+      "title": "Mistral lance Shieldstral, son « petit » modèle local pour la modération de contenus",
+      "url": "https://next.ink/250391/mistral-lance-shieldstral-son-petit-modele-local-pour-la-moderation-de-contenus/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-08-06T13:53:47.000Z",
+      "category": "ai",
+      "tags": [
+        "mistral",
+        "shieldstral",
+        "moderation",
+        "open source"
+      ],
+      "tldr": "Mistral a lancé Shieldstral, un modèle local open source de 4 milliards de paramètres spécialisé dans la modération de contenus."
+    },
+    {
+      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
+      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-06T11:58:07.000Z",
+      "category": "security",
+      "tags": [
+        "ai agents",
+        "security",
+        "permissions",
+        "threats"
+      ],
+      "tldr": "Une étude menée sur des milliers de parties montre que les humains ratent une menace sur trois lorsqu'ils doivent approuver les commandes d'agents IA."
+    },
+    {
+      "title": "L’agence de pub Adform piratée : un script substituait les portefeuilles crypto des lecteurs",
+      "url": "https://next.ink/250239/lagence-de-pub-adform-piratee-un-script-substituait-les-portefeuilles-crypto-des-lecteurs/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-08-05T09:54:51.000Z",
+      "category": "security",
+      "tags": [
+        "adform",
+        "hack",
+        "crypto",
+        "supply chain"
+      ],
+      "tldr": "L'agence publicitaire Adform a été compromise par un script malveillant qui remplaçait les portefeuilles de cryptomonnaies des lecteurs sur les sites clients."
+    },
+    {
+      "title": "☕️ Bien sûr que Doom tourne dans Paint",
+      "url": "https://next.ink/brief-article/bien-sur-que-doom-tourne-dans-paint/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-08-05T08:10:00.000Z",
+      "category": "other",
+      "tags": [
+        "doom",
+        "paint",
+        "retro",
+        "fun"
+      ],
+      "tldr": "Puisque Doom peut tourner sur pratiquement n'importe quel support, il trouve logiquement sa place au sein même du logiciel Paint."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "date": "2026-08-24",
+  "generatedAt": "2026-08-24T07:30:13.073Z",
+  "intro": "La sécurité informatique occupe le devant de la scène aujourd'hui, marquée par des attaques ciblées sur les infrastructures critiques et les systèmes embarqués automobiles. Parallèlement, l'actualité technique met en lumière les avancées en matière de performance avec l'optimisation des compilations JIT et des pratiques de développement web, ainsi que l'efficacité croissante des modèles de langage pour la rétro-ingénierie.",
+  "count": 7,
+  "items": [
+    {
+      "title": "Death to px, long live ch",
+      "url": "https://shkspr.mobi/blog/2026/08/death-to-px-long-live-ch/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T13:56:27.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "web",
+        "design"
+      ],
+      "tldr": "Cet article explore le remplacement potentiel des unités de pixels par de nouvelles méthodes de dimensionnement sur le web."
+    },
+    {
+      "title": "Malware infects Android-based automotive head unit firmware",
+      "url": "https://securelist.com/android-head-unit-malware/121106/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T13:05:38.000Z",
+      "category": "security",
+      "tags": [
+        "malware",
+        "android",
+        "firmware"
+      ],
+      "tldr": "Un nouveau malware a été découvert, infectant le micrologiciel des systèmes d'infodivertissement automobile basés sur Android."
+    },
+    {
+      "title": "Iranian hackers shut down UK power plant for 4 days",
+      "url": "https://www.telegraph.co.uk/news/2026/08/22/iranian-hackers-shut-down-uk-power-plant/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T10:03:01.000Z",
+      "category": "security",
+      "tags": [
+        "cybersecurity",
+        "hackers",
+        "infrastructure"
+      ],
+      "tldr": "Des hackers iraniens ont réussi à perturber et à mettre à l'arrêt une centrale électrique britannique pendant quatre jours."
+    },
+    {
+      "title": "I gave Qwen 3.8 27B a reverse-engineering job and it finished in 30 minutes",
+      "url": "https://www.xda-developers.com/qwen-3-8-27b-reverse-engineering-job-frontier-model/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T10:02:51.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "reverse-engineering",
+        "qwen"
+      ],
+      "tldr": "Le modèle d'intelligence artificielle Qwen 3.8 27B a accompli une tâche complexe de rétro-ingénierie en seulement 30 minutes."
+    },
+    {
+      "title": "Show HN: Live 3D satellite tracker and the declassified Pentagon UFO archive",
+      "url": "https://skylens.yantraai.app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T09:27:40.000Z",
+      "category": "other",
+      "tags": [
+        "3d",
+        "satellite",
+        "ufo"
+      ],
+      "tldr": "Un projet Show HN présente un suivi de satellites en 3D en direct combiné avec des archives déclassifiées du Pentagone sur les ovnis."
+    },
+    {
+      "title": "JIT Compiling Code in 5μs",
+      "url": "https://malisper.me/jit-compiling-code-in-5-us/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T06:04:51.000Z",
+      "category": "dev",
+      "tags": [
+        "jit",
+        "compilation",
+        "performance"
+      ],
+      "tldr": "Un article technique explore les mécanismes permettant d'obtenir une compilation JIT de code en seulement 5 microsecondes."
+    },
+    {
+      "title": "MartyPC is a cross-platform emulator of early PCs written in Rust",
+      "url": "https://martypc.net/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-23T03:13:16.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "emulator",
+        "retro-computing"
+      ],
+      "tldr": "MartyPC est un émulateur multiplateforme d'ordinateurs anciens entièrement développé en langage Rust."
+    }
+  ]
+}

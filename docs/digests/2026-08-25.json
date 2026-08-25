@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-25",
+  "generatedAt": "2026-08-25T07:30:40.845Z",
+  "intro": "La sécurité des environnements de développement et des moteurs d'inférence domine l'actualité technique avec l'émergence de vecteurs d'attaque ciblant directement les postes de travail et les environnements d'exécution des modèles. En parallèle, l'ingénierie logicielle s'intéresse à l'optimisation des flux de travail locaux, illustrée par la capture textuelle contextuelle pour l'assistance par IA, ainsi qu'aux défis de traçabilité et de rétro-ingénierie liés au marquage invisible des données.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Malware that runs the moment you open the project",
+      "url": "https://dev.to/avioflagos/malware-that-runs-the-moment-you-open-the-project-1j5e",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-25T07:18:35.000Z",
+      "category": "security",
+      "tags": [
+        "malware",
+        "vscode",
+        "security"
+      ],
+      "tldr": "Une famille de malwares se cache dans les dépôts de développeurs et s'exécute dès l'ouverture du projet dans VS Code, sans nécessiter d'installation npm."
+    },
+    {
+      "title": "Show HN: Screen memory without screenshots, just text to Markdown",
+      "url": "https://github.com/dragthelake/ambient-context",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T04:33:24.000Z",
+      "category": "dev",
+      "tags": [
+        "macos",
+        "markdown",
+        "accessibility"
+      ],
+      "tldr": "Une application macOS lit le texte de la fenêtre active via l'API d'accessibilité pour l'enregistrer en Markdown, sans utiliser de captures d'écran."
+    },
+    {
+      "title": "LLMs could control their host machines by exploiting inference engines",
+      "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-24T19:03:06.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "security",
+        "inference"
+      ],
+      "tldr": "Cet article explore comment les grands modèles de langage (LLM) pourraient potentiellement contrôler leurs machines hôtes en exploitant les moteurs d'inférence."
+    },
+    {
+      "title": "The entire city of San Francisco as a video game",
+      "url": "https://sf.thijs.gg/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-24T17:05:38.000Z",
+      "category": "other",
+      "tags": [
+        "gamedev",
+        "visualization",
+        "web"
+      ],
+      "tldr": "Ce projet recrée la ville entière de San Francisco sous la forme d'un jeu vidéo."
+    },
+    {
+      "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
+      "url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-24T15:28:04.000Z",
+      "category": "security",
+      "tags": [
+        "watermark",
+        "privacy",
+        "reverse-engineering"
+      ],
+      "tldr": "MS Paint et l'application Photos intègrent un filigrane invisible contenant un GUID, même pour les contenus générés localement."
+    }
+  ]
+}

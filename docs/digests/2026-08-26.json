@@ -1,0 +1,124 @@
+{
+  "date": "2026-08-26",
+  "generatedAt": "2026-08-26T07:30:12.686Z",
+  "intro": "La sécurité logicielle est au cœur de l'actualité avec les défis posés par l'autonomie des agents IA, la gestion délicate du contexte et des permissions, ainsi que des failles inattendues liées aux manipulations de chaînes de caractères et à l'authentification des médias. Parallèlement, l'écosystème technique innove avec l'arrivée de bases de données de graphes locales inspirées de SQLite, l'optimisation des flux web via WebAssembly et la standardisation de formats d'images performants.",
+  "count": 8,
+  "items": [
+    {
+      "title": "A Confirm Button Is Not a Coding-Agent Security Boundary",
+      "url": "https://dev.to/hefty_69a4c2d631c9dd70724/a-confirm-button-is-not-a-coding-agent-security-boundary-5700",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-26T07:13:33.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "ai",
+        "coding-agent"
+      ],
+      "tldr": "Un simple bouton de confirmation ne suffit pas comme limite de sécurité pour un agent de codage face aux risques de liens symboliques et de détournement de chemins."
+    },
+    {
+      "title": "Agentic Context Management: Memory and Cost as Architecture Problems",
+      "url": "https://arxiv.org/abs/2607.21503",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-26T02:35:25.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "architecture",
+        "memory",
+        "cost"
+      ],
+      "tldr": "Cet article aborde la gestion du contexte des agents IA comme un problème architectural fondamental lié à la mémoire et aux coûts."
+    },
+    {
+      "title": "Show HN: TeXbrain, a LaTeX editor that runs pdfTeX in the browser via WASM",
+      "url": "https://github.com/swimmingbrain/texbrain",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T22:08:50.000Z",
+      "category": "dev",
+      "tags": [
+        "latex",
+        "wasm",
+        "browser",
+        "editor"
+      ],
+      "tldr": "TeXbrain est un éditeur LaTeX exécutant pdfTeX directement dans le navigateur grâce au WebAssembly, offrant une alternative sans abonnement."
+    },
+    {
+      "title": "When str.lower() is a security vulnerability in Python",
+      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T20:49:03.000Z",
+      "category": "security",
+      "tags": [
+        "python",
+        "security",
+        "vulnerability"
+      ],
+      "tldr": "Une analyse détaillée met en lumière comment la méthode str.lower() en Python peut parfois introduire des vulnérabilités de sécurité inattendues."
+    },
+    {
+      "title": "C2PA Cameras Do Not Survive Contact with Reality",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T19:38:24.000Z",
+      "category": "security",
+      "tags": [
+        "c2pa",
+        "camera",
+        "android",
+        "authenticity"
+      ],
+      "tldr": "Les caméras équipées de la technologie C2PA pour l'authentification des médias peinent à résister aux réalités pratiques et aux manipulations sur Android."
+    },
+    {
+      "title": "Firefox 157 will include JPEG XL by default on all platforms",
+      "url": "https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T17:55:23.000Z",
+      "category": "dev",
+      "tags": [
+        "firefox",
+        "jpeg-xl",
+        "browser",
+        "image"
+      ],
+      "tldr": "La version 157 de Firefox intègrera le format d'image JPEG XL par défaut sur toutes les plateformes prises en charge."
+    },
+    {
+      "title": "Show HN: LatticeDB – Like SQLite but for graph databases",
+      "url": "https://github.com/jeffhajewski/latticedb",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T16:52:05.000Z",
+      "category": "dev",
+      "tags": [
+        "database",
+        "graph",
+        "sqlite"
+      ],
+      "tldr": "LatticeDB se positionne comme un équivalent de SQLite mais spécifiquement conçu pour simplifier l'utilisation locale des bases de données de graphes."
+    },
+    {
+      "title": "Tooltips need a delay, and then they need to skip it",
+      "url": "https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-25T16:35:36.000Z",
+      "category": "other",
+      "tags": [
+        "ux",
+        "ui",
+        "tooltips"
+      ],
+      "tldr": "Une réflexion sur l'ergonomie des infobulles (tooltips), qui nécessitent un délai d'apparition initial mais devraient ensuite s'afficher instantanément."
+    }
+  ]
+}

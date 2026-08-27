@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-27",
+  "generatedAt": "2026-08-27T07:30:07.388Z",
+  "intro": "L'actualité technique de ce jour met en lumière l'évolution des outils de développement web avec une nouvelle version majeure de gestionnaire de paquets JavaScript, ainsi que des innovations en matière de mise en réseau sécurisée basées sur Tailscale. Parallèlement, l'intégration des intelligences artificielles progresse à travers l'optimisation de la livraison de contenu pour les agents et l'analyse post-incident des plateformes de machine learning.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Pnpm 12.0",
+      "url": "https://pnpm.io/blog/releases/12.0",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T05:12:39.000Z",
+      "category": "dev",
+      "tags": [
+        "pnpm",
+        "javascript",
+        "package manager",
+        "release"
+      ],
+      "tldr": "Sortie de Pnpm 12.0, une nouvelle version majeure du gestionnaire de paquets populaire pour JavaScript."
+    },
+    {
+      "title": "Serve Markdown to AI Agents with Accept Headers",
+      "url": "https://acceptmarkdown.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-26T19:45:59.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "markdown",
+        "api",
+        "agents"
+      ],
+      "tldr": "Un service permet de servir du contenu au format Markdown directement aux agents IA en utilisant les en-têtes Accept."
+    },
+    {
+      "title": "The Hugging Face incident and the road ahead",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-26T19:15:23.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "hugging face",
+        "incident",
+        "openai"
+      ],
+      "tldr": "Retour sur l'incident de sécurité concernant Hugging Face et les perspectives d'avenir pour y faire face."
+    },
+    {
+      "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
+      "url": "https://github.com/tailscale/tailcat",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-26T17:42:22.000Z",
+      "category": "devops",
+      "tags": [
+        "networking",
+        "tailscale",
+        "netcat",
+        "tools"
+      ],
+      "tldr": "Présentation de Tailcat, un outil similaire à netcat mais fonctionnant par-dessus le plan de données de Tailscale."
+    }
+  ]
+}

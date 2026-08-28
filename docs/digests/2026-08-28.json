@@ -1,0 +1,154 @@
+{
+  "date": "2026-08-28",
+  "generatedAt": "2026-08-28T07:30:54.123Z",
+  "intro": "L actualite technique de ce jour met en avant l optimisation des architectures systemes et reseaux, illustree par la gestion des connexions persistantes et des volumes massifs de donnees. Les developpeurs peuvent egalement approfondir leurs connaissances en systemes de bases de donnees et en infrastructures d indexation performantes. Enfin, l ecosysteme de l intelligence artificielle continue d evoluer rapidement avec de nouveaux modeles multimodaux, des outils de recherche scientifique et des passerelles d integration dediees.",
+  "count": 10,
+  "items": [
+    {
+      "title": "Hidden complexity of building WebSocket servers from scratch",
+      "url": "https://dev.to/turboline_ai_/hidden-complexity-of-building-websocket-servers-from-scratch-9lp",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-28T07:09:02.000Z",
+      "category": "dev",
+      "tags": [
+        "websockets",
+        "tcp",
+        "networking"
+      ],
+      "tldr": "Créer des serveurs WebSocket à partir de zéro semble simple au début, mais révèle rapidement des complexités cachées lors de la maintenance des connexions persistantes."
+    },
+    {
+      "title": "SQL Execution Order Internals: Why WHERE Fails on Aliases but ORDER BY Succeeds",
+      "url": "https://dev.to/arpitmbangre/sql-execution-order-internals-why-where-fails-on-aliases-but-order-by-succeeds-1774",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-28T07:08:52.000Z",
+      "category": "dev",
+      "tags": [
+        "sql",
+        "database",
+        "queries"
+      ],
+      "tldr": "Ce guide explique l'ordre d'exécution des requêtes SQL pour comprendre pourquoi la clause WHERE échoue sur les alias de colonnes contrairement à ORDER BY."
+    },
+    {
+      "title": "Show HN: IndexFlow – Open-source indexing infrastructure built with Rust",
+      "url": "https://github.com/IndexFlowing/IndexFlow-core",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-28T02:46:39.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "open-source",
+        "indexing"
+      ],
+      "tldr": "IndexFlow est une infrastructure d'indexation open-source développée en langage Rust."
+    },
+    {
+      "title": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
+      "url": "https://www.terminal-bench-science.ai/announcement",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-28T00:06:51.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "agents",
+        "research"
+      ],
+      "tldr": "Terminal-Bench-Science est un outil d'évaluation conçu pour tester les performances des agents IA sur des flux de travail de recherche scientifique."
+    },
+    {
+      "title": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T21:46:39.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "rag",
+        "notebooks",
+        "colab"
+      ],
+      "tldr": "AI Engineer Notebooks propose des tutoriels gratuits sans framework pour le RAG, les agents et les évaluations directement sur Google Colab."
+    },
+    {
+      "title": "Show HN: We built open OpenRouter that turns usage into a better model",
+      "url": "https://github.com/experientiallabs/experiential",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T21:18:35.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "gateway",
+        "rust",
+        "llm"
+      ],
+      "tldr": "Une passerelle de modèles open source écrite en Rust a été créée pour gérer facilement les modèles locaux, open source et de pointe en un seul endroit."
+    },
+    {
+      "title": "Gemini-3.5-Transcribe",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T18:03:42.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "gemini",
+        "transcription",
+        "google"
+      ],
+      "tldr": "Google présente Gemini-3.5-Transcribe, un nouveau modèle de transcription vocale et audio issu de sa recherche."
+    },
+    {
+      "title": "We found a division by zero bug in FFmpeg with a vibecoded fuzzer",
+      "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T17:53:40.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "ffmpeg",
+        "fuzzing",
+        "bug"
+      ],
+      "tldr": "Un bogue de division par zéro a été découvert dans FFmpeg grâce à l'utilisation d'un fuzzer généré par IA."
+    },
+    {
+      "title": "Saving 100 terabytes of memory by optimizing 1.1.1.1's DNS cache",
+      "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T17:17:57.000Z",
+      "category": "devops",
+      "tags": [
+        "cloudflare",
+        "dns",
+        "memory",
+        "optimization"
+      ],
+      "tldr": "Cloudflare explique comment son équipe a réussi à économiser 100 téraoctets de mémoire en optimisant le cache DNS de son service 1.1.1.1."
+    },
+    {
+      "title": "Gemini Omni 1.1 Flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-27T17:06:32.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "gemini",
+        "google",
+        "developers"
+      ],
+      "tldr": "Google annonce la sortie de Gemini Omni 1.1 Flash, offrant de nouveaux outils multimodaux aux développeurs."
+    }
+  ]
+}

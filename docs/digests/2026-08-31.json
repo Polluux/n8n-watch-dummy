@@ -1,0 +1,82 @@
+{
+  "date": "2026-08-31",
+  "generatedAt": "2026-08-31T07:30:40.757Z",
+  "intro": "L evolution des architectures web modernes s accentue aujourd hui avec l integration croissante de WebAssembly, de WebGPU et de l intelligence artificielle directement dans les navigateurs, qui se transforment en veritables plateformes de calcul. Du cote de l ecosysteme logiciel, les ingenieurs doivent composer avec l optimisation des outils de compilation et de configuration des builds, tout en maintenant les exigences d accessibilite et de securite face aux dernieres vulnerabilites signalees sur les infrastructures publiques.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Unity_access, major updates and release status",
+      "url": "https://dev.to/retro-coder64/unityaccess-major-updates-and-release-status-4cfb",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-31T07:21:08.000Z",
+      "category": "dev",
+      "tags": [
+        "unity",
+        "accessibility",
+        "plugin",
+        "gamedev"
+      ],
+      "tldr": "Ce journal de développement présente les récentes mises à jour de Unity_access, un plugin améliorant la compatibilité de l'éditeur Unity avec les lecteurs d'écran."
+    },
+    {
+      "title": "What Browserslist Actually Does in Next.js",
+      "url": "https://dev.to/alessandro-grosselle/what-browserslist-actually-does-in-nextjs-2hlm",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-31T07:18:28.000Z",
+      "category": "dev",
+      "tags": [
+        "next.js",
+        "browserslist",
+        "javascript",
+        "build"
+      ],
+      "tldr": "Une analyse comparative examine si la configuration de browserslist dans le fichier package.json modifie réellement les builds compilés de projets Next.js 16."
+    },
+    {
+      "title": "🚀 The Browser Is Becoming a Compute Platform: How Edge AI, WebGPU, and WASM Are Reshaping Modern Architecture",
+      "url": "https://dev.to/usman_awan/the-browser-is-becoming-a-compute-platform-how-edge-ai-webgpu-and-wasm-are-reshaping-modern-2na5",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-31T07:01:29.000Z",
+      "category": "ai",
+      "tags": [
+        "webgpu",
+        "wasm",
+        "edge-ai",
+        "browser"
+      ],
+      "tldr": "Le navigateur évolue vers une plateforme de calcul complète grâce à l'intelligence artificielle en périphérie, WebGPU et WebAssembly, transformant l'architecture web moderne."
+    },
+    {
+      "title": "Java on Cloudflare Workers",
+      "url": "https://dev.to/gmitch215/java-on-cloudflare-workers-2njh",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-08-31T06:53:15.000Z",
+      "category": "dev",
+      "tags": [
+        "java",
+        "cloudflare",
+        "webassembly",
+        "serverless"
+      ],
+      "tldr": "Cet article présente bytebox, une solution utilisant TeaVM pour compiler du code Java en WebAssembly afin de l'exécuter sur les architectures serverless de Cloudflare Workers."
+    },
+    {
+      "title": "La plateforme Zéro Logement Vacant a été piratée",
+      "url": "https://korben.info/la-plateforme-zero-logement-vacant-a-ete-piratee.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-08-30T13:31:54.000Z",
+      "category": "security",
+      "tags": [
+        "piratage",
+        "fuite-de-données",
+        "cybersécurité"
+      ],
+      "tldr": "La plateforme française Zéro Logement Vacant a subi un piratage revendiqué par ZeroBytes, compromettant des millions de lignes de données issues du cadastre et de la DGFiP."
+    }
+  ]
+}

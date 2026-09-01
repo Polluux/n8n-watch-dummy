@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-01",
+  "generatedAt": "2026-09-01T07:30:52.548Z",
+  "intro": "L edition d aujourdhui met en lumiere l utilisation innovante des technologies web, entre architectures logicielles securisees et experimentations visuelles minimalistes. D un cote, WebAssembly s impose comme un modele de sandboxing garantissant la confidentialite cote client au dela de ses simples gains de performance. De l autre, le developpement frontal repousse ses limites creatives a travers des projets artistiques complexes entierement embarques dans un fichier unique.",
+  "count": 2,
+  "items": [
+    {
+      "title": "How WebAssembly became our privacy architecture (not just a performance trick)",
+      "url": "https://dev.to/iqbalhssn78/how-webassembly-became-our-privacy-architecture-not-just-a-performance-trick-5c00",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-01T07:05:58.000Z",
+      "category": "security",
+      "tags": [
+        "webassembly",
+        "privacy",
+        "sandbox",
+        "architecture"
+      ],
+      "tldr": "Cet article explique comment le modèle d'exécution cloisonné de WebAssembly permet de garantir la confidentialité et d'éliminer structurellement certains risques de sécurité dans le développement d'outils pour navigateur."
+    },
+    {
+      "title": "A walkable ASCII cyberpunk city in one HTML file [video]",
+      "url": "https://www.youtube.com/watch?v=3YtygAx_C6A",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-08-31T18:21:33.000Z",
+      "category": "other",
+      "tags": [
+        "ascii",
+        "cyberpunk",
+        "html",
+        "animation"
+      ],
+      "tldr": "Une vidéo présente une ville cyberpunk interactive en art ASCII, entièrement conçue et exécutée dans un seul fichier HTML."
+    }
+  ]
+}

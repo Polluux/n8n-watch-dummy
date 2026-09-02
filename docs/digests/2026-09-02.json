@@ -1,0 +1,65 @@
+{
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-02T07:30:44.060Z",
+  "intro": "L'actualité technique du jour met en avant l'intégration des grands modèles de langage avec la sortie de nouvelles versions et le développement d'assistants de code augmentés par l'appel de fonctions. Les ingénieurs se penchent également sur l'optimisation des performances d'inférence en production ainsi que sur des expérimentations créatives repoussant les limites du CSS moderne.",
+  "count": 4,
+  "items": [
+    {
+      "title": "How to Build an AI Coding Assistant with Amazon Bedrock Claude Function Calling in Node.js",
+      "url": "https://dev.to/dineshgowtham/how-to-build-an-ai-coding-assistant-with-amazon-bedrock-claude-function-calling-in-nodejs-5hlg",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-02T07:17:17.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "nodejs",
+        "claude",
+        "aws"
+      ],
+      "tldr": "Apprenez à créer un assistant de code intelligent en utilisant Amazon Bedrock, Claude et Node.js. Ce guide montre comment intégrer l'appel de fonctions pour automatiser l'édition de code."
+    },
+    {
+      "title": "The efficient frontier of LLM inference",
+      "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-01T23:48:05.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "inference",
+        "performance"
+      ],
+      "tldr": "Cet article explore la frontière efficace de l'inférence des modèles de langage (LLM), en analysant les performances et l'optimisation."
+    },
+    {
+      "title": "Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-01T17:53:53.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "anthropic",
+        "models"
+      ],
+      "tldr": "Découvrez les nouveautés apportées par Anthropic avec les modèles Claude Fable 5.1 et Claude Mythos 5.1."
+    },
+    {
+      "title": "Ambient CSS v3 – Blender meets CSS",
+      "url": "https://ambientcss.vercel.app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-01T15:35:11.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "design",
+        "web"
+      ],
+      "tldr": "Ambient CSS v3 propose une fusion surprenante entre les capacités de modélisation de Blender et le langage CSS."
+    }
+  ]
+}

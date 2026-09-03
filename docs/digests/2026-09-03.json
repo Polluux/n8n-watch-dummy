@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-03",
+  "generatedAt": "2026-09-03T07:30:18.171Z",
+  "intro": "L actualite technique du jour met en avant les dernieres evolutions du cote de l intelligence artificielle avec l acceleration des sorties de modeles de langage et les defis lies a l indexation des contenus synthetiques. Les developpeurs web et frontend trouveront egalement des analyses pointues concernant la gestion des donnees en temps reel et la robustesse des interfaces utilisateur sous React. Enfin, les nouveautes navigateurs et les algorithmes de generation procedurale completent ce tour d horizon technique.",
+  "count": 8,
+  "items": [
+    {
+      "title": "How to Build a Tennis Live Score Tracker with Next.js with Sportmicro",
+      "url": "https://dev.to/gobebarcelona/how-to-build-a-tennis-live-score-tracker-with-nextjs-with-sportmicro-12li",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-03T07:20:34.000Z",
+      "category": "dev",
+      "tags": [
+        "next.js",
+        "react",
+        "web"
+      ],
+      "tldr": "Découvrez comment construire un tracker de scores de tennis en direct avec Next.js et Sportmicro, en gérant la complexité des flux de données sportives en temps réel."
+    },
+    {
+      "title": "Your useOptimistic UI Might Be Lying to Users When the Server Action Actually Fails",
+      "url": "https://dev.to/anas_sheikh_2/your-useoptimistic-ui-might-be-lying-to-users-when-the-server-action-actually-fails-582j",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-03T07:02:27.000Z",
+      "category": "dev",
+      "tags": [
+        "react",
+        "ui",
+        "javascript"
+      ],
+      "tldr": "L'utilisation du hook useOptimistic dans React peut induire les utilisateurs en erreur si la gestion des erreurs lors de l'échec d'une action serveur est mal implémentée."
+    },
+    {
+      "title": "Google accélère et sort Gemini 3.8 Flash",
+      "url": "https://korben.info/google-accelere-et-sort-gemini-3-8-flash.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-03T04:56:32.000Z",
+      "category": "ai",
+      "tags": [
+        "google",
+        "gemini",
+        "llm"
+      ],
+      "tldr": "Google accélère son calendrier de sortie en lançant Gemini 3.8 Flash, marquant le troisième modèle de la gamme Flash en l'espace de six semaines."
+    },
+    {
+      "title": "Muse Spark 1.3",
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-02T19:35:04.000Z",
+      "category": "ai",
+      "tags": [
+        "meta",
+        "ai",
+        "models"
+      ],
+      "tldr": "Meta a introduit la version 1.3 de son modèle Muse Spark, enrichissant ainsi son offre de recherche en intelligence artificielle."
+    },
+    {
+      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-02T15:12:40.000Z",
+      "category": "ai",
+      "tags": [
+        "google",
+        "gemini",
+        "llm"
+      ],
+      "tldr": "Google DeepMind officialise les nouveaux modèles Gemini 3.8 Flash et 3.8 Flash Cyber, poursuivant le déploiement rapide de sa gamme."
+    },
+    {
+      "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
+      "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-02T13:59:59.000Z",
+      "category": "ai",
+      "tags": [
+        "seo",
+        "content",
+        "perplexity"
+      ],
+      "tldr": "Plus de 215 000 pages de comparatifs logiciels générées automatiquement pour l'IA ont été indexées et citées par Perplexity, soulevant des questions sur la fiabilité des sources."
+    },
+    {
+      "title": "Poisson Disk Sampling",
+      "url": "https://stripeacross.com/posts/poisson-disk-sampling/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-02T13:47:49.000Z",
+      "category": "other",
+      "tags": [
+        "algorithm",
+        "graphics",
+        "math"
+      ],
+      "tldr": "Cet article explore le concept et l'implémentation de l'échantillonnage par disque de Poisson, souvent utilisé pour la génération procédurale."
+    },
+    {
+      "title": "Firefox 155 apporte sa Fenêtre intelligente en France, la version iOS bloque la publicité",
+      "url": "https://next.ink/254095/firefox-155-apporte-sa-fenetre-intelligente-en-france-la-version-ios-bloque-la-publicite/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-02T07:40:00.000Z",
+      "category": "other",
+      "tags": [
+        "firefox",
+        "mozilla",
+        "browser"
+      ],
+      "tldr": "La version 155 de Firefox déploie sa fenêtre intelligente en France et intègre un bloqueur de publicité natif sur sa déclinaison iOS."
+    }
+  ]
+}

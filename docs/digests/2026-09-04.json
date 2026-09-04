@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T07:30:17.531Z",
+  "intro": "Les évolutions du développement front-end continuent de susciter de vives discussions, notamment autour de la fragilité des interfaces face aux modifications du DOM induites par les extensions de traduction et des turbulences structurelles que traverse le secteur. Parallèlement, l'actualité met en lumière l'efficacité surprenante de la simplicité dans les outils d'intelligence artificielle pour le code, où les agents autonomes privilégient des utilitaires textuels basiques aux protocoles de langage plus lourds. Enfin, l'écosystème technique s'enrichit de mises à jour pratiques avec le réveil notable d'un pilote système permettant l'interopérabilité des disques Linux sous Windows.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Your React app unmounts when a reader turns on Chrome translate",
+      "url": "https://dev.to/davlat_aliev_392c20ec5c92/your-react-app-unmounts-when-a-reader-turns-on-chrome-translate-2hn3",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-04T07:19:13.000Z",
+      "category": "dev",
+      "tags": [
+        "react",
+        "chrome",
+        "javascript",
+        "frontend"
+      ],
+      "tldr": "L'activation de Google Translate dans Chrome peut provoquer le démontage involontaire d'une application React, générant des erreurs de manipulation du DOM."
+    },
+    {
+      "title": "Grep beats LSP? Why coding agents ignore your fancier tools",
+      "url": "https://www.agentconnect.md/blog/grep-beat-lsp-harness/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-04T03:40:26.000Z",
+      "category": "ai",
+      "tags": [
+        "agents",
+        "llm",
+        "coding",
+        "tools"
+      ],
+      "tldr": "Une analyse montre pourquoi les agents de codage autonomes privilégient souvent l'outil simple grep au détriment d'outils plus complexes comme le Language Server Protocol (LSP)."
+    },
+    {
+      "title": "The asteroid currently hitting front end web development",
+      "url": "https://nolanlawson.com/2026/08/23/the-asteroid-currently-hitting-frontend-web-development/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-03T19:17:24.000Z",
+      "category": "dev",
+      "tags": [
+        "frontend",
+        "web",
+        "javascript"
+      ],
+      "tldr": "Article critique abordant les bouleversements et les défis majeurs qui secouent actuellement le développement web front-end."
+    },
+    {
+      "title": "Line Rider - À fond sur la piste de luge !",
+      "url": "https://korben.info/line-rider-jeu-dessin-physique-luge.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-03T10:54:04.000Z",
+      "category": "other",
+      "tags": [
+        "gaming",
+        "browser",
+        "web"
+      ],
+      "tldr": "Le célèbre jeu de traçage de pistes Line Rider revient dans une version moderne pour navigateur, gérant calques, multiples lugeurs et export vidéo."
+    },
+    {
+      "title": "WinBtrfs - Le pilote Windows qui monte vos disques Linux se réveille enfin",
+      "url": "https://korben.info/winbtrfs-btrfs-windows.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-03T10:26:16.000Z",
+      "category": "devops",
+      "tags": [
+        "windows",
+        "linux",
+        "filesystem",
+        "driver"
+      ],
+      "tldr": "La version 1.10 du pilote WinBtrfs pour Windows est enfin disponible, corrigeant divers plantages liés à Steam, à la corbeille et aux snapshots."
+    }
+  ]
+}

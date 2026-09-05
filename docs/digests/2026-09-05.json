@@ -1,0 +1,128 @@
+{
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T07:30:10.295Z",
+  "intro": "L'actualité technique de ce jour est dominée par des impératifs de sécurité urgents, marqués par la découverte de failles critiques de type exécution de code à distance sur des environnements web et des navigateurs majeurs. Parallèlement, l'écosystème du développement frontend et des outils de build progresse grâce à l'intégration de compilateurs en Rust. Enfin, l'intelligence artificielle continue de transformer les pratiques avec des avancées notables dans l'optimisation des tokens pour les assistants de code, la structuration du contexte pour les agents et la recherche en mathématiques formelles.",
+  "count": 8,
+  "items": [
+    {
+      "title": "Actively exploited sandbox RCE in all Chromium versions",
+      "url": "https://nvd.nist.gov/vuln/detail/cve-2026-85046",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-04T21:52:01.000Z",
+      "category": "security",
+      "tags": [
+        "chromium",
+        "rce",
+        "vulnerability",
+        "cve"
+      ],
+      "tldr": "Une vulnérabilité critique de type RCE dans le bac à sable affecte activement toutes les versions de Chromium. Un correctif est nécessaire pour se protéger de cette exploitation."
+    },
+    {
+      "title": "The Rust React Compiler is now native in Vite",
+      "url": "https://blog.master.dev/react-now-rusted-all-the-way-out/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-04T17:49:09.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "react",
+        "vite",
+        "compiler"
+      ],
+      "tldr": "Le compilateur React écrit en Rust est désormais intégré de manière native dans Vite. Cette évolution améliore les performances de build pour les applications web."
+    },
+    {
+      "title": "OpenViking’s Filesystem View of Agent Context Is a Welcome Escape from RAG Glue Code",
+      "url": "https://dev.to/yan_cheng/openvikings-filesystem-view-of-agent-context-is-a-welcome-escape-from-rag-glue-code-1a4a",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-05T07:05:35.000Z",
+      "category": "ai",
+      "tags": [
+        "rag",
+        "ai",
+        "agents",
+        "database"
+      ],
+      "tldr": "OpenViking propose une vue basée sur un système de fichiers pour gérer le contexte des agents IA. Cela offre une alternative structurée au code de liaison RAG traditionnel."
+    },
+    {
+      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
+      "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-04T23:38:50.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "spotify",
+        "tokens",
+        "optimization"
+      ],
+      "tldr": "L'outil Portal développé par Spotify a permis de réduire l'utilisation des jetons de Claude Code de 90%. C'est une avancée significative pour l'optimisation des coûts des assistants de code."
+    },
+    {
+      "title": "Formalizing Fermat's Last Theorem",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-04T18:42:56.000Z",
+      "category": "ai",
+      "tags": [
+        "anthropic",
+        "mathematics",
+        "research",
+        "theorem"
+      ],
+      "tldr": "Anthropic a mené des travaux de recherche sur la formalisation du dernier théorème de Fermat. Cette initiative démontre les capacités des modèles d'IA dans le domaine des mathématiques formelles."
+    },
+    {
+      "title": "Three.js, WebGPU et IA : où en est la 3D sur le web ?",
+      "url": "https://www.humancoders.com/podcast/three-js-webgpu-et-ia-ou-en-est-la-3d-sur-le-web-faq-3",
+      "source": "jdh",
+      "sourceName": "Journal du Hacker",
+      "publishedAt": "2026-09-04T12:48:04.000Z",
+      "category": "dev",
+      "tags": [
+        "webgpu",
+        "three.js",
+        "ai",
+        "3d"
+      ],
+      "tldr": "Ce podcast explore l'état actuel de la 3D sur le web à travers l'utilisation combinée de Three.js, WebGPU et de l'intelligence artificielle."
+    },
+    {
+      "title": "DokuWiki - Une faille critique à patcher immédiatement",
+      "url": "https://korben.info/dokuwiki-faille-rce-critique.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-04T07:30:00.000Z",
+      "category": "security",
+      "tags": [
+        "dokuwiki",
+        "rce",
+        "vulnerability",
+        "patch"
+      ],
+      "tldr": "Une faille critique de type RCE touchant DokuWiki depuis dix ans a été confirmée. Un correctif a été publié rapidement, mais il ne s'applique qu'aux dernières versions."
+    },
+    {
+      "title": "Une vulnérabilité sur Grafikart.fr",
+      "url": "https://grafikart.fr/blog/faille-xss-grafikart",
+      "source": "jdh",
+      "sourceName": "Journal du Hacker",
+      "publishedAt": "2026-09-03T16:36:36.000Z",
+      "category": "security",
+      "tags": [
+        "xss",
+        "grafikart",
+        "vulnerability",
+        "web"
+      ],
+      "tldr": "Une vulnérabilité de type XSS a été découverte et rapportée sur le site Grafikart.fr. Un correctif a été mis en place par la suite."
+    }
+  ]
+}

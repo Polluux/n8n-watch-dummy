@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-06",
+  "generatedAt": "2026-09-06T07:30:15.769Z",
+  "intro": "Le développement front-end est à l'honneur aujourd'hui avec l'intégration de flux d'intelligence artificielle en temps réel dans les applications Angular et la conception d'utilitaires web autonomes sans aucune dépendance. L'écosystème progresse également sur l'outillage des agents de codage, notamment grâce à l'émergence de solutions de mémoire persistante intégrées nativement aux workflows Git.",
+  "count": 3,
+  "items": [
+    {
+      "title": "Streaming AI Responses Into Your Angular App",
+      "url": "https://dev.to/krivanek06/streaming-ai-responses-into-your-angular-app-3bip",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-06T07:14:36.000Z",
+      "category": "ai",
+      "tags": [
+        "angular",
+        "ai",
+        "streaming",
+        "javascript"
+      ],
+      "tldr": "Découvrez comment intégrer le streaming de réponses d'IA dans votre application Angular pour offrir une expérience utilisateur fluide et instantanée, semblable à un chat en direct."
+    },
+    {
+      "title": "I built 59 free browser-based dev tools in vanilla JS — here's what I learned",
+      "url": "https://dev.to/yuvaraj_radhakrishnan_224/i-built-59-free-browser-based-dev-tools-in-vanilla-js-heres-what-i-learned-3ec4",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-06T06:37:45.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "tools",
+        "web",
+        "frontend"
+      ],
+      "tldr": "Un développeur partage son expérience après avoir conçu 59 outils de développement gratuits basés sur le navigateur, entièrement en JavaScript vanille, sans aucune dépendance ni serveur."
+    },
+    {
+      "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+      "url": "https://github.com/okf-memory/okf-agent-memory",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-05T22:15:52.000Z",
+      "category": "ai",
+      "tags": [
+        "git",
+        "memory",
+        "agents",
+        "ai"
+      ],
+      "tldr": "OKF Agent Memory propose une solution de mémoire persistante native à Git, spécialement conçue pour les agents de codage basés sur l'intelligence artificielle."
+    }
+  ]
+}

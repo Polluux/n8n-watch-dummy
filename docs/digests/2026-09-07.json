@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-07",
+  "generatedAt": "2026-09-07T07:30:21.708Z",
+  "intro": "Le paysage du développement d'aujourd'hui met en avant la légèreté et l'efficacité avec l'émergence d'une solution minimaliste basée sur les Proxy JavaScript pour dynamiser le DOM. Parallèlement, l'écosystème de l'intelligence artificielle s'enrichit d'architectures locales et durables, illustrées par l'intégration de moteurs de mémoire SQLite universels dédiés aux interfaces en ligne de commande.",
+  "count": 2,
+  "items": [
+    {
+      "title": "Show HN: Mador – Make any DOM reactive with a tiny 80-line Proxy state tuple",
+      "url": "https://github.com/marsbos/mador",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-06T20:45:13.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "dom",
+        "reactive",
+        "proxy"
+      ],
+      "tldr": "Mador est une bibliothèque légère de 80 lignes basée sur les Proxy JavaScript pour rendre n'importe quel élément du DOM réactif."
+    },
+    {
+      "title": "Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs",
+      "url": "https://github.com/timgordontg/engrim",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-07T04:49:36.000Z",
+      "category": "ai",
+      "tags": [
+        "sqlite",
+        "cli",
+        "memory",
+        "local-first"
+      ],
+      "tldr": "Engrim est un moteur de mémoire SQLite universel et local-first conçu spécifiquement pour les interfaces en ligne de commande (CLI) dopées à l'IA."
+    }
+  ]
+}

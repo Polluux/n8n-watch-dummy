@@ -1,0 +1,158 @@
+{
+  "date": "2026-09-08",
+  "generatedAt": "2026-09-08T07:30:10.249Z",
+  "intro": "L'actualité technique de ce jour met en lumière les défis de la résilience des architectures distribuées et l'optimisation des performances réseau avec les protocoles modernes. Parallèlement, l'écosystème des agents logiciels évolue rapidement, porté par de nouveaux modèles d'intelligence artificielle, des infrastructures virtualisées dédiées et des méthodes d'automatisation des tests de bout en bout.",
+  "count": 10,
+  "items": [
+    {
+      "title": "The HTTP client with no timeout that took down four services",
+      "url": "https://dev.to/sergey_shinder_ab2d943365/the-http-client-with-no-timeout-that-took-down-four-services-3ia9",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-08T07:21:37.000Z",
+      "category": "devops",
+      "tags": [
+        "http",
+        "reliability",
+        "architecture",
+        "backend"
+      ],
+      "tldr": "Un client HTTP sans délai d'attente (timeout) dans un service optionnel a provoqué une panne en cascade, faisant chuter l'ensemble de la plateforme en quelques minutes."
+    },
+    {
+      "title": "Running DynamoDB vector search locally",
+      "url": "https://dev.to/martinhicks/running-dynamodb-vector-search-locally-203o",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-08T07:21:32.000Z",
+      "category": "ai",
+      "tags": [
+        "dynamodb",
+        "vector-search",
+        "database",
+        "ai"
+      ],
+      "tldr": "Dynoxide intègre désormais la recherche vectorielle DynamoDB en local, permettant aux agents IA d'interagir avec les index sans passer par AWS."
+    },
+    {
+      "title": "I Made Claude Code Prove Billing End-to-End Before I Let It Ship",
+      "url": "https://dev.to/indierob_/i-made-claude-code-prove-billing-end-to-end-before-i-let-it-ship-2h9d",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-08T07:17:14.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "agents",
+        "testing",
+        "automation"
+      ],
+      "tldr": "Un développeur a contraint un agent de code (Claude Code) à prouver le bon fonctionnement de la facturation de bout en bout avant d'autoriser la mise en production."
+    },
+    {
+      "title": "GPT-6 Astra: A Developer's First Look at OpenAI's Most Capable Model Yet",
+      "url": "https://dev.to/shresthapandey/gpt-6-astra-a-developers-first-look-at-openais-most-capable-model-yet-2l5d",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-08T07:17:00.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "llm",
+        "gpt-6",
+        "agents"
+      ],
+      "tldr": "GPT-6 Astra, le nouveau modèle d'OpenAI, se distingue par ses performances en automatisation informatique et en sessions de code longues, idéal pour les flux de travail par agents."
+    },
+    {
+      "title": "HTTP/2 and HTTP/3 in C#: The Speed You Didn't Know You Were Missing",
+      "url": "https://dev.to/homolibere/http2-and-http3-in-c-the-speed-you-didnt-know-you-were-missing-2i4b",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-08T07:12:00.000Z",
+      "category": "dev",
+      "tags": [
+        "csharp",
+        "http/2",
+        "http/3",
+        "performance"
+      ],
+      "tldr": "Découvrez comment l'adoption des protocoles HTTP/2 et HTTP/3 en C# permet d'améliorer considérablement les performances réseau de vos applications."
+    },
+    {
+      "title": "The VMs Powering Mobile Agents (Instinct, Claude Code)",
+      "url": "https://rohanadwankar.github.io/posts/platforms.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-08T04:36:26.000Z",
+      "category": "devops",
+      "tags": [
+        "vms",
+        "agents",
+        "mobile",
+        "infrastructure"
+      ],
+      "tldr": "Analyse des machines virtuelles utilisées pour faire fonctionner des agents mobiles tels qu'Instinct et Claude Code."
+    },
+    {
+      "title": "How well do agents use test/verification techniques?",
+      "url": "https://danluu.com/agentic-testing/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-08T02:58:16.000Z",
+      "category": "ai",
+      "tags": [
+        "agents",
+        "testing",
+        "verification",
+        "ai"
+      ],
+      "tldr": "Examen de la capacité des agents IA à utiliser efficacement les techniques de test et de vérification logicielle."
+    },
+    {
+      "title": "I've factored the RSA keys of a Certificate Authority from the 90s",
+      "url": "https://mcpherrin.ca/2026/09/07/rsa.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-08T01:16:59.000Z",
+      "category": "security",
+      "tags": [
+        "rsa",
+        "cryptography",
+        "security",
+        "history"
+      ],
+      "tldr": "Un chercheur a réussi à factoriser les clés RSA d'une autorité de certification datant des années 1990."
+    },
+    {
+      "title": "Linux tourne enfin sur les Mac M3 (sauf la carte graphique)",
+      "url": "https://korben.info/asahi-linux-support-m3-mac.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-07T11:37:18.000Z",
+      "category": "dev",
+      "tags": [
+        "linux",
+        "mac",
+        "apple",
+        "hardware"
+      ],
+      "tldr": "Asahi Linux intègre le support des Mac M3 dans son installeur, bien que la prise en charge de la carte graphique 3D ne soit pas encore finalisée."
+    },
+    {
+      "title": "Un Galaxy S21 en mode Dex entier dans une souris",
+      "url": "https://korben.info/un-galaxy-s21-en-mode-dex-entier-dans-une-souris.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-07T11:19:09.000Z",
+      "category": "other",
+      "tags": [
+        "hardware",
+        "android",
+        "gadget",
+        "mod"
+      ],
+      "tldr": "Un passionné a intégré la carte mère d'un Samsung Galaxy S21 dans un boîtier de souris pour faire tourner Samsung DeX et Minecraft."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-09",
+  "generatedAt": "2026-09-09T07:31:14.834Z",
+  "intro": "L'actualité technique du jour met à l'honneur les performances web avec l'utilisation de WebGPU pour le rendu syntaxique et l'exécution directe de jeux rétro complexes au sein même du navigateur. En parallèle, l'évaluation des modèles de langage se poursuit avec des benchmarks précis sur l'impact de la quantification des LLM, confirmant la viabilité des formats à quatre bits face aux approches plus extrêmes.",
+  "count": 3,
+  "items": [
+    {
+      "title": "27.5KB language-agnostic WebGPU syntax highlighter",
+      "url": "https://gpu-lexer.vercel.app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-09T01:14:50.000Z",
+      "category": "dev",
+      "tags": [
+        "webgpu",
+        "syntax-highlighter",
+        "performance"
+      ],
+      "tldr": "Un colorateur syntaxique indépendant du langage et propulsé par WebGPU, pesant seulement 27.5 Ko."
+    },
+    {
+      "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses",
+      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-08T14:49:19.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "quantization",
+        "benchmark",
+        "qwen"
+      ],
+      "tldr": "Un benchmark des différentes quantifications du modèle Qwen3.8 27B montre que la version 4-bit conserve de bonnes performances tandis que la version 1-bit s'effondre."
+    },
+    {
+      "title": "reVCDOS - Vice City en entier dans un onglet",
+      "url": "https://korben.info/gta-vice-city-navigateur-web-revcdos.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-08T12:13:55.000Z",
+      "category": "other",
+      "tags": [
+        "gta",
+        "browser",
+        "retro-gaming"
+      ],
+      "tldr": "Le jeu GTA Vice City s'exécute entièrement dans un onglet de navigateur grâce au projet reVCDOS, avec support du tactile et des manettes."
+    }
+  ]
+}

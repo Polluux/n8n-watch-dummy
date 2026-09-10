@@ -1,0 +1,82 @@
+{
+  "date": "2026-09-10",
+  "generatedAt": "2026-09-10T07:30:11.789Z",
+  "intro": "L'actualité du développement web est marquée aujourd'hui par l'acquisition de Tailwind par Shopify et par l'optimisation des architectures front-end, qu'il s'agisse de concevoir le balisage HTML comme une véritable surface d'API, de structurer des applications avec des kits de démarrage Vue 3 ou d'améliorer les performances de lecture vidéo en configurant correctement les workers JavaScript. Par ailleurs, la sécurité des navigateurs reste une priorité avec la publication par Google d'un correctif critique pour une faille activement exploitée dans le moteur V8 de Chrome.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Your HTML Is an API Surface: 7 Patterns That Make Web Apps Easier to Automate",
+      "url": "https://dev.to/jim_smith_2acac60d656d462/your-html-is-an-api-surface-7-patterns-that-make-web-apps-easier-to-automate-11p2",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-10T07:09:47.000Z",
+      "category": "dev",
+      "tags": [
+        "html",
+        "api",
+        "frontend",
+        "automation"
+      ],
+      "tldr": "Cet article explore 7 motifs de conception pour structurer le HTML comme une surface d'API, facilitant ainsi l'automatisation des applications web."
+    },
+    {
+      "title": "Vue 3 SaaS starter kits in 2026: Nuxt kits, Vue on another backend, and one Go binary",
+      "url": "https://dev.to/benjy33000/vue-3-saas-starter-kits-in-2026-nuxt-kits-vue-on-another-backend-and-one-go-binary-1h26",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-10T07:07:36.000Z",
+      "category": "dev",
+      "tags": [
+        "vue",
+        "nuxt",
+        "saas",
+        "boilerplate"
+      ],
+      "tldr": "Un tour d'horizon des kits de démarrage SaaS basés sur Vue 3 en 2026, incluant des solutions Nuxt full-stack et des intégrations avec différents backends."
+    },
+    {
+      "title": "Check whether hls.js is actually using a worker (most ESM setups aren't)",
+      "url": "https://dev.to/masonwritescode/check-whether-hlsjs-is-actually-using-a-worker-most-esm-setups-arent-2jfc",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-10T06:55:59.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "performance",
+        "esm",
+        "worker"
+      ],
+      "tldr": "Attention, la plupart des configurations ESM de hls.js n'utilisent pas de worker par défaut, ce qui surcharge le thread principal. Cet article montre comment vérifier et corriger ce comportement."
+    },
+    {
+      "title": "Chrome : cette faille mérite que vous la mettiez à jour",
+      "url": "https://korben.info/chrome-cette-faille-merite-que-vous-le-mettiez-a-jour.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-09T15:41:21.000Z",
+      "category": "security",
+      "tags": [
+        "chrome",
+        "vulnerability",
+        "cve",
+        "update"
+      ],
+      "tldr": "Google a publié une mise à jour pour Chrome (version 153) qui corrige une faille critique dans V8 (CVE-2025-87491) déjà activement exploitée."
+    },
+    {
+      "title": "Shopify acquires Tailwind",
+      "url": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-09T13:27:11.000Z",
+      "category": "other",
+      "tags": [
+        "tailwind",
+        "shopify",
+        "acquisition"
+      ],
+      "tldr": "Shopify annonce l'acquisition du framework CSS Tailwind, marquant un tournant important pour le projet."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-11",
+  "generatedAt": "2026-09-11T07:30:09.497Z",
+  "intro": "L'actualité technique du jour est dominée par les avancées en matière d'intelligence artificielle avec de nouveaux modèles spécialisés et des API dédiées aux agents conversationnels, ainsi que par les défis du développement web mobile face aux nouveaux form factors et aux extensions de navigateurs. En parallèle, la sécurité informatique reste une préoccupation majeure avec la révélation de vulnérabilités critiques allant des failles RCE sur les serveurs aux exigences renforcées du Cyber Resilience Act en Europe.",
+  "count": 9,
+  "items": [
+    {
+      "title": "Apple shipped a foldable iPhone. Safari still can't tell you it folded.",
+      "url": "https://dev.to/keishin_nishiura_024653c6/apple-shipped-a-foldable-iphone-safari-still-cant-tell-you-it-folded-565a",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-11T07:08:41.000Z",
+      "category": "dev",
+      "tags": [
+        "apple",
+        "iphone",
+        "css",
+        "mobile"
+      ],
+      "tldr": "L'arrivée du premier iPhone pliable d'Apple soulève des questions techniques, notamment sur la gestion des dimensions des écrans et son impact sur le code CSS existant."
+    },
+    {
+      "title": "Agentic Accessibility - Can AI help us ship more accessible code?",
+      "url": "https://dev.to/josefine/agentic-accessibility-can-ai-help-us-ship-more-accessible-code-1bfa",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-11T07:07:26.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "accessibility",
+        "coding",
+        "agents"
+      ],
+      "tldr": "Cet article explore comment l'intelligence artificielle générative peut aider les développeurs à produire du code plus accessible à grande échelle."
+    },
+    {
+      "title": "☕️ Vivaldi sur Android prend en charge les extensions Desktop du Chrome Web Store",
+      "url": "https://next.ink/brief-article/vivaldi-sur-android-prend-en-charge-les-extensions-desktop-du-chrome-web-store/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-11T06:28:00.000Z",
+      "category": "other",
+      "tags": [
+        "vivaldi",
+        "android",
+        "browser",
+        "extensions"
+      ],
+      "tldr": "La version Android du navigateur Vivaldi intègre désormais la prise en charge des extensions de bureau provenant du Chrome Web Store."
+    },
+    {
+      "title": "OpenAI Agents API",
+      "url": "https://developers.openai.com/api/docs/guides/agents-api/overview",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-10T19:43:22.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "api",
+        "agents",
+        "llm"
+      ],
+      "tldr": "OpenAI présente sa nouvelle API dédiée aux agents conversationnels et autonomes."
+    },
+    {
+      "title": "The Deathray: A simple way for an untrusted site to freeze a Mac",
+      "url": "https://auberon.xyz/blog/posts/deathray/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-10T19:34:20.000Z",
+      "category": "security",
+      "tags": [
+        "macos",
+        "security",
+        "exploit",
+        "browser"
+      ],
+      "tldr": "Une vulnérabilité permet à un site web non sécurisé de figer complètement un Mac."
+    },
+    {
+      "title": "Forgejo <=16.0.3 Critical RCE",
+      "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/16.0.4.md",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-10T15:57:40.000Z",
+      "category": "security",
+      "tags": [
+        "forgejo",
+        "rce",
+        "vulnerability",
+        "security"
+      ],
+      "tldr": "Une faille critique d'exécution de code à distance (RCE) a été découverte et corrigée dans Forgejo."
+    },
+    {
+      "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+      "url": "https://cognition.com/blog/swe-2",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-10T15:29:47.000Z",
+      "category": "ai",
+      "tags": [
+        "cognition",
+        "swe-2",
+        "ai",
+        "model"
+      ],
+      "tldr": "Cognition lance son nouveau modèle SWE-2, se positionnant comme un rival des solutions concurrentes du marché."
+    },
+    {
+      "title": "Une faille cPanel distribue des accès root",
+      "url": "https://korben.info/cpanel-faille-prise-controle-compte-hebergement.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-10T08:15:16.000Z",
+      "category": "security",
+      "tags": [
+        "cpanel",
+        "rce",
+        "vulnerability",
+        "sql-injection"
+      ],
+      "tldr": "Une injection SQL critique notée 9.9/10 dans cPanel permettait à un utilisateur malveillant d'obtenir des accès root sur le serveur."
+    },
+    {
+      "title": "Routeurs : les fabricants devront prévenir l'Europe quand une faille est exploitée",
+      "url": "https://korben.info/routeurs-les-fabricants-devront-prevenir-leurope-quand-une-faille-est-exploitee.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-09T15:46:56.000Z",
+      "category": "security",
+      "tags": [
+        "cyber-resilience-act",
+        "routers",
+        "security",
+        "eu"
+      ],
+      "tldr": "Dans le cadre du Cyber Resilience Act, les fabricants de routeurs en Europe doivent désormais signaler toute faille activement exploitée sous 24 heures."
+    }
+  ]
+}

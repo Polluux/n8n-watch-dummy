@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-14",
+  "generatedAt": "2026-09-14T07:30:12.624Z",
+  "intro": "La sécurité et la protection de la vie privée dominent l'actualité technique avec l'intégration prochaine de preuves à divulgation nulle de connaissance sur Signal et la découverte d'une faille critique permettant l'élévation de privilèges root sur plusieurs constructeurs Android. En parallèle, l'ingénierie des formats graphiques est questionnée à travers les débats persistants sur la pertinence et l'adoption du format JPEG XL.",
+  "count": 3,
+  "items": [
+    {
+      "title": "OEMpocalypse: Unprivileged Android app to root on Samsung, Xiaomi, others",
+      "url": "https://calif.io/research/oempocalypse",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-14T02:25:44.000Z",
+      "category": "security",
+      "tags": [
+        "android",
+        "root",
+        "security",
+        "vulnerability"
+      ],
+      "tldr": "Une vulnérabilité nommée 'OEMpocalypse' permet à une application Android non privilégiée d'obtenir les privilèges root sur des appareils Samsung, Xiaomi et d'autres."
+    },
+    {
+      "title": "The case against JPEG XL",
+      "url": "https://giannirosato.com/blog/post/case-against-jxl/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-14T01:02:37.000Z",
+      "category": "other",
+      "tags": [
+        "image",
+        "jpeg",
+        "compression"
+      ],
+      "tldr": "Cet article présente les arguments contre l'utilisation du format d'image JPEG XL."
+    },
+    {
+      "title": "Registration without a phone number on Signal will use zero-knowledge proofs",
+      "url": "https://community.signalusers.org/t/registration-without-a-phone-number/2222?page=10",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-13T21:47:04.000Z",
+      "category": "security",
+      "tags": [
+        "signal",
+        "privacy",
+        "crypto",
+        "zkp"
+      ],
+      "tldr": "Signal prévoit d'utiliser des preuves à divulgation nulle de connaissance (zero-knowledge proofs) pour permettre l'inscription sans numéro de téléphone."
+    }
+  ]
+}

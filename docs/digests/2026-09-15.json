@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-15T07:30:10.826Z",
+  "intro": "L'actualité technique de ce jour met en lumière la modernisation des systèmes avec l'adoption croissante de langages sécurisés pour les composants fondamentaux, ainsi que les défis de sécurité posés par l'intégration des intelligences artificielles. Les ingénieurs apprécieront également les innovations en matière d'interfaces analytiques conversationnelles et la curiosité technique du portage de charges ludiques lourdes sur des microcontrôleurs contraints.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Charts built for Chat",
+      "url": "https://dbtcharts.com/blog/charts-built-for-chat/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-14T21:22:54.000Z",
+      "category": "dev",
+      "tags": [
+        "visualization",
+        "chat",
+        "analytics"
+      ],
+      "tldr": "Cet article présente la création de graphiques conçus spécifiquement pour interagir avec des interfaces de chat."
+    },
+    {
+      "title": "Ubuntu 26.10 completes transition to Rust-based coreutils",
+      "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-rust-coreutils-complete",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-14T13:38:58.000Z",
+      "category": "devops",
+      "tags": [
+        "ubuntu",
+        "rust",
+        "coreutils",
+        "linux"
+      ],
+      "tldr": "La version Ubuntu 26.10 finalise sa transition vers l'utilisation d'utilitaires de base (coreutils) entièrement réécrits en Rust."
+    },
+    {
+      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-14T12:40:57.000Z",
+      "category": "security",
+      "tags": [
+        "openai",
+        "security",
+        "rubygems",
+        "vulnerability"
+      ],
+      "tldr": "Des bots d'OpenAI étaient au courant d'une vulnérabilité liée au mécanisme de mise en cache de RubyGems."
+    },
+    {
+      "title": "Tomb Raider peut tourner sur un ESP32-P4",
+      "url": "https://korben.info/tomb-raider-peut-tourner-sur-un-esp32-p4.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-14T09:14:55.000Z",
+      "category": "other",
+      "tags": [
+        "embedded",
+        "tomb raider",
+        "esp32",
+        "gaming"
+      ],
+      "tldr": "Le jeu Tomb Raider a été porté avec succès sur le microcontrôleur ESP32-P4 grâce au projet OpenLara, tournant à 30 images par seconde."
+    }
+  ]
+}

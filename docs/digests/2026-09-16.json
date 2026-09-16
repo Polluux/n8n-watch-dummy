@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-16",
+  "generatedAt": "2026-09-16T07:30:09.438Z",
+  "intro": "La sécurité et l'authentification occupent le devant de la scène aujourd'hui, portées par l'analyse des failles de contrôle d'accès sur les plateformes de développement, la gestion de la sécurité au niveau des lignes dans PostgreSQL et les initiatives de vérification photographique. Du côté du développement web et de l'ingénierie système, l'actualité met en lumière l'architecture d'applications monopages légères adossées à SQLite, la conception de pilotes graphiques pour l'architecture Apple Silicon ainsi que l'évolution des interfaces de visualisation de données. Enfin, l'écosystème de l'intelligence artificielle continue de progresser avec de nouveaux modèles conversationnels dotés de capacités de raisonnement approfondi, des options de contrôle des robots d'indexation face au scraping et l'ouverture progressive des assistants intégrés aux systèmes d'exploitation.",
+  "count": 9,
+  "items": [
+    {
+      "title": "billboard.js 4.1.0: Live resizing, configurable subchart, React subpath & CSP-safe worker",
+      "url": "https://dev.to/netil/billboardjs-410-live-resizing-configurable-subchart-react-subpath-csp-safe-worker-2mkp",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-16T07:15:55.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "charts",
+        "react",
+        "web-worker"
+      ],
+      "tldr": "La version 4.1.0 de billboard.js apporte des améliorations majeures incluant le redimensionnement en direct, un sous-graphique configurable et un composant React optimisé."
+    },
+    {
+      "title": "Implementing Postgres Row-Level Security in Next.js: The Drizzle Multi-Tenant Pattern",
+      "url": "https://dev.to/u11d/implementing-postgres-row-level-security-in-nextjs-the-drizzle-multi-tenant-pattern-428l",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-16T07:00:00.000Z",
+      "category": "dev",
+      "tags": [
+        "postgresql",
+        "nextjs",
+        "drizzle",
+        "security"
+      ],
+      "tldr": "Cet article explore la mise en place de la sécurité au niveau des lignes (RLS) dans PostgreSQL avec Next.js et Drizzle, tout en évitant les pièges liés au compte superutilisateur."
+    },
+    {
+      "title": "Stay discoverable in search while disallowing AI training",
+      "url": "https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-16T02:25:18.000Z",
+      "category": "ai",
+      "tags": [
+        "cloudflare",
+        "ai",
+        "web",
+        "crawlers"
+      ],
+      "tldr": "Cloudflare propose des méthodes pour rester visible dans les moteurs de recherche tout en bloquant l'entraînement des modèles d'intelligence artificielle par les robots."
+    },
+    {
+      "title": "Apple Reference Image: A New Approach for Verified Photography",
+      "url": "https://security.apple.com/blog/apple-reference-image/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-16T02:07:31.000Z",
+      "category": "security",
+      "tags": [
+        "apple",
+        "photography",
+        "security",
+        "verification"
+      ],
+      "tldr": "Apple présente une nouvelle approche pour garantir l'authenticité et la vérification des photographies numériques grâce à des images de référence."
+    },
+    {
+      "title": "Building a Linux GPU Driver for the M4 Mac Mini in One Month",
+      "url": "https://codyho.dev/blog/gpu-driver/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-15T19:30:03.000Z",
+      "category": "other",
+      "tags": [
+        "linux",
+        "gpu",
+        "driver",
+        "apple-silicon"
+      ],
+      "tldr": "Un développeur relate son parcours pour concevoir un pilote graphique Linux destiné aux puces M4 d'Apple en seulement un mois."
+    },
+    {
+      "title": "We got admin access to Baseten's production GitHub",
+      "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-15T18:11:24.000Z",
+      "category": "security",
+      "tags": [
+        "github",
+        "security",
+        "vulnerability",
+        "access"
+      ],
+      "tldr": "Des chercheurs en sécurité expliquent comment ils ont obtenu un accès administrateur sur le dépôt GitHub de production de Baseten."
+    },
+    {
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-15T17:38:18.000Z",
+      "category": "ai",
+      "tags": [
+        "google",
+        "gemini",
+        "llm",
+        "ai"
+      ],
+      "tldr": "Google annonce le lancement de Gemini 3.8 Live ainsi qu'une version dotée de capacités de réflexion prolongée (Extended Thinking)."
+    },
+    {
+      "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+      "url": "https://withcapsule.app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-15T13:31:40.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "sqlite",
+        "web",
+        "database"
+      ],
+      "tldr": "Capsule est une application développée en Rust permettant de créer des applications web monopages qui stockent directement leurs données dans une base SQLite."
+    },
+    {
+      "title": "☕️ iOS 27 et macOS 27 pourraient permettre de remplacer Siri AI",
+      "url": "https://next.ink/brief-article/ios-27-macos-27-claude-et-gpt-5-6-peuvent-se-glisser-derriere-siri/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-15T05:43:00.000Z",
+      "category": "ai",
+      "tags": [
+        "apple",
+        "ios",
+        "macos",
+        "siri"
+      ],
+      "tldr": "Des indices découverts dans iOS 27 et macOS suggèrent qu'il sera possible de remplacer l'assistant Siri AI par d'autres modèles comme Claude ou GPT."
+    }
+  ]
+}

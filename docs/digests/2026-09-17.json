@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-17T07:30:11.188Z",
+  "intro": "L'actualité technique de ce jour met en lumière l'évolution des pratiques de développement bas niveau avec l'arrivée du support natif de Rust pour la programmation GPU chez Nvidia. La sécurité applicative et systémique occupe également une place centrale, rappelant la persistance des vulnérabilités historiques à travers l'analyse de failles anciennes et la mise à disposition de nouveaux outils d'audit par Cloudflare.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Nvidia announces native GPU programming in Rust",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-16T11:15:53.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "gpu",
+        "nvidia",
+        "cuda"
+      ],
+      "tldr": "Nvidia annonce la prise en charge native de la programmation GPU en Rust avec de nouvelles pistes pour l'écriture de noyaux."
+    },
+    {
+      "title": "A 32-year-old bug walks into a Telnet server",
+      "url": "https://labs.watchtowr.com/a-32-year-old-bug-walks-into-a-telnet-server-gnu-inetutils-telnetd-cve-2026-32746/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-16T02:01:27.000Z",
+      "category": "security",
+      "tags": [
+        "cve",
+        "telnet",
+        "vulnerability",
+        "bug"
+      ],
+      "tldr": "Découverte et analyse d'une vulnérabilité vieille de 32 ans affectant le serveur Telnet de GNU Inetutils."
+    },
+    {
+      "title": "Cloudflare/Security-Audit-Skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-17T04:36:55.000Z",
+      "category": "security",
+      "tags": [
+        "cloudflare",
+        "audit",
+        "github",
+        "security"
+      ],
+      "tldr": "Cloudflare publie une ressource sur GitHub dédiée aux compétences en matière d'audit de sécurité."
+    },
+    {
+      "title": "Shuffle Drummer - FL Studio n'a qu'à bien se tenir",
+      "url": "https://korben.info/shuffle-drummer-groovebox-navigateur.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-16T13:33:01.000Z",
+      "category": "other",
+      "tags": [
+        "audio",
+        "music",
+        "web",
+        "sampler"
+      ],
+      "tldr": "Shuffle Drummer est une boîte à rythmes et séquenceur en ligne gratuit créé par le beatmaker Mani Deïz."
+    }
+  ]
+}

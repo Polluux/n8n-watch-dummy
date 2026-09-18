@@ -1,0 +1,142 @@
+{
+  "date": "2026-09-18",
+  "generatedAt": "2026-09-18T07:30:44.470Z",
+  "intro": "Cette édition met en avant les évolutions majeures de l'intelligence artificielle, de l'optimisation des modèles légers à l'intégration des protocoles de contexte et des assistants dans les infrastructures connectées. L'actualité technique explore également la robustesse des architectures distribuées à grande échelle, la sécurité des systèmes d'IA ainsi que les avancées en matière de programmation et de calcul bas niveau sur GPU.",
+  "count": 9,
+  "items": [
+    {
+      "title": "How deep do MCP input schemas nest?",
+      "url": "https://dev.to/getmcpulse/how-deep-do-mcp-input-schemas-nest-3lb0",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-18T07:18:09.000Z",
+      "category": "ai",
+      "tags": [
+        "mcp",
+        "schemas",
+        "tools",
+        "llm"
+      ],
+      "tldr": "Une étude de la profondeur d'imbrication des schémas d'entrée MCP à travers des milliers d'outils réels pour comprendre comment les modèles gèrent ces structures."
+    },
+    {
+      "title": "Exploring Result Visibility of Fixed-Latency Instructions on the SM120 Architecture",
+      "url": "https://dev.to/comradepenguin1917/exploring-result-visibility-of-fixed-latency-instructions-on-the-sm120-architecture-5971",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-18T07:01:10.000Z",
+      "category": "dev",
+      "tags": [
+        "gpu",
+        "hardware",
+        "architecture",
+        "nvidia"
+      ],
+      "tldr": "Une analyse de l'architecture SM120 des GPU NVIDIA explorant la visibilité des résultats et les contraintes de dépendance gérées par le compilateur et le matériel."
+    },
+    {
+      "title": "Hacking OpenAI",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-18T02:47:24.000Z",
+      "category": "security",
+      "tags": [
+        "openai",
+        "hacking",
+        "security"
+      ],
+      "tldr": "Un article d'analyse ou de retour d'expérience sur la sécurité et le piratage des systèmes d'OpenAI."
+    },
+    {
+      "title": "How Uber Protects Against Retry Storms",
+      "url": "https://www.uber.com/us/en/blog/protecting-against-retry-storms/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-17T21:14:32.000Z",
+      "category": "devops",
+      "tags": [
+        "uber",
+        "architecture",
+        "reliability",
+        "resilience"
+      ],
+      "tldr": "Explication des méthodes mises en place par Uber pour se protéger contre les tempêtes de nouvelles tentatives (retry storms) et garantir la stabilité de ses services."
+    },
+    {
+      "title": "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-17T21:13:31.000Z",
+      "category": "ai",
+      "tags": [
+        "compression",
+        "llm",
+        "ml",
+        "model"
+      ],
+      "tldr": "Présentation de Bonsai 2 27B, un modèle offrant une compression quasi sans perte avec une empreinte mémoire neuf fois plus petite."
+    },
+    {
+      "title": "Bend – A language that blocks AI mistakes via proof, on CPU and GPU",
+      "url": "https://bend-lang.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-17T20:36:13.000Z",
+      "category": "dev",
+      "tags": [
+        "programming",
+        "language",
+        "cpu",
+        "gpu"
+      ],
+      "tldr": "Bend est un langage de programmation conçu pour bloquer les erreurs de l'IA grâce à des preuves formelles, exécutable à la fois sur CPU et GPU."
+    },
+    {
+      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+      "url": "https://arxiv.org/abs/2609.18842",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-17T16:55:14.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "parameters",
+        "weights",
+        "research"
+      ],
+      "tldr": "Une recherche sur les LLM à paramètres infinis capable de générer et d'adapter dynamiquement leurs poids à partir de données en direct."
+    },
+    {
+      "title": "Fugleramme - Le cadre qui dessine les oiseaux qu'il entend",
+      "url": "https://korben.info/fugleramme-detection-oiseaux-eink.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-17T15:15:41.000Z",
+      "category": "other",
+      "tags": [
+        "raspberrypi",
+        "audio",
+        "e-ink",
+        "diy"
+      ],
+      "tldr": "Un cadre mural à encre électronique couplé à un Raspberry Pi et BirdNET-Go qui illustre sous forme de planches naturalistes les oiseaux détectés par micro."
+    },
+    {
+      "title": "Google Home laisse ChatGPT et Claude piloter votre maison",
+      "url": "https://korben.info/google-home-laisse-chatgpt-et-claude-piloter-votre-maison.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-17T13:26:03.000Z",
+      "category": "ai",
+      "tags": [
+        "google",
+        "chatgpt",
+        "claude",
+        "mcp"
+      ],
+      "tldr": "Google Home permet désormais à ChatGPT et Claude de piloter les appareils connectés de la maison via un serveur MCP, pour les abonnés américains."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-21",
+  "generatedAt": "2026-09-21T07:30:12.418Z",
+  "intro": "L actualite technique du jour met en avant la montee en puissance des systemes multi-agents et des standards d orchestration pour l intelligence artificielle, illustree notamment par l integration au sein des navigateurs. En parallele, les defis de securite reviennent au premier plan avec l analyse de vulnerabilites critiques sur des APIs et du materiel connecte, tandis que les activites de retro-ingenierie confirment la vitalite du developpement bas niveau.",
+  "count": 5,
+  "items": [
+    {
+      "title": "What If Your AI Agent Never Had to Leave the Browser? (Demo 🚀)",
+      "url": "https://dev.to/sylwia-lask/what-if-your-ai-agent-never-had-to-leave-the-browser-demo--5g",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-21T07:14:46.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "browser",
+        "webmcp",
+        "agent"
+      ],
+      "tldr": "Découverte de WebMCP, une approche permettant aux agents IA d'opérer directement au sein du navigateur web."
+    },
+    {
+      "title": "I Found an OTP Bypass in The Kari Kadai App That Leaks User Tokens",
+      "url": "https://dev.to/mughunthen_3fb2a217c290e6/i-found-an-otp-bypass-in-the-kari-kadai-app-that-leaks-user-tokens-4jf2",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-21T06:58:31.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "api",
+        "otp",
+        "vulnerability"
+      ],
+      "tldr": "Un chercheur en sécurité a découvert une faille critique de contournement d'OTP dans une application de livraison, divulguant des jetons d'authentification."
+    },
+    {
+      "title": "AX – Google’s Open Agentic Orchestrator",
+      "url": "https://agentexecutor.io",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-20T22:32:43.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "google",
+        "orchestrator",
+        "agents"
+      ],
+      "tldr": "Présentation de AX, l'orchestrateur agentique open-source développé par Google."
+    },
+    {
+      "title": "Resident Evil 4 (GameCube) – complete byte-identical decompilation to C/C++",
+      "url": "https://github.com/adonis-singh/re4",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-20T17:38:27.000Z",
+      "category": "dev",
+      "tags": [
+        "gaming",
+        "decompilation",
+        "c++",
+        "reverse"
+      ],
+      "tldr": "Réalisation d'une décompilation complète et identique par octet du jeu Resident Evil 4 sur GameCube en C/C++."
+    },
+    {
+      "title": "Une caméra Flock stockait sa clé de chiffrement en clair, des hackers ont tout copié",
+      "url": "https://korben.info/une-camera-flock-stockait-sa-cle-de-chiffrement-en-clair-des-hackers-ont-tout-copie.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-20T09:40:24.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "hardware",
+        "encryption",
+        "leak"
+      ],
+      "tldr": "Une caméra de surveillance Flock stockait sa clé de chiffrement en clair, permettant à des hackers de compromettre des millions d'images."
+    }
+  ]
+}

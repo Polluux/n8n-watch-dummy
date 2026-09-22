@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-22",
+  "generatedAt": "2026-09-22T07:30:21.976Z",
+  "intro": "L'actualité technique de ce jour met en lumière les impacts profonds de l'intelligence artificielle sur l'écosystème du développement, de la refonte des pipelines d'intégration continue face au code généré automatiquement jusqu'aux interrogations sur l'authenticité des contenus textuels. Les ingénieurs pourront également se pencher sur les innovations en matière de contrôle de version avec les perspectives d'évolution de Git, ainsi que sur des explorations techniques allant des architectures de transformers jusqu'aux usages inattendus de la compression de données.",
+  "count": 8,
+  "items": [
+    {
+      "title": "Can gzip be a language model?",
+      "url": "https://nathan.rs/posts/gzip-lm/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-22T06:08:39.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "compression",
+        "language-model"
+      ],
+      "tldr": "Cet article explore l'idée surprenante d'utiliser l'algorithme de compression gzip comme un modèle de langage."
+    },
+    {
+      "title": "Looking forward to Git 2.56 – and 3.0",
+      "url": "https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-21T23:16:51.000Z",
+      "category": "dev",
+      "tags": [
+        "git",
+        "version-control",
+        "releases"
+      ],
+      "tldr": "Un aperçu des nouveautés à venir pour les futures versions majeures de Git, notamment Git 2.56 et 3.0."
+    },
+    {
+      "title": "Spymarks, Not Watermarks",
+      "url": "https://brand.io/article/spymarks/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-21T23:03:49.000Z",
+      "category": "security",
+      "tags": [
+        "watermark",
+        "tracking",
+        "privacy"
+      ],
+      "tldr": "Une discussion sur le concept de \"spymarks\" par opposition aux filigranes traditionnels pour le suivi et la sécurité."
+    },
+    {
+      "title": "I don't want to read what you didn't write",
+      "url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-21T22:30:41.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "writing",
+        "opinion"
+      ],
+      "tldr": "Une réflexion critique sur la prolifération de textes générés par l'intelligence artificielle et le manque d'authenticité perçu."
+    },
+    {
+      "title": "Transformers Explained Visually",
+      "url": "https://poloclub.github.io/transformer-explainer/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-21T19:43:49.000Z",
+      "category": "ai",
+      "tags": [
+        "transformers",
+        "visualization",
+        "machine-learning"
+      ],
+      "tldr": "Une explication visuelle et interactive du fonctionnement des modèles de type Transformers en intelligence artificielle."
+    },
+    {
+      "title": "AI coding has made CI a bottleneck, so we reworked ours to keep up",
+      "url": "https://linear.app/now/ci-bottleneck-reworked",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-21T19:23:33.000Z",
+      "category": "devops",
+      "tags": [
+        "ci/cd",
+        "automation",
+        "bottleneck"
+      ],
+      "tldr": "Face aux goulots d'étranglement de l'intégration continue provoqués par le code généré par l'IA, cette équipe a entièrement repensé son système CI."
+    },
+    {
+      "title": "Apple Copland D11E4 Booting in the Browser",
+      "url": "https://www.pagetable.com/300",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-21T18:15:32.000Z",
+      "category": "other",
+      "tags": [
+        "apple",
+        "emulator",
+        "browser"
+      ],
+      "tldr": "Découverte de l'émulation du système d'exploitation Apple Copland D11E4 pouvant s'exécuter directement dans un navigateur web."
+    },
+    {
+      "title": "Bonjourr - La page de démarrage navigateur minimaliste",
+      "url": "https://korben.info/bonjourr-extension-page-accueil-navigateur.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-21T09:51:47.000Z",
+      "category": "other",
+      "tags": [
+        "browser",
+        "extension",
+        "open-source"
+      ],
+      "tldr": "Bonjourr est une extension open source et minimaliste qui remplace la page de nouvel onglet de votre navigateur."
+    }
+  ]
+}

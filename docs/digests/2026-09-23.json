@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-23",
+  "generatedAt": "2026-09-23T07:30:17.118Z",
+  "intro": "Le développement front-end est à l'honneur aujourd'hui avec des avancées notables en CSS pour les animations et le design, ainsi que l'essor des applications natives construites en TypeScript. Cette édition met également en lumière l'importance continue de l'accessibilité web, la découverte de vulnérabilités critiques dans l'écosystème CMS, et de nouveaux outils en ligne de commande pour le terminal et la conversion de documents.",
+  "count": 6,
+  "items": [
+    {
+      "title": "How to Write Alt Text: Image Description Rules + Examples",
+      "url": "https://dev.to/chille87/how-to-write-alt-text-image-description-rules-examples-ai9",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-23T07:10:29.000Z",
+      "category": "dev",
+      "tags": [
+        "accessibility",
+        "html",
+        "web"
+      ],
+      "tldr": "Un article détaillant les règles et des exemples pour bien rédiger le texte alternatif (alt text) des images afin d'améliorer l'accessibilité du web."
+    },
+    {
+      "title": "The Impossible Filter Gallery Transition in CSS Only",
+      "url": "https://dev.to/prahalad/the-impossible-filter-gallery-transition-in-css-only-2ca9",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-23T06:59:46.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "animation",
+        "frontend"
+      ],
+      "tldr": "Une démonstration impressionnante montrant qu'il est possible de réaliser une transition de galerie avec des filtres complexes en utilisant uniquement du CSS."
+    },
+    {
+      "title": "Native apps written in TypeScript and CSS",
+      "url": "https://github.com/geastack/examples",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-22T19:42:20.000Z",
+      "category": "dev",
+      "tags": [
+        "typescript",
+        "css",
+        "desktop"
+      ],
+      "tldr": "Des exemples et des ressources pour développer des applications natives en utilisant exclusivement TypeScript et CSS."
+    },
+    {
+      "title": "WordPress: Unauthenticated path traversal leading to conditional RCE",
+      "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-7hp8-65ch-5whp",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-22T16:33:45.000Z",
+      "category": "security",
+      "tags": [
+        "wordpress",
+        "vulnerability",
+        "rce"
+      ],
+      "tldr": "Une vulnérabilité de traversée de chemin non authentifiée dans WordPress peut mener à une exécution de code à distance (RCE) conditionnelle."
+    },
+    {
+      "title": "curl.md - Récupérez le texte de n'importe quelle page web au format Markdown",
+      "url": "https://korben.info/curl-md-site-en-markdown.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-22T13:00:00.000Z",
+      "category": "other",
+      "tags": [
+        "markdown",
+        "cli",
+        "web"
+      ],
+      "tldr": "L'outil curl.md permet de convertir instantanément n'importe quelle page web publique au format Markdown en ajoutant simplement un préfixe à l'URL."
+    },
+    {
+      "title": "Cliamp - Votre musique + 58 000 radios dans le terminal",
+      "url": "https://korben.info/cliamp-lecteur-musique-terminal-winamp.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-22T08:30:00.000Z",
+      "category": "other",
+      "tags": [
+        "cli",
+        "music",
+        "terminal"
+      ],
+      "tldr": "Cliamp est un lecteur de musique pour le terminal inspiré de Winamp, capable de diffuser des radios, des podcasts et vos fichiers locaux."
+    }
+  ]
+}

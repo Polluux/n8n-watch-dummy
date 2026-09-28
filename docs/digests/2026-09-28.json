@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28T07:30:31.617Z",
+  "intro": "L'actualité technique de ce jour met en lumière l'optimisation des architectures cloud serverless et le traitement des données en périphérie, illustrés par la manipulation d'e-mails via des workers. Elle fait également la part belle aux innovations dans l'intelligence artificielle appliquée aux grands modèles de langage, tout en s'ouvrant sur des projets créatifs exploitant la génération audio et visuelle directement dans le navigateur.",
+  "count": 3,
+  "items": [
+    {
+      "title": "Cloudflare Email Worker inbox: store every message in D1 in 30 lines",
+      "url": "https://dev.to/howardzlh/cloudflare-email-worker-inbox-store-every-message-in-d1-in-30-lines-ii1",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-28T07:14:09.000Z",
+      "category": "devops",
+      "tags": [
+        "cloudflare",
+        "worker",
+        "database",
+        "email"
+      ],
+      "tldr": "Cet article montre comment utiliser un Cloudflare Email Worker pour intercepter et stocker automatiquement chaque e-mail entrant dans une base de données D1 en seulement 30 lignes."
+    },
+    {
+      "title": "Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi",
+      "url": "https://loficities.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-27T18:44:30.000Z",
+      "category": "other",
+      "tags": [
+        "pixel-art",
+        "audio",
+        "web"
+      ],
+      "tldr": "Lofi Cities propose des ambiances de villes nocturnes en pixel art accompagnées d'une génération de musique lofi directement dans le navigateur."
+    },
+    {
+      "title": "Ember-1",
+      "url": "https://fireworks.ai/blog/ember-1",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-27T17:31:53.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "fireworks.ai",
+        "machine-learning"
+      ],
+      "tldr": "Présentation d'Ember-1 sur le blog de Fireworks.ai, un nouveau modèle ou outil d'intelligence artificielle destiné aux développeurs."
+    }
+  ]
+}

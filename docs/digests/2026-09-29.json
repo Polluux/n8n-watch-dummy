@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-29",
+  "generatedAt": "2026-09-29T07:31:28.619Z",
+  "intro": "Le développement web moderne fait face à des défis constants d'optimisation, illustrés par la nécessité de dépasser les simples scores de performance pour mesurer l'expérience utilisateur réelle, tandis que l'écosystème frontal continue d'évoluer avec de nouvelles releases d'outils et de frameworks. Parallèlement, l'intelligence artificielle s'invite à toutes les échelles, qu'il s'agisse d'évaluer la capacité des modèles à générer du code en un seul prompt, d'expérimenter des architectures miniatures directement dans le navigateur ou d'entraîner des modèles de décision ultra-rapides. Enfin, l'actualité de la sécurité informatique rappelle la criticité des infrastructures avec des correctifs d'urgence déployés pour contrer des failles activement exploitées.",
+  "count": 7,
+  "items": [
+    {
+      "title": "Angular Addicts #53: NgRx 22, WebMCP, CopilotKit & more",
+      "url": "https://dev.to/playfulprogramming-angular/angular-addicts-53-ngrx-22-webmcp-copilotkit-more-1l1f",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-29T07:19:56.000Z",
+      "category": "dev",
+      "tags": [
+        "angular",
+        "ngrx",
+        "frontend",
+        "javascript"
+      ],
+      "tldr": "Cette édition d'Angular Addicts présente la version 22 de NgRx ainsi que diverses ressources pour les développeurs Angular. Elle met en avant de nouvelles extensions et des fonctionnalités comme les signaux profonds dynamiques."
+    },
+    {
+      "title": "Why Your Website Feels Slow Even When Your PageSpeed Score Looks Good",
+      "url": "https://dev.to/hibhashim/why-your-website-feels-slow-even-when-your-pagespeed-score-looks-good-125d",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-29T07:19:55.000Z",
+      "category": "dev",
+      "tags": [
+        "performance",
+        "web",
+        "ux",
+        "optimisation"
+      ],
+      "tldr": "Un site web peut afficher un bon score PageSpeed tout en paraissant lent aux utilisateurs. Cela s'explique par l'importance de métriques comme l'INP qui mesurent la réactivité réelle lors des interactions."
+    },
+    {
+      "title": "Show HN: Pac-Bench – How well can models one-shot a Pac-Man game?",
+      "url": "https://jonclegg.github.io/pacman-bakeoff/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-28T22:43:12.000Z",
+      "category": "ai",
+      "tags": [
+        "benchmark",
+        "llm",
+        "jeux",
+        "prompt"
+      ],
+      "tldr": "Pac-Bench évalue la capacité de différents modèles d'IA à générer un jeu Pac-Man complet en une seule tentative à partir d'un unique prompt. Chaque modèle est testé sans possibilité de correction ultérieure."
+    },
+    {
+      "title": "Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms",
+      "url": "https://github.com/firelex/jeff",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-28T20:23:36.000Z",
+      "category": "ai",
+      "tags": [
+        "modèle",
+        "ia",
+        "décision",
+        "open-source"
+      ],
+      "tldr": "Présentation de Jeff, des modèles de décision de 0,8B compatibles Jev entraînés à domicile offrant un temps de réponse d'environ 30 millisecondes."
+    },
+    {
+      "title": "MicroLLM Lab – Try 7 tiny LLM's in the browser",
+      "url": "https://stateofutopia.com/experiments/microllmlab/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-28T18:58:53.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "navigateur",
+        "expérimentation",
+        "ia"
+      ],
+      "tldr": "MicroLLM Lab permet d'essayer directement sept modèles de langage miniatures directement dans son navigateur web."
+    },
+    {
+      "title": "Hijacking the PS5's RTMP stream",
+      "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-28T15:35:23.000Z",
+      "category": "other",
+      "tags": [
+        "ps5",
+        "streaming",
+        "rtmp",
+        "hacking"
+      ],
+      "tldr": "Un article technique détaille la méthode pour intercepter et détourner le flux de diffusion RTMP d'une console PlayStation 5."
+    },
+    {
+      "title": "Citrix corrige en urgence deux failles critiques déjà exploitées dans ses produits NetScaler",
+      "url": "https://next.ink/258614/citrix-corrige-en-urgence-deux-failles-critiques-deja-exploitees-dans-ses-produits-netscaler/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-28T08:06:25.000Z",
+      "category": "security",
+      "tags": [
+        "citrix",
+        "vulnérabilité",
+        "correctif",
+        "netscaler"
+      ],
+      "tldr": "Citrix a publié en urgence des correctifs pour plusieurs vulnérabilités critiques affectant ses produits NetScaler. Deux de ces failles font déjà l'objet d'exploitations actives."
+    }
+  ]
+}

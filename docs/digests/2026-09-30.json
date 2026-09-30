@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30T07:30:10.162Z",
+  "intro": "L'actualité technique de ce jour met en lumière l'optimisation des flux de travail front-end avec l'essor du traitement local des formats issus des modèles génératifs. Du côté des infrastructures et des environnements de développement, la sécurité demeure une priorité critique suite aux correctifs d'urgence déployés par Apple, tandis que l'écosystème évolue entre modernisation des navigateurs et curiosités matérielles rétro.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Why I Built a Zero-Latency, 100% Client-Side Markdown Viewer in 2026",
+      "url": "https://dev.to/tangtangit/why-i-built-a-zero-latency-100-client-side-markdown-viewer-in-2026-99o",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-09-30T07:25:46.000Z",
+      "category": "dev",
+      "tags": [
+        "markdown",
+        "frontend",
+        "llm",
+        "performance"
+      ],
+      "tldr": "Création d'une visionneuse Markdown 100 % côté client et sans latence pour faciliter la lecture et la validation des documents et des flux de travail générés par les LLM."
+    },
+    {
+      "title": "☕️ Firefox 157 et son interface Nova sont disponibles",
+      "url": "https://next.ink/brief-article/firefox-157-et-son-interface-nova-sont-disponibles/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-29T15:25:00.000Z",
+      "category": "other",
+      "tags": [
+        "firefox",
+        "navigateur",
+        "ui"
+      ],
+      "tldr": "Mozilla lance Firefox 157, qui introduit une nouvelle interface nommée Nova modernisant le design du navigateur avec des formes arrondies et des couleurs plus vives."
+    },
+    {
+      "title": "☕️ Apple corrige en urgence une faille critique exploitée dans iOS, iPadOS et macOS",
+      "url": "https://next.ink/brief-article/apple-corrige-en-urgence-une-faille-critique-exploitee-dans-ios-ipados-et-macos/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-29T12:00:00.000Z",
+      "category": "security",
+      "tags": [
+        "apple",
+        "faille",
+        "macos",
+        "ios"
+      ],
+      "tldr": "Apple a publié en urgence des correctifs pour une faille critique activement exploitée sur iOS, iPadOS et macOS, liée au traitement de fichiers mal conçus."
+    },
+    {
+      "title": "NESCD - Un lecteur CD pour la NES",
+      "url": "https://korben.info/nescd-lecteur-cd-nes.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-29T10:39:34.000Z",
+      "category": "other",
+      "tags": [
+        "nes",
+        "rétrogaming",
+        "hardware"
+      ],
+      "tldr": "Un passionné a réussi à connecter un lecteur CD à une console NES pour lancer des jeux stockés sur disque via une cartouche Everdrive."
+    }
+  ]
+}

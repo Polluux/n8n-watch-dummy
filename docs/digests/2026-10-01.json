@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-01",
+  "generatedAt": "2026-10-01T07:30:10.279Z",
+  "intro": "L'actualité technique met cette semaine l'accent sur l'optimisation des architectures et la sécurisation des écosystèmes, qu'il s'agisse d'accélérer l'exécution des fonctions serverless avec des micro-machines virtuelles ou de fiabiliser l'intégration des agents intelligents via de nouveaux moteurs d'inférence et protocoles. Les développeurs profitent également de nouveautés ergonomiques en front-end avec les animations CSS natives, tout en mesurant les limites de la vérification formelle et l'importance critique de la robustesse face aux défaillances techniques.",
+  "count": 10,
+  "items": [
+    {
+      "title": "Entry Animations with CSS @starting-style",
+      "url": "https://dev.to/salehmubashar/entry-animations-with-css-starting-style-34f1",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-01T07:23:12.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "animations",
+        "frontend"
+      ],
+      "tldr": "La règle CSS @starting-style simplifie la gestion des animations d'entrée en permettant de définir explicitement les valeurs initiales d'un élément dès son chargement."
+    },
+    {
+      "title": "How We Stopped AI Agents from Hallucinating Tool Schemas & Wasting API Credits",
+      "url": "https://dev.to/shaurya_singh_27b622a46f3/how-we-stopped-ai-agents-from-hallucinating-tool-schemas-wasting-api-credits-21a0",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-01T07:17:57.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "agents",
+        "api",
+        "validation"
+      ],
+      "tldr": "Découvrez comment éviter que les agents IA ne hallucinent les schémas de paramètres, prévenant ainsi la corruption de données et le gaspillage de crédits API."
+    },
+    {
+      "title": "Bring Your API: Building an MCP Server Builder",
+      "url": "https://dev.to/nipunika_jain/bring-your-api-building-an-mcp-server-builder-3id8",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-01T07:16:41.000Z",
+      "category": "ai",
+      "tags": [
+        "mcp",
+        "api",
+        "assistants"
+      ],
+      "tldr": "Ce projet explore la création d'un serveur MCP (Model Context Protocol) pour permettre à un assistant IA d'interagir facilement avec des API existantes."
+    },
+    {
+      "title": "Show HN: Yantra – an LALR(1) parser generator for C++",
+      "url": "https://github.com/TantrixAuto/yantra",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-01T02:30:48.000Z",
+      "category": "dev",
+      "tags": [
+        "c++",
+        "parser",
+        "ast"
+      ],
+      "tldr": "Yantra est un générateur de parseurs LALR(1) pour C++ qui génère lexer, parseur et parcours d'AST à partir d'un seul outil."
+    },
+    {
+      "title": "Gemini 4 Argon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-30T20:04:37.000Z",
+      "category": "ai",
+      "tags": [
+        "gemini",
+        "google",
+        "models"
+      ],
+      "tldr": "Annonce et analyse des performances et de l'intelligence du nouveau modèle d'intelligence artificielle Gemini 4 Argon."
+    },
+    {
+      "title": "5x faster Edge Functions: V8 isolates to Firecracker MicroVMs",
+      "url": "https://www.netlify.com/blog/edge-functions-firecracker-microvms/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-30T18:17:45.000Z",
+      "category": "devops",
+      "tags": [
+        "edge",
+        "serverless",
+        "microvms"
+      ],
+      "tldr": "Netlify améliore ses Edge Functions en passant des isolements V8 aux micro-machines virtuelles Firecracker, offrant des performances multipliées par 5."
+    },
+    {
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-30T17:37:40.000Z",
+      "category": "ai",
+      "tags": [
+        "inference",
+        "engine",
+        "agents",
+        "optimization"
+      ],
+      "tldr": "Magnitude est un moteur d'inférence auto-optimisé pour les agents IA, conçu pour s'adapter à votre matériel et surpasser la vitesse de llama.cpp."
+    },
+    {
+      "title": "What TLA+ can and can't check",
+      "url": "https://buttondown.com/hillelwayne/archive/what-tla-can-and-cant-check/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-09-30T13:57:06.000Z",
+      "category": "dev",
+      "tags": [
+        "tla+",
+        "formal",
+        "verification"
+      ],
+      "tldr": "Un article détaillé explorant les limites et les capacités de vérification formelle offertes par l'outil TLA+."
+    },
+    {
+      "title": "Piratage de la DGFiP : pas d’attaque sophistiquée, mais une série de défaillances techniques",
+      "url": "https://next.ink/259041/piratage-de-la-dgfip-pas-dattaque-sophistiquee-mais-une-serie-de-defaillances-techniques/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-09-30T09:01:00.000Z",
+      "category": "security",
+      "tags": [
+        "dgfip",
+        "violation",
+        "cybersecurity"
+      ],
+      "tldr": "L'intrusion dans les systèmes de la DGFiP, affectant des centaines de milliers de contribuables, est due à une série de défaillances techniques plutôt qu'à une attaque sophistiquée."
+    },
+    {
+      "title": "Votre agent IA part en vrille ? Nvidia promet de le stopper en quelques millisecondes",
+      "url": "https://korben.info/votre-agent-ia-part-en-vrille-nvidia-promet-de-le-stopper-en-millisecondes.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-30T07:54:31.000Z",
+      "category": "security",
+      "tags": [
+        "nvidia",
+        "agents",
+        "safety",
+        "opensource"
+      ],
+      "tldr": "Nvidia lance la plateforme Open Agent Safety, comprenant OpenShell et Sentry, pour stopper les comportements déviants des agents IA en quelques millisecondes."
+    }
+  ]
+}

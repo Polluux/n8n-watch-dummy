@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-02",
+  "generatedAt": "2026-10-02T07:30:11.411Z",
+  "intro": "L'actualité du développement logiciel met en avant l'évolution des frameworks front-end, l'optimisation des outils de versioning ainsi que les nouveautés en matière d'infrastructure et d'automatisation. Le secteur de l'intelligence artificielle progresse quant à lui sur l'inférence locale et l'optimisation des modèles de décision. Enfin, la sécurité applicative et les correctifs d'urgence pour les infrastructures critiques restent des sujets centraux pour les équipes techniques.",
+  "count": 10,
+  "items": [
+    {
+      "title": "100+ Useful Payloads for Web Security Testing",
+      "url": "https://dev.to/trixsec/100-useful-payloads-for-web-security-testing-2127",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-02T07:13:58.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "pentesting",
+        "payloads",
+        "web"
+      ],
+      "tldr": "Cette ressource propose plus d'une centaine de charges utiles pour tester la sécurité des applications web et identifier des vulnérabilités courantes."
+    },
+    {
+      "title": "CSS Bed: Classless CSS themes to use as starting points in web development",
+      "url": "https://www.cssbed.com",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-01T21:21:32.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "web",
+        "frontend"
+      ],
+      "tldr": "CSS Bed propose des thèmes CSS sans classes pour démarrer rapidement le développement web front-end."
+    },
+    {
+      "title": "Show HN: Janus – Go binary that runs GGUF models via Vulkan on AMD/Intel/Nvidia",
+      "url": "https://github.com/Vibra-Ingenn/Janus",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-01T20:36:47.000Z",
+      "category": "ai",
+      "tags": [
+        "go",
+        "llm",
+        "vulkan",
+        "ai"
+      ],
+      "tldr": "Janus est un binaire Go permettant d'exécuter des modèles GGUF via Vulkan sur des GPU AMD, Intel et Nvidia."
+    },
+    {
+      "title": "SvelteKit 3",
+      "url": "https://svelte.dev/blog/sveltekit-3-is-here",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-01T20:14:23.000Z",
+      "category": "dev",
+      "tags": [
+        "svelte",
+        "javascript",
+        "web",
+        "framework"
+      ],
+      "tldr": "La version majeure SvelteKit 3 est désormais disponible pour le développement d'applications web."
+    },
+    {
+      "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
+      "url": "https://blog.gitbutler.com/git-3-sha-256",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-01T16:57:03.000Z",
+      "category": "dev",
+      "tags": [
+        "git",
+        "sha-256",
+        "versioning"
+      ],
+      "tldr": "Un article analyse pourquoi le choix de Git 3.0 d'utiliser SHA-256 par défaut pourrait s'avérer être une erreur coûteuse."
+    },
+    {
+      "title": "Clef: Open-weight decision models, and new RL fine-tuning platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-01T16:18:57.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "models",
+        "cloudflare",
+        "rl"
+      ],
+      "tldr": "Cloudflare présente Clef, une collection de modèles de décision à poids ouverts ainsi qu'une nouvelle plateforme de fine-tuning par renforcement."
+    },
+    {
+      "title": "Les serveurs e-mail Zimbra visés par l’exploitation très active d’une faille critique",
+      "url": "https://next.ink/259249/les-serveurs-e-mail-zimbra-vises-par-lexploitation-tres-active-dune-faille-critique/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-01T07:36:06.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "zimbra",
+        "vulnerability",
+        "patch"
+      ],
+      "tldr": "Les serveurs e-mail Zimbra font l'objet d'exploitations actives d'une faille critique, rendant une mise à jour urgente indispensable."
+    },
+    {
+      "title": "CTFreak - L'ordonnanceur de tâches pour toutes vos machines",
+      "url": "https://korben.info/ctfreak-ordonnanceur-taches-self-hosted.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-01T07:13:00.000Z",
+      "category": "devops",
+      "tags": [
+        "automation",
+        "tasks",
+        "devops",
+        "scheduler"
+      ],
+      "tldr": "CTFreak est un planificateur de tâches auto-hébergé permettant d'exécuter des scripts et commandes à distance sans agent."
+    },
+    {
+      "title": "Test de la batterie externe Ugreen MagFlow Pro avec son refroidissement liquide visible",
+      "url": "https://korben.info/test-de-la-batterie-externe-ugreen-magflow-pro-avec-son-refroidissement-liquide-visible.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-30T15:27:37.000Z",
+      "category": "other",
+      "tags": [
+        "hardware",
+        "battery",
+        "review"
+      ],
+      "tldr": "Test de la batterie externe Ugreen MagFlow Pro, dotée d'un refroidissement liquide visible et de la technologie Qi2."
+    },
+    {
+      "title": "Relapse - Le jailbreak qui libère presque toutes les PS5",
+      "url": "https://korben.info/ps5-jailbreak-relapse.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-09-30T15:02:14.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "ps5",
+        "jailbreak",
+        "exploit"
+      ],
+      "tldr": "L'exploit Relapse permet de débloquer l'homebrew sur une grande majorité de consoles PS5 selon leur version de firmware."
+    }
+  ]
+}

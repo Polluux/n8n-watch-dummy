@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05T07:30:25.095Z",
+  "intro": "Le paysage technique d'aujourd'hui est marqué par des évolutions significatives en architecture et en infrastructure, illustrées par l'impact du passage au mode sans état pour le protocole MCP sur la conception des passerelles. Les ingénieurs apprécieront également les progrès en matière d'optimisation, qu'il s'agisse de l'exécution de modèles de langage massifs sur du matériel grand public ou de projets insolites comme le portage de Doom en SQL. Enfin, la sécurité des réseaux reste un sujet critique avec la révélation d'une vulnérabilité de contournement de certificats dans Xray-core.",
+  "count": 5,
+  "items": [
+    {
+      "title": "What stateless MCP changes for gateways",
+      "url": "https://dev.to/bengreenberg/what-stateless-mcp-changes-for-gateways-74h",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-05T07:26:11.000Z",
+      "category": "dev",
+      "tags": [
+        "mcp",
+        "gateways",
+        "api"
+      ],
+      "tldr": "Le passage du protocole MCP à un mode sans état (stateless) modifie profondément le fonctionnement des passerelles gérant de multiples serveurs MCP."
+    },
+    {
+      "title": "Relaxicons: Turn Any Iconify Icon into a Native Component for 8 Frameworks",
+      "url": "https://dev.to/ravikishan/relaxicons-turn-any-iconify-icon-into-a-native-component-for-8-frameworks-nem",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-05T07:24:51.000Z",
+      "category": "dev",
+      "tags": [
+        "icons",
+        "components",
+        "cli",
+        "frontend"
+      ],
+      "tldr": "Relaxicons est un outil CLI Node.js permettant de convertir n'importe quelle icône Iconify en composant natif pour huit frameworks différents sans bibliothèque d'exécution."
+    },
+    {
+      "title": "Xray-core concealed a certificate verification bypass vulnerability",
+      "url": "https://github.com/net4people/bbs/issues/672",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T17:38:54.000Z",
+      "category": "security",
+      "tags": [
+        "xray",
+        "vulnerability",
+        "bypass",
+        "certificate"
+      ],
+      "tldr": "Xray-core dissimulait une vulnérabilité permettant de contourner la vérification des certificats."
+    },
+    {
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "url": "https://github.com/Niko1221/Strata",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T12:51:53.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "hardware",
+        "inference"
+      ],
+      "tldr": "Exécuter le modèle Qwen 3.8 Flash Next (125B) sur du matériel grand public tel qu'une RTX 4090 à une vitesse de 100 tokens par seconde."
+    },
+    {
+      "title": "We ported the original Doom to SQL",
+      "url": "https://cedardb.com/blog/sqldoom/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-03T22:14:00.000Z",
+      "category": "other",
+      "tags": [
+        "sql",
+        "retro",
+        "database"
+      ],
+      "tldr": "Le jeu original Doom a été entièrement porté et exécuté en utilisant uniquement du SQL."
+    }
+  ]
+}

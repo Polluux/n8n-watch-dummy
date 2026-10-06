@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-06T07:30:09.580Z",
+  "intro": "Cette édition met l'accent sur la sécurité applicative et les bonnes pratiques de développement, allant des pièges de validation des jetons JWT et de la protection des données sensibles sous Neovim jusqu'aux incidents récents de fuites de données chez les prestataires. Les ingénieurs pourront également découvrir des retours d'expérience sur l'écosystème JavaScript, la gestion des tests d'accessibilité dans le navigateur, ainsi que des avancées notables en matière d'agents conversationnels appliqués à la recherche scientifique.",
+  "count": 9,
+  "items": [
+    {
+      "title": "Prove native focus trapping and restoration with a browser test",
+      "url": "https://dev.to/chriserodriguez/prove-native-focus-trapping-and-restoration-with-a-browser-test-1bf7",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-06T07:25:08.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "testing",
+        "browser",
+        "accessibility"
+      ],
+      "tldr": "Cet article montre comment tester le comportement réel du piège de focus natif à l'aide d'un test de navigateur et d'un dialogue natif."
+    },
+    {
+      "title": "Why Decoding a JWT Is Not Verifying It (And How Security Bugs Slip Through)",
+      "url": "https://dev.to/devomnitools/why-decoding-a-jwt-is-not-verifying-it-and-how-security-bugs-slip-through-3af",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-06T07:20:20.000Z",
+      "category": "security",
+      "tags": [
+        "jwt",
+        "security",
+        "authentication",
+        "bugs"
+      ],
+      "tldr": "Décoder un jeton JWT ne suffit pas à le vérifier, une erreur fréquente qui peut introduire des failles de sécurité critiques."
+    },
+    {
+      "title": "How I turn any handful of colours into a readable theme",
+      "url": "https://dev.to/zeybek/how-i-turn-any-handful-of-colours-into-a-readable-theme-hpn",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-06T07:19:20.000Z",
+      "category": "dev",
+      "tags": [
+        "ui",
+        "design",
+        "css",
+        "themes"
+      ],
+      "tldr": "Une astuce pour transformer un ensemble aléatoire de couleurs en un thème visuel lisible et bien contrasté."
+    },
+    {
+      "title": "How camouflage.nvim masks secrets in Neovim without leaking a frame",
+      "url": "https://dev.to/zeybek/how-camouflagenvim-masks-secrets-in-neovim-without-leaking-a-frame-1fao",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-06T07:19:16.000Z",
+      "category": "security",
+      "tags": [
+        "neovim",
+        "privacy",
+        "security",
+        "lua"
+      ],
+      "tldr": "Découvrez comment le plugin camouflage.nvim masque les informations sensibles dans Neovim sans compromettre l'affichage lors des partages d'écran."
+    },
+    {
+      "title": "Friendship ended with Deno, now Node is my best friend",
+      "url": "https://dbushell.com/2026/10/03/deno-to-node/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T22:30:02.000Z",
+      "category": "dev",
+      "tags": [
+        "node",
+        "deno",
+        "javascript",
+        "backend"
+      ],
+      "tldr": "Un retour d'expérience sur le passage de Deno à Node.js, marquant un retour vers l'écosystème initial."
+    },
+    {
+      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T21:00:21.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "agents",
+        "semiconductors",
+        "research"
+      ],
+      "tldr": "Des agents basés sur Opus 5.5 ont découvert deux nouveaux candidats semi-conducteurs magnétiques à température ambiante."
+    },
+    {
+      "title": "Web Search API",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T10:47:06.000Z",
+      "category": "dev",
+      "tags": [
+        "cloudflare",
+        "api",
+        "search",
+        "web"
+      ],
+      "tldr": "Cloudflare introduit une nouvelle API de recherche web permettant d'intégrer facilement des fonctionnalités de recherche dans les applications."
+    },
+    {
+      "title": "Facturation électronique : fuite d’informations chez VosFactures à cause d’un prestataire",
+      "url": "https://next.ink/259753/facturation-electronique-fuite-dinformations-chez-vosfactures-a-cause-dun-prestataire/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-05T09:09:09.000Z",
+      "category": "security",
+      "tags": [
+        "breach",
+        "security",
+        "billing",
+        "data"
+      ],
+      "tldr": "Une fuite de données chez VosFactures, plateforme de facturation électronique, a eu lieu suite à une faille provenant d'un prestataire polonais."
+    },
+    {
+      "title": "Quick Tunnels - Votre projet localhost sur le web avec invitation",
+      "url": "https://korben.info/cloudflare-quick-tunnels-tuto.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-05T07:40:07.000Z",
+      "category": "devops",
+      "tags": [
+        "cloudflare",
+        "tunnels",
+        "localhost",
+        "devops"
+      ],
+      "tldr": "Cloudflare Quick Tunnels permet de publier un serveur local en une seule commande, avec de nouvelles options de restriction par e-mail."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T07:30:08.768Z",
+  "intro": "L'actualité technique de ce jour met en lumière les évolutions de l'intelligence artificielle, entre nouvelles interfaces de décision, recherche mathématique et contraintes réglementaires européennes qui impactent directement la gestion de la sécurité open source. Parallèlement, l'écosystème du développement web continue d'explorer les performances graphiques avancées, l'intégration de composants modernes et le rétro-engineering créatif directement dans le navigateur.",
+  "count": 8,
+  "items": [
+    {
+      "title": "Shaders, WebGPU Components for React, Vue, Svelte, Solid, JavaScript and Framer",
+      "url": "https://github.com/shader-effects-inc/shaders",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T05:38:35.000Z",
+      "category": "dev",
+      "tags": [
+        "webgpu",
+        "react",
+        "vue",
+        "javascript"
+      ],
+      "tldr": "Une collection de composants et shaders WebGPU compatibles avec les principaux frameworks JavaScript et Framer."
+    },
+    {
+      "title": "State of Devs 2026",
+      "url": "https://2026.stateofdevs.com/en-US/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T23:26:30.000Z",
+      "category": "dev",
+      "tags": [
+        "developer",
+        "survey",
+        "trends"
+      ],
+      "tldr": "L'édition 2026 de l'enquête State of Devs propose un aperçu complet des tendances et de l'état de la communauté des développeurs."
+    },
+    {
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T22:17:21.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "math",
+        "research"
+      ],
+      "tldr": "OpenAI partage de nouvelles avancées concernant l'application de l'intelligence artificielle dans le domaine des mathématiques."
+    },
+    {
+      "title": "Decisions API is in public beta",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T20:57:25.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "api",
+        "beta"
+      ],
+      "tldr": "L'API Decisions d'OpenAI est désormais accessible au public en version bêta."
+    },
+    {
+      "title": "Il a entièrement recodé 8 vieux OS en HTML + un VB6 qui sort des .exe.",
+      "url": "https://korben.info/vieux-windows-mac-os-9-navigateur-wieslaw-soltes.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-06T15:22:00.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "retro",
+        "os",
+        "html"
+      ],
+      "tldr": "Huit anciens systèmes d'exploitation et un environnement VB6 ont été entièrement réécrits en JavaScript pour tourner directement dans un navigateur sans émulation."
+    },
+    {
+      "title": "AI Slop : Google met en pause son programme de bug bounty pour le logiciel libre",
+      "url": "https://next.ink/260081/ai-slop-google-met-en-pause-son-programme-de-bug-bounty-pour-le-logiciel-libre/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-06T14:54:00.000Z",
+      "category": "security",
+      "tags": [
+        "google",
+        "bugbounty",
+        "opensource",
+        "ai"
+      ],
+      "tldr": "Google suspend temporairement son programme de bug bounty pour l'open source en raison d'un afflux trop important de rapports erronés générés par l'IA."
+    },
+    {
+      "title": "ChatGPT va marquer ses textes d'un filigrane invisible, mais seulement en Europe",
+      "url": "https://korben.info/chatgpt-va-marquer-ses-textes-dun-filigrane-invisible-mais-seulement-en-europe.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-06T08:06:51.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "chatgpt",
+        "watermark",
+        "europe"
+      ],
+      "tldr": "OpenAI déploie un filigrane invisible sur les textes de ChatGPT en Europe pour se conformer à l'AI Act."
+    },
+    {
+      "title": "OpenMouse - Réglez votre souris gaming depuis le navigateur",
+      "url": "https://korben.info/openmouse-configurer-souris-gaming-navigateur.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-06T07:55:43.000Z",
+      "category": "other",
+      "tags": [
+        "hardware",
+        "mouse",
+        "browser",
+        "gaming"
+      ],
+      "tldr": "OpenMouse permet de configurer les paramètres de sa souris gaming directement depuis un navigateur web sans logiciel tiers."
+    }
+  ]
+}

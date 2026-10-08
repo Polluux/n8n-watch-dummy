@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T07:30:07.559Z",
+  "intro": "L'actualité technique de ce jour met en lumière les efforts continus d'optimisation des performances et de l'expérience utilisateur, illustrés par l'intégration du format d'image JPEG XL dans Chrome et par le projet de portage du compilateur TypeScript en Rust. Du côté du développement web, les discussions se concentrent sur la conception d'interfaces plus robustes et soignées, allant de la mise en place de messages d'erreur explicites et exploitables jusqu'à l'utilisation créative d'animations en ASCII.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Errors should say what failed and how to fix it (Web HIG tip #7)",
+      "url": "https://dev.to/frozonfreak/errors-should-say-what-failed-and-how-to-fix-it-web-hig-tip-7-fo4",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-08T07:14:03.000Z",
+      "category": "dev",
+      "tags": [
+        "ux",
+        "error-handling",
+        "web"
+      ],
+      "tldr": "Les messages d'erreur doivent clairement expliquer ce qui a échoué et indiquer des solutions exploitables par les utilisateurs, au lieu de formuler des messages vagues."
+    },
+    {
+      "title": "Rust Port of TypeScript (Tsc)",
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T00:46:00.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "typescript",
+        "compiler"
+      ],
+      "tldr": "Un projet visant à porter le compilateur TypeScript (tsc) en langage Rust pour potentiellement améliorer les performances."
+    },
+    {
+      "title": "Animated ASCII Art for Web Pages",
+      "url": "https://ascii.rest/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T15:05:37.000Z",
+      "category": "other",
+      "tags": [
+        "ascii",
+        "animation",
+        "web"
+      ],
+      "tldr": "Un outil ou site web permettant d'intégrer de l'art ASCII animé sur des pages web."
+    },
+    {
+      "title": "Shipping JPEG XL in Chrome",
+      "url": "https://developer.chrome.com/blog/jpeg-xl-in-chrome",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T11:25:02.000Z",
+      "category": "dev",
+      "tags": [
+        "chrome",
+        "image",
+        "jpeg-xl",
+        "browser"
+      ],
+      "tldr": "Google Chrome annonce l'intégration du format d'image JPEG XL pour améliorer la compression et la qualité visuelle sur le web."
+    }
+  ]
+}

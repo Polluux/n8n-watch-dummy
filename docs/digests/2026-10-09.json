@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09T07:43:49.374Z",
+  "intro": "La veille technique de ce jour met en lumière les avancées de l'écosystème web et des architectures performantes, illustrées par l'arrivée de la version 4.6 de Nuxt et par des portages audacieux exploitant Rust et WebAssembly. L'intelligence artificielle occupe également une place centrale avec l'optimisation de modèles de transcription ultralégers, l'évaluation de modèles de décision et la démocratisation d'outils de détection de contenus synthétiques. Enfin, le paysage de la cybersécurité reste sous tension, marqué par les derniers rapports de l'ANSSI sur les fuites de données étatiques et l'exploitation active de failles zero-day.",
+  "count": 7,
+  "items": [
+    {
+      "title": "Show HN: Quake ported to safe Rust, playable in browser",
+      "url": "https://quake-srp.pages.dev/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-09T05:22:58.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "wasm",
+        "gaming"
+      ],
+      "tldr": "Le jeu classique Quake a été porté en Rust sécurisé et peut désormais être joué directement dans le navigateur."
+    },
+    {
+      "title": "Nuxt 4.6, le framework web full-stack libre et open source basé sur Vue.js, Nitro et Vite, arrive avec une refonte majeure de son architecture indépendante du serveur et la CLI v4",
+      "url": "https://javascript.developpez.com/actu/387920/Nuxt-4-6-le-framework-web-full-stack-libre-et-open-source-base-sur-Vue-js-Nitro-et-Vite-arrive-avec-une-refonte-majeure-de-son-architecture-independante-du-serveur-et-la-CLI-v4/",
+      "source": "dvp",
+      "sourceName": "Developpez.com",
+      "publishedAt": "2026-10-08T01:11:00.000Z",
+      "category": "dev",
+      "tags": [
+        "nuxt",
+        "vue.js",
+        "framework",
+        "javascript"
+      ],
+      "tldr": "Nuxt 4.6 est disponible avec une refonte majeure de son architecture indépendante du serveur et une nouvelle version de sa CLI."
+    },
+    {
+      "title": "Show HN: OldRoll, a free vintage photo editor for the browser",
+      "url": "https://www.oldroll.io/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-09T06:40:14.000Z",
+      "category": "other",
+      "tags": [
+        "photo",
+        "web",
+        "browser",
+        "editor"
+      ],
+      "tldr": "OldRoll Web propose des effets de caméra vintage et des filtres directement dans le navigateur sans nécessiter d'installation."
+    },
+    {
+      "title": "Whistle: Speech to Text in 16.9 MB",
+      "url": "https://cactuscompute.com/blog/whistle",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T16:59:39.000Z",
+      "category": "ai",
+      "tags": [
+        "speech-to-text",
+        "audio",
+        "ai"
+      ],
+      "tldr": "Whistle propose un modèle de transcription vocale (speech-to-text) tenant dans seulement 16,9 Mo."
+    },
+    {
+      "title": "Show HN: Jevman – AI decision models play Pac-Man",
+      "url": "https://opper.ai/jevman-benchmark/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T16:34:13.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "benchmark",
+        "pac-man",
+        "models"
+      ],
+      "tldr": "Un comparatif utilise le jeu Pac-Man comme benchmark pour tester les performances de différents modèles de décision par IA."
+    },
+    {
+      "title": "Google met SynthID Detector à la disposition de tous pour détecter les images, vidéos et audios créés par l'IA, notamment ceux générés par Google, OpenAI, Nvidia et Kakao",
+      "url": "https://intelligence-artificielle.developpez.com/actu/387925/Google-met-SynthID-Detector-a-la-disposition-de-tous-pour-detecter-les-images-videos-et-audios-crees-par-l-IA-notamment-ceux-generes-par-Google-OpenAI-Nvidia-et-Kakao/",
+      "source": "dvp",
+      "sourceName": "Developpez.com",
+      "publishedAt": "2026-10-08T12:11:00.000Z",
+      "category": "ai",
+      "tags": [
+        "synthid",
+        "detection",
+        "ai",
+        "google"
+      ],
+      "tldr": "Google ouvre l'accès à SynthID Detector au grand public pour identifier facilement les contenus visuels et audio générés par l'IA."
+    },
+    {
+      "title": "Actualité Cybersécurité de la semaine du 05/10/2026",
+      "url": "https://erreur403.fr/p/erreur-403-96-l-anssi-publie-un-premier-bilan-de-99-fuites-visant-l-etat/",
+      "source": "jdh",
+      "sourceName": "Journal du Hacker",
+      "publishedAt": "2026-10-08T07:15:34.000Z",
+      "category": "security",
+      "tags": [
+        "anssi",
+        "cybersecurity",
+        "data-leaks",
+        "zero-day"
+      ],
+      "tldr": "Le dernier bilan de l'ANSSI met en lumière 99 fuites visant l'État, tandis que plusieurs failles et attaques zero-day ont été signalées."
+    }
+  ]
+}

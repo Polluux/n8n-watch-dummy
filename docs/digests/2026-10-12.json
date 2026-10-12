@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-12T07:30:18.091Z",
+  "intro": "L actualite technique du jour met en lumiere les defis persistants de la securite et de la vie privee sur le web, notamment a travers les debats sur l authentification moderne et l evolution du tracking utilisateur. Du cote du developpement logiciel, l ingenierie systeme est a l honneur avec des innovations en matiere de typage strict pour le web ainsi que des projets de modernisation de logiciels et de jeux classiques.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Type-safe HTML templating in Zig",
+      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T05:02:34.000Z",
+      "category": "dev",
+      "tags": [
+        "zig",
+        "html",
+        "templating"
+      ],
+      "tldr": "Découvrez une méthode de templating HTML sécurisée pour les types, implémentée en langage Zig."
+    },
+    {
+      "title": "Crest – an Arc-inspired open-source browser for Mac",
+      "url": "https://crestbrowser.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T03:37:09.000Z",
+      "category": "other",
+      "tags": [
+        "browser",
+        "mac",
+        "open-source"
+      ],
+      "tldr": "Crest est un nouveau navigateur open-source pour Mac, inspiré par les concepts du navigateur Arc."
+    },
+    {
+      "title": "Fingerprints are the new cookies",
+      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T22:33:39.000Z",
+      "category": "security",
+      "tags": [
+        "fingerprinting",
+        "privacy",
+        "cookies",
+        "tracking"
+      ],
+      "tldr": "Cet article analyse comment le fingerprinting tend à remplacer les cookies traditionnels pour le suivi des utilisateurs."
+    },
+    {
+      "title": "Passkeys are a trap",
+      "url": "https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T21:59:48.000Z",
+      "category": "security",
+      "tags": [
+        "passkeys",
+        "authentication",
+        "security"
+      ],
+      "tldr": "Une critique argumentée suggérant que les passkeys représentent un piège potentiel et qu'il conviendrait de les éviter."
+    },
+    {
+      "title": "Total Annihilation, rebuilt for modern computers",
+      "url": "https://nanolathe.gg",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T18:04:47.000Z",
+      "category": "other",
+      "tags": [
+        "gaming",
+        "retro",
+        "rebuild"
+      ],
+      "tldr": "Le jeu classique Total Annihilation fait l'objet d'une reconstruction pour fonctionner sur les ordinateurs modernes."
+    }
+  ]
+}

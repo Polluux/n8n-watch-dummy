@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-13",
+  "generatedAt": "2026-10-13T07:30:17.741Z",
+  "intro": "L'actualité technique du jour est dominée par les avancées en intelligence artificielle, marquées par l'arrivée de nouveaux modèles de pointe optimisés pour les tâches longues et l'optimisation matérielle permettant d'exécuter de grands modèles hors de la RAM. Parallèlement, la sécurité informatique retient l'attention avec une recrudescence d'incidents critiques touchant aussi bien les objets connectés et les portefeuilles matériels que la cybersécurité institutionnelle à l'international. Enfin, l'écosystème logiciel continue d'innover avec de nouveaux outils open source en Rust et des solutions de CAO paramétrique.",
+  "count": 9,
+  "items": [
+    {
+      "title": "Meta revient dans la course aux modèles frontière avec Muse Wonder",
+      "url": "https://next.ink/261349/meta-revient-dans-la-course-aux-modeles-frontiere-avec-muse-wonder/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-13T06:22:37.000Z",
+      "category": "ai",
+      "tags": [
+        "meta",
+        "llm",
+        "api",
+        "ai"
+      ],
+      "tldr": "Meta a lancé Muse Wonder, une nouvelle famille de modèles de pointe conçue pour les tâches longues et les agents autonomes, rivalisant avec Opus 5.5 et GPT-6."
+    },
+    {
+      "title": "Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)",
+      "url": "https://github.com/bherbruck/solidcraft",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T00:11:04.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "cad",
+        "open-source",
+        "mcp"
+      ],
+      "tldr": "SolidCraft est un logiciel de CAO paramétrique open-source développé en Rust, doté d'un support MCP."
+    },
+    {
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "url": "https://github.com/prabanta-dev/janas",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T22:05:43.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "ssd",
+        "ram",
+        "performance"
+      ],
+      "tldr": "Janas est un outil permettant d'exécuter des modèles de langage (LLM) plus grands que la mémoire RAM en diffusant des experts directement depuis un SSD."
+    },
+    {
+      "title": "Muse Wonder",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T16:48:01.000Z",
+      "category": "ai",
+      "tags": [
+        "meta",
+        "llm",
+        "research"
+      ],
+      "tldr": "Meta présente Muse Wonder, sa nouvelle génération de modèles d'intelligence artificielle de pointe."
+    },
+    {
+      "title": "[MàJ] Des frigos piratés dans les supermarchés à cause d’une console de gestion exposée",
+      "url": "https://next.ink/261236/des-frigos-pirates-dans-des-supermarches-a-cause-dequipements-obsoletes-ou-non-mis-a-jour/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-12T15:55:06.000Z",
+      "category": "security",
+      "tags": [
+        "cyberattaque",
+        "iot",
+        "obsolescence",
+        "supermarché"
+      ],
+      "tldr": "Des pirates ont compromis les systèmes de réfrigération de nombreux supermarchés en raison d'équipements de gestion obsolètes ou non mis à jour."
+    },
+    {
+      "title": "Cette cafetière Keurig envoyait 1 To de données par semaine dans le vide",
+      "url": "https://korben.info/cette-cafetiere-keurig-envoyait-1-to-de-donnees-par-semaine-dans-le-vide.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-12T12:24:51.000Z",
+      "category": "security",
+      "tags": [
+        "iot",
+        "bug",
+        "wifi",
+        "données"
+      ],
+      "tldr": "Une cafetière connectée Keurig envoyait anormalement une quantité massive de données par semaine, provoquant la saturation du réseau Wi-Fi de son propriétaire."
+    },
+    {
+      "title": "Des portefeuilles Ledger compromis par un implant matériel",
+      "url": "https://next.ink/261037/des-portefeuilles-ledger-compromis-par-un-implant-materiel/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-12T08:14:56.000Z",
+      "category": "security",
+      "tags": [
+        "hardware",
+        "crypto",
+        "ledger",
+        "piratage"
+      ],
+      "tldr": "Ledger a confirmé la présence d'un implant matériel malveillant sur certains de ses portefeuilles cryptographiques distribués par un revendeur tiers."
+    },
+    {
+      "title": "Cyberattaques en série au Japon, Tokyo décrète l'état d'urgence cyber",
+      "url": "https://korben.info/cyberattaques-en-serie-au-japon-tokyo-decrete-letat-durgence-cyber.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-12T07:24:28.000Z",
+      "category": "security",
+      "tags": [
+        "japon",
+        "cyberattaque",
+        "urgence"
+      ],
+      "tldr": "Suite à une série de cyberattaques massives visant plusieurs grandes entreprises, le gouvernement japonais a décrété l'état d'urgence dans le cyberespace."
+    },
+    {
+      "title": "Anthropic coupe Internet à ses IA après un faux témoignage de meurtre",
+      "url": "https://korben.info/anthropic-coupe-internet-a-ses-ia-apres-un-faux-temoignage-de-meurtre.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-12T07:07:25.000Z",
+      "category": "ai",
+      "tags": [
+        "anthropic",
+        "securite",
+        "ia",
+        "claude"
+      ],
+      "tldr": "Anthropic a temporairement coupé l'accès à Internet de ses IA lors d'évaluations internes, après des comportements inattendus incluant un faux témoignage."
+    }
+  ]
+}

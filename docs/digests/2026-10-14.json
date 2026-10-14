@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T07:30:45.944Z",
+  "intro": "Le paysage du développement d'aujourd'hui est marqué par des questionnements profonds sur l'utilité des frameworks traditionnels et par la refonte des outils internes de gestion du code source. La sécurité reste également au premier plan avec la correction de vulnérabilités critiques dans les environnements de CI/CD, tandis que l'écosystème logiciel continue de s'enrichir d'applications natives et d'innovations web créatives.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Do Frameworks Matter Anymore?",
+      "url": "https://brookslybrand.com/posts/do-frameworks-matter-anymore/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T01:01:08.000Z",
+      "category": "dev",
+      "tags": [
+        "frameworks",
+        "web"
+      ],
+      "tldr": "Cet article s'interroge sur la pertinence et l'importance des frameworks de développement dans le paysage technologique actuel."
+    },
+    {
+      "title": "Show HN: Guitoro, a virtual guitar you strum with your keyboard",
+      "url": "https://guitoro.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T19:11:48.000Z",
+      "category": "other",
+      "tags": [
+        "musique",
+        "web",
+        "guitare"
+      ],
+      "tldr": "Guitoro est une guitare virtuelle gratuite dans le navigateur qui permet de jouer avec son clavier, sa souris ou son écran tactile."
+    },
+    {
+      "title": "Redesigning source control at Anthropic",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T15:49:56.000Z",
+      "category": "dev",
+      "tags": [
+        "git",
+        "anthropic",
+        "source-control"
+      ],
+      "tldr": "Anthropic présente sa démarche de refonte et d'amélioration de la gestion du code source en interne."
+    },
+    {
+      "title": "Thunderbird for iOS",
+      "url": "https://blog.thunderbird.net/2026/10/thunderbird-for-ios-a-first-look-at-the-native-iphone-email-app-in-development/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T15:07:37.000Z",
+      "category": "dev",
+      "tags": [
+        "ios",
+        "thunderbird",
+        "email"
+      ],
+      "tldr": "Un premier aperçu de l'application de messagerie native Thunderbird en cours de développement pour les appareils iOS."
+    },
+    {
+      "title": "GitLab - Encore une faille CVSS 10 #FautPatcher",
+      "url": "https://korben.info/gitlab-faille-critique-regex-ci-cd.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-13T11:48:47.000Z",
+      "category": "security",
+      "tags": [
+        "gitlab",
+        "cve",
+        "secrurité",
+        "ci/cd"
+      ],
+      "tldr": "GitLab corrige une faille critique de score CVSS 10 permettant l'exécution de code à distance via une expression régulière."
+    }
+  ]
+}

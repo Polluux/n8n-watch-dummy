@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-15T07:30:37.611Z",
+  "intro": "La sécurité informatique domine l'actualité avec la découverte d'une faille critique dans Ghostscript et un nouveau record de vulnérabilités corrigées par Microsoft lors de son dernier Patch Tuesday. Parallèlement, l'écosystème logiciel évolue avec des optimisations de performance réseau dans Go, de nouveaux outils open-source dédiés à la collaboration en pair-programmation et l'émergence d'agents d'intelligence artificielle optimisés pour l'exécution locale sur les appareils.",
+  "count": 6,
+  "items": [
+    {
+      "title": "Ghostscript - L'aperçu des PDF peut mettre à mal votre serveur",
+      "url": "https://korben.info/ghostscript-faille-pdf-serveurs.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-15T06:56:47.000Z",
+      "category": "security",
+      "tags": [
+        "ghostscript",
+        "pdf",
+        "cve",
+        "serveur"
+      ],
+      "tldr": "Une faille critique (score de 9,8) a été découverte dans Ghostscript, permettant l'exécution de code via un PDF piégé sous certaines conditions. Il est recommandé de vérifier les correctifs disponibles auprès de votre hébergeur ou distribution."
+    },
+    {
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T23:59:37.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "agent",
+        "on-device",
+        "ai"
+      ],
+      "tldr": "Présentation de LFM2.5-24B-A2B, un modèle conçu pour alimenter des agents rapides directement sur les appareils. Il vise à optimiser l'exécution locale des charges de travail d'intelligence artificielle."
+    },
+    {
+      "title": "Show HN: Petal, open-source CoScreen/ScreenHero finally free",
+      "url": "https://petal.live/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T18:23:14.000Z",
+      "category": "dev",
+      "tags": [
+        "open-source",
+        "collaboration",
+        "pair-programming",
+        "outils"
+      ],
+      "tldr": "Petal est un nouvel outil de pair-programmation open-source créé par l'ancienne équipe de CoScreen. Il est désormais gratuit pour remplacer le service arrêté par Datadog."
+    },
+    {
+      "title": "Better HTTP/1 connection reuse in Go 1.27",
+      "url": "https://go.dev/blog/http-connection-reuse",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T16:29:33.000Z",
+      "category": "dev",
+      "tags": [
+        "go",
+        "http",
+        "réseau",
+        "performance"
+      ],
+      "tldr": "La version Go 1.27 améliore la réutilisation des connexions HTTP/1. Cette mise à jour vise à optimiser les performances réseau et l'efficacité des transferts."
+    },
+    {
+      "title": "Patch Tuesday : Microsoft bat un nouveau record avec 1 411 failles corrigées",
+      "url": "https://next.ink/261605/patch-tuesday-microsoft-bat-un-nouveau-record-avec-1-411-failles-corrigees/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-14T07:12:12.000Z",
+      "category": "security",
+      "tags": [
+        "microsoft",
+        "patch-tuesday",
+        "vulnérabilité",
+        "0-day"
+      ],
+      "tldr": "Microsoft bat un record en corrigeant 1 411 failles de sécurité lors de son Patch Tuesday d'octobre. Cette mise à jour colmate notamment trois vulnérabilités de type 0-day, dont une déjà exploitée."
+    },
+    {
+      "title": "Le Petit Prince devient un jeu 3D dans votre navigateur (Merci l'IA)",
+      "url": "https://korben.info/petit-prince-jeu-3d-ia.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-14T06:00:16.000Z",
+      "category": "ai",
+      "tags": [
+        "jeu-3d",
+        "navigateur",
+        "ia",
+        "webgpu"
+      ],
+      "tldr": "Un jeu 3D basé sur Le Petit Prince a été développé en seulement 16 jours grâce à des outils d'IA comme Claude Opus 5.5, Tripo et Blender. Il est directement jouable dans le navigateur via WebGPU."
+    }
+  ]
+}

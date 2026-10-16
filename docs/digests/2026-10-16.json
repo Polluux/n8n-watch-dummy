@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-16T09:06:00.648Z",
+  "intro": "La sécurité logicielle occupe une place centrale aujourd'hui, avec la prévention des fuites d'identifiants dans les dépôts et la lutte contre le phishing par usurpation de domaines. L'actualité met également en avant l'évolution des environnements Linux et de l'écosystème web, marqués par l'adoption généralisée de Wayland et l'amélioration continue des outils de développement. Enfin, les avancées se poursuivent dans l'intelligence artificielle open source et la dynamique des runtimes JavaScript.",
+  "count": 7,
+  "items": [
+    {
+      "title": "# 🔐 Gitleaks: Detect Secrets Before They Reach Git",
+      "url": "https://dev.to/sharonkynu/-gitleaks-detect-secrets-before-they-reach-git-10cl",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-16T09:04:20.000Z",
+      "category": "security",
+      "tags": [
+        "gitleaks",
+        "git",
+        "secrets",
+        "security"
+      ],
+      "tldr": "Gitleaks est un outil open source conçu pour détecter et empêcher les fuites de clés API, mots de passe et identifiants sensibles avant qu'ils ne se retrouvent dans Git."
+    },
+    {
+      "title": "PunyGuard: A Chrome Extension That Blocks Every Internationalized Domain",
+      "url": "https://dev.to/sho7650/punyguard-a-chrome-extension-that-blocks-every-internationalized-domain-4alk",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-16T09:02:56.000Z",
+      "category": "security",
+      "tags": [
+        "chrome",
+        "extension",
+        "security",
+        "domain"
+      ],
+      "tldr": "PunyGuard est une extension Chrome développée pour bloquer les domaines internationalisés afin de se protéger contre le phishing par usurpation d'identifiants visuels."
+    },
+    {
+      "title": "Real-Time VAT Validation in a React Checkout Form",
+      "url": "https://dev.to/iurii_rogulia/real-time-vat-validation-in-a-react-checkout-form-p5a",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-16T09:00:55.000Z",
+      "category": "dev",
+      "tags": [
+        "react",
+        "validation",
+        "vat",
+        "form"
+      ],
+      "tldr": "Cet article présente l'implémentation d'un formulaire React permettant de valider en temps réel un numéro de TVA grâce à un hook avec debounced et un proxy backend."
+    },
+    {
+      "title": "Thank You, Deno",
+      "url": "https://www.vlt.io/blog/competition-keeps-javascript-moving",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-16T00:52:40.000Z",
+      "category": "dev",
+      "tags": [
+        "deno",
+        "javascript",
+        "competition"
+      ],
+      "tldr": "Un article qui revient sur l'apport de Deno et souligne comment la concurrence stimule l'évolution constante de l'écosystème JavaScript."
+    },
+    {
+      "title": "Muse Spark Open",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T17:47:39.000Z",
+      "category": "ai",
+      "tags": [
+        "meta",
+        "ai",
+        "model",
+        "open-source"
+      ],
+      "tldr": "Meta lance Muse Spark Open, un nouveau modèle d'intelligence artificielle open source disponible notamment sur Hugging Face."
+    },
+    {
+      "title": "L'environnement de bureau Linux KDE Plasma 6.8 sort à l'occasion du 30e anniversaire de la communauté KDE, et abandonne la prise en charge de X11 au profit du protocole d'affichage Wayland",
+      "url": "https://linux.developpez.com/actu/388169/L-environnement-de-bureau-Linux-KDE-Plasma-6-8-sort-a-l-occasion-du-30e-anniversaire-de-la-communaute-KDE-et-abandonne-la-prise-en-charge-de-X11-au-profit-du-protocole-d-affichage-Wayland/",
+      "source": "dvp",
+      "sourceName": "Developpez.com",
+      "publishedAt": "2026-10-15T15:30:00.000Z",
+      "category": "devops",
+      "tags": [
+        "kde",
+        "linux",
+        "wayland",
+        "desktop"
+      ],
+      "tldr": "La version 6.8 de KDE Plasma sort pour le 30e anniversaire de la communauté et abandonne définitivement X11 au profit exclusif de Wayland."
+    },
+    {
+      "title": "Wayland desktop for Linux with skeuomorphic design",
+      "url": "https://github.com/fyzugx/DEsk",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T13:23:44.000Z",
+      "category": "dev",
+      "tags": [
+        "linux",
+        "wayland",
+        "desktop",
+        "skeuomorphic"
+      ],
+      "tldr": "DEsk est un nouvel environnement de bureau Linux pour Wayland qui arbore un design skeuomorphique distinctif."
+    }
+  ]
+}

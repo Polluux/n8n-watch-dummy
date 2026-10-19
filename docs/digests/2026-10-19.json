@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T07:30:27.710Z",
+  "intro": "Le paysage technique du jour est dominé par l'actualité du développement front-end et des enquêtes sectorielles, couplé à des évolutions majeures en matière de sécurité des bases de données avec Supabase et de robustesse matérielle suite à une faille critique sur les puces Wi-Fi Broadcom. Les ingénieurs s'intéressent également aux bonnes pratiques d'optimisation des contextes pour les assistants de code basés sur l'intelligence artificielle et à l'émergence de nouveaux modèles d'agents de raisonnement hybride.",
+  "count": 6,
+  "items": [
+    {
+      "title": "What's happening to CSS-Tricks, State of Devs 2026, announcing State of HTML 2026, and more | Front End News #116",
+      "url": "https://dev.to/adriansandu/whats-happening-to-css-tricks-state-of-devs-2026-announcing-state-of-html-2026-and-more-front-2gah",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-19T07:28:29.000Z",
+      "category": "dev",
+      "tags": [
+        "frontend",
+        "css",
+        "news"
+      ],
+      "tldr": "Un point d'actualité sur le développement front-end, abordant l'évolution de CSS-Tricks, le State of Devs 2026 et l'annonce du State of HTML 2026."
+    },
+    {
+      "title": "Supabase RLS breaking change (Oct 30, 2026): 5-minute check to avoid 42501 errors",
+      "url": "https://dev.to/cekuu35/supabase-rls-breaking-change-oct-30-2026-5-minute-check-to-avoid-42501-errors-50ei",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-19T07:27:15.000Z",
+      "category": "devops",
+      "tags": [
+        "supabase",
+        "database",
+        "breaking-change",
+        "security"
+      ],
+      "tldr": "Supabase annonce un changement critique concernant les règles RLS (Row Level Security) dans le schéma public, nécessitant une vérification rapide pour éviter les erreurs d'accès."
+    },
+    {
+      "title": "Your CLAUDE.md Is Too Long: What to Cut So Claude Code Follows It",
+      "url": "https://dev.to/promptmaster/your-claudemd-is-too-long-what-to-cut-so-claude-code-follows-it-5713",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-19T07:27:18.000Z",
+      "category": "dev",
+      "tags": [
+        "claude",
+        "ai",
+        "prompting",
+        "best-practices"
+      ],
+      "tldr": "Pour que Claude Code suive correctement vos instructions, il est souvent plus efficace de réduire la taille de votre fichier CLAUDE.md plutôt que d'y ajouter de nouvelles lignes."
+    },
+    {
+      "title": "Security flaw in Broadcom chip allows strangers to control nearby routers",
+      "url": "https://dev.to/hacksgr/security-flaw-in-broadcom-chip-allows-strangers-to-control-nearby-routers-5f04",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-19T07:29:36.000Z",
+      "category": "security",
+      "tags": [
+        "vulnerability",
+        "hardware",
+        "router"
+      ],
+      "tldr": "Une faille de sécurité critique dans les puces Wi-Fi Broadcom permet à des attaquants à proximité de prendre le contrôle de routeurs vulnérables sans nécessiter de mot de passe."
+    },
+    {
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-18T20:48:14.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "agents",
+        "reasoning"
+      ],
+      "tldr": "Présentation des agents de raisonnement hybride, qui utilisent des grands modèles de langage capables de penser dans un espace latent tout en interagissant via du texte."
+    },
+    {
+      "title": "PalmOS Lemmings",
+      "url": "https://github.com/ardiri/palmos-lemmings",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-18T17:56:59.000Z",
+      "category": "other",
+      "tags": [
+        "retro",
+        "gaming",
+        "palmos"
+      ],
+      "tldr": "Le jeu classique Lemmings porté sur les anciens appareils fonctionnant sous PalmOS."
+    }
+  ]
+}

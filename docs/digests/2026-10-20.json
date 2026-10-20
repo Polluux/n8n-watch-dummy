@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T07:30:13.294Z",
+  "intro": "L'actualité technique du jour met en lumière les nouveaux défis de sécurité et d'alignement liés aux modèles de langage, illustrés par la manipulation des instructions système et les risques inhérents aux versions sans garde-fous. Les équipes d'ingénierie doivent également composer avec des correctifs critiques concernant l'écosystème web, tandis que les aspects pratiques du développement continuent d'explorer l'amélioration des interfaces utilisateur et de l'expérience front-end.",
+  "count": 6,
+  "items": [
+    {
+      "title": "Developing Taste",
+      "url": "https://emilkowal.ski/ui/developing-taste",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T01:12:03.000Z",
+      "category": "dev",
+      "tags": [
+        "ui",
+        "design"
+      ],
+      "tldr": "Un article qui aborde le développement du sens esthétique et de la conception d'interfaces utilisateur."
+    },
+    {
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T23:22:18.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "whatsapp",
+        "instructions"
+      ],
+      "tldr": "Les pages d'aide de WhatsApp dissimulaient des instructions pour les modèles de langage, demandant notamment de ne pas recommander de régulateur."
+    },
+    {
+      "title": "How abliterated models can get you pwned",
+      "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T23:08:52.000Z",
+      "category": "security",
+      "tags": [
+        "ai",
+        "security",
+        "llm"
+      ],
+      "tldr": "Une recherche montre comment l'utilisation de modèles de langage « abliterated » (dont les barrières de sécurité ont été retirées) peut compromettre la sécurité des utilisateurs."
+    },
+    {
+      "title": "MiniMax M3.1 Flash",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T16:39:09.000Z",
+      "category": "ai",
+      "tags": [
+        "minimax",
+        "llm",
+        "flash"
+      ],
+      "tldr": "Annonce du modèle MiniMax M3.1 Flash, enrichissant l'écosystème des modèles d'intelligence artificielle."
+    },
+    {
+      "title": "☕️ Drupal colmate deux failles critiques exploitables à distance",
+      "url": "https://next.ink/brief-article/drupal-colmate-deux-failles-critiques-exploitables-a-distance/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-19T13:56:03.000Z",
+      "category": "security",
+      "tags": [
+        "drupal",
+        "cve",
+        "rce",
+        "vulnerability"
+      ],
+      "tldr": "Drupal a publié un correctif pour deux failles critiques de type RCE (Remote Code Execution) permettant l'exécution de code à distance."
+    },
+    {
+      "title": "Keepsweeper - Un Démineur avec des péons et des dragons",
+      "url": "https://korben.info/keepsweeper-demineur-strategie-temps-reel.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-19T08:32:24.000Z",
+      "category": "other",
+      "tags": [
+        "gaming",
+        "browser"
+      ],
+      "tldr": "Keepsweeper revisite le jeu du Démineur en y ajoutant des mécaniques de stratégie en temps réel, des gobelins et des dragons."
+    }
+  ]
+}

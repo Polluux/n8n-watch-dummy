@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T07:30:08.927Z",
+  "intro": "Cette édition met en lumière de nouveaux équilibres en matière de performances web et d'infrastructure avec des évolutions notables pour WebAssembly et le développement frontend. L'actualité est également marquée par des enjeux critiques de cybersécurité, illustrés par des incidents touchant des chaînes de certification et des outils de distribution de code. Enfin, l'écosystème de l'intelligence artificielle progresse rapidement grâce aux dernières innovations en matière de backends matériels et de grands modèles de langage.",
+  "count": 8,
+  "items": [
+    {
+      "title": "C# now beats Rust on WASM size",
+      "url": "https://github.com/zion-sati/NetWasm",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T02:53:47.000Z",
+      "category": "dev",
+      "tags": [
+        "c#",
+        "rust",
+        "wasm"
+      ],
+      "tldr": "Un projet montre que C# surpasse désormais Rust en matière de taille de fichier pour WebAssembly."
+    },
+    {
+      "title": "The Future of CSS",
+      "url": "https://www.joshwcomeau.com/css/interop-2027/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T01:47:28.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "interop",
+        "web"
+      ],
+      "tldr": "Cet article explore l'avenir du CSS à travers l'initiative Interop 2027."
+    },
+    {
+      "title": "Muse exposes users' personal and business secrets when they share conversations",
+      "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T00:45:59.000Z",
+      "category": "security",
+      "tags": [
+        "meta",
+        "ai",
+        "privacy",
+        "leak"
+      ],
+      "tldr": "L'outil Muse de Meta expose des secrets personnels et professionnels lorsque les utilisateurs partagent leurs conversations."
+    },
+    {
+      "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T16:40:24.000Z",
+      "category": "ai",
+      "tags": [
+        "google",
+        "pytorch",
+        "tpu"
+      ],
+      "tldr": "Google passe en open source TorchTPU, un backend PyTorch natif conçu pour ses processeurs TPU."
+    },
+    {
+      "title": "Voxtral 3",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T16:02:07.000Z",
+      "category": "ai",
+      "tags": [
+        "mistral",
+        "llm",
+        "voxtral"
+      ],
+      "tldr": "Mistral AI annonce la sortie de Voxtral 3, enrichissant son offre dans le domaine de l'intelligence artificielle."
+    },
+    {
+      "title": "eMudhra intermediate CA compromise",
+      "url": "https://emudhra.we-have-a-problem.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T13:58:33.000Z",
+      "category": "security",
+      "tags": [
+        "ssl",
+        "certificate",
+        "compromise"
+      ],
+      "tldr": "Une compromission a touché l'autorité de certification intermédiaire eMudhra, entraînant des mesures de protection des navigateurs."
+    },
+    {
+      "title": "Le client en ligne de commande d’OVHcloud compromis par un pirate sur GitHub",
+      "url": "https://next.ink/262824/le-client-en-ligne-de-commande-dovhcloud-compromis-par-un-pirate-sur-github/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-20T05:44:10.000Z",
+      "category": "security",
+      "tags": [
+        "ovhcloud",
+        "github",
+        "cli",
+        "malware"
+      ],
+      "tldr": "Le client en ligne de commande d'OVHcloud distribué sur GitHub a été brièvement piégé par un pirate pour voler des secrets."
+    },
+    {
+      "title": "La Disquette - Un vieux jeu PC par semaine, sans rien installer",
+      "url": "https://korben.info/la-disquette-jeu-pc-de-la-semaine-navigateur.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-20T05:14:23.000Z",
+      "category": "other",
+      "tags": [
+        "retro",
+        "gaming",
+        "web"
+      ],
+      "tldr": "La Disquette permet de jouer gratuitement à un ancien jeu PC directement dans le navigateur chaque semaine, sans installation."
+    }
+  ]
+}

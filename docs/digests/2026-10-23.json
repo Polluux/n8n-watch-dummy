@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T07:30:26.457Z",
+  "intro": "L'actualité technique du jour met en avant l'intelligence artificielle avec l'essor de la vérification formelle assistée par les modèles de langage et la sécurisation des environnements d'exécution pour les agents autonomes. Les évolutions du développement web se distinguent également à travers l'expérimentation de nouvelles API graphiques dans les navigateurs. Enfin, l'innovation logicielle s'illustre par des projets originaux de filtrage géographique appliqués aux grandes bases de connaissances.",
+  "count": 4,
+  "items": [
+    {
+      "title": "The HTML-in-Canvas API origin trial",
+      "url": "https://developer.chrome.com/blog/html-in-canvas-origin-trial",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T19:54:04.000Z",
+      "category": "dev",
+      "tags": [
+        "html",
+        "canvas",
+        "chrome",
+        "api"
+      ],
+      "tldr": "Un nouvel essai d'origine (origin trial) pour l'API HTML-in-Canvas est disponible dans Chrome."
+    },
+    {
+      "title": "LLMs are making formal software verification feasible at a much larger scale",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T22:54:43.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "verification",
+        "software",
+        "research"
+      ],
+      "tldr": "Les grands modèles de langage (LLM) permettent de rendre la vérification formelle des logiciels réalisable à plus grande échelle."
+    },
+    {
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T17:44:06.000Z",
+      "category": "security",
+      "tags": [
+        "ai",
+        "agents",
+        "runtime",
+        "security"
+      ],
+      "tldr": "OpenShell de NVIDIA propose un environnement d'exécution sûr et privé pour les flottes d'agents d'intelligence artificielle autonomes."
+    },
+    {
+      "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
+      "url": "https://edjefferson.com/localwiki/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T23:01:18.000Z",
+      "category": "other",
+      "tags": [
+        "wikipedia",
+        "local",
+        "geoloc"
+      ],
+      "tldr": "Un projet de Wikipédia local qui filtre les articles pour ne garder que ceux situés à proximité géographique."
+    }
+  ]
+}

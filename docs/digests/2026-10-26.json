@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T08:31:20.909Z",
+  "intro": "Les performances web et l'optimisation des architectures front-end reviennent au premier plan, illustrées par la recherche de légèreté face à la complexité des frameworks actuels et l'essor d'alternatives en Rust et WebAssembly. Parallèlement, l'écosystème de l'intelligence artificielle se structure autour de l'ingénierie du contexte et de la chute drastique des coûts des grands modèles de langage, redéfinissant les modèles économiques et pratiques du développement.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Removing Next.js Got My Blog to 100 on Every Lighthouse Category",
+      "url": "https://korindiehacker.bloffy.blog/en/removing-nextjs-got-my-blog-to-100-on-every-lighthouse-category",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T01:03:39.000Z",
+      "category": "dev",
+      "tags": [
+        "next.js",
+        "performance",
+        "blog",
+        "lighthouse"
+      ],
+      "tldr": "Supprimer Next.js d'un blog a permis d'atteindre un score de 100 dans toutes les catégories Lighthouse. Cette démarche met en lumière l'impact des choix de framework sur les performances web."
+    },
+    {
+      "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T03:29:05.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "pdf",
+        "wasm",
+        "mcp"
+      ],
+      "tldr": "PaperPilot est un moteur PDF entièrement conçu en Rust, sans cloud, intégrant WASM et MCP. Il offre une solution locale et performante pour la manipulation de documents."
+    },
+    {
+      "title": "The State of Context Engineering",
+      "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-25T20:32:31.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "context",
+        "engineering"
+      ],
+      "tldr": "Cet article explore l'état actuel de l'ingénierie du contexte dans les systèmes d'intelligence artificielle. Il analyse la gestion et l'optimisation des informations fournies aux modèles."
+    },
+    {
+      "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-25T21:11:31.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "anthropic",
+        "llm",
+        "pricing"
+      ],
+      "tldr": "OpenAI et Anthropic ont réduit le prix de leurs grands modèles de langage (LLM) de près de 80 % en quelques mois. L'article examine les raisons économiques et stratégiques de cette baisse."
+    },
+    {
+      "title": "Show HN: TitleArt – Make text like it's 1997",
+      "url": "https://titleart.dvy.io/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T03:23:57.000Z",
+      "category": "other",
+      "tags": [
+        "retro",
+        "design",
+        "text",
+        "tool"
+      ],
+      "tldr": "TitleArt est un projet permettant de générer du texte stylisé rappelant l'esthétique du web de 1997. Un outil nostalgique pour créer des titres originaux."
+    }
+  ]
+}

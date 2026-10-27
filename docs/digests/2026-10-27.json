@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T08:30:10.238Z",
+  "intro": "L'actualité technique de ce jour met en lumière les outils d'optimisation du développement front-end et du contrôle qualité, avec l'analyse statique et les bundlers modernes. La sécurité des architectures d'intelligence artificielle est également au premier plan suite à la divulgation d'une faille critique d'exposition de cache. Enfin, l'évolution des standards de typage et l'ergonomie du web durable continuent d'animer les discussions de la communauté.",
+  "count": 6,
+  "items": [
+    {
+      "title": "ESLint Explained: Catching Bugs Before They Run",
+      "url": "https://dev.to/practicaldevblog/eslint-explained-catching-bugs-before-they-run-4535",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-27T08:21:04.000Z",
+      "category": "dev",
+      "tags": [
+        "eslint",
+        "javascript",
+        "static analysis"
+      ],
+      "tldr": "ESLint permet d'analyser le code de manière statique pour détecter les bogues et les erreurs courantes avant l'exécution."
+    },
+    {
+      "title": "Vite Explained: Why Development Got Instant",
+      "url": "https://dev.to/practicaldevblog/vite-explained-why-development-got-instant-4pai",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-27T08:19:54.000Z",
+      "category": "dev",
+      "tags": [
+        "vite",
+        "javascript",
+        "bundler"
+      ],
+      "tldr": "Vite révolutionne le développement web en éliminant les temps d'attente initiaux des bundlers traditionnels."
+    },
+    {
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T22:41:48.000Z",
+      "category": "security",
+      "tags": [
+        "ai",
+        "security",
+        "cache",
+        "cloudflare"
+      ],
+      "tldr": "Un problème d'exposition de cache KV inter-requêtes a été identifié et corrigé dans le modèle Workers AI GLM-5.3."
+    },
+    {
+      "title": "Type Server Protocol",
+      "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T18:14:49.000Z",
+      "category": "dev",
+      "tags": [
+        "typescript",
+        "python",
+        "protocol"
+      ],
+      "tldr": "Présentation du Type Server Protocol par Microsoft pour améliorer le support du typage."
+    },
+    {
+      "title": "CSS-Tricks has a new owner",
+      "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T15:51:23.000Z",
+      "category": "other",
+      "tags": [
+        "css-tricks",
+        "acquisition"
+      ],
+      "tldr": "Le site web populaire CSS-Tricks a officiellement changé de propriétaire."
+    },
+    {
+      "title": "Websites Should Be Printable",
+      "url": "https://brennenputh.me/blog/printable-websites/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-26T10:32:14.000Z",
+      "category": "dev",
+      "tags": [
+        "web",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "tldr": "Un plaidoyer pour concevoir des sites web qui prennent correctement en compte l'impression papier."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29T08:30:11.794Z",
+  "intro": "L actualite technique de ce jour met en lumiere les defis persistants de la securite avec de nouvelles vulnerabilites et failles logiques dans les environnements systemes et navigateurs. L intelligence artificielle continue egalement de transformer les pratiques de developpement, entre l integration d outils autonomes, l evolution des modeles et les impacts sur la contribution open source. Enfin, l ecosysteme web et logiciel s enrichit de nouvelles optimisations de performance et de formats d interoperabilite adaptes aux agents.",
+  "count": 10,
+  "items": [
+    {
+      "title": "Defer, Async, and Module Scripts: A Field Guide for INP and TBT",
+      "url": "https://dev.to/apogeewatcher/defer-async-and-module-scripts-a-field-guide-for-inp-and-tbt-5bbk",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-10-29T08:23:49.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "performance",
+        "html"
+      ],
+      "tldr": "Ce guide analyse l'impact des scripts defer, async et module sur les performances web (INP et TBT), en expliquant comment ils gèrent le chargement et l'analyse du code HTML."
+    },
+    {
+      "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only",
+      "url": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-29T06:47:28.000Z",
+      "category": "security",
+      "tags": [
+        "browser",
+        "exploit",
+        "edge"
+      ],
+      "tldr": "Un article détaille la création d'une chaîne d'exploitation complète (full chain) ciblant Microsoft Edge en utilisant uniquement des bugs de logique."
+    },
+    {
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-29T03:33:42.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "agent",
+        "llm"
+      ],
+      "tldr": "Il a été révélé que l'outil Claude Code transmet régulièrement la transcription de chaque agent d'arrière-plan à son modèle d'intelligence artificielle."
+    },
+    {
+      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "url": "https://divagr.com/blog/qwenputer",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-29T00:25:45.000Z",
+      "category": "ai",
+      "tags": [
+        "risc-v",
+        "cpu",
+        "llm"
+      ],
+      "tldr": "Qwenputer démontre qu'il est possible d'exécuter un processeur RISC-V fonctionnel et déterministe directement à l'intérieur du modèle Qwen3.5."
+    },
+    {
+      "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
+      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-28T23:45:46.000Z",
+      "category": "security",
+      "tags": [
+        "gitlab",
+        "cve",
+        "incident"
+      ],
+      "tldr": "Un incident de sécurité chez GitLab a impliqué une tentative d'exploitation de la vulnérabilité CVE-2026-97229."
+    },
+    {
+      "title": "Why is this fingerprinting script creating bioweapons?",
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-28T17:13:29.000Z",
+      "category": "security",
+      "tags": [
+        "fingerprinting",
+        "security",
+        "web"
+      ],
+      "tldr": "Une analyse s'interroge sur le comportement surprenant d'un script de fingerprinting web apparemment lié à la création d'armes biologiques."
+    },
+    {
+      "title": "Gemini 4 Carbon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-28T17:01:23.000Z",
+      "category": "ai",
+      "tags": [
+        "google",
+        "gemini",
+        "model"
+      ],
+      "tldr": "Google a officialisé Gemini 4 Carbon, une nouvelle itération de sa famille de modèles d'intelligence artificielle et de recherche."
+    },
+    {
+      "title": "Apple ajoute du JSON dans Xcode et Keynote pour les agents IA et les développeurs",
+      "url": "https://next.ink/264508/apple-ajoute-du-json-dans-xcode-et-keynote-pour-les-agents-ia-et-les-developpeurs/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-28T14:50:30.000Z",
+      "category": "dev",
+      "tags": [
+        "apple",
+        "xcode",
+        "json"
+      ],
+      "tldr": "Apple intègre des formats de fichiers basés sur JSON dans Xcode et Keynote afin de faciliter le travail des agents IA tout en bénéficiant aux développeurs."
+    },
+    {
+      "title": "Une faille dans l’UEFI menace les serveurs utilisant le démarrage réseau",
+      "url": "https://next.ink/264365/une-faille-dans-luefi-menace-les-serveurs-utilisant-le-demarrage-reseau/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-28T10:29:37.000Z",
+      "category": "security",
+      "tags": [
+        "uefi",
+        "server",
+        "pxe"
+      ],
+      "tldr": "Une faille de sécurité critique découverte dans les firmwares UEFI menace les serveurs configurés pour utiliser le démarrage réseau PXE."
+    },
+    {
+      "title": "IA : la Linux Foundation constate l’épuisement croissant des contributeurs",
+      "url": "https://next.ink/264168/ia-et-logiciel-libre-la-linux-foundation-fait-le-point/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-10-27T14:32:03.000Z",
+      "category": "other",
+      "tags": [
+        "open-source",
+        "linux",
+        "community"
+      ],
+      "tldr": "Un rapport de la Linux Foundation met en avant l'impact de l'IA sur l'open source, combinant hausse de production et épuisement accru des contributeurs."
+    }
+  ]
+}

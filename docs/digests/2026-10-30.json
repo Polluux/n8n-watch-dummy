@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-30T08:30:09.368Z",
+  "intro": "L'actualité du développement logiciel met en lumière la pérennité des outils open source avec la fin de maintenance de projets populaires face à l'émergence de nouvelles solutions front end. Parallèlement, l'intelligence artificielle s'impose massivement dans les architectures à travers la publication de nouveaux modèles ouverts et le développement d'assistants locaux orientés vers la confidentialité.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Pico CSS is no longer maintained",
+      "url": "https://github.com/picocss/pico/discussions/754",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-30T01:58:44.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "opensource",
+        "maintenance"
+      ],
+      "tldr": "Le framework Pico CSS n'est plus maintenu activement par ses créateurs."
+    },
+    {
+      "title": "ElementaryUI – Swift, in the Browser",
+      "url": "https://elementary.codes",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-29T20:56:39.000Z",
+      "category": "dev",
+      "tags": [
+        "swift",
+        "browser",
+        "ui"
+      ],
+      "tldr": "ElementaryUI permet d'utiliser le langage Swift directement dans le navigateur."
+    },
+    {
+      "title": "We're releasing the weights of Mistral Large 4",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-29T14:13:21.000Z",
+      "category": "ai",
+      "tags": [
+        "mistral",
+        "llm",
+        "opensource"
+      ],
+      "tldr": "Mistral AI annonce la publication des poids de son nouveau modèle Mistral Large 4."
+    },
+    {
+      "title": "Eney, l'assistant IA des créateurs de CleanMyMac tourne sur votre Mac sans tout envoyer au cloud",
+      "url": "https://korben.info/eney-lassistant-ia-des-createurs-de-cleanmymac-tourne-sur-votre-mac-sans-tout-envoyer-au-cloud.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-10-28T16:51:20.000Z",
+      "category": "ai",
+      "tags": [
+        "mac",
+        "assistant",
+        "privacy"
+      ],
+      "tldr": "MacPaw lance Eney, un assistant IA local pour macOS et iOS conçu pour préserver la vie privée."
+    }
+  ]
+}

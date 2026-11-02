@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-02",
+  "generatedAt": "2026-11-02T08:30:16.945Z",
+  "intro": "La veille technique d'aujourd'hui met à l'honneur les capacités grandissantes du navigateur avec l'exécution de charges lourdes et de traitements multimédias via WebAssembly, ainsi que l'optimisation des outils de développement en Rust. Les actualités de la cybersécurité rappellent par ailleurs la criticité de la protection des données, qu'il s'agisse d'incidents sur les environnements cloud ou de failles matérielles sur le plan physique. Enfin, les débats persistent autour des coûts induits par l'intégration de l'intelligence artificielle dans l'écosystème des frameworks front-end modernes.",
+  "count": 7,
+  "items": [
+    {
+      "title": "Mapping a picture onto a Minecraft skin in the browser: what worked and what didn't",
+      "url": "https://dev.to/zhifen_zhu_3df68293e0ddb6/mapping-a-picture-onto-a-minecraft-skin-in-the-browser-what-worked-and-what-didnt-3193",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-02T08:27:25.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "browser",
+        "minecraft",
+        "frontend"
+      ],
+      "tldr": "Cet article détaille la création de BlockSkinLab, un outil en ligne permettant de mapper une image sur un skin Minecraft directement dans le navigateur sans passer par un serveur."
+    },
+    {
+      "title": "Running ffmpeg, Whisper and background removal in the browser: lessons learned",
+      "url": "https://dev.to/dennykot/running-ffmpeg-whisper-and-background-removal-in-the-browser-lessons-learned-2bdl",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-02T08:25:13.000Z",
+      "category": "dev",
+      "tags": [
+        "wasm",
+        "ffmpeg",
+        "whisper",
+        "browser"
+      ],
+      "tldr": "Un retour d'expérience sur l'exécution d'outils lourds comme FFmpeg, Whisper et la suppression d'arrière-plan directement dans le navigateur via WebAssembly et des modèles locaux."
+    },
+    {
+      "title": "Trigger.dev customer environment variables exposed",
+      "url": "https://trigger.dev/blog/security-incident-nov-2026",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-02T01:09:16.000Z",
+      "category": "security",
+      "tags": [
+        "incident",
+        "security",
+        "environment"
+      ],
+      "tldr": "Un incident de sécurité a entraîné l'exposition des variables d'environnement des clients sur la plateforme Trigger.dev."
+    },
+    {
+      "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+      "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-01T14:34:43.000Z",
+      "category": "security",
+      "tags": [
+        "hardware",
+        "security",
+        "usb"
+      ],
+      "tldr": "Une faille de conception a été découverte sur une clé USB prétendument sécurisée par empreinte digitale de Lenovo, qui s'avère n'être qu'une simple carte SD non chiffrée."
+    },
+    {
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "url": "https://github.com/ivankovic/omnidiff",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-01T13:02:30.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "git",
+        "diff",
+        "opensource"
+      ],
+      "tldr": "Présentation d'OmniDiff, un outil de diff Git open source développé en Rust, conçu pour être extrêmement rapide et capable de comparer divers formats de fichiers."
+    },
+    {
+      "title": "The AI cost of JavaScript frameworks",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-01T06:06:19.000Z",
+      "category": "ai",
+      "tags": [
+        "javascript",
+        "frameworks",
+        "ai",
+        "web"
+      ],
+      "tldr": "Une réflexion sur l'impact et le coût de l'utilisation de l'intelligence artificielle en lien avec la complexité des frameworks JavaScript modernes."
+    },
+    {
+      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-31T22:41:06.000Z",
+      "category": "other",
+      "tags": [
+        "agriculture",
+        "history",
+        "nature"
+      ],
+      "tldr": "Un fermier italien a planté des graines inconnues trouvées dans son grenier, obtenant un résultat exceptionnel et inattendu."
+    }
+  ]
+}

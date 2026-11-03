@@ -35,7 +35,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Source list - THE single place to add/remove/rename a feed.\nconst SOURCES = [\n  {\n    \"name\": \"dev.to\",\n    \"tag\": \"devto\",\n    \"url\": \"https://dev.to/feed\"\n  },\n  {\n    \"name\": \"Hacker News\",\n    \"tag\": \"hn\",\n    \"url\": \"https://hnrss.org/frontpage\"\n  },\n  {\n    \"name\": \"Journal du Hacker\",\n    \"tag\": \"jdh\",\n    \"url\": \"https://www.journalduhacker.net/rss\"\n  },\n  {\n    \"name\": \"Korben\",\n    \"tag\": \"kbn\",\n    \"url\": \"https://korben.info/feedfull\"\n  },\n  {\n    \"name\": \"Next\",\n    \"tag\": \"nxt\",\n    \"url\": \"https://next.ink/feed/free\"\n  }\n];\nreturn SOURCES.map((s) => ({ json: s }));"
+        "jsCode": "// Source list - THE single place to add/remove/rename a feed.\nconst SOURCES = [\n  {\n    \"name\": \"dev.to\",\n    \"tag\": \"devto\",\n    \"url\": \"https://dev.to/feed\"\n  },\n  {\n    \"name\": \"Hacker News\",\n    \"tag\": \"hn\",\n    \"url\": \"https://hnrss.org/frontpage\"\n  },\n  {\n    \"name\": \"Journal du Hacker\",\n    \"tag\": \"jdh\",\n    \"url\": \"https://www.journalduhacker.net/rss\"\n  },\n  {\n    \"name\": \"Korben\",\n    \"tag\": \"kbn\",\n    \"url\": \"https://korben.info/feedfull\"\n  },\n  {\n    \"name\": \"Next\",\n    \"tag\": \"nxt\",\n    \"url\": \"https://next.ink/feed/free\"\n  },\n  {\n    \"name\": \"Developpez.com\",\n    \"tag\": \"dvp\",\n    \"url\": \"https://www.developpez.com/index/rss\"\n  }\n];\nreturn SOURCES.map((s) => ({ json: s }));"
       },
       "id": "a1000000-0000-4000-8000-000000000080",
       "name": "Sources",
@@ -126,8 +126,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1432,
-        680
+        1440,
+        688
       ],
       "credentials": {
         "googlePalmApi": {
@@ -174,8 +174,8 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        2008,
-        680
+        2016,
+        688
       ]
     },
     {

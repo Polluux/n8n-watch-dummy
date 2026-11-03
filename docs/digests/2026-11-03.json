@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-03",
+  "generatedAt": "2026-11-03T09:14:09.387Z",
+  "intro": "L'actualité du développement logiciel met en avant l'intégration croissante de l'intelligence artificielle dans les flux de travail, qu'il s'agisse d'automatiser les tests de régression, d'assister la correction d'interfaces ou d'optimiser l'outillage avec les dernières évolutions de Visual Studio Code. Les équipes d'ingénierie font également face à des défis critiques en matière de sécurité système avec des retards de patchs kernel, tout en optimisant leurs infrastructures à grande échelle comme le démontre la gestion de Git chez OpenAI.",
+  "count": 9,
+  "items": [
+    {
+      "title": "Paste the Broken UI Into Claude Code, Then Make Playwright Prove the Fix",
+      "url": "https://dev.to/gabrielanhaia/paste-the-broken-ui-into-claude-code-then-make-playwright-prove-the-fix-3oa9",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-03T09:01:06.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "playwright",
+        "testing",
+        "ui"
+      ],
+      "tldr": "Découvrez comment utiliser Claude Code pour corriger une interface utilisateur défectueuse et exploiter Playwright pour valider automatiquement la correction."
+    },
+    {
+      "title": "uBlock Origin filter to block autoplay videos in TechCrunch",
+      "url": "https://cornfieldlabs.github.io/posts/ublock-stop-techcrunch-autoplay-video/post.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-03T07:36:47.000Z",
+      "category": "other",
+      "tags": [
+        "ublock",
+        "extension",
+        "web"
+      ],
+      "tldr": "Un filtre uBlock Origin a été créé pour bloquer spécifiquement la lecture automatique des vidéos sur TechCrunch."
+    },
+    {
+      "title": "Show HN: ReBirth 338 in Browser",
+      "url": "https://margeux.com/rb338.html",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-03T06:24:50.000Z",
+      "category": "other",
+      "tags": [
+        "browser",
+        "audio",
+        "retro"
+      ],
+      "tldr": "Une version émulée du synthétiseur ReBirth 338 est désormais jouable directement dans votre navigateur web."
+    },
+    {
+      "title": "Show HN: I built a little browser game to practice Vim commands",
+      "url": "https://hjkl.duy.run",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-03T03:10:04.000Z",
+      "category": "dev",
+      "tags": [
+        "vim",
+        "game",
+        "learning"
+      ],
+      "tldr": "Un petit jeu par navigateur a été conçu pour s'entraîner et mémoriser plus facilement les commandes de l'éditeur Vim."
+    },
+    {
+      "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+      "url": "https://hackertimes.ca/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-03T01:53:34.000Z",
+      "category": "other",
+      "tags": [
+        "news",
+        "design",
+        "parody"
+      ],
+      "tldr": "Hacker Times propose de parcourir les articles de Hacker News en adoptant la mise en page classique du célèbre journal New York Times."
+    },
+    {
+      "title": "Scaling Git at OpenAI",
+      "url": "https://openai.com/index/scaling-git-at-openai/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-02T23:47:56.000Z",
+      "category": "devops",
+      "tags": [
+        "git",
+        "scaling",
+        "infrastructure"
+      ],
+      "tldr": "Découvrez comment les équipes d'OpenAI parviennent à mettre à l'échelle leur infrastructure Git pour répondre à leurs besoins massifs."
+    },
+    {
+      "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+      "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-02T18:39:38.000Z",
+      "category": "security",
+      "tags": [
+        "linux",
+        "ubuntu",
+        "cve",
+        "kernel"
+      ],
+      "tldr": "Ubuntu n'a toujours pas publié de correctif pour une vulnérabilité critique de type 0day RCE affectant les noyaux Linux LTS depuis près de trois semaines."
+    },
+    {
+      "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+      "url": "https://momentic.ai/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-02T17:05:25.000Z",
+      "category": "ai",
+      "tags": [
+        "agents",
+        "qa",
+        "testing",
+        "automation"
+      ],
+      "tldr": "Momentic propose des agents IA autonomes capables de planifier, d'explorer et de détecter des bugs au sein de vos applications web et mobiles."
+    },
+    {
+      "title": "Microsoft a publié la version 1.144 de Visual Studio Code, avec des fonctionnalités pour assurer la continuité du travail des agents IA d'un environnement à l'autre et de trouver les modèles adaptés",
+      "url": "https://visualstudio.developpez.com/actu/388653/Microsoft-a-publie-la-version-1-144-de-Visual-Studio-Code-avec-des-fonctionnalites-pour-assurer-la-continuite-du-travail-des-agents-IA-d-un-environnement-a-l-autre-et-de-trouver-les-modeles-adaptes/",
+      "source": "dvp",
+      "sourceName": "Developpez.com",
+      "publishedAt": "2026-11-02T15:57:00.000Z",
+      "category": "dev",
+      "tags": [
+        "vscode",
+        "microsoft",
+        "ai",
+        "agents"
+      ],
+      "tldr": "Microsoft a publié Visual Studio Code 1.144, introduisant des fonctionnalités pour assurer la continuité des agents IA entre environnements et identifier les modèles adaptés."
+    }
+  ]
+}

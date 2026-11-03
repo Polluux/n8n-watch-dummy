@@ -22,7 +22,7 @@ The n8n editor works on its own database (Docker volume `n8n_data`), and `workfl
 ## Commands
 
 ```bash
-docker compose up -d                  # n8n at http://localhost:5678 (TZ Europe/Paris)
+docker compose up -d                  # n8n at http://localhost:5678 (TZ Europe/Paris; listens on 0.0.0.0 — n8n's default `::` crash-loops on hosts without IPv6)
 ./scripts/export-workflow.sh          # sync workflow: n8n DB → repo JSON
 
 # Headless execution (the verification loop used for every acceptance criterion):

@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04T08:31:14.400Z",
+  "intro": "L actualite technique du jour met en lumiere les enjeux de confidentialite et de securite des donnees liees a l integration forcee d assistants intelligents dans les outils de developpement. Parallelement, l ecosysteme front-end evolue avec l arrivee de fonctionnalites d affichage adaptatif sur navigateurs, tandis qu un clin d oeil nostalgiaque rappelle l evolution des interfaces web depuis la fin des annees nonante.",
+  "count": 3,
+  "items": [
+    {
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-03T21:39:05.000Z",
+      "category": "dev",
+      "tags": [
+        "safari",
+        "webkit",
+        "dark mode",
+        "ui"
+      ],
+      "tldr": "Safari introduit le mode sombre adaptatif dans sa version 27.3, offrant de nouvelles fonctionnalités d'affichage pour les utilisateurs."
+    },
+    {
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-03T17:22:37.000Z",
+      "category": "security",
+      "tags": [
+        "postman",
+        "ai",
+        "privacy",
+        "api"
+      ],
+      "tldr": "Postman installe silencieusement des plugins d'intelligence artificielle et tente de partager l'ensemble des données d'API des utilisateurs, soulevant des inquiétudes."
+    },
+    {
+      "title": "Cherchez Zelda sur Google et son interface de 1998 ressuscite",
+      "url": "https://korben.info/cherchez-zelda-sur-google-et-son-interface-de-1998-ressuscite.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-03T10:00:11.000Z",
+      "category": "other",
+      "tags": [
+        "google",
+        "zelda",
+        "easter egg",
+        "rétro"
+      ],
+      "tldr": "Un easter egg sur Google permet de retrouver l'interface de 1998 en cherchant Zelda, célébrant ainsi la sortie prochaine d'un remake sur Switch 2."
+    }
+  ]
+}

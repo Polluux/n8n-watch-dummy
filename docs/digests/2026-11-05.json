@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T08:30:51.973Z",
+  "intro": "Cette édition met en lumière les évolutions majeures de l'écosystème logiciel, marquées par l'essor des architectures multi-agents, des nouveaux modèles d'IA open-weight et de l'inférence prouvable. Les ingénieurs devront également composer avec des actualités structurantes pour les langages et les systèmes, incluant l'évolution des API JSON en Go, la non-ratification historique du C++26 par l'ISO et la publication de correctifs critiques pour le noyau Linux.",
+  "count": 8,
+  "items": [
+    {
+      "title": "The A2A protocol: how it works, step by step, and how it compares with MCP",
+      "url": "https://dev.to/marwa_sahli_273c3e83f3039/the-a2a-protocol-how-it-works-step-by-step-and-how-it-compares-with-mcp-4o9n",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-05T08:28:43.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "agents",
+        "protocol",
+        "mcp"
+      ],
+      "tldr": "Cet article détaille le fonctionnement du protocole A2A étape par étape et le compare au protocole MCP dans le contexte des systèmes multi-agents."
+    },
+    {
+      "title": "Mode sombre adaptatif, onglets verticaux, Siri AI : Apple sort Safari de sa torpeur",
+      "url": "https://next.ink/265755/mode-sombre-adaptatif-onglets-verticaux-siri-ai-apple-sort-safari-de-sa-torpeur/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-05T07:30:46.000Z",
+      "category": "other",
+      "tags": [
+        "apple",
+        "safari",
+        "browser",
+        "ai"
+      ],
+      "tldr": "Apple met à jour Safari avec de nouvelles fonctionnalités majeures, incluant des onglets verticaux, un mode sombre adaptatif et l'intégration de Siri AI."
+    },
+    {
+      "title": "Lemmings CSS Animation",
+      "url": "https://markblah.github.io/lemmings/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-05T04:54:10.000Z",
+      "category": "dev",
+      "tags": [
+        "css",
+        "animation",
+        "web"
+      ],
+      "tldr": "Une animation interactive du célèbre jeu Lemmings entièrement réalisée en CSS."
+    },
+    {
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "url": "https://www.ricursive.com/ripple",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-04T18:53:29.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "coding",
+        "ai",
+        "model"
+      ],
+      "tldr": "Ripple-65B se positionne comme un nouveau modèle open-weight américain de pointe spécialisé dans le développement et l'assistance au code agentique."
+    },
+    {
+      "title": "A new Go API for JSON",
+      "url": "https://go.dev/blog/jsonv2",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-04T17:52:11.000Z",
+      "category": "dev",
+      "tags": [
+        "go",
+        "api",
+        "json"
+      ],
+      "tldr": "Une nouvelle proposition d'API JSON est présentée pour le langage Go (jsonv2), visant à améliorer les performances et l'ergonomie."
+    },
+    {
+      "title": "Progress on provable inference for large language models",
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-04T17:17:46.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "research",
+        "inference"
+      ],
+      "tldr": "Anthropic présente ses avancées en matière d'inférence prouvable pour les grands modèles de langage, garantissant plus de fiabilité."
+    },
+    {
+      "title": "Une faille critique dans le noyau Linux permet de faire planter un serveur via TCP",
+      "url": "https://next.ink/265616/une-faille-critique-dans-le-noyau-linux-permet-de-faire-planter-un-serveur-via-tcp/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-04T10:07:00.000Z",
+      "category": "security",
+      "tags": [
+        "linux",
+        "kernel",
+        "vulnerability",
+        "tcp"
+      ],
+      "tldr": "Une faille critique avec un score CVSS de 9,8 a été découverte dans le noyau Linux, permettant de faire planter un serveur à distance via TCP."
+    },
+    {
+      "title": "Le C++26 refusé à l’ISO, une première dans l’histoire du langage",
+      "url": "https://next.ink/265495/le-c26-refuse-a-liso-une-premiere-dans-lhistoire-du-langage/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-04T09:05:00.000Z",
+      "category": "dev",
+      "tags": [
+        "cpp",
+        "iso",
+        "programming"
+      ],
+      "tldr": "Pour la première fois de son histoire, le langage C++26 n'a pas été ratifié par l'ISO en raison de désaccords, notamment sur les concepts de contrats."
+    }
+  ]
+}

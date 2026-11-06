@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06T08:30:39.889Z",
+  "intro": "L actualite technique du jour met en lumiere les defis de securite et de gouvernance lies a l integration des systemes d intelligence artificielle, notamment a travers les vulnerabilites des kits de developpement et la gestion des permissions dans les espaces de travail. Les evolutions des protocoles d agents et les dernieres failles logicielles rappellent la necessite constante de maitriser les flux de donnees et les limites d execution des outils modernes.",
+  "count": 5,
+  "items": [
+    {
+      "title": "When an MCP Tool Needs a Missing Value: Elicitation vs Failing the Call",
+      "url": "https://dev.to/jeff_pdc/when-an-mcp-tool-needs-a-missing-value-elicitation-vs-failing-the-call-3jb6",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-06T08:21:08.000Z",
+      "category": "ai",
+      "tags": [
+        "mcp",
+        "tools",
+        "api",
+        "ux"
+      ],
+      "tldr": "L'élicitation dans le protocole MCP permet à un serveur de demander dynamiquement une valeur manquante à l'utilisateur en cours d'appel, évitant ainsi un échec immédiat ou une estimation."
+    },
+    {
+      "title": "Building VARYN: Why Permission Boundaries Matter More Than Another AI API Call",
+      "url": "https://dev.to/evannaraya/building-varyn-why-permission-boundaries-matter-more-than-another-ai-api-call-5e8o",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-06T08:19:40.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "security",
+        "permissions",
+        "workspace"
+      ],
+      "tldr": "Le développement de VARYN souligne l'importance cruciale des limites de permissions dans les espaces de travail IA avant d'envoyer des données à des modèles externes."
+    },
+    {
+      "title": "Three MCP Python SDK Advisories, and the One an Upgrade Will Not Fix",
+      "url": "https://dev.to/x1y1co/three-mcp-python-sdk-advisories-and-the-one-an-upgrade-will-not-fix-2dp2",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-06T08:17:56.000Z",
+      "category": "security",
+      "tags": [
+        "mcp",
+        "python",
+        "security",
+        "sdk"
+      ],
+      "tldr": "Trois avis de sécurité ont été publiés pour le SDK Python MCP, dont un qui ne peut pas être résolu par une simple mise à jour du paquet."
+    },
+    {
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-05T22:17:15.000Z",
+      "category": "security",
+      "tags": [
+        "privacy",
+        "claude-code",
+        "leak"
+      ],
+      "tldr": "Un problème signalé dans Claude Code indique que l'outil transmet l'adresse e-mail des utilisateurs à des sites web."
+    },
+    {
+      "title": "MS Paint Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-05T20:43:42.000Z",
+      "category": "security",
+      "tags": [
+        "cve",
+        "windows",
+        "mspaint",
+        "rce"
+      ],
+      "tldr": "Une vulnérabilité critique d'exécution de code à distance (RCE) a été découverte dans MS Paint."
+    }
+  ]
+}

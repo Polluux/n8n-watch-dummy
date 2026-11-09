@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-09",
+  "generatedAt": "2026-11-09T08:30:19.416Z",
+  "intro": "Le développement en Rust et l'utilisation des technologies graphiques modernes comme WebGPU s'imposent aujourd'hui pour concevoir des applications performantes, qu'il s'agisse de modélisation 3D ou de frameworks d'interface utilisateur. En parallèle, l'actualité technique met en lumière le durcissement des exigences de sécurité dans la messagerie avec la généralisation du rejet des e-mails non protégés par DMARC, ainsi que des réflexions plus larges sur l'évolution de l'écosystème web et l'audio par IA.",
+  "count": 5,
+  "items": [
+    {
+      "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+      "url": "https://ketchup3d.github.io/app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-08T22:35:35.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "webgpu",
+        "3d",
+        "opensource"
+      ],
+      "tldr": "KetchUp est une alternative open-source à SketchUp développée en Rust et propulsée par WebGPU."
+    },
+    {
+      "title": "A Critique of GPUI",
+      "url": "https://blog.zortax.de/posts/a-critique-of-gpui",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-09T03:51:10.000Z",
+      "category": "dev",
+      "tags": [
+        "gui",
+        "rust",
+        "ui",
+        "critique"
+      ],
+      "tldr": "Cet article propose une critique détaillée du framework d'interface utilisateur GPUI."
+    },
+    {
+      "title": "The Web Is More Than Enough, by Paul Ford",
+      "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-08T19:48:32.000Z",
+      "category": "other",
+      "tags": [
+        "web",
+        "culture",
+        "internet"
+      ],
+      "tldr": "Une réflexion de Paul Ford sur l'état actuel et l'abondance du web moderne."
+    },
+    {
+      "title": "Outlook.com is rejecting email from domains without DMARC",
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-08T19:20:32.000Z",
+      "category": "security",
+      "tags": [
+        "email",
+        "dmarc",
+        "security",
+        "outlook"
+      ],
+      "tldr": "Outlook.com rejette désormais les e-mails provenant de domaines ne disposant pas d'une configuration DMARC."
+    },
+    {
+      "title": "Chimera Vocal Synth",
+      "url": "https://chimera-vocal-synth.vercel.app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-08T22:36:03.000Z",
+      "category": "ai",
+      "tags": [
+        "audio",
+        "synth",
+        "voice",
+        "music"
+      ],
+      "tldr": "Chimera Vocal Synth est un synthétiseur vocal en ligne basé sur des technologies innovantes."
+    }
+  ]
+}

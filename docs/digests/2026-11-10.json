@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T08:30:29.458Z",
+  "intro": "Le paysage technique du jour met en lumière les nouveaux défis du développement multiplateforme et de l'optimisation des interfaces utilisateur, illustrés par l'émergence de frameworks innovants et d'outils utilitaires exécutés directement côté client. L'actualité est également marquée par des innovations en matière de connectivité matérielle et de reverse engineering mobile, tandis qu'une faille critique découverte dans OpenSSH sur Alpine Linux rappelle l'importance cruciale de la sécurité des infrastructures et de la veille corrective.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Why We Built TnTS Tools: A 100% Free, Client-Side PDF Suite & Neural AI Voice Reader",
+      "url": "https://dev.to/tnts-tools/why-we-built-tnts-tools-a-100-free-client-side-pdf-suite-neural-ai-voice-reader-27lk",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-10T08:20:31.000Z",
+      "category": "ai",
+      "tags": [
+        "pdf",
+        "ai",
+        "voice",
+        "tools"
+      ],
+      "tldr": "TnTS Tools propose une suite d'outils gratuite exécutée côté client comprenant un lecteur vocal basé sur l'IA et des utilitaires pour documents PDF et images."
+    },
+    {
+      "title": "Exact – a new cross platform UI framework",
+      "url": "https://github.com/expo/exact",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-09T22:59:13.000Z",
+      "category": "dev",
+      "tags": [
+        "ui",
+        "framework",
+        "cross-platform",
+        "expo"
+      ],
+      "tldr": "Exact est un nouveau framework d'interface utilisateur multiplateforme développé par l'équipe d'Expo."
+    },
+    {
+      "title": "Show HN: MeowDisplay Is iPhone Mirroring, but in Reverse",
+      "url": "https://meowdisplay.app/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-09T18:39:22.000Z",
+      "category": "dev",
+      "tags": [
+        "ios",
+        "iphone",
+        "mirroring",
+        "display"
+      ],
+      "tldr": "MeowDisplay est une application open-source permettant de faire du mirroring d'écran inversé depuis l'iPhone."
+    },
+    {
+      "title": "OpenSSH laissait entrer avec n'importe quel mot de passe sur Alpine Linux",
+      "url": "https://korben.info/openssh-laissait-entrer-avec-nimporte-quel-mot-de-passe-sur-alpine-linux.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-09T14:20:39.000Z",
+      "category": "security",
+      "tags": [
+        "openssh",
+        "alpine",
+        "linux",
+        "vulnerability"
+      ],
+      "tldr": "Une vulnérabilité critique dans OpenSSH sur Alpine Linux permettait de contourner l'authentification avec certains mots de passe longs, une faille rapidement corrigée."
+    }
+  ]
+}

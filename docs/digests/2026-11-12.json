@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-12",
+  "generatedAt": "2026-11-12T08:30:10.741Z",
+  "intro": "L'actualité technique de ce jour met en lumière les avancées majeures de l'intelligence artificielle pour le développement, avec l'optimisation des agents de code, des systèmes RAG et de nouvelles interfaces de décision. Parallèlement, l'écosystème fait face à des impératifs de sécurité accrus, marqués par la découverte d'une faille critique sur les serveurs web et la nécessité de renforcer la protection des pipelines CI/CD. Enfin, l'outillage DevOps progresse avec l'arrivée de solutions d'émulation cloud locales pour simplifier l'architecture des applications.",
+  "count": 8,
+  "items": [
+    {
+      "title": "Modern Web Guidance - Votre agent IA va enfin goûter au code web moderne",
+      "url": "https://korben.info/modern-web-guidance-agents-web.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-12T08:00:00.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "web",
+        "agent",
+        "navigation"
+      ],
+      "tldr": "Modern Web Guidance intègre des guides sur les fonctionnalités natives du navigateur directement dans votre agent de code pour améliorer son efficacité."
+    },
+    {
+      "title": "Critical RCE Vulnerability in Apache HTTP Server",
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-12T02:11:11.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "vulnerability",
+        "rce",
+        "apache"
+      ],
+      "tldr": "Une vulnérabilité critique de type RCE (Exécution à distance de code) a été découverte dans le serveur HTTP Apache."
+    },
+    {
+      "title": "Lock Your GitHub Actions",
+      "url": "https://hugovk.dev/blog/2026/lock-github-actions/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-11T22:16:41.000Z",
+      "category": "devops",
+      "tags": [
+        "github",
+        "ci/cd",
+        "security",
+        "actions"
+      ],
+      "tldr": "Cet article aborde l'importance de verrouiller et sécuriser ses workflows GitHub Actions."
+    },
+    {
+      "title": "Gemini Decisions API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-11T18:32:42.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "api",
+        "google",
+        "gemini"
+      ],
+      "tldr": "Google présente Gemini Decisions API, un nouvel outil destiné aux développeurs pour intégrer des capacités de prise de décision."
+    },
+    {
+      "title": "AWS emulator",
+      "url": "https://github.com/aws/aws-emulator",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-11T18:21:38.000Z",
+      "category": "devops",
+      "tags": [
+        "aws",
+        "emulator",
+        "cloud",
+        "dev"
+      ],
+      "tldr": "Amazon propose un émulateur AWS officiel facilitant le développement et les tests locaux d'applications cloud."
+    },
+    {
+      "title": "Faster Retrieval for Better, More Efficient RAG",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-11T16:57:45.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "rag",
+        "apple",
+        "search"
+      ],
+      "tldr": "Apple détaille ses recherches pour optimiser la récupération de données et rendre les systèmes RAG plus rapides et efficaces."
+    },
+    {
+      "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+      "url": "https://github.com/FrigadeHQ/yogurt",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-11T15:33:06.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "open-source",
+        "desktop",
+        "privacy"
+      ],
+      "tldr": "Yogurt est une alternative open-source et respectueuse de la vie privée à Granola, utilisant des modèles d'IA locaux pour transcrire et résumer les réunions."
+    },
+    {
+      "title": "Claude Fable 5.2 code un OS en huit jours avec 1 000 agents",
+      "url": "https://korben.info/claude-fable-5-2-code-un-os-en-huit-jours-avec-1-000-agents.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-10T13:31:01.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "os",
+        "anthropic",
+        "claude"
+      ],
+      "tldr": "Anthropic a lancé Fable 5.2, un modèle capable de coordonner plus de 1 000 agents pour coder un prototype d'OS en huit jours."
+    }
+  ]
+}

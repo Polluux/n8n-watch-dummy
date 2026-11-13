@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-13",
+  "generatedAt": "2026-11-13T08:31:17.372Z",
+  "intro": "L actualite technique de ce jour met en avant l evolution des ecosystemes systemes et navigateurs avec les nouvelles versions de Rust et Firefox. Les defis de securite et de performance sont egalement a l honneur, illustres par l analyse d une vulnerabilite historique sous PostgreSQL ainsi que par des optimisations de latence dediees aux assistants vocaux en temps reel.",
+  "count": 4,
+  "items": [
+    {
+      "title": "Rust 1.100",
+      "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-12T18:39:05.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "release",
+        "programming"
+      ],
+      "tldr": "Sortie de la version 1.100 du langage de programmation Rust, apportant son lot d'améliorations et de correctifs."
+    },
+    {
+      "title": "Turning a 22-year-old Postgres type-confusion primitive into RCE",
+      "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-12T18:22:22.000Z",
+      "category": "security",
+      "tags": [
+        "postgres",
+        "vulnerability",
+        "cve",
+        "rce"
+      ],
+      "tldr": "Analyse de la transformation d'une ancienne primitive de confusion de types dans PostgreSQL en exécution de code à distance (RCE)."
+    },
+    {
+      "title": "☕️ Firefox 160 introduit une « mini fenêtre » pour garder un œil sur un contenu spécifique",
+      "url": "https://next.ink/brief-article/firefox-160-introduit-une-mini-fenetre-pour-garder-un-oeil-sur-un-contenu-specifique/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-12T11:02:00.000Z",
+      "category": "other",
+      "tags": [
+        "firefox",
+        "browser",
+        "release"
+      ],
+      "tldr": "Firefox 160 est disponible et introduit notamment une fonctionnalité de « Mini Window » pour suivre facilement un contenu spécifique."
+    },
+    {
+      "title": "Show HN: RealtimeVAD – trading false positives for 110ms earlier end-of-speech",
+      "url": "https://github.com/KoljaB/RealtimeVAD",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-12T21:30:57.000Z",
+      "category": "ai",
+      "tags": [
+        "voice",
+        "latency",
+        "audio",
+        "vad"
+      ],
+      "tldr": "Présentation de RealtimeVAD, un outil visant à réduire la latence de fin de parole pour les assistants vocaux en échange de quelques faux positifs."
+    }
+  ]
+}

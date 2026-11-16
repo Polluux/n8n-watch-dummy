@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16T08:30:24.415Z",
+  "intro": "L'actualité technique du jour met en lumière d'importants défis de sécurité avec des vulnérabilités critiques touchant les extensions de navigateur et des campagnes de détournement de liens. Du côté du développement web, l'attention se porte sur l'optimisation des rendus graphiques et l'hébergement autonome de tuiles cartographiques, tandis que l'écosystème de l'intelligence artificielle poursuit son évolution avec l'arrivée de nouveaux modèles linguistiques de pointe.",
+  "count": 9,
+  "items": [
+    {
+      "title": "devicePixelRatio is the wrong input for a canvas high-res export",
+      "url": "https://dev.to/shu_jing_915fa287b22539ad/devicepixelratio-is-the-wrong-input-for-a-canvas-high-res-export-4p29",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-16T08:18:14.000Z",
+      "category": "dev",
+      "tags": [
+        "canvas",
+        "javascript",
+        "web",
+        "hidpi"
+      ],
+      "tldr": "L'utilisation de devicePixelRatio est souvent inadaptée pour l'export haute résolution d'un canvas. Cet article explique comment gérer correctement la taille des images exportées."
+    },
+    {
+      "title": "Qwen4-Max",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-16T02:14:44.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "qwen",
+        "ai"
+      ],
+      "tldr": "Présentation de Qwen4-Max, un nouveau modèle linguistique de pointe. Il s'inscrit dans l'évolution des grands modèles d'intelligence artificielle."
+    },
+    {
+      "title": "Universal XSS in uBlock Origin from website-driven element picker",
+      "url": "https://iter.ca/post/ubo-uxss/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-16T02:04:48.000Z",
+      "category": "security",
+      "tags": [
+        "xss",
+        "security",
+        "browser",
+        "extension"
+      ],
+      "tldr": "Une vulnérabilité de type Cross-Site Scripting (XSS) universel a été découverte dans uBlock Origin via son sélecteur d'éléments contrôlé par un site web."
+    },
+    {
+      "title": "Tor Project Issues Rapid-Response DoS-Defense Fix Amid Sustained DDoS Attack",
+      "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-16T00:21:54.000Z",
+      "category": "security",
+      "tags": [
+        "tor",
+        "security",
+        "dos",
+        "patch"
+      ],
+      "tldr": "Le projet Tor a publié un correctif d'urgence pour contrer une attaque par déni de service (DDoS) soutenue en cours."
+    },
+    {
+      "title": "Old Bitly links are being hijacked",
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-15T22:11:43.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "hijacking",
+        "urls",
+        "dns"
+      ],
+      "tldr": "Des liens Bitly anciens font l'objet de détournements, posant des risques majeurs de sécurité et de redirection malveillante."
+    },
+    {
+      "title": "WebGL Flight Simulator with seed generated terrain",
+      "url": "https://baron.by.dai.studio/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-15T20:20:05.000Z",
+      "category": "other",
+      "tags": [
+        "webgl",
+        "simulator",
+        "game",
+        "3d"
+      ],
+      "tldr": "Découvrez un simulateur de vol en WebGL doté d'un terrain généré par graine (seed). Une réalisation technique interactive et fluide dans le navigateur."
+    },
+    {
+      "title": "Handwriting, as a Font",
+      "url": "https://ductus.sorenblank.com",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-15T19:42:13.000Z",
+      "category": "other",
+      "tags": [
+        "fonts",
+        "design",
+        "typography",
+        "handwriting"
+      ],
+      "tldr": "Un projet novateur permet de transformer l'écriture manuscrite en police de caractères numérique exploitable. C'est une approche créative de la typographie."
+    },
+    {
+      "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+      "url": "https://bruceroettgers.eu/blog/protomaps/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-15T19:26:22.000Z",
+      "category": "dev",
+      "tags": [
+        "maps",
+        "self-hosting",
+        "gis",
+        "web"
+      ],
+      "tldr": "Protomaps démontre que l'hébergement autonome de tuiles cartographiques est devenu à la fois simple et économique. Une solution idéale pour les développeurs web."
+    },
+    {
+      "title": "Vectors - Aiguilleur du ciel ze game !",
+      "url": "https://korben.info/vectors-jeu-controle-aerien-navigateur.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-15T06:54:41.000Z",
+      "category": "other",
+      "tags": [
+        "game",
+        "browser",
+        "aviation",
+        "simulation"
+      ],
+      "tldr": "Vectors est un jeu de contrôle aérien gratuit et jouable directement dans le navigateur sans inscription. Il propose différents scénarios et un tutoriel complet."
+    }
+  ]
+}

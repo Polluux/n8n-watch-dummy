@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-17",
+  "generatedAt": "2026-11-17T08:30:23.869Z",
+  "intro": "L'actualité de ce jour met principalement en lumière les enjeux de sécurité logicielle et de protection des données, allant des correctifs critiques pour bases de données et des restrictions de permissions au niveau des systèmes d'exploitation jusqu'à l'émergence d'agents d'intelligence artificielle dédiés aux tests d'intrusion. Parallèlement, les retours d'expérience en développement web rappellent la complexité de la gestion multilingue et du référencement sur les applications modernes.",
+  "count": 6,
+  "items": [
+    {
+      "title": "Four locales, one Next.js app: the hreflang mistakes I made so you don't have to",
+      "url": "https://dev.to/johnsiebyronstack/four-locales-one-nextjs-app-the-hreflang-mistakes-i-made-so-you-dont-have-to-1148",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-17T08:26:12.000Z",
+      "category": "dev",
+      "tags": [
+        "next.js",
+        "seo",
+        "i18n",
+        "web"
+      ],
+      "tldr": "Cet article partage les erreurs à éviter lors de la configuration de balises hreflang et de slugs multilingues pour une application Next.js gérant plusieurs langues."
+    },
+    {
+      "title": "macOS 27.3 : Apple encadre davantage l’accès des applications aux données",
+      "url": "https://next.ink/267871/macos-27-3-apple-encadre-davantage-lacces-des-applications-aux-donnees/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-17T07:22:00.000Z",
+      "category": "security",
+      "tags": [
+        "macos",
+        "apple",
+        "sécurité",
+        "permissions"
+      ],
+      "tldr": "La deuxième bêta de macOS 27.3 introduit un renforcement des autorisations pour mieux encadrer l'accès des applications aux données et au disque des utilisateurs."
+    },
+    {
+      "title": "PostgreSQL Anonymizer 3.3 : une mise à jour de sécurité majeure",
+      "url": "https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html",
+      "source": "jdh",
+      "sourceName": "Journal du Hacker",
+      "publishedAt": "2026-11-16T10:55:58.000Z",
+      "category": "security",
+      "tags": [
+        "postgresql",
+        "base de données",
+        "sécurité",
+        "mise à jour"
+      ],
+      "tldr": "La version 3.3 de PostgreSQL Anonymizer est une mise à jour de sécurité majeure qui corrige 12 vulnérabilités critiques liées aux privilèges et rôles masqués."
+    },
+    {
+      "title": "Cyberattaque sur Maileva, filiale de la Poste : 22 millions de personnes exposées",
+      "url": "https://next.ink/267710/cyberattaque-sur-maileva-filiale-de-la-poste-22-millions-de-personnes-exposees/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-16T08:32:02.000Z",
+      "category": "security",
+      "tags": [
+        "cyberattaque",
+        "données personnelles",
+        "france"
+      ],
+      "tldr": "Maileva, filiale de La Poste, a subi une cyberattaque potentiellement exposée les informations personnelles de 22 millions de personnes, entraînant l'ouverture d'une enquête."
+    },
+    {
+      "title": "OpenAI lance Daybreak, des agents IA qui piratent vos applis pour les sécuriser",
+      "url": "https://korben.info/openai-lance-daybreak-des-agents-ia-qui-piratent-vos-applis-pour-les-securiser.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-15T09:26:21.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "ia",
+        "sécurité",
+        "agents"
+      ],
+      "tldr": "OpenAI a présenté Daybreak, des agents IA propulsés par GPT-6 Cyber conçus pour tester l'intrusion dans les applications web et proposer automatiquement des correctifs."
+    },
+    {
+      "title": "I built a self-hosted app to see all my Steam, PlayStation and Xbox games in one place",
+      "url": "https://dev.to/hexguardsec/i-built-a-self-hosted-app-to-see-all-my-steam-playstation-and-xbox-games-in-one-place-81l",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-17T08:28:28.000Z",
+      "category": "other",
+      "tags": [
+        "gaming",
+        "self-hosted",
+        "développement"
+      ],
+      "tldr": "Un développeur a créé une application auto-hébergée pour centraliser en une seule page ses statistiques et bibliothèques de jeux Steam, PlayStation et Xbox."
+    }
+  ]
+}

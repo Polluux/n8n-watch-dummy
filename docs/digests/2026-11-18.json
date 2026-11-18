@@ -1,0 +1,96 @@
+{
+  "date": "2026-11-18",
+  "generatedAt": "2026-11-18T08:30:09.442Z",
+  "intro": "Cette édition met en lumière la criticité de la sécurité logicielle, marquée par la vulnérabilité critique Java4Shell dans OpenJDK et les attaques par compromission de la chaîne d'approvisionnement ciblant les outils tiers. Les aspects pratiques du développement web sont également à l'honneur, entre l'optimisation de l'expérience utilisateur sur les formulaires, la rigueur nécessaire dans les tests d'accessibilité et les dernières évolutions de l'écosystème JavaScript.",
+  "count": 6,
+  "items": [
+    {
+      "title": "Testing Tab Structure: When axe and Chrome Disagree About Your tablist",
+      "url": "https://dev.to/a11y_practice_be4b9244508/testing-tab-structure-when-axe-and-chrome-disagree-about-your-tablist-48ca",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-18T08:24:18.000Z",
+      "category": "dev",
+      "tags": [
+        "accessibility",
+        "testing",
+        "aria",
+        "html"
+      ],
+      "tldr": "Cet article analyse une contradiction entre l'outil axe-core et Chrome lors de la validation de structures de listes d'onglets (tablists). Il met en lumière les subtilités des tests d'accessibilité web (a11y)."
+    },
+    {
+      "title": "Don't validate complex fields on every keystroke (Web HIG tip #19)",
+      "url": "https://dev.to/frozonfreak/dont-validate-complex-fields-on-every-keystroke-web-hig-tip-19-kjo",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-18T08:22:59.000Z",
+      "category": "dev",
+      "tags": [
+        "ux",
+        "forms",
+        "javascript",
+        "web"
+      ],
+      "tldr": "Évitez de valider les champs de formulaire complexes à chaque frappe pour ne pas perturber l'expérience utilisateur. Il est préférable d'attendre que l'utilisateur ait fini de saisir ses données."
+    },
+    {
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "url": "https://calif.io/java4shell/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-17T21:11:28.000Z",
+      "category": "security",
+      "tags": [
+        "java",
+        "rce",
+        "vulnerability",
+        "security"
+      ],
+      "tldr": "Java4Shell expose une vulnérabilité critique de type RCE (exécution de code à distance) dans OpenJDK lors du traitement de chaînes en Base64."
+    },
+    {
+      "title": "jQuery 4.1.0",
+      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-17T19:50:40.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "jquery",
+        "release"
+      ],
+      "tldr": "La version 4.1.0 de jQuery est désormais disponible, apportant son lot de mises à jour et de correctifs pour la célèbre bibliothèque JavaScript."
+    },
+    {
+      "title": "Piratée, la plateforme de tests Optimizely a servi des scripts malveillants à ses clients",
+      "url": "https://next.ink/268010/piratee-la-plateforme-de-tests-optimizely-a-servi-des-scripts-malveillants-a-ses-clients/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-17T09:33:00.000Z",
+      "category": "security",
+      "tags": [
+        "supply-chain",
+        "malware",
+        "security",
+        "breach"
+      ],
+      "tldr": "La plateforme de tests Optimizely a été compromise, servant de vecteur pour propager des scripts malveillants visant à voler des données sensibles chez de grandes entreprises. C'est une nouvelle illustration des attaques sur la chaîne d'approvisionnement logicielle."
+    },
+    {
+      "title": "OxiCloud : un serveur drive, calendar et contact en Rust",
+      "url": "https://www.fredix.xyz/2026/11/oxicloud/",
+      "source": "jdh",
+      "sourceName": "Journal du Hacker",
+      "publishedAt": "2026-11-17T00:01:29.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "self-hosted",
+        "server"
+      ],
+      "tldr": "OxiCloud est un serveur de cloud personnel gérant le stockage, le calendrier et les contacts, développé en langage Rust."
+    }
+  ]
+}

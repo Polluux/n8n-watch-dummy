@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T08:30:23.961Z",
+  "intro": "La journée est marquée par la découverte d'une vulnérabilité critique d'exécution de code à distance non authentifiée affectant Nginx, rappelant l'importance cruciale de la sécurité des serveurs web. En parallèle, l'ingénierie front-end et le portage technique repoussent les limites du navigateur avec l'arrivée de jeux complexes tournant directement grâce aux technologies web modernes.",
+  "count": 2,
+  "items": [
+    {
+      "title": "Unreal Tournament 2004 in the Browser",
+      "url": "https://ut2004.dev/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-19T01:29:29.000Z",
+      "category": "dev",
+      "tags": [
+        "browser",
+        "gaming",
+        "webgl",
+        "wasm"
+      ],
+      "tldr": "Le jeu classique Unreal Tournament 2004 a été porté pour fonctionner directement dans le navigateur web."
+    },
+    {
+      "title": "Unauthenticated remote code execution in Nginx",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-18T15:19:55.000Z",
+      "category": "security",
+      "tags": [
+        "nginx",
+        "rce",
+        "vulnerability",
+        "http2"
+      ],
+      "tldr": "Une vulnérabilité critique d'exécution de code à distance non authentifiée a été découverte dans Nginx."
+    }
+  ]
+}

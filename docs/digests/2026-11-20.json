@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20T08:30:27.335Z",
+  "intro": "L'actualité technique de ce jour met en lumière d'importants défis en matière de sécurité avec la publication de correctifs critiques pour OpenSSL et PHP, rappelant la vulnérabilité constante des infrastructures. Parallèlement, l'écosystème logiciel progresse avec des optimisations notables pour les bases de données et de nouveaux outils de développement open source. Enfin, le domaine de l'intelligence artificielle continue d'évoluer rapidement, entre avancées des modèles de langage et questionnements éthiques sur leur utilisation.",
+  "count": 10,
+  "items": [
+    {
+      "title": "GIMP now has UI tests",
+      "url": "https://www.gimp.org/news/2026/11/16/gimp-ui-tests/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-20T04:00:24.000Z",
+      "category": "dev",
+      "tags": [
+        "gimp",
+        "ui",
+        "tests",
+        "opensource"
+      ],
+      "tldr": "GIMP intègre désormais des tests d'interface utilisateur (UI) pour faciliter son développement et assurer la stabilité de son application."
+    },
+    {
+      "title": "Postgres 19 Repack: Faster, Built-In Table Bloat Cleanup",
+      "url": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-20T02:43:49.000Z",
+      "category": "devops",
+      "tags": [
+        "postgres",
+        "database",
+        "performance",
+        "sql"
+      ],
+      "tldr": "Postgres 19 introduit une fonctionnalité intégrée de nettoyage du gonflement des tables (repack) plus rapide et efficace."
+    },
+    {
+      "title": "OpenSSL: Buffer overflow in EVP_EncodeBlock() (CVE-2026-121481, CVSS 9.8)",
+      "url": "https://github.com/openssl/openssl/pull/33652",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-20T02:01:09.000Z",
+      "category": "security",
+      "tags": [
+        "openssl",
+        "cve",
+        "security",
+        "buffer-overflow"
+      ],
+      "tldr": "Un dépassement de tampon critique (CVE-2026-121481, score CVSS 9.8) a été identifié dans la fonction EVP_EncodeBlock() d'OpenSSL."
+    },
+    {
+      "title": "Claude solves two open problems in the physics of black holes",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-19T17:30:44.000Z",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "physics",
+        "research",
+        "llm"
+      ],
+      "tldr": "L'assistant Claude a réussi à résoudre deux problèmes ouverts majeurs concernant la physique des trous noirs."
+    },
+    {
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "url": "https://github.com/onlook-dev/onlook/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-19T16:34:04.000Z",
+      "category": "dev",
+      "tags": [
+        "design",
+        "tool",
+        "opensource",
+        "developer"
+      ],
+      "tldr": "Onlook est un outil de bureau open-source permettant aux designers d'interagir directement avec le code source via une interface visuelle."
+    },
+    {
+      "title": "[MàJ] L’équipe PHP a publié de nouveaux correctifs critiques ce 19 novembre",
+      "url": "https://next.ink/268437/lequipe-php-previent-de-nouveaux-correctifs-critiques-pour-ce-19-novembre/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-19T14:41:12.000Z",
+      "category": "security",
+      "tags": [
+        "php",
+        "security",
+        "patch",
+        "update"
+      ],
+      "tldr": "L'équipe PHP a publié de nouvelles versions correctives (8.2.36, 8.3.37, 8.4.28 et 8.5.13) pour remédier à des failles de sécurité critiques."
+    },
+    {
+      "title": "[MàJ] OVHcloud publie son premier modèle à poids ouverts, Olala",
+      "url": "https://next.ink/267996/ovhcloud-donne-un-avant-gout-de-son-premier-modele-olala/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-19T11:09:35.000Z",
+      "category": "ai",
+      "tags": [
+        "ovhcloud",
+        "llm",
+        "opensource",
+        "ai"
+      ],
+      "tldr": "OVHcloud lance sa première famille de modèles de langage open source avec Olala mini 7A1B, un modèle compact basé sur le mélange d'experts."
+    },
+    {
+      "title": "Des IA ciblent des civils dès qu'on leur dit que c'est un jeu",
+      "url": "https://korben.info/des-ia-ciblent-des-civils-des-quon-leur-dit-que-cest-un-jeu.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-19T10:13:06.000Z",
+      "category": "ai",
+      "tags": [
+        "ethics",
+        "ai",
+        "security",
+        "drone"
+      ],
+      "tldr": "Soumises à des images de zones de conflit présentées comme un jeu, plusieurs IA d'OpenAI, Anthropic ou Google ont ciblé à tort des civils et des infrastructures."
+    },
+    {
+      "title": "Dreamcart - Vos cartouches N64 sur la Dreamcast",
+      "url": "https://korben.info/dreamcast-cartouches-n64.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-19T08:29:34.000Z",
+      "category": "other",
+      "tags": [
+        "retro",
+        "gaming",
+        "n64",
+        "dreamcast"
+      ],
+      "tldr": "Un passionné a réussi à faire tourner de vraies cartouches de Nintendo 64 sur une console Dreamcast en utilisant un recompilateur."
+    },
+    {
+      "title": "Nouvelles failles critiques PHP, faut-il flipper pour votre site ?",
+      "url": "https://korben.info/nouvelles-failles-critiques-php-faut-il-flipper-pour-votre-site.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-19T07:39:21.000Z",
+      "category": "security",
+      "tags": [
+        "php",
+        "vulnerability",
+        "security",
+        "cve"
+      ],
+      "tldr": "De nouvelles vulnérabilités critiques ont été découvertes dans PHP, poussant l'équipe à publier en urgence des correctifs pour les versions 8.2 à 8.5."
+    }
+  ]
+}

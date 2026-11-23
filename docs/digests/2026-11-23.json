@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23T08:31:18.793Z",
+  "intro": "Cette édition met en lumière les défis liés à l'intelligence artificielle, entre l'optimisation des coûts des API de grands modèles, l'hébergement local performant sur des environnements contraints et la compréhension de leur perplexité. L'actualité technique aborde également la sécurité informatique, marquée par de récents incidents et alertes, ainsi que le développement d'outils et de pratiques visant à renforcer la confidentialité des données et la robustesse des applications.",
+  "count": 9,
+  "items": [
+    {
+      "title": "Why I Built 6 Zero-Backend Browser Tools for Researchers & Engineers (Free Live Demos)",
+      "url": "https://dev.to/hua_xu_521a1aa12635cbbede/why-i-built-6-zero-backend-browser-tools-for-researchers-engineers-free-live-demos-476i",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-23T08:26:19.000Z",
+      "category": "dev",
+      "tags": [
+        "tools",
+        "browser",
+        "privacy",
+        "research"
+      ],
+      "tldr": "Création de six outils de navigateur sans backend pour les chercheurs et ingénieurs, garantissant que les données sensibles restent locales et évitant les abonnements SaaS."
+    },
+    {
+      "title": "When the product matches the background, the edge-hue test goes blind",
+      "url": "https://dev.to/wisly/when-the-product-matches-the-background-the-edge-hue-test-goes-blind-43bd",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-23T08:25:35.000Z",
+      "category": "dev",
+      "tags": [
+        "design",
+        "testing",
+        "color"
+      ],
+      "tldr": "Analyse des limites des tests de teinte par détection de contours lorsque le produit présente une couleur similaire à son arrière-plan."
+    },
+    {
+      "title": "LLM API Cost Math in 2026: Modeling Prompt Cache Hit Rates Across OpenAI, Claude, Gemini & DeepSeek",
+      "url": "https://dev.to/devboxzeroops/llm-api-cost-math-in-2026-modeling-prompt-cache-hit-rates-across-openai-claude-gemini-deepseek-2jce",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-23T08:23:53.000Z",
+      "category": "ai",
+      "tags": [
+        "llm",
+        "api",
+        "cost",
+        "cache"
+      ],
+      "tldr": "Modélisation des coûts des API LLM en 2026, mettant en avant l'impact crucial du taux de réussite du cache de prompts sur la facture mensuelle."
+    },
+    {
+      "title": "Running a self-hosted AI for a Discord bot on a CPU-only VPS (and the thread trick that made it 70% faster)",
+      "url": "https://dev.to/one_shotonly_9983088d742/running-a-self-hosted-ai-for-a-discord-bot-on-a-cpu-only-vps-and-the-thread-trick-that-made-it-70-5ag5",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-23T08:23:52.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "bot",
+        "self-hosted",
+        "cpu"
+      ],
+      "tldr": "Hébergement d'une IA locale (Qwen 2.5 3B via Ollama) sur un VPS sans GPU pour un bot Discord, rendu 70 % plus rapide grâce à une astuce de gestion des threads."
+    },
+    {
+      "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
+      "url": "https://spelunkr.tv",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-23T01:13:51.000Z",
+      "category": "other",
+      "tags": [
+        "video",
+        "archive",
+        "streaming",
+        "retro"
+      ],
+      "tldr": "Lancement d'un réseau de télévision alternatif et gratuit constitué des vidéos oubliées de l'Internet Archive."
+    },
+    {
+      "title": "GL.iNet Security Notice 2026-11-20",
+      "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-22T23:06:37.000Z",
+      "category": "security",
+      "tags": [
+        "security",
+        "router",
+        "gl-inet",
+        "notice"
+      ],
+      "tldr": "Publication d'un avis de sécurité important par GL.iNet concernant ses équipements."
+    },
+    {
+      "title": "A miniature San Francisco with live buses, planes and boats",
+      "url": "https://smallsf.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-22T20:33:23.000Z",
+      "category": "other",
+      "tags": [
+        "simulation",
+        "san francisco",
+        "visualization",
+        "maps"
+      ],
+      "tldr": "Découverte d'une représentation miniature de San Francisco intégrant des bus, des avions et des bateaux en direct."
+    },
+    {
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-22T17:06:27.000Z",
+      "category": "ai",
+      "tags": [
+        "openai",
+        "perplexity",
+        "intelligence"
+      ],
+      "tldr": "Article d'OpenAI explorant les liens entre la perplexité des modèles et leur niveau d'intelligence."
+    },
+    {
+      "title": "Chase confirme un vol de données, Visa et Mastercard frappés aussi",
+      "url": "https://korben.info/chase-confirme-un-vol-de-donnees-visa-et-mastercard-frappes-aussi.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-21T10:50:49.000Z",
+      "category": "security",
+      "tags": [
+        "data-breach",
+        "chase",
+        "visa",
+        "mastercard"
+      ],
+      "tldr": "JPMorgan Chase confirme une fuite de données suite au piratage de prestataires, touchant également les clients de Visa et Mastercard via un groupe de cybercriminels."
+    }
+  ]
+}

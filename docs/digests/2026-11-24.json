@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-24",
+  "generatedAt": "2026-11-24T13:14:44.653Z",
+  "intro": "L'actualité du développement logiciel met en lumière les défis liés à la robustesse des processus de déploiement et au débogage en production, soulignés par les limites des linters CI/CD et l'importance cruciale des symboles de compilation. Côté web et interfaces, l'écosystème évolue entre l'essor de composants modulaires en JavaScript, l'émergence de nouveaux langages pour la collaboration avec l'intelligence artificielle et les débats persistants autour des moteurs de navigation et de l'indépendance technologique.",
+  "count": 7,
+  "items": [
+    {
+      "title": "GitHub Actions Accepts Invalid YAML. actionlint and yamllint Don't Catch It",
+      "url": "https://dev.to/alanwest/github-actions-accepts-invalid-yaml-actionlint-and-yamllint-dont-catch-it-64g",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-24T13:10:03.000Z",
+      "category": "devops",
+      "tags": [
+        "github actions",
+        "yaml",
+        "linting",
+        "ci/cd"
+      ],
+      "tldr": "GitHub Actions peut exécuter des fichiers YAML invalides que les outils de linting courants ne parviennent pas à détecter."
+    },
+    {
+      "title": "Introducing ZidanSelect: A Zero-Dependency Vanilla JS Custom Select, Combobox & Tag Input Plugin",
+      "url": "https://dev.to/akhtar_ali_f891e7276534f8/introducing-zidanselect-a-zero-dependency-vanilla-js-custom-select-combobox-tag-input-plugin-4i1i",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-24T13:09:22.000Z",
+      "category": "dev",
+      "tags": [
+        "javascript",
+        "frontend",
+        "ui",
+        "plugin"
+      ],
+      "tldr": "ZidanSelect est un plugin JavaScript vanille sans dépendance pour créer des menus déroulants et sélecteurs personnalisés."
+    },
+    {
+      "title": "Crashes ofuscados legíveis: mappings do R8, source maps do React Native e dSYMs",
+      "url": "https://dev.to/luispeixoto/crashes-ofuscados-legiveis-mappings-do-r8-source-maps-do-react-native-e-dsyms-4010",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-24T13:07:58.000Z",
+      "category": "dev",
+      "tags": [
+        "debugging",
+        "mobile",
+        "react native",
+        "android"
+      ],
+      "tldr": "L'utilisation de mappings R8, de source maps React Native et de dSYMs est essentielle pour rendre les rapports de crash de production lisibles."
+    },
+    {
+      "title": "Ladybird - Vous pouvez enfin installer ce navigateur indépendant",
+      "url": "https://korben.info/ladybird-premiere-alpha.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-24T09:04:43.000Z",
+      "category": "other",
+      "tags": [
+        "browser",
+        "alpha",
+        "linux",
+        "macos"
+      ],
+      "tldr": "La première version alpha du navigateur indépendant Ladybird est désormais installable sans compilation sur Linux et macOS."
+    },
+    {
+      "title": "Malgré le DMA, WebKit reste le seul moteur des rivaux de Safari en Europe",
+      "url": "https://next.ink/269516/malgre-le-dma-webkit-reste-le-seul-moteur-des-rivaux-de-safari-en-europe/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-24T06:44:45.000Z",
+      "category": "other",
+      "tags": [
+        "browser",
+        "ios",
+        "apple",
+        "regulation"
+      ],
+      "tldr": "Malgré le règlement sur les marchés numériques (DMA), WebKit reste imposé comme unique moteur aux navigateurs rivaux sur iOS en Europe."
+    },
+    {
+      "title": "Declare is a UI language for you and your AI",
+      "url": "https://davidtemkin.github.io/declarelang/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-24T02:36:56.000Z",
+      "category": "ai",
+      "tags": [
+        "ui",
+        "language",
+        "llm"
+      ],
+      "tldr": "Declare est un nouveau langage d'interface utilisateur conçu pour faciliter la collaboration entre les humains et leurs intelligences artificielles."
+    },
+    {
+      "title": "GPUI is getting its own repository",
+      "url": "https://github.com/zed-industries/gpui",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-23T20:52:54.000Z",
+      "category": "dev",
+      "tags": [
+        "rust",
+        "gui",
+        "open source"
+      ],
+      "tldr": "Le framework graphique GPUI, développé par Zed Industries, dispose désormais de son propre dépôt de code indépendant."
+    }
+  ]
+}

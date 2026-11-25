@@ -1,0 +1,158 @@
+{
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T08:30:11.669Z",
+  "intro": "La veille technologique d'aujourd'hui met à l'honneur les avancées en matière de performance web et d'accessibilité, portées par l'optimisation des interfaces mobiles et de nouvelles techniques de rendu graphique. L'actualité est également marquée par l'expansion des outils d'intelligence artificielle générative et d'agents autonomes dédiés au développement, de la relecture automatisée de code aux protocoles financiers, complétée par des recherches de pointe en algorithmique et en sécurité des systèmes.",
+  "count": 10,
+  "items": [
+    {
+      "title": "Catching Focus Hidden Under a Sticky Header: A Console Check, and Why elementFromPoint Lies",
+      "url": "https://dev.to/a11y_practice_be4b9244508/catching-focus-hidden-under-a-sticky-header-a-console-check-and-why-elementfrompoint-lies-3kc",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-25T08:17:18.000Z",
+      "category": "dev",
+      "tags": [
+        "accessibility",
+        "html",
+        "javascript",
+        "css"
+      ],
+      "tldr": "Cet article analyse comment le focus clavier peut être masqué sous un en-tête fixe et pourquoi la méthode elementFromPoint peut induire en erreur lors des tests."
+    },
+    {
+      "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
+      "url": "https://gpu-demo-gallery.pages.dev/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-25T04:31:48.000Z",
+      "category": "other",
+      "tags": [
+        "graphics",
+        "webgl",
+        "retro",
+        "browser"
+      ],
+      "tldr": "Une collection de anciennes démos techniques Nvidia et ATI remises en route pour fonctionner directement dans le navigateur."
+    },
+    {
+      "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
+      "url": "https://buttons.joshwcomeau.com/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-25T03:23:07.000Z",
+      "category": "other",
+      "tags": [
+        "ui",
+        "audio",
+        "design",
+        "web"
+      ],
+      "tldr": "Une bibliothèque de sons de boutons professionnels enregistrés pour enrichir les interactions de clics et de pressions."
+    },
+    {
+      "title": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
+      "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-25T03:04:37.000Z",
+      "category": "dev",
+      "tags": [
+        "ios",
+        "safari",
+        "performance",
+        "web"
+      ],
+      "tldr": "Découvrez comment contourner la limite de 60 FPS d'iOS Safari pour concevoir des applications web aux performances fluides et dignes d'une application native."
+    },
+    {
+      "title": "Solr's security.json Is Not a Safe Read for Low-Trust Administrators",
+      "url": "https://dev.to/ioneyrezende/solrs-securityjson-is-not-a-safe-read-for-low-trust-administrators-50od",
+      "source": "devto",
+      "sourceName": "dev.to",
+      "publishedAt": "2026-11-25T08:22:13.000Z",
+      "category": "security",
+      "tags": [
+        "solr",
+        "cve",
+        "security",
+        "zookeeper"
+      ],
+      "tldr": "La vulnérabilité CVE-2026-53672 montre que l'accès au fichier security.json de Solr n'est pas sûr pour les administrateurs à faibles privilèges, permettant de consulter la configuration d'authentification."
+    },
+    {
+      "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-25T01:19:26.000Z",
+      "category": "other",
+      "tags": [
+        "math",
+        "algorithm",
+        "openai",
+        "research"
+      ],
+      "tldr": "Une prépublication d'OpenAI aborde une nouvelle borne sur l'exposant de la multiplication matricielle, évaluée à Θ(n^2.25)."
+    },
+    {
+      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "url": "https://news.ycombinator.com/item?id=50634426",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-24T20:44:15.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "mcp",
+        "fintech",
+        "startup"
+      ],
+      "tldr": "Versine présente un protocole MCP permettant d'envoyer et de recevoir de l'argent simplement en conversant avec son intelligence artificielle."
+    },
+    {
+      "title": "Ternary Bonsai 2.5 27B",
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-24T20:08:03.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "llm",
+        "model",
+        "ternary"
+      ],
+      "tldr": "Sortie du modèle Ternary Bonsai 2.5 27B, un nouveau système d'intelligence artificielle optimisé pour les performances."
+    },
+    {
+      "title": "☕️ Avec Claude Ship, Anthropic s’attaque à la correction automatique des pull requests",
+      "url": "https://next.ink/brief-article/avec-claude-ship-anthropic-sattaque-a-la-correction-automatique-des-pull-requests/",
+      "source": "nxt",
+      "sourceName": "Next",
+      "publishedAt": "2026-11-24T16:21:00.000Z",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "github",
+        "anthropic",
+        "automation"
+      ],
+      "tldr": "Anthropic lance Claude Ship, un outil automatisé conçu pour relire le code, corriger les bugs et gérer les pull requests sur GitHub."
+    },
+    {
+      "title": "Shirudo - Quand l'IA fabrique des boucliers pour Linux",
+      "url": "https://korben.info/shirudo-openai-cisco-ebpf.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-24T07:38:51.000Z",
+      "category": "security",
+      "tags": [
+        "linux",
+        "security",
+        "ai",
+        "ebpf"
+      ],
+      "tldr": "OpenAI et Cisco dévoilent Shirudo, un outil qui déploie des boucliers de sécurité temporaires sur un noyau Linux en attendant l'application de correctifs pérennes."
+    }
+  ]
+}

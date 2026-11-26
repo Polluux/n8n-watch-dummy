@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T08:30:15.124Z",
+  "intro": "La sécurité logicielle domine l actualite avec la divulgation d une vulnerabilite critique de longue date dans le noyau Linux et les dernieres informations concernant l incident de 1Password. En parallele, l exploration technique met a l honneur des projets insolites et retro, allant de l execution d un systeme Linux dans un fichier PDF a la preservation d interfaces graphiques historiques et au detournement de peripheriques materiels.",
+  "count": 5,
+  "items": [
+    {
+      "title": "Collection of preserved UI style guides",
+      "url": "https://aresluna.org/ui-style-guides/",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-26T00:40:00.000Z",
+      "category": "dev",
+      "tags": [
+        "ui",
+        "design",
+        "archives",
+        "web"
+      ],
+      "tldr": "Une collection d'anciens guides de style d'interface utilisateur préservés pour l'inspiration et l'histoire du web."
+    },
+    {
+      "title": "Nfs2root: A 12-year-old pre-auth remote root in the Linux kernel's NFS server",
+      "url": "https://opensec.in/blog/nfs2root-cve-2026-99362",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-25T20:35:50.000Z",
+      "category": "security",
+      "tags": [
+        "linux",
+        "kernel",
+        "cve",
+        "nfs"
+      ],
+      "tldr": "Découverte d'une ancienne vulnérabilité critique de type pre-auth remote root vieille de 12 ans dans le serveur NFS du noyau Linux."
+    },
+    {
+      "title": "1Password Security Incident",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "source": "hn",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-11-25T17:18:26.000Z",
+      "category": "security",
+      "tags": [
+        "1password",
+        "incident",
+        "breach",
+        "update"
+      ],
+      "tldr": "Mise à jour officielle concernant l'incident de sécurité survenu chez 1Password en novembre 2026."
+    },
+    {
+      "title": "LinuxPDF - Quand Linux se lance dans un PDF",
+      "url": "https://korben.info/linuxpdf-linux-dans-un-pdf.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-25T09:25:14.000Z",
+      "category": "other",
+      "tags": [
+        "linux",
+        "pdf",
+        "risc-v",
+        "chrome"
+      ],
+      "tldr": "LinuxPDF permet de lancer un véritable système Linux RISC-V directement depuis un fichier PDF ouvert dans Chrome grâce au JavaScript."
+    },
+    {
+      "title": "Votre vieux clavier Logitech G15 a encore des choses à afficher",
+      "url": "https://korben.info/g15-retro-hud.html?utm_source=rss&utm_medium=feed&utm_campaign=flux-complet",
+      "source": "kbn",
+      "sourceName": "Korben",
+      "publishedAt": "2026-11-25T08:42:17.000Z",
+      "category": "other",
+      "tags": [
+        "hardware",
+        "logitech",
+        "hud",
+        "windows"
+      ],
+      "tldr": "G15-Retro-HUD redonne vie à l'écran LCD du clavier Logitech G15 sur Windows 10 et 11 via une communication USB directe sans les anciens pilotes."
+    }
+  ]
+}
